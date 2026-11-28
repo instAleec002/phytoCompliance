@@ -1,0 +1,10 @@
+{
+ "fecha": "2026-11-26",
+ "juez": "local:gemma4:e4b",
+ "n": 180,
+ "kappa_relevante_si_no_vs_humano": 0.423,
+ "kappa_0_1_2_vs_humano": 0.282,
+ "kappa_relevante_si_no_qwen_vs_humano": 0.667,
+ "kappa_relevante_si_no_vs_qwen": 0.48,
+ "kappa_0_1_2_vs_qwen": 0.392
+}

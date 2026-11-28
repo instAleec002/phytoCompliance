@@ -1,0 +1,49 @@
+# Processing of the document corpus (knowledge/documents). Every value here can be swapped without touching code;
+# one run can also override it with DOCS_* environment variables or with the flags of
+#   python -m interfaces.jobs.documents procesar <file> --route ... --pdf ... --chunker ...
+
+# How a file becomes blocks: markdown (engine's Markdown, parsed), structured (engine's typed output) or mixed (text
+# from Markdown, tables from the structured output).
+route: markdown
+
+# Engine per format. pdf: opendataloader | pymupdf | docling (docling only for the benchmark; optional extra).
+extractors:
+  pdf: opendataloader
+  docx: docx
+  xlsx: xlsx
+
+extractor_options:
+  opendataloader:
+    table_method: default      # default (border-based) | cluster
+    reading_order: xycut       # xycut | off
+    fast_jvm: true             # -XX:TieredStopAtLevel=1
+    cds: true                  # class-data-sharing archive in non_local/non_cache/odl.jsa
+  pymupdf:
+    ocr: false                 # OCR is not a priority (06/11/2026)
+  docling:
+    ocr: false
+    table_structure: true
+
+# Steps after extraction, in order. rules goes after sections (it reads section paths).
+steps: [text, furniture, tables, outline, sections]
+
+step_options:
+  furniture: {min_pages: 3, min_share: 0.3, max_chars: 140}
+  tables: {max_empty: 0.8}
+  outline: {max_heading_chars: 110}
+  rules: {drop_sections: [], drop_kinds: [], min_chars: 0}
+
+# structural | fixed | page | parent_child. Etapa 3 (24/11/2026): parent_child (V7 = V5 + MMR), elegido en la partición de
+# desarrollo con la regla fijada de antemano; en prueba no difiere de structural de forma significativa (ver ml/evaluation/runs/*_seleccion_v7.json)
+chunker:
+  name: parent_child
+  max_tokens: 480
+  min_tokens: 80
+  overlap_tokens: 60           # fixed only
+  child_tokens: 160            # parent_child only
+
+# Document title and section path prepended for embedding and shown with the citation (replaces late chunking).
+contextual_header: true
+
+tokens: approx                 # token counter used for the budgets
+language: es                   # sentence splitting (pySBD)

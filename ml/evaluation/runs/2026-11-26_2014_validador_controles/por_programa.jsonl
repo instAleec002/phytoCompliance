@@ -1,0 +1,42 @@
+{"pid": "c001", "tipo": "LIMPIO", "correcto": true, "esperados": [], "hallados": [], "descripcion": "programa limpio"}
+{"pid": "c002", "tipo": "LIMPIO", "correcto": true, "esperados": [], "hallados": [], "descripcion": "programa limpio"}
+{"pid": "c003", "tipo": "LIMPIO", "correcto": true, "esperados": [], "hallados": [], "descripcion": "programa limpio"}
+{"pid": "c004", "tipo": "LIMPIO", "correcto": true, "esperados": [], "hallados": [], "descripcion": "programa limpio"}
+{"pid": "c005", "tipo": "LIMPIO", "correcto": true, "esperados": [], "hallados": [], "descripcion": "programa limpio"}
+{"pid": "c006", "tipo": "LIMPIO", "correcto": true, "esperados": [], "hallados": [], "descripcion": "programa limpio"}
+{"pid": "c007", "tipo": "LIMPIO", "correcto": true, "esperados": [], "hallados": [], "descripcion": "programa limpio"}
+{"pid": "c008", "tipo": "LIMPIO", "correcto": true, "esperados": [], "hallados": [], "descripcion": "programa limpio"}
+{"pid": "c009", "tipo": "LIMPIO", "correcto": true, "esperados": [], "hallados": [], "descripcion": "programa limpio"}
+{"pid": "c010", "tipo": "LIMPIO", "correcto": true, "esperados": [], "hallados": [], "descripcion": "programa limpio"}
+{"pid": "c011", "tipo": "LIMPIO", "correcto": true, "esperados": [], "hallados": [], "descripcion": "programa limpio"}
+{"pid": "c012", "tipo": "LIMPIO", "correcto": true, "esperados": [], "hallados": [], "descripcion": "programa limpio"}
+{"pid": "c013", "tipo": "LIMPIO", "correcto": true, "esperados": [], "hallados": [], "descripcion": "programa limpio"}
+{"pid": "c014", "tipo": "LIMPIO", "correcto": true, "esperados": [], "hallados": [], "descripcion": "programa limpio"}
+{"pid": "c015", "tipo": "PHI_EXACTA", "correcto": true, "esperados": [], "hallados": [], "descripcion": "aplicado exactamente 1 días (su carencia) antes de la cosecha"}
+{"pid": "c016", "tipo": "PHI_MENOS_UNO", "correcto": true, "esperados": [["PHI_NOT_MET", "A1", "001201500376"]], "hallados": [["PHI_NOT_MET", "A1", "001201500376"]], "descripcion": "aplicado 0 días antes de la cosecha, uno menos que su carencia de 1"}
+{"pid": "c017", "tipo": "COSECHA_MISMO_DIA", "correcto": true, "esperados": [["PHI_NOT_MET", "B2", "001202200070"]], "hallados": [["PHI_NOT_MET", "B2", "001202200070"]], "descripcion": "aplicado el mismo día de la cosecha (carencia 7); no es posterior a la cosecha"}
+{"pid": "c018", "tipo": "OTRA_PLAGA", "correcto": true, "esperados": [["NOT_REGISTERED", "A1", "001201200048"]], "hallados": [["NOT_REGISTERED", "A1", "001201200048"]], "descripcion": "producto registrado para table_grape contra 000437, usado contra 000484, para la que no lo está"}
+{"pid": "c019", "tipo": "ROTACION_ALTERNA", "correcto": true, "esperados": [], "hallados": [], "descripcion": "el primer producto se repite después de otros dos grupos (no consecutivo)"}
+{"pid": "c020", "tipo": "PHI_EXACTA", "correcto": true, "esperados": [], "hallados": [], "descripcion": "aplicado exactamente 2 días (su carencia) antes de la cosecha"}
+{"pid": "c021", "tipo": "PHI_MENOS_UNO", "correcto": true, "esperados": [["PHI_NOT_MET", "A1", "001201400056"]], "hallados": [["PHI_NOT_MET", "A1", "001201400056"]], "descripcion": "aplicado 20 días antes de la cosecha, uno menos que su carencia de 21"}
+{"pid": "c022", "tipo": "COSECHA_MISMO_DIA", "correcto": true, "esperados": [["PHI_NOT_MET", "B2", "001201900021"]], "hallados": [["PHI_NOT_MET", "B2", "001201900021"]], "descripcion": "aplicado el mismo día de la cosecha (carencia 14); no es posterior a la cosecha"}
+{"pid": "c023", "tipo": "OTRA_PLAGA", "correcto": true, "esperados": [["NOT_REGISTERED", "A1", "001202400472"]], "hallados": [["NOT_REGISTERED", "A1", "001202400472"]], "descripcion": "producto registrado para avocado contra 000550, usado contra 011978, para la que no lo está"}
+{"pid": "c024", "tipo": "ROTACION_ALTERNA", "correcto": true, "esperados": [], "hallados": [], "descripcion": "el primer producto se repite después de otros dos grupos (no consecutivo)"}
+{"pid": "c025", "tipo": "PHI_EXACTA", "correcto": true, "esperados": [], "hallados": [], "descripcion": "aplicado exactamente 1 días (su carencia) antes de la cosecha"}
+{"pid": "c026", "tipo": "PHI_MENOS_UNO", "correcto": true, "esperados": [["PHI_NOT_MET", "A1", "001202300263"]], "hallados": [["PHI_NOT_MET", "A1", "001202300263"]], "descripcion": "aplicado 6 días antes de la cosecha, uno menos que su carencia de 7"}
+{"pid": "c027", "tipo": "COSECHA_MISMO_DIA", "correcto": true, "esperados": [["PHI_NOT_MET", "A1", "001202000092"]], "hallados": [["PHI_NOT_MET", "A1", "001202000092"]], "descripcion": "aplicado el mismo día de la cosecha (carencia 21); no es posterior a la cosecha"}
+{"pid": "c028", "tipo": "OTRA_PLAGA", "correcto": true, "esperados": [["NOT_REGISTERED", "B2", "001202600165"]], "hallados": [["NOT_REGISTERED", "B2", "001202600165"]], "descripcion": "producto registrado para blueberry contra 001913, usado contra 000341, para la que no lo está"}
+{"pid": "c029", "tipo": "ROTACION_ALTERNA", "correcto": true, "esperados": [], "hallados": [], "descripcion": "el primer producto se repite después de otros dos grupos (no consecutivo)"}
+{"pid": "c030", "tipo": "PHI_EXACTA", "correcto": true, "esperados": [], "hallados": [], "descripcion": "aplicado exactamente 7 días (su carencia) antes de la cosecha"}
+{"pid": "c031", "tipo": "PHI_MENOS_UNO", "correcto": true, "esperados": [["PHI_NOT_MET", "B2", "001202200182"]], "hallados": [["PHI_NOT_MET", "B2", "001202200182"]], "descripcion": "aplicado 4 días antes de la cosecha, uno menos que su carencia de 5"}
+{"pid": "c032", "tipo": "COSECHA_MISMO_DIA", "correcto": true, "esperados": [["PHI_NOT_MET", "A1", "001201400187"]], "hallados": [["PHI_NOT_MET", "A1", "001201400187"]], "descripcion": "aplicado el mismo día de la cosecha (carencia 14); no es posterior a la cosecha"}
+{"pid": "c033", "tipo": "OTRA_PLAGA", "correcto": true, "esperados": [["NOT_REGISTERED", "B2", "001202200317"]], "hallados": [["NOT_REGISTERED", "B2", "001202200317"]], "descripcion": "producto registrado para table_grape contra 000437, usado contra 000309, para la que no lo está"}
+{"pid": "c034", "tipo": "ROTACION_ALTERNA", "correcto": true, "esperados": [], "hallados": [], "descripcion": "el primer producto se repite después de otros dos grupos (no consecutivo)"}
+{"pid": "c035", "tipo": "PHI_EXACTA", "correcto": true, "esperados": [], "hallados": [], "descripcion": "aplicado exactamente 1 días (su carencia) antes de la cosecha"}
+{"pid": "c036", "tipo": "PHI_MENOS_UNO", "correcto": true, "esperados": [["PHI_NOT_MET", "B2", "001201500047"]], "hallados": [["PHI_NOT_MET", "B2", "001201500047"]], "descripcion": "aplicado 29 días antes de la cosecha, uno menos que su carencia de 30"}
+{"pid": "c037", "tipo": "COSECHA_MISMO_DIA", "correcto": true, "esperados": [["PHI_NOT_MET", "A1", "001200700084"]], "hallados": [["PHI_NOT_MET", "A1", "001200700084"]], "descripcion": "aplicado el mismo día de la cosecha (carencia 30); no es posterior a la cosecha"}
+{"pid": "c038", "tipo": "OTRA_PLAGA", "correcto": true, "esperados": [["NOT_REGISTERED", "A1", "001201400168"]], "hallados": [["NOT_REGISTERED", "A1", "001201400168"]], "descripcion": "producto registrado para avocado contra 000726, usado contra 000508, para la que no lo está"}
+{"pid": "c039", "tipo": "ROTACION_ALTERNA", "correcto": true, "esperados": [], "hallados": [], "descripcion": "el primer producto se repite después de otros dos grupos (no consecutivo)"}
+{"pid": "c040", "tipo": "PHI_EXACTA", "correcto": true, "esperados": [], "hallados": [], "descripcion": "aplicado exactamente 1 días (su carencia) antes de la cosecha"}
+{"pid": "c041", "tipo": "PHI_MENOS_UNO", "correcto": true, "esperados": [["PHI_NOT_MET", "B2", "001202600233"]], "hallados": [["PHI_NOT_MET", "B2", "001202600233"]], "descripcion": "aplicado 6 días antes de la cosecha, uno menos que su carencia de 7"}
+{"pid": "c042", "tipo": "COSECHA_MISMO_DIA", "correcto": true, "esperados": [["PHI_NOT_MET", "B2", "001201700135"]], "hallados": [["PHI_NOT_MET", "B2", "001201700135"]], "descripcion": "aplicado el mismo día de la cosecha (carencia 14); no es posterior a la cosecha"}

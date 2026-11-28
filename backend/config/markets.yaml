@@ -1,0 +1,13 @@
+# Mercados de referencia del alcance (UE, EE. UU., Codex).
+EU:
+  name: Unión Europea
+  source: EU Pesticides Database (API de la DG SANTE)
+  default_mrl_mg_kg: 0.01        # Reglamento (CE) 396/2005, art. 18
+US:
+  name: Estados Unidos
+  source: 40 CFR Part 180 (eCFR)
+  default_mrl_mg_kg: null        # sin tolerancia definida = no permitido; se trata como hallazgo
+CODEX:
+  name: Codex Alimentarius
+  source: Base de datos de LMR del Codex
+  default_mrl_mg_kg: null

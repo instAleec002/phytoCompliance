@@ -1,0 +1,19 @@
+{
+ "modo": "memoria",
+ "modelo": "qwen3:8b",
+ "preguntas": 110,
+ "exactitud": 0.073,
+ "por_tipo": {
+  "lmr_ue_vigente": 0.0,
+  "lmr_ue_historico": 0.0,
+  "lmr_eeuu": 0.0,
+  "lmr_codex": 0.0,
+  "comparacion": 0.1,
+  "registro": 0.333,
+  "carencia": 0.0,
+  "modo_accion": 0.2
+ },
+ "con_valor_inventado": 0,
+ "sin_llamar_herramientas": null,
+ "segundos_mediana": 0.735
+}

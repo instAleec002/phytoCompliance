@@ -1,0 +1,38 @@
+{
+ "s1": {
+  "sistema": "2026-11-24_1012_cumplimiento_s1_herramientas",
+  "2026-11-26_2321_cumplimiento_s1_herramientas_gen-gemma4-e4b": {
+   "preguntas": 110,
+   "exactas_sistema": 110,
+   "exactas_otro": 108,
+   "solo_a": 2,
+   "solo_b": 0,
+   "p": 0.5,
+   "prueba": "McNemar exacta (scipy.stats.binomtest)"
+  },
+  "2026-11-26_2324_cumplimiento_s1_sin-guarda_gen-gemma4-e4b": {
+   "preguntas": 110,
+   "exactas_sistema": 110,
+   "exactas_otro": 104,
+   "solo_a": 6,
+   "solo_b": 0,
+   "p": 0.03125,
+   "prueba": "McNemar exacta (scipy.stats.binomtest)"
+  }
+ },
+ "s2": {
+  "sistema": "2026-11-26_2015_fidelidad_s2_qwen3-8b",
+  "contra": "2026-11-26_2326_fidelidad_s2_gen-gemma4-e4b_qwen3-8b",
+  "ambos_con_evidencia": 41,
+  "media_sistema_pareada": 0.75,
+  "media_otro_pareada": 0.917,
+  "media_sistema": 0.752,
+  "media_otro": 0.899,
+  "respondidas_sistema": 50,
+  "respondidas_otro": 45,
+  "n": 24,
+  "estadistico": 61.0,
+  "p": 0.010962381895272433,
+  "prueba": "Wilcoxon (scipy.stats.wilcoxon)"
+ }
+}

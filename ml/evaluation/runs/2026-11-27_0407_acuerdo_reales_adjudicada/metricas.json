@@ -1,0 +1,27 @@
+{
+ "corrida": "2026-11-27_0405_validador_reales",
+ "referencia": "adjudicada",
+ "correcciones": [
+  "avocado:Buprofezin:¿Registrado para el cultivo?",
+  "avocado:Dimetoato:¿Registrado para el cultivo?",
+  "table_grape:Sulfodin:LMR UE",
+  "avocado:Difenoconazole:Tolerancia EE. UU."
+ ],
+ "filas_comparadas": 54,
+ "bloqueante": {
+  "referencia_positivas": 4,
+  "sistema_positivas": 4,
+  "coinciden": 54,
+  "precision": 1.0,
+  "exhaustividad": 1.0,
+  "kappa": 1.0
+ },
+ "riesgo_mercado": {
+  "referencia_positivas": 23,
+  "sistema_positivas": 26,
+  "coinciden": 49,
+  "precision": 0.846,
+  "exhaustividad": 0.957,
+  "kappa": 0.814
+ }
+}

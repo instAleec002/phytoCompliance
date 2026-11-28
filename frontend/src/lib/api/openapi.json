@@ -1,0 +1,5506 @@
+{
+ "openapi": "3.1.0",
+ "info": {
+  "title": "TP202620505 · Núcleo de cumplimiento",
+  "description": "Reglas exactas de cumplimiento fitosanitario: límites vigentes por mercado y fecha, validación de\nprogramas por bloque, resultados de laboratorio contra perfiles de comprador y alertas de límites próximos. Cada\nrespuesta cita su norma y la instantánea de la fuente.",
+  "version": "0.1.0"
+ },
+ "paths": {
+  "/api/salud": {
+   "get": {
+    "tags": [
+     "servicio"
+    ],
+    "summary": "El servicio responde (sin sesión)",
+    "operationId": "health_api_salud_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/auth/iniciar-sesion": {
+   "post": {
+    "tags": [
+     "sesión"
+    ],
+    "summary": "Inicia sesión con nombre de usuario o correo",
+    "operationId": "login_api_auth_iniciar_sesion_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/LoginIn"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/LoginOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/auth/enlace": {
+   "post": {
+    "tags": [
+     "sesión"
+    ],
+    "summary": "Datos de un enlace de activación o restablecimiento",
+    "operationId": "link_info_api_auth_enlace_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/LinkIn"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/LinkInfoOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/auth/activar": {
+   "post": {
+    "tags": [
+     "sesión"
+    ],
+    "summary": "Fija la contraseña con un enlace de un solo uso; al activar, acepta el aviso de privacidad",
+    "operationId": "redeem_api_auth_activar_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/RedeemIn"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/UserOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/auth/aviso-privacidad": {
+   "get": {
+    "tags": [
+     "sesión"
+    ],
+    "summary": "Aviso de privacidad vigente (Ley N.° 29733)",
+    "operationId": "privacy_notice_api_auth_aviso_privacidad_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/NoticeOut"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/auth/yo": {
+   "get": {
+    "tags": [
+     "sesión"
+    ],
+    "summary": "La cuenta de la sesión actual",
+    "operationId": "me_api_auth_yo_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/UserOut"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ]
+   }
+  },
+  "/api/auth/cerrar-sesion": {
+   "post": {
+    "tags": [
+     "sesión"
+    ],
+    "summary": "Cierra la sesión actual",
+    "operationId": "logout_api_auth_cerrar_sesion_post",
+    "responses": {
+     "204": {
+      "description": "Successful Response"
+     }
+    },
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ]
+   }
+  },
+  "/api/mis/contrasena": {
+   "post": {
+    "tags": [
+     "mi cuenta"
+    ],
+    "summary": "Cambia la contraseña; las demás sesiones se cierran",
+    "operationId": "change_password_api_mis_contrasena_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/PasswordChangeIn"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "204": {
+      "description": "Successful Response"
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ]
+   }
+  },
+  "/api/mis/sesiones": {
+   "get": {
+    "tags": [
+     "mi cuenta"
+    ],
+    "summary": "Sesiones abiertas de la cuenta",
+    "operationId": "sessions_api_mis_sesiones_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "items": {
+          "$ref": "#/components/schemas/SessionOut"
+         },
+         "type": "array",
+         "title": "Response Sessions Api Mis Sesiones Get"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ]
+   }
+  },
+  "/api/mis/sesiones/{session_id}": {
+   "delete": {
+    "tags": [
+     "mi cuenta"
+    ],
+    "summary": "Cierra una sesión (p. ej. un equipo olvidado)",
+    "operationId": "revoke_api_mis_sesiones__session_id__delete",
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ],
+    "parameters": [
+     {
+      "name": "session_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "integer",
+       "title": "Session Id"
+      }
+     }
+    ],
+    "responses": {
+     "204": {
+      "description": "Successful Response"
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/mis/actividad": {
+   "get": {
+    "tags": [
+     "mi cuenta"
+    ],
+    "summary": "Registro de actividad propio",
+    "operationId": "activity_api_mis_actividad_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "items": {
+          "$ref": "#/components/schemas/ActivityOut"
+         },
+         "type": "array",
+         "title": "Response Activity Api Mis Actividad Get"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ]
+   }
+  },
+  "/api/mis/aviso": {
+   "post": {
+    "tags": [
+     "mi cuenta"
+    ],
+    "summary": "Acepta la versión vigente del aviso de privacidad",
+    "operationId": "accept_notice_api_mis_aviso_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/NoticeAcceptIn"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/UserOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ]
+   }
+  },
+  "/api/mis/datos": {
+   "get": {
+    "tags": [
+     "mi cuenta"
+    ],
+    "summary": "Descarga todos los datos personales de la cuenta (derecho de acceso)",
+    "operationId": "personal_data_api_mis_datos_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ]
+   }
+  },
+  "/api/mis/derechos": {
+   "get": {
+    "tags": [
+     "mi cuenta"
+    ],
+    "summary": "Solicitudes de derechos propias",
+    "operationId": "my_rights_api_mis_derechos_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "items": {
+          "$ref": "#/components/schemas/RightRequestOut"
+         },
+         "type": "array",
+         "title": "Response My Rights Api Mis Derechos Get"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ]
+   },
+   "post": {
+    "tags": [
+     "mi cuenta"
+    ],
+    "summary": "Solicita la rectificación, la cancelación o la oposición (Ley N.° 29733)",
+    "operationId": "request_right_api_mis_derechos_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/RightRequestIn"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "201": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/RightRequestOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ]
+   }
+  },
+  "/api/mis/programas": {
+   "get": {
+    "tags": [
+     "mi cuenta"
+    ],
+    "summary": "Programas guardados",
+    "operationId": "programs_api_mis_programas_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "items": {
+          "$ref": "#/components/schemas/ProgramSummaryOut"
+         },
+         "type": "array",
+         "title": "Response Programs Api Mis Programas Get"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ]
+   },
+   "post": {
+    "tags": [
+     "mi cuenta"
+    ],
+    "summary": "Guarda un programa nuevo",
+    "operationId": "create_program_api_mis_programas_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/SavedProgramIn"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "201": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/ProgramOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ]
+   }
+  },
+  "/api/mis/programas/{program_id}": {
+   "get": {
+    "tags": [
+     "mi cuenta"
+    ],
+    "summary": "Un programa guardado",
+    "operationId": "get_program_api_mis_programas__program_id__get",
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ],
+    "parameters": [
+     {
+      "name": "program_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "integer",
+       "title": "Program Id"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/ProgramOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   },
+   "put": {
+    "tags": [
+     "mi cuenta"
+    ],
+    "summary": "Actualiza un programa guardado",
+    "operationId": "update_program_api_mis_programas__program_id__put",
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ],
+    "parameters": [
+     {
+      "name": "program_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "integer",
+       "title": "Program Id"
+      }
+     }
+    ],
+    "requestBody": {
+     "required": true,
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/SavedProgramIn"
+       }
+      }
+     }
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/ProgramOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   },
+   "delete": {
+    "tags": [
+     "mi cuenta"
+    ],
+    "summary": "Elimina un programa guardado",
+    "operationId": "delete_program_api_mis_programas__program_id__delete",
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ],
+    "parameters": [
+     {
+      "name": "program_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "integer",
+       "title": "Program Id"
+      }
+     }
+    ],
+    "responses": {
+     "204": {
+      "description": "Successful Response"
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/mis/lotes": {
+   "get": {
+    "tags": [
+     "mi cuenta"
+    ],
+    "summary": "Lotes evaluados",
+    "operationId": "lots_api_mis_lotes_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "items": {
+          "$ref": "#/components/schemas/LotSummaryOut"
+         },
+         "type": "array",
+         "title": "Response Lots Api Mis Lotes Get"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ]
+   }
+  },
+  "/api/mis/lotes/{lot_id}": {
+   "get": {
+    "tags": [
+     "mi cuenta"
+    ],
+    "summary": "Un lote evaluado, con su entrada y su resultado",
+    "operationId": "get_lot_api_mis_lotes__lot_id__get",
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ],
+    "parameters": [
+     {
+      "name": "lot_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "integer",
+       "title": "Lot Id"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/LotOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/admin/derechos": {
+   "get": {
+    "tags": [
+     "administración"
+    ],
+    "summary": "Solicitudes de derechos de los titulares",
+    "operationId": "rights_api_admin_derechos_get",
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ],
+    "parameters": [
+     {
+      "name": "pendientes",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "boolean",
+       "default": false,
+       "title": "Pendientes"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/RightRequestOut"
+         },
+         "title": "Response Rights Api Admin Derechos Get"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/admin/derechos/{request_id}": {
+   "patch": {
+    "tags": [
+     "administración"
+    ],
+    "summary": "Responde una solicitud de derechos (atendida o rechazada, con la respuesta al titular)",
+    "operationId": "resolve_right_api_admin_derechos__request_id__patch",
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ],
+    "parameters": [
+     {
+      "name": "request_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "integer",
+       "title": "Request Id"
+      }
+     }
+    ],
+    "requestBody": {
+     "required": true,
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/RightResolveIn"
+       }
+      }
+     }
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/RightRequestOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/admin/usuarios": {
+   "get": {
+    "tags": [
+     "administración"
+    ],
+    "summary": "Todas las cuentas",
+    "operationId": "users_api_admin_usuarios_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "items": {
+          "$ref": "#/components/schemas/UserOut"
+         },
+         "type": "array",
+         "title": "Response Users Api Admin Usuarios Get"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ]
+   },
+   "post": {
+    "tags": [
+     "administración"
+    ],
+    "summary": "Invita a un usuario; devuelve su enlace de activación de un solo uso",
+    "operationId": "invite_api_admin_usuarios_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/InviteIn"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "201": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/LinkOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ]
+   }
+  },
+  "/api/admin/usuarios/{user_id}": {
+   "patch": {
+    "tags": [
+     "administración"
+    ],
+    "summary": "Cambia el rol o desactiva/reactiva una cuenta",
+    "operationId": "update_api_admin_usuarios__user_id__patch",
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ],
+    "parameters": [
+     {
+      "name": "user_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "integer",
+       "title": "User Id"
+      }
+     }
+    ],
+    "requestBody": {
+     "required": true,
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/UserUpdateIn"
+       }
+      }
+     }
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/UserOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/admin/usuarios/{user_id}/enlace": {
+   "post": {
+    "tags": [
+     "administración"
+    ],
+    "summary": "Emite un enlace nuevo: de activación si la cuenta está invitada, de restablecimiento si no",
+    "operationId": "new_link_api_admin_usuarios__user_id__enlace_post",
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ],
+    "parameters": [
+     {
+      "name": "user_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "integer",
+       "title": "User Id"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/LinkOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/admin/auditoria": {
+   "get": {
+    "tags": [
+     "administración"
+    ],
+    "summary": "Registro de actividad de todas las cuentas",
+    "operationId": "activity_api_admin_auditoria_get",
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ],
+    "parameters": [
+     {
+      "name": "usuario_id",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "integer"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "Usuario Id"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/ActivityOut"
+         },
+         "title": "Response Activity Api Admin Auditoria Get"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/admin/usuarios/{user_id}/programas": {
+   "get": {
+    "tags": [
+     "administración"
+    ],
+    "summary": "Programas de un usuario",
+    "operationId": "user_programs_api_admin_usuarios__user_id__programas_get",
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ],
+    "parameters": [
+     {
+      "name": "user_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "integer",
+       "title": "User Id"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/ProgramSummaryOut"
+         },
+         "title": "Response User Programs Api Admin Usuarios  User Id  Programas Get"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/admin/usuarios/{user_id}/programas/{program_id}": {
+   "get": {
+    "tags": [
+     "administración"
+    ],
+    "summary": "Un programa (solo lectura)",
+    "operationId": "user_program_api_admin_usuarios__user_id__programas__program_id__get",
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ],
+    "parameters": [
+     {
+      "name": "user_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "integer",
+       "title": "User Id"
+      }
+     },
+     {
+      "name": "program_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "integer",
+       "title": "Program Id"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/ProgramOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/admin/usuarios/{user_id}/lotes": {
+   "get": {
+    "tags": [
+     "administración"
+    ],
+    "summary": "Lotes de un usuario",
+    "operationId": "user_lots_api_admin_usuarios__user_id__lotes_get",
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ],
+    "parameters": [
+     {
+      "name": "user_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "integer",
+       "title": "User Id"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/LotSummaryOut"
+         },
+         "title": "Response User Lots Api Admin Usuarios  User Id  Lotes Get"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/admin/usuarios/{user_id}/lotes/{lot_id}": {
+   "get": {
+    "tags": [
+     "administración"
+    ],
+    "summary": "Un lote (solo lectura)",
+    "operationId": "user_lot_api_admin_usuarios__user_id__lotes__lot_id__get",
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ],
+    "parameters": [
+     {
+      "name": "user_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "integer",
+       "title": "User Id"
+      }
+     },
+     {
+      "name": "lot_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "integer",
+       "title": "Lot Id"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/LotOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/admin/usuarios/{user_id}/conversaciones": {
+   "get": {
+    "tags": [
+     "administración"
+    ],
+    "summary": "Conversaciones de un usuario con el asistente",
+    "operationId": "user_conversations_api_admin_usuarios__user_id__conversaciones_get",
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ],
+    "parameters": [
+     {
+      "name": "user_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "integer",
+       "title": "User Id"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/ConversationSummaryOut"
+         },
+         "title": "Response User Conversations Api Admin Usuarios  User Id  Conversaciones Get"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/admin/usuarios/{user_id}/conversaciones/{conversation_id}": {
+   "get": {
+    "tags": [
+     "administración"
+    ],
+    "summary": "Una conversación (solo lectura)",
+    "operationId": "user_conversation_api_admin_usuarios__user_id__conversaciones__conversation_id__get",
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ],
+    "parameters": [
+     {
+      "name": "user_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "integer",
+       "title": "User Id"
+      }
+     },
+     {
+      "name": "conversation_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "integer",
+       "title": "Conversation Id"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/ConversationOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/cultivos": {
+   "get": {
+    "tags": [
+     "catálogo"
+    ],
+    "summary": "Cultivos del alcance",
+    "operationId": "crops_api_cultivos_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "items": {
+          "$ref": "#/components/schemas/CropOut"
+         },
+         "type": "array",
+         "title": "Response Crops Api Cultivos Get"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ]
+   }
+  },
+  "/api/mercados": {
+   "get": {
+    "tags": [
+     "catálogo"
+    ],
+    "summary": "Mercados cargados; known_from indica desde qué fecha se conoce su estado",
+    "operationId": "markets_api_mercados_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "items": {
+          "$ref": "#/components/schemas/MarketOut"
+         },
+         "type": "array",
+         "title": "Response Markets Api Mercados Get"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ]
+   }
+  },
+  "/api/plagas": {
+   "get": {
+    "tags": [
+     "catálogo"
+    ],
+    "summary": "Plagas y otros usos con productos registrados",
+    "operationId": "pests_api_plagas_get",
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ],
+    "parameters": [
+     {
+      "name": "cultivo",
+      "in": "query",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "examples": [
+        "blueberry"
+       ],
+       "title": "Cultivo"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/PestOut"
+         },
+         "title": "Response Pests Api Plagas Get"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/productos": {
+   "get": {
+    "tags": [
+     "catálogo"
+    ],
+    "summary": "Productos registrados en SENASA para un cultivo y una plaga",
+    "operationId": "products_api_productos_get",
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ],
+    "parameters": [
+     {
+      "name": "cultivo",
+      "in": "query",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "examples": [
+        "blueberry"
+       ],
+       "title": "Cultivo"
+      }
+     },
+     {
+      "name": "plaga",
+      "in": "query",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "examples": [
+        "000626"
+       ],
+       "title": "Plaga"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/ProductOut"
+         },
+         "title": "Response Products Api Productos Get"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/ingredientes": {
+   "get": {
+    "tags": [
+     "catálogo"
+    ],
+    "summary": "Ingredientes para autocompletar: los del cultivo si se indica, filtrados por texto",
+    "operationId": "ingredients_api_ingredientes_get",
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ],
+    "parameters": [
+     {
+      "name": "q",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "Q"
+      }
+     },
+     {
+      "name": "cultivo",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "Cultivo"
+      }
+     },
+     {
+      "name": "limite",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "integer",
+       "maximum": 500,
+       "minimum": 1,
+       "default": 50,
+       "title": "Limite"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/IngredientOut"
+         },
+         "title": "Response Ingredients Api Ingredientes Get"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/lmr": {
+   "get": {
+    "tags": [
+     "límites"
+    ],
+    "summary": "Límite vigente en una fecha (hoy si no se indica)",
+    "operationId": "limit_api_lmr_get",
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ],
+    "parameters": [
+     {
+      "name": "ingrediente",
+      "in": "query",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "examples": [
+        "pyraclostrobin"
+       ],
+       "title": "Ingrediente"
+      }
+     },
+     {
+      "name": "cultivo",
+      "in": "query",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "examples": [
+        "blueberry"
+       ],
+       "title": "Cultivo"
+      }
+     },
+     {
+      "name": "mercado",
+      "in": "query",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "examples": [
+        "EU"
+       ],
+       "title": "Mercado"
+      }
+     },
+     {
+      "name": "fecha",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string",
+         "format": "date"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "Fecha"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/LimitOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/lmr/versiones": {
+   "get": {
+    "tags": [
+     "límites"
+    ],
+    "summary": "Todas las versiones del límite, nunca sobrescritas",
+    "operationId": "versions_api_lmr_versiones_get",
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ],
+    "parameters": [
+     {
+      "name": "ingrediente",
+      "in": "query",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Ingrediente"
+      }
+     },
+     {
+      "name": "cultivo",
+      "in": "query",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Cultivo"
+      }
+     },
+     {
+      "name": "mercado",
+      "in": "query",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Mercado"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/VersionOut"
+         },
+         "title": "Response Versions Api Lmr Versiones Get"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/lmr/proximos": {
+   "get": {
+    "tags": [
+     "límites"
+    ],
+    "summary": "Versiones aprobadas que aún no aplican",
+    "operationId": "next_versions_api_lmr_proximos_get",
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ],
+    "parameters": [
+     {
+      "name": "ingrediente",
+      "in": "query",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Ingrediente"
+      }
+     },
+     {
+      "name": "cultivo",
+      "in": "query",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Cultivo"
+      }
+     },
+     {
+      "name": "mercado",
+      "in": "query",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Mercado"
+      }
+     },
+     {
+      "name": "fecha",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string",
+         "format": "date"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "Fecha"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/VersionOut"
+         },
+         "title": "Response Next Versions Api Lmr Proximos Get"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/validar": {
+   "post": {
+    "tags": [
+     "programas"
+    ],
+    "summary": "Valida un programa por bloque y mercado: registro, carencia, límites y rotación",
+    "operationId": "validate_api_validar_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/ProgramIn"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/ReportOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ]
+   }
+  },
+  "/api/cosecha-segura": {
+   "post": {
+    "tags": [
+     "programas"
+    ],
+    "summary": "Primer día de cosecha que respeta las carencias de cada bloque",
+    "operationId": "harvest_api_cosecha_segura_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/ProgramIn"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "items": {
+          "$ref": "#/components/schemas/SafeHarvestOut"
+         },
+         "type": "array",
+         "title": "Response Harvest Api Cosecha Segura Post"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ]
+   }
+  },
+  "/api/programas/importar": {
+   "post": {
+    "tags": [
+     "programas"
+    ],
+    "summary": "Lee una hoja de campo (Excel o CSV) y resuelve cada fila en un producto registrado y una fecha",
+    "operationId": "import_program_api_programas_importar_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/ImportIn"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/ImportOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ]
+   }
+  },
+  "/api/perfiles": {
+   "get": {
+    "tags": [
+     "laboratorio"
+    ],
+    "summary": "Perfiles de comprador configurados",
+    "operationId": "list_profiles_api_perfiles_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "items": {
+          "$ref": "#/components/schemas/ProfileOut"
+         },
+         "type": "array",
+         "title": "Response List Profiles Api Perfiles Get"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ]
+   }
+  },
+  "/api/laboratorio": {
+   "post": {
+    "tags": [
+     "laboratorio"
+    ],
+    "summary": "Resultados de laboratorio de un lote contra el LMR y, si se indica, un perfil de comprador",
+    "description": "The evaluation is saved under the user (Mis lotes) with its input and result.",
+    "operationId": "lab_api_laboratorio_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/LabResultIn"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/LabReportOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ]
+   }
+  },
+  "/api/alertas": {
+   "get": {
+    "tags": [
+     "alertas"
+    ],
+    "summary": "Límites próximos de un ingrediente",
+    "operationId": "alerts_api_alertas_get",
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ],
+    "parameters": [
+     {
+      "name": "ingrediente",
+      "in": "query",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Ingrediente"
+      }
+     },
+     {
+      "name": "cultivo",
+      "in": "query",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Cultivo"
+      }
+     },
+     {
+      "name": "mercado",
+      "in": "query",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Mercado"
+      }
+     },
+     {
+      "name": "fecha",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string",
+         "format": "date"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "Fecha"
+      }
+     },
+     {
+      "name": "horizonte_dias",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "integer",
+         "minimum": 1
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "Horizonte Dias"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/AlertOut"
+         },
+         "title": "Response Alerts Api Alertas Get"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/alertas/programa": {
+   "post": {
+    "tags": [
+     "alertas"
+    ],
+    "summary": "Límites próximos de los ingredientes de un programa, con los bloques afectados",
+    "operationId": "program_alerts_api_alertas_programa_post",
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ],
+    "parameters": [
+     {
+      "name": "fecha",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string",
+         "format": "date"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "Fecha"
+      }
+     }
+    ],
+    "requestBody": {
+     "required": true,
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/ProgramIn"
+       }
+      }
+     }
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/AlertOut"
+         },
+         "title": "Response Program Alerts Api Alertas Programa Post"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/consulta": {
+   "post": {
+    "tags": [
+     "asistente"
+    ],
+    "summary": "Una pregunta suelta con respuesta citada",
+    "operationId": "ask_api_consulta_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/QuestionIn"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/AnswerOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ]
+   }
+  },
+  "/api/conversaciones": {
+   "get": {
+    "tags": [
+     "asistente"
+    ],
+    "summary": "Mis conversaciones",
+    "operationId": "list_conversations_api_conversaciones_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "items": {
+          "$ref": "#/components/schemas/ConversationSummaryOut"
+         },
+         "type": "array",
+         "title": "Response List Conversations Api Conversaciones Get"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ]
+   },
+   "post": {
+    "tags": [
+     "asistente"
+    ],
+    "summary": "Nueva conversación",
+    "operationId": "new_conversation_api_conversaciones_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/ConversationIn"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "201": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/ConversationOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ]
+   }
+  },
+  "/api/conversaciones/{conversation_id}": {
+   "get": {
+    "tags": [
+     "asistente"
+    ],
+    "summary": "Una conversación con sus mensajes",
+    "operationId": "get_conversation_api_conversaciones__conversation_id__get",
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ],
+    "parameters": [
+     {
+      "name": "conversation_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "integer",
+       "title": "Conversation Id"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/ConversationOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   },
+   "patch": {
+    "tags": [
+     "asistente"
+    ],
+    "summary": "Renombrar",
+    "operationId": "rename_conversation_api_conversaciones__conversation_id__patch",
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ],
+    "parameters": [
+     {
+      "name": "conversation_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "integer",
+       "title": "Conversation Id"
+      }
+     }
+    ],
+    "requestBody": {
+     "required": true,
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/ConversationIn"
+       }
+      }
+     }
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/ConversationSummaryOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   },
+   "delete": {
+    "tags": [
+     "asistente"
+    ],
+    "summary": "Eliminar una conversación",
+    "operationId": "delete_conversation_api_conversaciones__conversation_id__delete",
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ],
+    "parameters": [
+     {
+      "name": "conversation_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "integer",
+       "title": "Conversation Id"
+      }
+     }
+    ],
+    "responses": {
+     "204": {
+      "description": "Successful Response"
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/conversaciones/{conversation_id}/mensajes": {
+   "post": {
+    "tags": [
+     "asistente"
+    ],
+    "summary": "Preguntar dentro de una conversación (usa el historial)",
+    "operationId": "ask_in_conversation_api_conversaciones__conversation_id__mensajes_post",
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ],
+    "parameters": [
+     {
+      "name": "conversation_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "integer",
+       "title": "Conversation Id"
+      }
+     }
+    ],
+    "requestBody": {
+     "required": true,
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/QuestionIn"
+       }
+      }
+     }
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/TurnOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/corpus": {
+   "get": {
+    "tags": [
+     "asistente"
+    ],
+    "summary": "Documentos del corpus y su estado",
+    "operationId": "corpus_status_api_corpus_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/CorpusStatusOut"
+        }
+       }
+      }
+     }
+    },
+    "security": [
+     {
+      "HTTPBearer": []
+     }
+    ]
+   }
+  }
+ },
+ "components": {
+  "schemas": {
+   "ActivityOut": {
+    "properties": {
+     "id": {
+      "type": "integer",
+      "title": "Id"
+     },
+     "accion": {
+      "type": "string",
+      "title": "Accion"
+     },
+     "detalle": {
+      "additionalProperties": true,
+      "type": "object",
+      "title": "Detalle"
+     },
+     "creado": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Creado"
+     },
+     "email": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Email"
+     },
+     "nombre": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Nombre"
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "accion",
+     "detalle",
+     "creado"
+    ],
+    "title": "ActivityOut"
+   },
+   "AcuteOut": {
+    "properties": {
+     "population": {
+      "type": "string",
+      "title": "Population"
+     },
+     "diet": {
+      "type": "string",
+      "title": "Diet"
+     },
+     "case": {
+      "type": "string",
+      "title": "Case"
+     },
+     "iesti_mg_kg_bw": {
+      "type": "number",
+      "title": "Iesti Mg Kg Bw"
+     },
+     "percent_of_arfd": {
+      "type": "number",
+      "title": "Percent Of Arfd"
+     }
+    },
+    "type": "object",
+    "required": [
+     "population",
+     "diet",
+     "case",
+     "iesti_mg_kg_bw",
+     "percent_of_arfd"
+    ],
+    "title": "AcuteOut"
+   },
+   "AlertOut": {
+    "properties": {
+     "ingredient": {
+      "type": "string",
+      "title": "Ingredient"
+     },
+     "crop": {
+      "type": "string",
+      "title": "Crop"
+     },
+     "market": {
+      "type": "string",
+      "title": "Market"
+     },
+     "applies_from": {
+      "type": "string",
+      "format": "date",
+      "title": "Applies From"
+     },
+     "days_left": {
+      "type": "integer",
+      "title": "Days Left"
+     },
+     "current_mg_kg": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Current Mg Kg"
+     },
+     "new_mg_kg": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "New Mg Kg"
+     },
+     "new_no_mrl_required": {
+      "type": "boolean",
+      "title": "New No Mrl Required"
+     },
+     "stricter": {
+      "type": "boolean",
+      "title": "Stricter"
+     },
+     "regulation": {
+      "type": "string",
+      "title": "Regulation"
+     },
+     "snapshot": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Snapshot"
+     },
+     "blocks_affected": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Blocks Affected"
+     }
+    },
+    "type": "object",
+    "required": [
+     "ingredient",
+     "crop",
+     "market",
+     "applies_from",
+     "days_left",
+     "current_mg_kg",
+     "new_mg_kg",
+     "new_no_mrl_required",
+     "stricter",
+     "regulation",
+     "snapshot",
+     "blocks_affected"
+    ],
+    "title": "AlertOut"
+   },
+   "AnswerOut": {
+    "properties": {
+     "pregunta": {
+      "type": "string",
+      "title": "Pregunta"
+     },
+     "respuesta": {
+      "type": "string",
+      "title": "Respuesta"
+     },
+     "evidencia": {
+      "type": "boolean",
+      "title": "Evidencia"
+     },
+     "citas": {
+      "items": {
+       "$ref": "#/components/schemas/CitationOut"
+      },
+      "type": "array",
+      "title": "Citas"
+     },
+     "traza": {
+      "additionalProperties": true,
+      "type": "object",
+      "title": "Traza"
+     },
+     "filas_grafo": {
+      "items": {
+       "additionalProperties": true,
+       "type": "object"
+      },
+      "type": "array",
+      "title": "Filas Grafo",
+      "default": []
+     }
+    },
+    "type": "object",
+    "required": [
+     "pregunta",
+     "respuesta",
+     "evidencia",
+     "citas",
+     "traza"
+    ],
+    "title": "AnswerOut"
+   },
+   "ApplicationIn": {
+    "properties": {
+     "block": {
+      "type": "string",
+      "title": "Block"
+     },
+     "product_id": {
+      "type": "string",
+      "title": "Product Id",
+      "description": "Id del producto en SIGIA"
+     },
+     "applied_on": {
+      "type": "string",
+      "format": "date",
+      "title": "Applied On"
+     },
+     "pest": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Pest",
+      "description": "Id de la plaga en SIGIA, o use:<clase> para otros usos"
+     }
+    },
+    "type": "object",
+    "required": [
+     "block",
+     "product_id",
+     "applied_on"
+    ],
+    "title": "ApplicationIn"
+   },
+   "BlockIn": {
+    "properties": {
+     "key": {
+      "type": "string",
+      "title": "Key",
+      "examples": [
+       "A1"
+      ]
+     },
+     "harvest_on": {
+      "type": "string",
+      "format": "date",
+      "title": "Harvest On",
+      "description": "Cosecha planificada del bloque"
+     },
+     "markets": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "minItems": 1,
+      "title": "Markets",
+      "examples": [
+       [
+        "EU",
+        "US"
+       ]
+      ]
+     }
+    },
+    "type": "object",
+    "required": [
+     "key",
+     "harvest_on",
+     "markets"
+    ],
+    "title": "BlockIn"
+   },
+   "CitationOut": {
+    "properties": {
+     "n": {
+      "type": "integer",
+      "title": "N"
+     },
+     "chunk_id": {
+      "type": "string",
+      "title": "Chunk Id"
+     },
+     "doc_id": {
+      "type": "string",
+      "title": "Doc Id"
+     },
+     "titulo": {
+      "type": "string",
+      "title": "Titulo"
+     },
+     "fuente": {
+      "type": "string",
+      "title": "Fuente"
+     },
+     "nivel": {
+      "type": "string",
+      "title": "Nivel"
+     },
+     "url": {
+      "type": "string",
+      "title": "Url"
+     },
+     "seccion": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Seccion"
+     },
+     "paginas": {
+      "items": {
+       "type": "integer"
+      },
+      "type": "array",
+      "title": "Paginas"
+     },
+     "texto": {
+      "type": "string",
+      "title": "Texto"
+     }
+    },
+    "type": "object",
+    "required": [
+     "n",
+     "chunk_id",
+     "doc_id",
+     "titulo",
+     "fuente",
+     "nivel",
+     "url",
+     "seccion",
+     "paginas",
+     "texto"
+    ],
+    "title": "CitationOut"
+   },
+   "ConversationIn": {
+    "properties": {
+     "titulo": {
+      "type": "string",
+      "maxLength": 120,
+      "title": "Titulo",
+      "default": ""
+     }
+    },
+    "type": "object",
+    "title": "ConversationIn"
+   },
+   "ConversationOut": {
+    "properties": {
+     "id": {
+      "type": "integer",
+      "title": "Id"
+     },
+     "titulo": {
+      "type": "string",
+      "title": "Titulo"
+     },
+     "creado": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Creado"
+     },
+     "actualizado": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Actualizado"
+     },
+     "mensajes": {
+      "items": {
+       "$ref": "#/components/schemas/MessageOut"
+      },
+      "type": "array",
+      "title": "Mensajes"
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "titulo",
+     "creado",
+     "actualizado",
+     "mensajes"
+    ],
+    "title": "ConversationOut"
+   },
+   "ConversationSummaryOut": {
+    "properties": {
+     "id": {
+      "type": "integer",
+      "title": "Id"
+     },
+     "titulo": {
+      "type": "string",
+      "title": "Titulo"
+     },
+     "creado": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Creado"
+     },
+     "actualizado": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Actualizado"
+     },
+     "preguntas": {
+      "type": "integer",
+      "title": "Preguntas"
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "titulo",
+     "creado",
+     "actualizado",
+     "preguntas"
+    ],
+    "title": "ConversationSummaryOut"
+   },
+   "CorpusDocumentOut": {
+    "properties": {
+     "doc_id": {
+      "type": "string",
+      "title": "Doc Id"
+     },
+     "fuente": {
+      "type": "string",
+      "title": "Fuente"
+     },
+     "nivel": {
+      "type": "string",
+      "title": "Nivel"
+     },
+     "titulo": {
+      "type": "string",
+      "title": "Titulo"
+     },
+     "anio": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Anio"
+     },
+     "tipo": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Tipo"
+     },
+     "licencia": {
+      "type": "string",
+      "title": "Licencia"
+     },
+     "url": {
+      "type": "string",
+      "title": "Url"
+     },
+     "estado": {
+      "type": "string",
+      "title": "Estado"
+     },
+     "motivo": {
+      "type": "string",
+      "title": "Motivo"
+     },
+     "paginas": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Paginas"
+     },
+     "formato": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Formato"
+     },
+     "actualizado": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Actualizado"
+     }
+    },
+    "type": "object",
+    "required": [
+     "doc_id",
+     "fuente",
+     "nivel",
+     "titulo",
+     "anio",
+     "tipo",
+     "licencia",
+     "url",
+     "estado",
+     "motivo",
+     "paginas",
+     "formato",
+     "actualizado"
+    ],
+    "title": "CorpusDocumentOut"
+   },
+   "CorpusStatusOut": {
+    "properties": {
+     "documentos": {
+      "items": {
+       "$ref": "#/components/schemas/CorpusDocumentOut"
+      },
+      "type": "array",
+      "title": "Documentos"
+     },
+     "resumen": {
+      "additionalProperties": true,
+      "type": "object",
+      "title": "Resumen"
+     }
+    },
+    "type": "object",
+    "required": [
+     "documentos",
+     "resumen"
+    ],
+    "title": "CorpusStatusOut"
+   },
+   "CropOut": {
+    "properties": {
+     "key": {
+      "type": "string",
+      "title": "Key"
+     },
+     "name_es": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Name Es"
+     },
+     "scientific_name": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Scientific Name"
+     },
+     "eu_code": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Eu Code"
+     },
+     "us_crop_group": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Us Crop Group"
+     },
+     "sigia_id": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Sigia Id"
+     }
+    },
+    "type": "object",
+    "required": [
+     "key"
+    ],
+    "title": "CropOut"
+   },
+   "DoseCheckOut": {
+    "properties": {
+     "text": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Text"
+     },
+     "status": {
+      "type": "string",
+      "title": "Status",
+      "description": "within, outside_range (para revisar, no bloquea) o not_comparable"
+     },
+     "reason": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Reason"
+     },
+     "registered": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Registered",
+      "description": "Dosis registradas en SIGIA para ese uso"
+     }
+    },
+    "type": "object",
+    "required": [
+     "text",
+     "status"
+    ],
+    "title": "DoseCheckOut"
+   },
+   "FindingOut": {
+    "properties": {
+     "code": {
+      "type": "string",
+      "title": "Code",
+      "description": "Código estable del hallazgo, p. ej. PHI_NOT_MET o MRL_EXCEEDED"
+     },
+     "severity": {
+      "type": "string",
+      "title": "Severity",
+      "description": "blocking, risk o info"
+     },
+     "message": {
+      "type": "string",
+      "title": "Message"
+     },
+     "block": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Block"
+     },
+     "product_id": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Product Id"
+     },
+     "ingredient": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Ingredient"
+     },
+     "market": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Market"
+     },
+     "evidence": {
+      "additionalProperties": true,
+      "type": "object",
+      "title": "Evidence",
+      "description": "Datos en que se apoya: norma, instantánea, cifras"
+     }
+    },
+    "type": "object",
+    "required": [
+     "code",
+     "severity",
+     "message"
+    ],
+    "title": "FindingOut"
+   },
+   "HTTPValidationError": {
+    "properties": {
+     "detail": {
+      "items": {
+       "$ref": "#/components/schemas/ValidationError"
+      },
+      "type": "array",
+      "title": "Detail"
+     }
+    },
+    "type": "object",
+    "title": "HTTPValidationError"
+   },
+   "ImportIn": {
+    "properties": {
+     "name": {
+      "type": "string",
+      "maxLength": 120,
+      "title": "Name",
+      "default": "programa"
+     },
+     "crop": {
+      "type": "string",
+      "title": "Crop",
+      "examples": [
+       "avocado"
+      ]
+     },
+     "markets": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "minItems": 1,
+      "title": "Markets",
+      "examples": [
+       [
+        "EU",
+        "US"
+       ]
+      ]
+     },
+     "harvest_on": {
+      "type": "string",
+      "format": "date",
+      "title": "Harvest On",
+      "description": "Cosecha planificada: fija la campaña de las fechas sin año"
+     },
+     "pest_text": {
+      "anyOf": [
+       {
+        "type": "string",
+        "maxLength": 200
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Pest Text",
+      "description": "Plaga del programa entero, como la escribe la hoja (p. ej. «oídio»)"
+     },
+     "file_name": {
+      "type": "string",
+      "title": "File Name",
+      "description": "Con su extensión: .xlsx o .csv",
+      "examples": [
+       "programa_palto.xlsx"
+      ]
+     },
+     "file_base64": {
+      "type": "string",
+      "title": "File Base64",
+      "description": "Contenido del archivo en base64"
+     }
+    },
+    "type": "object",
+    "required": [
+     "crop",
+     "markets",
+     "harvest_on",
+     "file_name",
+     "file_base64"
+    ],
+    "title": "ImportIn",
+    "description": "A field sheet as the farm writes it, with what the sheet does not say: crop, markets and planned harvest."
+   },
+   "ImportOut": {
+    "properties": {
+     "summary": {
+      "additionalProperties": true,
+      "type": "object",
+      "title": "Summary"
+     },
+     "rows": {
+      "items": {
+       "$ref": "#/components/schemas/ImportRowOut"
+      },
+      "type": "array",
+      "title": "Rows"
+     },
+     "program": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/ProgramIn"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "description": "Listo para /api/validar; null si ninguna fila se resolvió"
+     }
+    },
+    "type": "object",
+    "required": [
+     "summary",
+     "rows",
+     "program"
+    ],
+    "title": "ImportOut"
+   },
+   "ImportRowOut": {
+    "properties": {
+     "n": {
+      "type": "integer",
+      "title": "N"
+     },
+     "original": {
+      "additionalProperties": {
+       "type": "string"
+      },
+      "type": "object",
+      "title": "Original",
+      "description": "La fila tal como vino en la hoja"
+     },
+     "status": {
+      "type": "string",
+      "title": "Status",
+      "description": "resolved_by_trade_name, resolved_by_ingredient, not_a_pesticide o needs_review"
+     },
+     "block": {
+      "type": "string",
+      "title": "Block"
+     },
+     "product_id": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Product Id"
+     },
+     "trade_name": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Trade Name"
+     },
+     "ingredients": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Ingredients"
+     },
+     "candidates": {
+      "type": "integer",
+      "title": "Candidates",
+      "description": "Productos registrados que la fila podría ser"
+     },
+     "applied_on": {
+      "anyOf": [
+       {
+        "type": "string",
+        "format": "date"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Applied On"
+     },
+     "approximate_date": {
+      "type": "boolean",
+      "title": "Approximate Date",
+      "description": "La fecha sale de una etapa o de un rango de meses"
+     },
+     "pest": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Pest"
+     },
+     "mismatch": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Mismatch",
+      "description": "El nombre comercial y el ingrediente escrito no coinciden"
+     },
+     "notes": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Notes"
+     },
+     "dose": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/DoseCheckOut"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     },
+     "target_pests": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Target Pests",
+      "description": "Plagas de SIGIA que nombra la columna «objetivo»"
+     },
+     "target_check": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Target Check",
+      "description": "registered, not_registered (para revisar, no bloquea) o unresolved; null si la fila no trae objetivo"
+     }
+    },
+    "type": "object",
+    "required": [
+     "n",
+     "original",
+     "status",
+     "block",
+     "product_id",
+     "trade_name",
+     "ingredients",
+     "candidates",
+     "applied_on",
+     "approximate_date",
+     "pest",
+     "mismatch",
+     "notes",
+     "dose"
+    ],
+    "title": "ImportRowOut"
+   },
+   "IngredientOut": {
+    "properties": {
+     "key": {
+      "type": "string",
+      "title": "Key"
+     },
+     "biological": {
+      "type": "boolean",
+      "title": "Biological",
+      "default": false
+     },
+     "markets": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Markets",
+      "default": []
+     }
+    },
+    "type": "object",
+    "required": [
+     "key"
+    ],
+    "title": "IngredientOut"
+   },
+   "InviteIn": {
+    "properties": {
+     "email": {
+      "type": "string",
+      "maxLength": 254,
+      "title": "Email"
+     },
+     "usuario": {
+      "type": "string",
+      "maxLength": 32,
+      "title": "Usuario"
+     },
+     "nombre": {
+      "type": "string",
+      "maxLength": 120,
+      "minLength": 1,
+      "title": "Nombre"
+     },
+     "rol": {
+      "type": "string",
+      "pattern": "^(admin|usuario)$",
+      "title": "Rol",
+      "default": "usuario"
+     }
+    },
+    "type": "object",
+    "required": [
+     "email",
+     "usuario",
+     "nombre"
+    ],
+    "title": "InviteIn"
+   },
+   "LabReportOut": {
+    "properties": {
+     "verdict": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Verdict"
+     },
+     "findings": {
+      "items": {
+       "$ref": "#/components/schemas/FindingOut"
+      },
+      "type": "array",
+      "title": "Findings"
+     },
+     "measurements": {
+      "items": {
+       "$ref": "#/components/schemas/MeasurementOut"
+      },
+      "type": "array",
+      "title": "Measurements"
+     },
+     "lot_id": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Lot Id",
+      "description": "Id del lote guardado en Mis lotes"
+     }
+    },
+    "type": "object",
+    "required": [
+     "verdict",
+     "findings",
+     "measurements"
+    ],
+    "title": "LabReportOut"
+   },
+   "LabResultIn": {
+    "properties": {
+     "lot": {
+      "type": "string",
+      "title": "Lot"
+     },
+     "crop": {
+      "type": "string",
+      "title": "Crop"
+     },
+     "market": {
+      "type": "string",
+      "title": "Market"
+     },
+     "sampled_on": {
+      "type": "string",
+      "format": "date",
+      "title": "Sampled On"
+     },
+     "measurements": {
+      "items": {
+       "$ref": "#/components/schemas/MeasurementIn"
+      },
+      "type": "array",
+      "minItems": 1,
+      "title": "Measurements"
+     },
+     "profile": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Profile",
+      "description": "Clave de config/buyer_profiles, p. ej. lidl_2025"
+     }
+    },
+    "type": "object",
+    "required": [
+     "lot",
+     "crop",
+     "market",
+     "sampled_on",
+     "measurements"
+    ],
+    "title": "LabResultIn"
+   },
+   "LimitOut": {
+    "properties": {
+     "ingredient": {
+      "type": "string",
+      "title": "Ingredient"
+     },
+     "crop": {
+      "type": "string",
+      "title": "Crop"
+     },
+     "market": {
+      "type": "string",
+      "title": "Market"
+     },
+     "day": {
+      "type": "string",
+      "format": "date",
+      "title": "Day"
+     },
+     "status": {
+      "type": "string",
+      "title": "Status",
+      "description": "specific, default, exempt, not_permitted, no_reference, without_value o no_data"
+     },
+     "value_mg_kg": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Value Mg Kg"
+     },
+     "at_limit_of_determination": {
+      "type": "boolean",
+      "title": "At Limit Of Determination"
+     },
+     "regulation": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Regulation"
+     },
+     "residue": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Residue"
+     },
+     "snapshot": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Snapshot"
+     },
+     "ambiguous": {
+      "type": "boolean",
+      "title": "Ambiguous"
+     },
+     "note": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Note"
+     }
+    },
+    "type": "object",
+    "required": [
+     "ingredient",
+     "crop",
+     "market",
+     "day",
+     "status",
+     "value_mg_kg",
+     "at_limit_of_determination",
+     "regulation",
+     "residue",
+     "snapshot",
+     "ambiguous",
+     "note"
+    ],
+    "title": "LimitOut"
+   },
+   "LinkIn": {
+    "properties": {
+     "token": {
+      "type": "string",
+      "maxLength": 200,
+      "minLength": 10,
+      "title": "Token"
+     }
+    },
+    "type": "object",
+    "required": [
+     "token"
+    ],
+    "title": "LinkIn"
+   },
+   "LinkInfoOut": {
+    "properties": {
+     "usuario": {
+      "type": "string",
+      "title": "Usuario"
+     },
+     "email": {
+      "type": "string",
+      "title": "Email"
+     },
+     "nombre": {
+      "type": "string",
+      "title": "Nombre"
+     },
+     "tipo": {
+      "type": "string",
+      "title": "Tipo",
+      "description": "activacion o restablecimiento"
+     },
+     "expira": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Expira"
+     }
+    },
+    "type": "object",
+    "required": [
+     "usuario",
+     "email",
+     "nombre",
+     "tipo",
+     "expira"
+    ],
+    "title": "LinkInfoOut"
+   },
+   "LinkOut": {
+    "properties": {
+     "usuario": {
+      "$ref": "#/components/schemas/UserOut"
+     },
+     "enlace": {
+      "type": "string",
+      "title": "Enlace",
+      "description": "Enlace de un solo uso para entregar al usuario; vence en 72 h"
+     },
+     "expira_en_horas": {
+      "type": "integer",
+      "title": "Expira En Horas",
+      "default": 72
+     }
+    },
+    "type": "object",
+    "required": [
+     "usuario",
+     "enlace"
+    ],
+    "title": "LinkOut"
+   },
+   "LoginIn": {
+    "properties": {
+     "identificador": {
+      "type": "string",
+      "maxLength": 254,
+      "minLength": 1,
+      "title": "Identificador",
+      "description": "Nombre de usuario o correo"
+     },
+     "contrasena": {
+      "type": "string",
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Contrasena"
+     }
+    },
+    "type": "object",
+    "required": [
+     "identificador",
+     "contrasena"
+    ],
+    "title": "LoginIn"
+   },
+   "LoginOut": {
+    "properties": {
+     "token": {
+      "type": "string",
+      "title": "Token",
+      "description": "Va en la cabecera Authorization: Bearer <token>"
+     },
+     "usuario": {
+      "$ref": "#/components/schemas/UserOut"
+     }
+    },
+    "type": "object",
+    "required": [
+     "token",
+     "usuario"
+    ],
+    "title": "LoginOut"
+   },
+   "LotOut": {
+    "properties": {
+     "id": {
+      "type": "integer",
+      "title": "Id"
+     },
+     "codigo": {
+      "type": "string",
+      "title": "Codigo"
+     },
+     "cultivo": {
+      "type": "string",
+      "title": "Cultivo"
+     },
+     "mercado": {
+      "type": "string",
+      "title": "Mercado"
+     },
+     "muestreo": {
+      "type": "string",
+      "format": "date",
+      "title": "Muestreo"
+     },
+     "perfil": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Perfil"
+     },
+     "veredicto": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Veredicto"
+     },
+     "residuos": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Residuos"
+     },
+     "creado": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Creado"
+     },
+     "entrada": {
+      "additionalProperties": true,
+      "type": "object",
+      "title": "Entrada"
+     },
+     "resultado": {
+      "additionalProperties": true,
+      "type": "object",
+      "title": "Resultado"
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "codigo",
+     "cultivo",
+     "mercado",
+     "muestreo",
+     "perfil",
+     "veredicto",
+     "residuos",
+     "creado",
+     "entrada",
+     "resultado"
+    ],
+    "title": "LotOut"
+   },
+   "LotSummaryOut": {
+    "properties": {
+     "id": {
+      "type": "integer",
+      "title": "Id"
+     },
+     "codigo": {
+      "type": "string",
+      "title": "Codigo"
+     },
+     "cultivo": {
+      "type": "string",
+      "title": "Cultivo"
+     },
+     "mercado": {
+      "type": "string",
+      "title": "Mercado"
+     },
+     "muestreo": {
+      "type": "string",
+      "format": "date",
+      "title": "Muestreo"
+     },
+     "perfil": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Perfil"
+     },
+     "veredicto": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Veredicto"
+     },
+     "residuos": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Residuos"
+     },
+     "creado": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Creado"
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "codigo",
+     "cultivo",
+     "mercado",
+     "muestreo",
+     "perfil",
+     "veredicto",
+     "residuos",
+     "creado"
+    ],
+    "title": "LotSummaryOut"
+   },
+   "MarketOut": {
+    "properties": {
+     "key": {
+      "type": "string",
+      "title": "Key"
+     },
+     "name": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Name"
+     },
+     "source": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Source"
+     },
+     "known_from": {
+      "anyOf": [
+       {
+        "type": "string",
+        "format": "date"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Known From"
+     }
+    },
+    "type": "object",
+    "required": [
+     "key"
+    ],
+    "title": "MarketOut"
+   },
+   "MeasurementIn": {
+    "properties": {
+     "ingredient": {
+      "type": "string",
+      "title": "Ingredient"
+     },
+     "value_mg_kg": {
+      "type": "number",
+      "minimum": 0.0,
+      "title": "Value Mg Kg"
+     }
+    },
+    "type": "object",
+    "required": [
+     "ingredient",
+     "value_mg_kg"
+    ],
+    "title": "MeasurementIn"
+   },
+   "MeasurementOut": {
+    "properties": {
+     "ingredient": {
+      "type": "string",
+      "title": "Ingredient"
+     },
+     "measured_mg_kg": {
+      "type": "number",
+      "title": "Measured Mg Kg"
+     },
+     "limit": {
+      "$ref": "#/components/schemas/LimitOut"
+     },
+     "fraction_of_mrl": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Fraction Of Mrl",
+      "description": "Medido / LMR, cuando el límite tiene valor"
+     },
+     "arfd_status": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Arfd Status",
+      "description": "set, not_needed o not_set; null sin datos toxicológicos"
+     },
+     "arfd_mg_kg_bw": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Arfd Mg Kg Bw"
+     },
+     "acute": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/AcuteOut"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "description": "Ingesta aguda de la población más crítica (EFSA PRIMo 3.1)"
+     }
+    },
+    "type": "object",
+    "required": [
+     "ingredient",
+     "measured_mg_kg",
+     "limit",
+     "fraction_of_mrl",
+     "arfd_status",
+     "arfd_mg_kg_bw",
+     "acute"
+    ],
+    "title": "MeasurementOut"
+   },
+   "MessageOut": {
+    "properties": {
+     "id": {
+      "type": "integer",
+      "title": "Id"
+     },
+     "rol": {
+      "type": "string",
+      "title": "Rol"
+     },
+     "texto": {
+      "type": "string",
+      "title": "Texto"
+     },
+     "evidencia": {
+      "anyOf": [
+       {
+        "type": "boolean"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Evidencia"
+     },
+     "citas": {
+      "items": {
+       "$ref": "#/components/schemas/CitationOut"
+      },
+      "type": "array",
+      "title": "Citas"
+     },
+     "traza": {
+      "additionalProperties": true,
+      "type": "object",
+      "title": "Traza"
+     },
+     "creado": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Creado"
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "rol",
+     "texto",
+     "evidencia",
+     "citas",
+     "traza",
+     "creado"
+    ],
+    "title": "MessageOut"
+   },
+   "NoticeAcceptIn": {
+    "properties": {
+     "version": {
+      "type": "string",
+      "maxLength": 20,
+      "title": "Version"
+     }
+    },
+    "type": "object",
+    "required": [
+     "version"
+    ],
+    "title": "NoticeAcceptIn"
+   },
+   "NoticeOut": {
+    "properties": {
+     "version": {
+      "type": "string",
+      "title": "Version"
+     },
+     "secciones": {
+      "items": {
+       "$ref": "#/components/schemas/NoticeSectionOut"
+      },
+      "type": "array",
+      "title": "Secciones"
+     }
+    },
+    "type": "object",
+    "required": [
+     "version",
+     "secciones"
+    ],
+    "title": "NoticeOut"
+   },
+   "NoticeSectionOut": {
+    "properties": {
+     "titulo": {
+      "type": "string",
+      "title": "Titulo"
+     },
+     "texto": {
+      "type": "string",
+      "title": "Texto"
+     }
+    },
+    "type": "object",
+    "required": [
+     "titulo",
+     "texto"
+    ],
+    "title": "NoticeSectionOut"
+   },
+   "PasswordChangeIn": {
+    "properties": {
+     "actual": {
+      "type": "string",
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Actual"
+     },
+     "nueva": {
+      "type": "string",
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Nueva"
+     }
+    },
+    "type": "object",
+    "required": [
+     "actual",
+     "nueva"
+    ],
+    "title": "PasswordChangeIn"
+   },
+   "PestOut": {
+    "properties": {
+     "key": {
+      "type": "string",
+      "title": "Key"
+     },
+     "scientific_name": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Scientific Name"
+     },
+     "common_name": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Common Name"
+     },
+     "other_use": {
+      "type": "boolean",
+      "title": "Other Use",
+      "default": false
+     },
+     "products": {
+      "type": "integer",
+      "title": "Products"
+     }
+    },
+    "type": "object",
+    "required": [
+     "key",
+     "products"
+    ],
+    "title": "PestOut"
+   },
+   "ProductOut": {
+    "properties": {
+     "product_id": {
+      "type": "string",
+      "title": "Product Id"
+     },
+     "trade_name": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Trade Name"
+     },
+     "registration_number": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Registration Number"
+     },
+     "product_type": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Product Type"
+     },
+     "preharvest_interval_days": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Preharvest Interval Days"
+     },
+     "preharvest_not_applicable": {
+      "type": "boolean",
+      "title": "Preharvest Not Applicable",
+      "default": false
+     },
+     "peru_mrl_mg_kg": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Peru Mrl Mg Kg"
+     },
+     "ingredients": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Ingredients"
+     },
+     "snapshot": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Snapshot"
+     }
+    },
+    "type": "object",
+    "required": [
+     "product_id",
+     "ingredients"
+    ],
+    "title": "ProductOut"
+   },
+   "ProfileOut": {
+    "properties": {
+     "key": {
+      "type": "string",
+      "title": "Key"
+     },
+     "name": {
+      "type": "string",
+      "title": "Name"
+     },
+     "max_fraction_of_mrl_per_substance": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Max Fraction Of Mrl Per Substance"
+     },
+     "max_sum_of_mrl_fractions": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Max Sum Of Mrl Fractions"
+     },
+     "max_number_of_residues": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Max Number Of Residues"
+     },
+     "max_fraction_of_arfd": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Max Fraction Of Arfd"
+     }
+    },
+    "type": "object",
+    "required": [
+     "key",
+     "name",
+     "max_fraction_of_mrl_per_substance",
+     "max_sum_of_mrl_fractions",
+     "max_number_of_residues",
+     "max_fraction_of_arfd"
+    ],
+    "title": "ProfileOut"
+   },
+   "ProgramIn": {
+    "properties": {
+     "crop": {
+      "type": "string",
+      "title": "Crop",
+      "examples": [
+       "blueberry"
+      ]
+     },
+     "blocks": {
+      "items": {
+       "$ref": "#/components/schemas/BlockIn"
+      },
+      "type": "array",
+      "minItems": 1,
+      "title": "Blocks"
+     },
+     "applications": {
+      "items": {
+       "$ref": "#/components/schemas/ApplicationIn"
+      },
+      "type": "array",
+      "title": "Applications"
+     }
+    },
+    "type": "object",
+    "required": [
+     "crop",
+     "blocks",
+     "applications"
+    ],
+    "title": "ProgramIn"
+   },
+   "ProgramOut": {
+    "properties": {
+     "id": {
+      "type": "integer",
+      "title": "Id"
+     },
+     "nombre": {
+      "type": "string",
+      "title": "Nombre"
+     },
+     "cultivo": {
+      "type": "string",
+      "title": "Cultivo"
+     },
+     "bloques": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Bloques"
+     },
+     "aplicaciones": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Aplicaciones"
+     },
+     "creado": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Creado"
+     },
+     "actualizado": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Actualizado"
+     },
+     "contenido": {
+      "additionalProperties": true,
+      "type": "object",
+      "title": "Contenido"
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "nombre",
+     "cultivo",
+     "bloques",
+     "aplicaciones",
+     "creado",
+     "actualizado",
+     "contenido"
+    ],
+    "title": "ProgramOut"
+   },
+   "ProgramSummaryOut": {
+    "properties": {
+     "id": {
+      "type": "integer",
+      "title": "Id"
+     },
+     "nombre": {
+      "type": "string",
+      "title": "Nombre"
+     },
+     "cultivo": {
+      "type": "string",
+      "title": "Cultivo"
+     },
+     "bloques": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Bloques"
+     },
+     "aplicaciones": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Aplicaciones"
+     },
+     "creado": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Creado"
+     },
+     "actualizado": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Actualizado"
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "nombre",
+     "cultivo",
+     "bloques",
+     "aplicaciones",
+     "creado",
+     "actualizado"
+    ],
+    "title": "ProgramSummaryOut"
+   },
+   "QuestionIn": {
+    "properties": {
+     "pregunta": {
+      "type": "string",
+      "maxLength": 1000,
+      "minLength": 3,
+      "title": "Pregunta"
+     }
+    },
+    "type": "object",
+    "required": [
+     "pregunta"
+    ],
+    "title": "QuestionIn"
+   },
+   "RedeemIn": {
+    "properties": {
+     "token": {
+      "type": "string",
+      "maxLength": 200,
+      "minLength": 10,
+      "title": "Token"
+     },
+     "contrasena": {
+      "type": "string",
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Contrasena"
+     },
+     "aviso_version": {
+      "anyOf": [
+       {
+        "type": "string",
+        "maxLength": 20
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Aviso Version",
+      "description": "Versión del aviso de privacidad aceptada; obligatoria al activar"
+     }
+    },
+    "type": "object",
+    "required": [
+     "token",
+     "contrasena"
+    ],
+    "title": "RedeemIn"
+   },
+   "ReportOut": {
+    "properties": {
+     "verdict": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Verdict",
+      "description": "La severidad más alta encontrada; null si no hay hallazgos"
+     },
+     "findings": {
+      "items": {
+       "$ref": "#/components/schemas/FindingOut"
+      },
+      "type": "array",
+      "title": "Findings"
+     },
+     "safe_harvest": {
+      "items": {
+       "$ref": "#/components/schemas/SafeHarvestOut"
+      },
+      "type": "array",
+      "title": "Safe Harvest"
+     }
+    },
+    "type": "object",
+    "required": [
+     "verdict",
+     "findings",
+     "safe_harvest"
+    ],
+    "title": "ReportOut"
+   },
+   "RightRequestIn": {
+    "properties": {
+     "tipo": {
+      "type": "string",
+      "pattern": "^(rectificacion|cancelacion|oposicion)$",
+      "title": "Tipo"
+     },
+     "detalle": {
+      "type": "string",
+      "maxLength": 2000,
+      "minLength": 1,
+      "title": "Detalle"
+     }
+    },
+    "type": "object",
+    "required": [
+     "tipo",
+     "detalle"
+    ],
+    "title": "RightRequestIn"
+   },
+   "RightRequestOut": {
+    "properties": {
+     "id": {
+      "type": "integer",
+      "title": "Id"
+     },
+     "usuario_id": {
+      "type": "integer",
+      "title": "Usuario Id"
+     },
+     "usuario": {
+      "type": "string",
+      "title": "Usuario"
+     },
+     "nombre": {
+      "type": "string",
+      "title": "Nombre"
+     },
+     "email": {
+      "type": "string",
+      "title": "Email"
+     },
+     "tipo": {
+      "type": "string",
+      "title": "Tipo",
+      "description": "rectificacion, cancelacion u oposicion"
+     },
+     "detalle": {
+      "type": "string",
+      "title": "Detalle"
+     },
+     "estado": {
+      "type": "string",
+      "title": "Estado",
+      "description": "pendiente, atendida o rechazada"
+     },
+     "respuesta": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Respuesta"
+     },
+     "creada": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Creada"
+     },
+     "atendida": {
+      "anyOf": [
+       {
+        "type": "string",
+        "format": "date-time"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Atendida"
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "usuario_id",
+     "usuario",
+     "nombre",
+     "email",
+     "tipo",
+     "detalle",
+     "estado",
+     "respuesta",
+     "creada",
+     "atendida"
+    ],
+    "title": "RightRequestOut"
+   },
+   "RightResolveIn": {
+    "properties": {
+     "estado": {
+      "type": "string",
+      "pattern": "^(atendida|rechazada)$",
+      "title": "Estado"
+     },
+     "respuesta": {
+      "type": "string",
+      "maxLength": 2000,
+      "minLength": 1,
+      "title": "Respuesta"
+     }
+    },
+    "type": "object",
+    "required": [
+     "estado",
+     "respuesta"
+    ],
+    "title": "RightResolveIn"
+   },
+   "SafeHarvestOut": {
+    "properties": {
+     "block": {
+      "type": "string",
+      "title": "Block"
+     },
+     "safe_from": {
+      "anyOf": [
+       {
+        "type": "string",
+        "format": "date"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Safe From",
+      "description": "Primer día en que se puede cosechar respetando las carencias"
+     },
+     "limiting_product": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Limiting Product"
+     },
+     "undetermined_by": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Undetermined By",
+      "description": "Productos cuya carencia no se conoce"
+     }
+    },
+    "type": "object",
+    "required": [
+     "block",
+     "safe_from",
+     "limiting_product",
+     "undetermined_by"
+    ],
+    "title": "SafeHarvestOut"
+   },
+   "SavedProgramIn": {
+    "properties": {
+     "nombre": {
+      "type": "string",
+      "maxLength": 120,
+      "minLength": 1,
+      "title": "Nombre"
+     },
+     "cultivo": {
+      "type": "string",
+      "maxLength": 40,
+      "minLength": 1,
+      "title": "Cultivo"
+     },
+     "contenido": {
+      "additionalProperties": true,
+      "type": "object",
+      "title": "Contenido",
+      "description": "El programa tal como lo edita la interfaz (bloques y aplicaciones)"
+     }
+    },
+    "type": "object",
+    "required": [
+     "nombre",
+     "cultivo",
+     "contenido"
+    ],
+    "title": "SavedProgramIn"
+   },
+   "SessionOut": {
+    "properties": {
+     "id": {
+      "type": "integer",
+      "title": "Id"
+     },
+     "agente": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Agente"
+     },
+     "creada": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Creada"
+     },
+     "ultima_actividad": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Ultima Actividad"
+     },
+     "expira": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Expira"
+     },
+     "actual": {
+      "type": "boolean",
+      "title": "Actual",
+      "default": false
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "agente",
+     "creada",
+     "ultima_actividad",
+     "expira"
+    ],
+    "title": "SessionOut"
+   },
+   "TurnOut": {
+    "properties": {
+     "pregunta": {
+      "$ref": "#/components/schemas/MessageOut"
+     },
+     "respuesta": {
+      "$ref": "#/components/schemas/MessageOut"
+     }
+    },
+    "type": "object",
+    "required": [
+     "pregunta",
+     "respuesta"
+    ],
+    "title": "TurnOut",
+    "description": "One exchange: the user's message as stored and the assistant's answer."
+   },
+   "UserOut": {
+    "properties": {
+     "id": {
+      "type": "integer",
+      "title": "Id"
+     },
+     "usuario": {
+      "type": "string",
+      "title": "Usuario"
+     },
+     "email": {
+      "type": "string",
+      "title": "Email"
+     },
+     "nombre": {
+      "type": "string",
+      "title": "Nombre"
+     },
+     "rol": {
+      "type": "string",
+      "title": "Rol",
+      "description": "admin o usuario"
+     },
+     "estado": {
+      "type": "string",
+      "title": "Estado",
+      "description": "invitado, activo o desactivado"
+     },
+     "ultimo_ingreso": {
+      "anyOf": [
+       {
+        "type": "string",
+        "format": "date-time"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Ultimo Ingreso"
+     },
+     "creado": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Creado"
+     },
+     "aviso_version": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Aviso Version",
+      "description": "Versión del aviso de privacidad aceptada"
+     },
+     "aviso_pendiente": {
+      "type": "boolean",
+      "title": "Aviso Pendiente",
+      "description": "True si debe aceptar la versión vigente del aviso",
+      "default": false
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "usuario",
+     "email",
+     "nombre",
+     "rol",
+     "estado",
+     "ultimo_ingreso",
+     "creado"
+    ],
+    "title": "UserOut"
+   },
+   "UserUpdateIn": {
+    "properties": {
+     "rol": {
+      "anyOf": [
+       {
+        "type": "string",
+        "pattern": "^(admin|usuario)$"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Rol"
+     },
+     "estado": {
+      "anyOf": [
+       {
+        "type": "string",
+        "pattern": "^(activo|desactivado)$"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Estado"
+     }
+    },
+    "type": "object",
+    "title": "UserUpdateIn"
+   },
+   "ValidationError": {
+    "properties": {
+     "loc": {
+      "items": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "integer"
+        }
+       ]
+      },
+      "type": "array",
+      "title": "Location"
+     },
+     "msg": {
+      "type": "string",
+      "title": "Message"
+     },
+     "type": {
+      "type": "string",
+      "title": "Error Type"
+     },
+     "input": {
+      "title": "Input"
+     },
+     "ctx": {
+      "type": "object",
+      "title": "Context"
+     }
+    },
+    "type": "object",
+    "required": [
+     "loc",
+     "msg",
+     "type"
+    ],
+    "title": "ValidationError"
+   },
+   "VersionOut": {
+    "properties": {
+     "residue": {
+      "type": "string",
+      "title": "Residue"
+     },
+     "value_mg_kg": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Value Mg Kg"
+     },
+     "value_text": {
+      "type": "string",
+      "title": "Value Text"
+     },
+     "applies_from": {
+      "anyOf": [
+       {
+        "type": "string",
+        "format": "date"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Applies From"
+     },
+     "valid_until": {
+      "anyOf": [
+       {
+        "type": "string",
+        "format": "date"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Valid Until"
+     },
+     "regulation": {
+      "type": "string",
+      "title": "Regulation"
+     },
+     "no_mrl_required": {
+      "type": "boolean",
+      "title": "No Mrl Required"
+     },
+     "footnote": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Footnote"
+     },
+     "snapshot": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Snapshot"
+     }
+    },
+    "type": "object",
+    "required": [
+     "residue",
+     "value_mg_kg",
+     "value_text",
+     "applies_from",
+     "valid_until",
+     "regulation",
+     "no_mrl_required",
+     "footnote",
+     "snapshot"
+    ],
+    "title": "VersionOut"
+   }
+  },
+  "securitySchemes": {
+   "HTTPBearer": {
+    "type": "http",
+    "description": "Token de sesión obtenido al iniciar sesión",
+    "scheme": "bearer"
+   }
+  }
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "suite": "textual.jsonl (S2)",
+ "sistema": "agente",
+ "generador": "gemma4:e4b",
+ "juez": "local:qwen3:8b",
+ "unidad": "oraciones de la respuesta (evaluation/fidelidad.py)",
+ "preguntas": 42,
+ "con_evidencia": 26,
+ "abstenciones": 16,
+ "medidas": 26,
+ "fidelidad_media": 0.992,
+ "fidelidad_mediana": 1.0,
+ "por_tipo": {
+  "un_salto": {
+   "n": 18,
+   "media": 0.989
+  },
+  "varios_saltos": {
+   "n": 8,
+   "media": 1.0
+  }
+ },
+ "oraciones": 92,
+ "veredictos": {
+  "respaldada": 91,
+  "ausente": 1
+ },
+ "meta": 0.7,
+ "cumple": true
+}

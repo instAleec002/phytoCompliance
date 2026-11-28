@@ -1,0 +1,23 @@
+{
+ "suite": "textual.jsonl (S2)",
+ "preguntas": 60,
+ "generador": "qwen3:8b",
+ "juez": "local:qwen3:8b:sin-razonamiento",
+ "con_evidencia": 48,
+ "abstenciones": 12,
+ "medidas": 48,
+ "fidelidad_media": 0.739,
+ "fidelidad_mediana": 0.775,
+ "por_tipo": {
+  "un_salto": {
+   "n": 32,
+   "media": 0.833
+  },
+  "varios_saltos": {
+   "n": 16,
+   "media": 0.55
+  }
+ },
+ "meta": 0.7,
+ "cumple": true
+}

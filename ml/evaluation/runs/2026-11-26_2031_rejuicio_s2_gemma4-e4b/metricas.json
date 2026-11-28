@@ -1,0 +1,33 @@
+{
+ "suite": "textual.jsonl (S2)",
+ "corrida_fuente": "2026-11-26_1951_fidelidad_s2_rag_qwen3-8b",
+ "sistema": "rag",
+ "generador": "qwen3:8b",
+ "juez": "local:gemma4:e4b",
+ "unidad": "oraciones de la respuesta (evaluation/fidelidad.py)",
+ "preguntas": 60,
+ "con_evidencia": 36,
+ "abstenciones": 24,
+ "medidas": 36,
+ "fidelidad_media": 0.91,
+ "fidelidad_mediana": 1.0,
+ "por_tipo": {
+  "un_salto": {
+   "n": 29,
+   "media": 0.922
+  },
+  "varios_saltos": {
+   "n": 7,
+   "media": 0.861
+  }
+ },
+ "oraciones": 82,
+ "veredictos": {
+  "respaldada": 76,
+  "mezcla": 1,
+  "ausente": 4,
+  "contradice": 1
+ },
+ "meta": 0.7,
+ "cumple": true
+}

@@ -1,0 +1,20 @@
+{
+ "s1": {
+  "sistema": "2026-11-24_1012_cumplimiento_s1_herramientas"
+ },
+ "s2": {
+  "sistema": "2026-11-26_2032_rejuicio_s2_llama3_1-8b",
+  "contra": "2026-11-26_2347_rejuicio_s2_llama3_1-8b",
+  "ambos_con_evidencia": 41,
+  "media_sistema_pareada": 0.722,
+  "media_otro_pareada": 0.741,
+  "media_sistema": 0.714,
+  "media_otro": 0.74,
+  "respondidas_sistema": 50,
+  "respondidas_otro": 45,
+  "n": 28,
+  "estadistico": 188.5,
+  "p": 0.741024910597083,
+  "prueba": "Wilcoxon (scipy.stats.wilcoxon)"
+ }
+}

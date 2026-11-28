@@ -1,0 +1,6 @@
+# Perfil configurable de ejemplo (no corresponde a un cliente real).
+name: Perfil de ejemplo
+max_fraction_of_mrl_per_substance: 0.70
+max_sum_of_mrl_fractions: null
+max_number_of_residues: null
+max_fraction_of_arfd: 1.0

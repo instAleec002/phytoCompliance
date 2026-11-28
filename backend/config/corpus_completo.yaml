@@ -1,0 +1,848 @@
+# Generado por knowledge.corpus.discover.select; no editar a mano (rehacer con «corpus seleccionar»).
+items:
+- source: senasa
+  uuid: 571bdcfa-6bec-4f5f-b99d-9d2cfdf40723
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; guía del SENASA'
+- source: senasa
+  uuid: abb1514e-a7c4-48fb-a96f-d0246546b99f
+  why: 'conteo candidatos_2026-11-11: arandano, palto; guía del SENASA'
+- source: senasa
+  uuid: c4bbfc9c-c0d0-42b0-81bb-cffccae248ce
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; guía del SENASA'
+- source: senasa
+  uuid: b94161da-f0a6-4ff6-9b16-5e8511cde5b0
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; guía del SENASA'
+- source: senasa
+  uuid: 2b613f51-9795-434e-9617-7204edc93fb3
+  why: 'conteo candidatos_2026-11-11: arandano, palto; guía del SENASA'
+- source: senasa
+  uuid: 63918995-6770-4eb9-8a88-426a577cbec2
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; guía del SENASA'
+- source: senasa
+  uuid: 43a712c5-2263-491b-88d3-2aa7935e6f42
+  why: 'conteo candidatos_2026-11-11: arandano, palto; guía del SENASA'
+- source: senasa
+  uuid: c028a20f-fe53-4d59-92a4-48e3ce886ea0
+  why: 'conteo candidatos_2026-11-11: arandano, palto; guía del SENASA'
+- source: senasa
+  uuid: 22f6e59f-4ee8-4330-ae41-61e859afc91c
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; guía del SENASA'
+- source: senasa
+  uuid: 09b28aef-0255-4d62-b5c2-dfdef7d85f6e
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; guía del SENASA'
+- source: senasa
+  uuid: 00451ef6-5464-421e-9839-5d700a2babc9
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; guía del SENASA'
+- source: senasa
+  uuid: 0d8dc329-d5bc-4bfc-ba45-1f20d798cb99
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; guía del SENASA'
+- source: senasa
+  uuid: 50866abe-599b-405d-ab22-4835a29ce2e5
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; guía del SENASA'
+- source: senasa
+  uuid: bd5b9d0e-cd8f-4f62-805c-43dccfae1e89
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; guía del SENASA'
+- source: senasa
+  uuid: 8d291ade-f94c-4c3d-9c7f-33d4a7f0d7ec
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; guía del SENASA'
+- source: senasa
+  uuid: 11eb33f6-f3be-4775-b0f1-8f1d24e15f6c
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; guía del SENASA'
+- source: senasa
+  uuid: 90bb65ec-9469-4f47-8e8a-6fccb0112226
+  why: 'conteo candidatos_2026-11-11: arandano; guía del SENASA'
+- source: senasa
+  uuid: 13b36a58-3e68-4d2a-b705-ac2a56325e4e
+  why: 'conteo candidatos_2026-11-11: palto, vid; guía del SENASA'
+- source: senasa
+  uuid: b1e225ab-7a02-407f-8eff-f8b09cbe4e78
+  why: 'conteo candidatos_2026-11-11: palto, vid; guía del SENASA'
+- source: senasa
+  uuid: bfbebca5-b249-4637-9a6a-cf5794611e05
+  why: 'conteo candidatos_2026-11-11: palto, vid; guía del SENASA'
+- source: senasa
+  uuid: 07b71a38-4b88-4e27-aebc-38716963444d
+  why: 'conteo candidatos_2026-11-11: palto; guía del SENASA'
+- source: senasa
+  uuid: a5065b8d-1a8b-41ad-a4b5-e5e53bc77513
+  why: 'conteo candidatos_2026-11-11: palto; guía del SENASA'
+- source: senasa
+  uuid: 256ce381-19b2-414c-93cd-5f2be621db4c
+  why: 'conteo candidatos_2026-11-11: palto, vid; guía del SENASA'
+- source: senasa
+  uuid: e94b6351-4429-472f-b078-971c91f9d7a9
+  why: 'conteo candidatos_2026-11-11: palto, vid; guía del SENASA'
+- source: senasa
+  uuid: fd7d0396-bd9d-475f-836c-d8b22ce73d0e
+  why: 'conteo candidatos_2026-11-11: palto, vid; guía del SENASA'
+- source: senasa
+  uuid: 3ce0c0c5-85f5-42a6-9f63-c52d98bc5c66
+  why: 'conteo candidatos_2026-11-11: palto; guía del SENASA'
+- source: senasa
+  uuid: 685f0f6b-d14f-4a46-ad87-e2b12053862a
+  why: 'conteo candidatos_2026-11-11: palto, vid; guía del SENASA'
+- source: senasa
+  uuid: 19eb482a-a72c-4335-946c-50bb12220a77
+  why: 'conteo candidatos_2026-11-11: palto; guía del SENASA'
+- source: senasa
+  uuid: 4e0432ac-09f0-42ac-9a27-f648545e0b84
+  why: 'conteo candidatos_2026-11-11: palto, vid; guía del SENASA'
+- source: senasa
+  uuid: f5fbc270-e022-414b-af7f-6e13410bdb91
+  why: 'conteo candidatos_2026-11-11: palto; guía del SENASA'
+- source: senasa
+  uuid: a87a4663-0054-4ff6-a45f-2a211732d41e
+  why: 'conteo candidatos_2026-11-11: palto, vid; guía del SENASA'
+- source: senasa
+  uuid: 283c3895-7cd4-4274-88f8-c62de686a056
+  why: 'conteo candidatos_2026-11-11: palto, vid; guía del SENASA'
+- source: senasa
+  uuid: cf073100-1909-4202-ba8b-5ed8262c670f
+  why: 'conteo candidatos_2026-11-11: palto, vid; guía del SENASA'
+- source: senasa
+  uuid: 7aa22cfb-fc18-4900-9165-b16d39674766
+  why: 'conteo candidatos_2026-11-11: palto; guía del SENASA'
+- source: senasa
+  uuid: 2c5c8685-69ba-472d-bcbb-36e5e14502e4
+  why: 'conteo candidatos_2026-11-11: palto; guía del SENASA'
+- source: senasa
+  uuid: e6ca1ede-355b-46b5-bd11-a61918a8b00f
+  why: 'conteo candidatos_2026-11-11: palto; guía del SENASA'
+- source: senasa
+  uuid: 213a4005-cc84-4c96-b359-8ec0a300b1a8
+  why: 'conteo candidatos_2026-11-11: palto; guía del SENASA'
+- source: senasa
+  uuid: 669a3ced-7805-4d57-9d7f-9fef9dcef8fa
+  why: 'conteo candidatos_2026-11-11: palto, vid; guía del SENASA'
+- source: senasa
+  uuid: 536a7a72-0675-44a4-a2e2-af8e47cb3bbd
+  why: 'conteo candidatos_2026-11-11: palto; guía del SENASA'
+- source: senasa
+  uuid: 10e9285a-7b4a-4656-aae2-0f2c9df814ab
+  why: 'conteo candidatos_2026-11-11: palto; guía del SENASA'
+- source: senasa
+  uuid: 7c7d47a8-8e59-4257-8675-49039e025078
+  why: 'conteo candidatos_2026-11-11: palto; guía del SENASA'
+- source: senasa
+  uuid: 55973a96-6cc7-4d81-8b5f-774f5b8b289c
+  why: 'conteo candidatos_2026-11-11: palto, vid; guía del SENASA'
+- source: senasa
+  uuid: c3c0241f-8cb2-460a-8fa4-341852142418
+  why: 'conteo candidatos_2026-11-11: palto; guía del SENASA'
+- source: senasa
+  uuid: 2450ba75-bb2b-4c21-a68e-8fa33cb83835
+  why: 'conteo candidatos_2026-11-11: palto; guía del SENASA'
+- source: senasa
+  uuid: c6c43aac-21e7-413a-b928-7d209de77247
+  why: 'conteo candidatos_2026-11-11: palto; guía del SENASA'
+- source: senasa
+  uuid: 4f697808-1d77-48f4-afed-29cb2ef0c1b9
+  why: 'conteo candidatos_2026-11-11: palto, vid; guía del SENASA'
+- source: senasa
+  uuid: 2134710e-401d-4dfc-a4c9-c7d9f030058b
+  why: 'conteo candidatos_2026-11-11: palto; guía del SENASA'
+- source: senasa
+  uuid: f086c507-db77-4f4d-81e8-b4eaa747d904
+  why: 'conteo candidatos_2026-11-11: palto; guía del SENASA'
+- source: senasa
+  uuid: e5b71ec5-8426-4ba6-876b-b670073c5d4d
+  why: 'conteo candidatos_2026-11-11: palto; guía del SENASA'
+- source: senasa
+  uuid: 41f588e0-8073-4d25-8dff-901b0a193a6f
+  why: 'conteo candidatos_2026-11-11: vid; guía del SENASA'
+- source: senasa
+  uuid: f742c7a9-2c2c-4c36-84b3-ebf6aad95cc9
+  why: 'conteo candidatos_2026-11-11: vid; guía del SENASA'
+- source: senasa
+  uuid: 93af0b15-5dba-46f2-b147-7f028680aba8
+  why: 'conteo candidatos_2026-11-11: vid; guía del SENASA'
+- source: senasa
+  uuid: eef96319-06e4-46f2-ad2b-9d1f022d7768
+  why: 'conteo candidatos_2026-11-11: vid; guía del SENASA'
+- source: senasa
+  uuid: dfde4320-6853-44f1-b09d-28f9a1d66f8a
+  why: 'conteo candidatos_2026-11-11: vid; guía del SENASA'
+- source: unalm
+  uuid: 8f286783-2c67-4e2c-a358-f395f201635d
+  why: 'conteo candidatos_2026-11-11: arandano; cultivo en el título'
+- source: unalm
+  uuid: 5f628e99-655b-4b3a-8782-5fe2fed4e089
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: 3e6baa89-c74c-4e46-bec7-711fbf6a384a
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: f59805fb-27e3-4959-8845-ba73f7caaf23
+  why: 'conteo candidatos_2026-11-11: arandano; cultivo en el título'
+- source: unalm
+  uuid: b119c855-87af-4728-b8ca-5df2acb76cf7
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 07245584-5130-487e-8539-e950a1d9d5d2
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: 53ec5317-d97a-4944-94de-0f9b3a5ab9a7
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 74d6be6c-dc6a-4fc5-8bc8-12996e6463d6
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 99d81381-fe75-4a3c-b8a9-95723e8ca83f
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 81e2888a-aff2-43b9-9c34-3f5bbe1eeb0a
+  why: 'conteo candidatos_2026-11-11: arandano, vid; cultivo en el título'
+- source: unalm
+  uuid: f7529d2e-59e3-4434-a126-1c2571014703
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: e10ad188-c001-4450-be56-2e7dc516554e
+  why: 'conteo candidatos_2026-11-11: arandano; cultivo en el título'
+- source: unalm
+  uuid: cb7da9b3-2cf1-453f-97ee-2aa8681a0321
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 3af55fc9-63af-4b05-99d6-dcfc573ceaec
+  why: 'conteo candidatos_2026-11-11: arandano; cultivo en el título'
+- source: unalm
+  uuid: 2fedb332-3049-4813-aa61-6f566ce34dcb
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: 85662cac-9862-466b-af42-43a1609dc635
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 7dabf022-852d-4331-938b-cce19fc6afee
+  why: 'conteo candidatos_2026-11-11: arandano; cultivo en el título'
+- source: unalm
+  uuid: 9b132870-a241-497f-8033-b3e5f1049e95
+  why: 'conteo candidatos_2026-11-11: arandano; cultivo en el título'
+- source: unalm
+  uuid: cd6c785e-dac5-4f65-a0a2-f1cfa3b60630
+  why: 'conteo candidatos_2026-11-11: arandano; cultivo en el título'
+- source: unalm
+  uuid: 43baab53-fafb-4d3a-aab1-0fda8b2da4a7
+  why: 'conteo candidatos_2026-11-11: arandano; cultivo en el título'
+- source: unalm
+  uuid: 9a8a90ec-0b80-4ae7-8353-402739822f54
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 0a89f9de-5a37-4bf4-8490-97a6d7e28d6e
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: a935e884-19e5-40bd-915c-b1bd5dc47c79
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: f3580f4a-19de-48b3-9339-bce19b1c071b
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 0eda5d4d-6523-4499-9d91-03862cc8481c
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: 192e9b30-0c6a-4fec-941e-3bd3877c72db
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 5ead3c48-e3ed-4a25-87a6-f7c856cb7f12
+  why: 'conteo candidatos_2026-11-11: arandano, vid; cultivo en el título'
+- source: unalm
+  uuid: 864350ec-48ef-4cf5-9611-d968b917c6e5
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: edee52ed-8a21-4caf-bbcc-9a485d069881
+  why: 'conteo candidatos_2026-11-11: arandano, vid; cultivo en el título'
+- source: unalm
+  uuid: bc12aa04-0bc1-4051-bfd2-90f067f8981b
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: b70a9477-a09c-40d1-aaad-cef377e8b58f
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 03e07dfe-71a9-4365-adcb-f6253b7e5580
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: 06f546d9-8a22-4483-b7d7-4c52e1c91c43
+  why: 'conteo candidatos_2026-11-11: arandano; cultivo en el título'
+- source: unalm
+  uuid: 3cdc936a-57a8-4563-a1ec-b7e6dcd56899
+  why: 'conteo candidatos_2026-11-11: arandano, vid; cultivo en el título'
+- source: unalm
+  uuid: 0feed203-c14a-489a-847d-a2a3fb9bfd89
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: dcfa2e7b-d629-4370-930a-8adc5cba999f
+  why: 'conteo candidatos_2026-11-11: arandano; cultivo en el título'
+- source: unalm
+  uuid: 0d182f4e-f048-411e-8fa9-613aa5924320
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: 1702f23c-db0b-4971-9111-9004555780b9
+  why: 'conteo candidatos_2026-11-11: arandano; cultivo en el título'
+- source: unalm
+  uuid: a14d210a-a517-4c69-a288-182635efce7c
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: d1aacebf-cede-4006-9c11-ab74d1546b29
+  why: 'conteo candidatos_2026-11-11: arandano; cultivo en el título'
+- source: unalm
+  uuid: c9f63db2-4dee-406f-a7fe-f3214349b061
+  why: 'conteo candidatos_2026-11-11: arandano; cultivo en el título'
+- source: unalm
+  uuid: 8ec15bcc-0af7-466b-8f03-fca741868b28
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 13bfe458-9e94-4918-970c-858e32ecc17a
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: ee354874-0cdf-4ef3-87da-a877f31d36a1
+  why: 'conteo candidatos_2026-11-11: arandano; cultivo en el título'
+- source: unalm
+  uuid: 0a907796-3e3b-4ac9-986a-8eea2201328d
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 5fec3c26-5804-44ce-be61-e9af2807e925
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: 44d4f480-92f2-4c70-8a16-00945e0a13b8
+  why: 'conteo candidatos_2026-11-11: arandano; cultivo en el título'
+- source: unalm
+  uuid: 2c39c06d-51b2-46b7-9040-7a5567ec8aa5
+  why: 'conteo candidatos_2026-11-11: arandano; cultivo en el título'
+- source: unalm
+  uuid: 15f75738-2c15-451b-83f1-fbd982f0e44f
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: 2a3e0c97-20d3-49cd-beb5-f2a8f6b04652
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: 15907c90-2588-40db-aaf6-cae82d64fb75
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: e8f61026-0962-47a6-b95b-9ab60122d741
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: b82b0cd6-abc2-4a8d-b666-87a8581e3b3a
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: f5497683-d779-4bc6-85ca-6579e2b55868
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 051178bf-d4bc-4c68-858f-85aef43c7d13
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: d4e23206-160e-4f83-92d2-a8190c34b1a8
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 1c9efe4a-7e41-48fa-b9b8-aa8ed5cc5785
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: f6ba50d4-2ec4-4211-83bf-51bcef6574ac
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 4a9a1222-1bef-46a3-aecd-59bdd863eb0a
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: ff8fc87c-efdf-4ca3-8e0c-cc741e1340d6
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 2f2adca0-4e09-42a8-85fa-a67c60ca74de
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: 74038cf4-6d17-4c12-a95b-9bb2d031edd9
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: 0cf6a84b-0587-4132-b6a6-a38706410471
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 378e7a69-0265-4da0-9418-adaa080c78b1
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: 03045123-52d9-4396-8d51-c5e93683d030
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: ddf8a577-1170-466f-8cfd-c53d1aa98a0a
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 35990d59-06c7-411c-aeec-9de731077e2b
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: ff0f2b74-90fa-4725-a75b-adaf46980ef9
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: cca2cfeb-4048-41c6-96cb-9c95cf0096db
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 5581089a-f34f-4831-a99d-8fb08df6f5df
+  why: 'conteo candidatos_2026-11-11: arandano, vid; cultivo en el título'
+- source: unalm
+  uuid: e822b2cb-8c4e-41f0-9838-653a08f9b1bb
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 8f0e48ef-99ae-4fff-b456-76e3a8f355e2
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 84569f1d-4cf7-4d4d-9df0-dc21dacbfa4b
+  why: 'conteo candidatos_2026-11-11: arandano, vid; cultivo en el título'
+- source: unalm
+  uuid: 80ed406e-1297-4b51-80ef-5250ab5b1c3e
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 17c9a800-294a-4f89-8e40-ff34075efdd9
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: 30d9b72a-0ef9-4d87-a70e-5fccb4017b10
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 4bdf0bdc-ceea-4922-8f18-13accf44dbd5
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 5a10d50f-b6d2-421f-98ff-db501119db64
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: b7593540-233b-477a-aaa8-323334accec0
+  why: 'conteo candidatos_2026-11-11: arandano, vid; cultivo en el título'
+- source: unalm
+  uuid: 186fb99d-f56c-41d6-a578-1d2fb79f4416
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: c82b8b2e-dbba-4127-9a0c-944fdb91b658
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 72a2af98-9153-4f17-a08e-4a5c14baa257
+  why: 'conteo candidatos_2026-11-11: arandano, vid; cultivo en el título'
+- source: unalm
+  uuid: b9df531f-372d-4d1d-afb6-b4876a543a51
+  why: 'conteo candidatos_2026-11-11: arandano; cultivo en el título'
+- source: unalm
+  uuid: 034f8f70-4b84-449f-96a8-999667195e95
+  why: 'conteo candidatos_2026-11-11: arandano; cultivo en el título'
+- source: unalm
+  uuid: 6ddc8c45-bfb7-4c9d-bb61-e34624885652
+  why: 'conteo candidatos_2026-11-11: arandano, vid; cultivo en el título'
+- source: unalm
+  uuid: 9709314c-c24d-415c-91d4-5754d598aae5
+  why: 'conteo candidatos_2026-11-11: arandano; cultivo en el título'
+- source: unalm
+  uuid: 73745fa7-80a3-4f2e-861e-275dcc004af0
+  why: 'conteo candidatos_2026-11-11: arandano; cultivo en el título'
+- source: unalm
+  uuid: 2897ee02-5aec-4944-93f1-111037508a78
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: dd021379-eb5a-4aea-b275-4b3d1317f562
+  why: 'conteo candidatos_2026-11-11: arandano; cultivo en el título'
+- source: unalm
+  uuid: 3ee245b0-9316-48c4-a342-92a22ecd1a77
+  why: 'conteo candidatos_2026-11-11: arandano; cultivo en el título'
+- source: unalm
+  uuid: 7ee4bfef-40b2-4585-aeb5-5a29834c1a3b
+  why: 'conteo candidatos_2026-11-11: arandano; cultivo en el título'
+- source: unalm
+  uuid: ac674bd9-e668-4632-ae3c-80efc05c1cc8
+  why: 'conteo candidatos_2026-11-11: arandano, vid; cultivo en el título'
+- source: unalm
+  uuid: e7c517f3-6415-4350-9da0-fdd4a1156fe2
+  why: 'conteo candidatos_2026-11-11: arandano, vid; cultivo en el título'
+- source: unalm
+  uuid: f6451f85-ff9e-4a48-b488-d26b4c144471
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: fda9655d-369f-4f40-8f9d-990bbe7d04fd
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: c187f754-2ce6-43e6-b860-cc6ada47f0c1
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: fbcbe03c-836c-47ac-bd9a-3c42b2952170
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: 461133e5-fce0-4a75-ae89-708a8a8a4666
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 13a00146-91f1-4589-98d6-4cd6b59ea83d
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: ff72213d-4982-42ff-9c3c-ddbe7bd93eb6
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: 133511d6-86f9-473c-871f-446e175d913d
+  why: 'conteo candidatos_2026-11-11: arandano, vid; cultivo en el título'
+- source: unalm
+  uuid: 3cb5c70c-88ef-4c52-b703-7adee0b171ec
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: 123b7f28-1e9b-41d8-9e5b-9149de189505
+  why: 'conteo candidatos_2026-11-11: arandano; cultivo en el título'
+- source: unalm
+  uuid: d7ad27c7-50b0-4483-b4ae-c7e97300b511
+  why: 'conteo candidatos_2026-11-11: arandano; cultivo en el título'
+- source: unalm
+  uuid: 7e967aed-a3bf-42de-8009-97fead03b15d
+  why: 'conteo candidatos_2026-11-11: arandano; cultivo en el título'
+- source: unalm
+  uuid: 58fabe8b-77c0-4bb5-9606-3b99e08c304a
+  why: 'conteo candidatos_2026-11-11: arandano; cultivo en el título'
+- source: unalm
+  uuid: 396a7cb2-65ce-4504-ab65-d8203ff3b288
+  why: 'conteo candidatos_2026-11-11: arandano; cultivo en el título'
+- source: unalm
+  uuid: 883e051b-7c96-442f-9b3e-55d35539a2fc
+  why: 'conteo candidatos_2026-11-11: arandano, vid; cultivo en el título'
+- source: unalm
+  uuid: f3f7201a-33c0-4730-8b79-237d07927cf0
+  why: 'conteo candidatos_2026-11-11: arandano, vid; cultivo en el título'
+- source: unalm
+  uuid: 67fe26b8-8a20-48b9-ae02-51845dccb44b
+  why: 'conteo candidatos_2026-11-11: arandano; cultivo en el título'
+- source: unalm
+  uuid: feaac803-be0c-415b-bebe-df50771d4526
+  why: 'conteo candidatos_2026-11-11: arandano; cultivo en el título'
+- source: unalm
+  uuid: 00a1e9c9-095e-400e-a033-b1ca7ef3784f
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: d5ee6f80-d2d2-422e-b91d-47f173fbfdb7
+  why: 'conteo candidatos_2026-11-11: arandano, palto; cultivo en el título'
+- source: unalm
+  uuid: 32b7943c-55a0-4e5a-a5e8-7dc3703c541f
+  why: 'conteo candidatos_2026-11-11: arandano, palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 57444638-0d61-46c1-9de1-7e4d888a6071
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 7a7bf707-870a-474a-b4a9-6b858609cbe8
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 7c229e81-fcaf-489d-8a5b-68c439d265fd
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 3804195d-7712-4dd1-a2aa-0b4e80e56a52
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 39231e4c-5e49-49ef-be0e-761374dcfc75
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 0e8a4073-0bd1-405e-b70c-0e56ffd90104
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 5ec2bd10-3dc1-4afa-a332-94a89a18d0d4
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 0d12f317-0de8-4595-a09e-fcfc2d1c1ecc
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: d9769bb1-3abd-4802-b726-93d8d842d9eb
+  why: 'conteo candidatos_2026-11-11: palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 869e068f-7348-40a4-af3e-65111a9477a6
+  why: 'conteo candidatos_2026-11-11: palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 544d37c6-294d-4c98-9a98-ddffa5bc0c98
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 7177fffa-a8c0-402b-bc23-5d193357f837
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 49765077-2005-45fe-843a-1994df480f11
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 963eee1a-e40b-4f08-a251-cf9fd80065fe
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 1a1e00a6-2212-4ddc-8f3b-f200c50bf65d
+  why: 'conteo candidatos_2026-11-11: palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 65cb9f86-ab10-4a45-a3be-1ee6c0f57138
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 20c7147b-c3d8-4ce0-aad3-52a77c6ab71f
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 9cf5327f-7b55-4ee6-8546-175c674c7649
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 7196fa8d-c067-4b9e-bdf0-69e560ec6aa2
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: e6262e9e-2c65-4e90-b781-548b417221da
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 46e2f861-ff65-49a5-ad29-06b5b496cd6d
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 7eaeadb5-16bf-41dc-88a8-c276b15ff8a9
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: a2b0a40e-3e20-4702-b5ec-9c699c60e919
+  why: 'conteo candidatos_2026-11-11: palto, vid; cultivo en el título'
+- source: unalm
+  uuid: b0d07abf-d6d7-49be-9a95-6ef487c8d708
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 97f2b607-fe8b-40f3-80ca-f2686194d291
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: a22c058e-02ed-4c8f-9e7d-f5df51d23553
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 8e7a7067-f2f5-4b7a-af32-85915acd7dc1
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 41d58f50-6a3c-4e50-87ea-5b8e5dd09a5a
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 918c7f7a-9586-4dd5-9cf9-65c2982f3d03
+  why: 'conteo candidatos_2026-11-11: palto, vid; cultivo en el título'
+- source: unalm
+  uuid: e8860b34-4d9f-41cd-9a1d-e969025f5f0d
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: e07264e5-6ed7-420e-8b65-52bd1ea1cc53
+  why: 'conteo candidatos_2026-11-11: palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 5fb1e1e1-2f44-4bfd-9568-b34b8150608e
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 6b289376-6465-43f0-a2df-d84368e76477
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: b38e2ba0-ee6a-4925-909e-b1557d909735
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: b61e5761-ad43-428c-8a2f-08151925cbb7
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 0f2fd6ed-9e22-4e8b-9657-8b8f17f3a19d
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 49aebffa-5a57-4447-9f90-13ea37285e0f
+  why: 'conteo candidatos_2026-11-11: palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 8a41b1ee-be55-422c-9621-8e03c0814ccf
+  why: 'conteo candidatos_2026-11-11: palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 9fe3b3d6-bf24-40ce-b92c-e5ee97a8ee4f
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: debc9f58-7b95-4105-b235-dc253b45305e
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: c9b61669-bce5-4d5a-8312-b41dcd123144
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 8858d386-bf5a-41ac-9b95-0d54adaded46
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 7b36c668-d111-424f-931b-c88c2453d754
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: e090e391-831d-4c03-8c85-e3789c88cb47
+  why: 'conteo candidatos_2026-11-11: palto, vid; cultivo en el título'
+- source: unalm
+  uuid: ff9804a9-7e33-4097-953a-6e706cea73f8
+  why: 'conteo candidatos_2026-11-11: palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 30df5578-e08f-4cf9-ac8a-8574cc954c94
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: bc506665-5dca-4364-89e7-b4f8adbac084
+  why: 'conteo candidatos_2026-11-11: palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 69749bf5-15f5-444b-ac57-13d1ea50391d
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 9a7d1b9e-813f-44eb-ba32-5270d1459a83
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: fdad5669-0707-4c42-9be5-eb5d12cae7df
+  why: 'conteo candidatos_2026-11-11: palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 5f0c5632-1c55-47d3-96ad-a2cacbdd2ecf
+  why: 'conteo candidatos_2026-11-11: palto, vid; cultivo en el título'
+- source: unalm
+  uuid: e701168e-8dac-4ed5-a6c9-e2c8f31f7eeb
+  why: 'conteo candidatos_2026-11-11: palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 6f992021-e240-4565-b2ea-8645a15da137
+  why: 'conteo candidatos_2026-11-11: palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 35f354ac-a68c-4f7d-88f6-edc6dd144599
+  why: 'conteo candidatos_2026-11-11: palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 8232b22a-e403-4b33-a469-cae43302c427
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 581d73d7-ce10-43aa-ba4b-12ce3e0ce8aa
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 609ba489-bf55-4422-b3a6-266638fcb256
+  why: 'conteo candidatos_2026-11-11: palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 566044b4-7138-4536-86fc-2d03a0d76adf
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 1f764b56-c37f-4d85-a633-e1f054cb8021
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: a1b98440-bca7-4726-a7e0-fb595e29fa96
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: f21e54a6-f449-45a3-bd8f-c3544c40221a
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 02bf771d-5506-4708-ac4d-e8c966ff6b7c
+  why: 'conteo candidatos_2026-11-11: palto, vid; cultivo en el título'
+- source: unalm
+  uuid: dbd7f499-3203-4be6-9c56-43570a6d9e76
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: a473a9eb-885e-4c67-9d20-b0c78b418fab
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: f641d24b-675f-4838-9b00-cf24ac2e119c
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 2f99cf49-afa8-48fa-bfe0-9603e4fd83af
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 96e5cda3-d6de-4f51-a388-b01657442af3
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: e8826a4b-3321-454f-b8fa-75f3589596aa
+  why: 'conteo candidatos_2026-11-11: palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 7f1cbe79-4cb0-4b2d-a701-ab5747592902
+  why: 'conteo candidatos_2026-11-11: palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 609277d0-e7d2-4a9b-8610-3cd7d8a61e5d
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 511235d4-4ae3-4486-92a0-691aa18c5ce5
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 9210f764-59d3-4a78-9785-8826c357039c
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: ace146db-9de0-43d2-a290-52d0b80f8f3b
+  why: 'conteo candidatos_2026-11-11: palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 9267b771-7daf-4276-a3ee-155c5d5ae5a7
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: a5e775d3-1907-48a4-b02d-8ca2a549523f
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: ebcb8623-9fc4-46a9-b4fa-2b77021a8109
+  why: 'conteo candidatos_2026-11-11: palto, vid; cultivo en el título'
+- source: unalm
+  uuid: 1607dff4-858d-4297-9a4f-e078ba946bd7
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 35422dd3-75ef-4f83-b293-77c1ac72f8c0
+  why: 'conteo candidatos_2026-11-11: palto; cultivo en el título'
+- source: unalm
+  uuid: 0b676694-125d-4783-ab0d-9119ec7fb677
+  why: 'conteo candidatos_2026-11-11: palto, vid; cultivo en el título'
+- source: unalm
+  uuid: bc8903b6-7e66-4c91-a3cc-b2caa41acb94
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: 54954147-a1f3-41f6-bc15-19926c063845
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: 40dbdba1-1dc0-488f-afa2-69785a7cb533
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: 87c1dc9f-b9c2-4472-a5aa-5ac66e559fd6
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: 926f8add-64e0-476d-92e7-fc270ebb9102
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: 3a085689-0ae0-4ea5-95f7-2c0501e960bb
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: cc0f11db-4e0c-45bc-9098-ac3844d184de
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: d0b0daab-a1b0-4391-96ce-d5aee7cacd7b
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: 6ade0933-2975-4159-8a6f-ed7179962a6c
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: cc484cc9-0027-4e93-bf18-d9902bbb59ea
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: 4b90baf5-bb4e-4508-a268-ac5653c1adbe
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: b44c7034-7858-4d5a-b22b-4538b64e0e69
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: ee19d198-6287-4c61-8a63-5788aac1c296
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: cfc9a1bf-c346-4cdb-8a90-60114021626c
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: 5c8e5414-ddaa-4b39-abe9-8e7fafa2584f
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: dee63e1f-a44b-4520-8d6e-bf2875314f3b
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: 7d9436d8-7350-417e-b595-7b035d1220a8
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: 7d8991ed-4f66-4780-a996-d7fad34d5685
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: 8621dea2-52a3-4560-8348-744f27b0c989
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: 8085ae31-e654-4bb2-858f-67a60a80077b
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: 137f8dae-044b-425e-918b-ffd041237793
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: 0e17bcc5-ed75-4c42-8813-33a656710e35
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: fe302df9-d2c2-4eea-8932-39002fff05d5
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: b32f2711-1355-4a8f-ba46-57aafea9f809
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: 9ebc6abe-57e7-4cd7-834e-ed31fa26b68a
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: fd66ef5b-d0f4-4275-9c52-77f073413981
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: 3129187c-4dda-4ec8-949d-8de14f1f035c
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: f74bccc0-83c7-4cbf-913c-d1c3088a3a4f
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: caf39fc5-3a19-4321-bca9-57630409a260
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: 67e23f8b-af94-4eeb-b8c5-851826f22c4a
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: a8ffff0c-e373-4f2c-a132-a05fcafa6e80
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: fb183fdb-202c-4891-b5c9-a3d9a7d1a182
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: fd521959-ad3e-4887-8829-6943a8ca4ac0
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: 6e7c64c4-76c0-4e39-8f7b-8b38f2712fd7
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'
+- source: unalm
+  uuid: 93e10aa3-f746-4cd5-964c-9408249b23ac
+  why: 'conteo candidatos_2026-11-11: vid; cultivo en el título'

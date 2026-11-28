@@ -1,0 +1,10 @@
+{
+ "fecha": "2026-11-26",
+ "juez": "local:llama3.1:8b",
+ "n": 180,
+ "kappa_relevante_si_no_vs_humano": 0.141,
+ "kappa_0_1_2_vs_humano": 0.088,
+ "kappa_relevante_si_no_qwen_vs_humano": 0.667,
+ "kappa_relevante_si_no_vs_qwen": 0.107,
+ "kappa_0_1_2_vs_qwen": 0.075
+}

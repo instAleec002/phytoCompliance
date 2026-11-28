@@ -1,0 +1,39 @@
+{
+ "firma": "6223e6d20ce3",
+ "preguntas": 60,
+ "casos": {
+  "ninguno": 23,
+  "ambos": 26,
+  "solo_denso": 8,
+  "solo_hibrido": 3
+ },
+ "util1_hibrido": 0.483,
+ "util1_denso": 0.567,
+ "solo_denso_origen_del_primero_hibrido": {
+  "ambos": 8
+ },
+ "solo_denso_rango_hibrido_del_primero_denso": [
+  2,
+  2,
+  2,
+  3,
+  3,
+  3,
+  5,
+  5
+ ],
+ "solo_denso_rango_lexico_del_primero_denso": [
+  4,
+  19,
+  20,
+  25,
+  99,
+  99,
+  99,
+  99
+ ],
+ "solo_denso_por_tipo": {
+  "un_salto": 5,
+  "varios_saltos": 3
+ }
+}

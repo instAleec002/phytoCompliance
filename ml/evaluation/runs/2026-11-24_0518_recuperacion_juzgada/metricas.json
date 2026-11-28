@@ -1,0 +1,105 @@
+{
+ "juicios": 8293,
+ "firma": "db7e71e57aec",
+ "particion": "desarrollo",
+ "preguntas": 18,
+ "mmr": 0.85,
+ "encabezado_lexico": "peso",
+ "peso_genericas": null,
+ "idf/lexico": {
+  "recall@1": 0.006,
+  "util@1": 0.222,
+  "recall@5": 0.04,
+  "util@5": 0.611,
+  "recall@10": 0.085,
+  "util@10": 0.778,
+  "mrr@10": 0.468,
+  "ndcg@10": 0.263,
+  "por_tipo": {
+   "un_salto": {
+    "recall@1": 0.005,
+    "util@1": 0.167,
+    "recall@5": 0.026,
+    "util@5": 0.5,
+    "recall@10": 0.066,
+    "util@10": 0.75,
+    "mrr@10": 0.438,
+    "ndcg@10": 0.251
+   },
+   "varios_saltos": {
+    "recall@1": 0.008,
+    "util@1": 0.333,
+    "recall@5": 0.067,
+    "util@5": 0.833,
+    "recall@10": 0.124,
+    "util@10": 0.833,
+    "mrr@10": 0.528,
+    "ndcg@10": 0.288
+   }
+  }
+ },
+ "idf/denso": {
+  "recall@1": 0.012,
+  "util@1": 0.556,
+  "recall@5": 0.053,
+  "util@5": 0.667,
+  "recall@10": 0.091,
+  "util@10": 0.667,
+  "mrr@10": 0.623,
+  "ndcg@10": 0.436,
+  "por_tipo": {
+   "un_salto": {
+    "recall@1": 0.01,
+    "util@1": 0.583,
+    "recall@5": 0.054,
+    "util@5": 0.75,
+    "recall@10": 0.09,
+    "util@10": 0.75,
+    "mrr@10": 0.676,
+    "ndcg@10": 0.491
+   },
+   "varios_saltos": {
+    "recall@1": 0.018,
+    "util@1": 0.5,
+    "recall@5": 0.051,
+    "util@5": 0.5,
+    "recall@10": 0.092,
+    "util@10": 0.5,
+    "mrr@10": 0.519,
+    "ndcg@10": 0.327
+   }
+  }
+ },
+ "idf/hibrido": {
+  "recall@1": 0.013,
+  "util@1": 0.5,
+  "recall@5": 0.049,
+  "util@5": 0.667,
+  "recall@10": 0.093,
+  "util@10": 0.778,
+  "mrr@10": 0.63,
+  "ndcg@10": 0.422,
+  "por_tipo": {
+   "un_salto": {
+    "recall@1": 0.01,
+    "util@1": 0.5,
+    "recall@5": 0.048,
+    "util@5": 0.75,
+    "recall@10": 0.091,
+    "util@10": 0.833,
+    "mrr@10": 0.674,
+    "ndcg@10": 0.47
+   },
+   "varios_saltos": {
+    "recall@1": 0.018,
+    "util@1": 0.5,
+    "recall@5": 0.051,
+    "util@5": 0.5,
+    "recall@10": 0.095,
+    "util@10": 0.667,
+    "mrr@10": 0.542,
+    "ndcg@10": 0.327
+   }
+  }
+ }
+}

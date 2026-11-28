@@ -1,0 +1,33 @@
+{
+ "suite": "textual.jsonl (S2)",
+ "corrida_fuente": "2026-11-26_2015_fidelidad_s2_qwen3-8b",
+ "sistema": "agente",
+ "generador": "qwen3:8b",
+ "juez": "local:llama3.1:8b",
+ "unidad": "oraciones de la respuesta (evaluation/fidelidad.py)",
+ "preguntas": 60,
+ "con_evidencia": 50,
+ "abstenciones": 10,
+ "medidas": 50,
+ "fidelidad_media": 0.714,
+ "fidelidad_mediana": 0.667,
+ "por_tipo": {
+  "un_salto": {
+   "n": 34,
+   "media": 0.706
+  },
+  "varios_saltos": {
+   "n": 16,
+   "media": 0.729
+  }
+ },
+ "oraciones": 132,
+ "veredictos": {
+  "respaldada": 93,
+  "mezcla": 35,
+  "ausente": 3,
+  "contradice": 1
+ },
+ "meta": 0.7,
+ "cumple": true
+}

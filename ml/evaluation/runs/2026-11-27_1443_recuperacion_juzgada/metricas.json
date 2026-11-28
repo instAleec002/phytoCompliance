@@ -1,0 +1,109 @@
+{
+ "juicios": 8628,
+ "firma": "c33f24be94bd",
+ "particion": "desarrollo",
+ "preguntas": 18,
+ "mmr": null,
+ "encabezado_lexico": "con",
+ "peso_genericas": null,
+ "tope_por_documento": null,
+ "lista_grafo": 0.0,
+ "expandir_sinonimos": null,
+ "descomponer": false,
+ "idf/lexico": {
+  "recall@1": 0.019,
+  "util@1": 0.222,
+  "recall@5": 0.051,
+  "util@5": 0.611,
+  "recall@10": 0.096,
+  "util@10": 0.722,
+  "mrr@10": 0.545,
+  "ndcg@10": 0.325,
+  "por_tipo": {
+   "un_salto": {
+    "recall@1": 0.006,
+    "util@1": 0.167,
+    "recall@5": 0.039,
+    "util@5": 0.583,
+    "recall@10": 0.078,
+    "util@10": 0.75,
+    "mrr@10": 0.442,
+    "ndcg@10": 0.293
+   },
+   "varios_saltos": {
+    "recall@1": 0.044,
+    "util@1": 0.333,
+    "recall@5": 0.073,
+    "util@5": 0.667,
+    "recall@10": 0.132,
+    "util@10": 0.667,
+    "mrr@10": 0.75,
+    "ndcg@10": 0.388
+   }
+  }
+ },
+ "idf/denso": {
+  "recall@1": 0.012,
+  "util@1": 0.556,
+  "recall@5": 0.056,
+  "util@5": 0.667,
+  "recall@10": 0.09,
+  "util@10": 0.667,
+  "mrr@10": 0.667,
+  "ndcg@10": 0.483,
+  "por_tipo": {
+   "un_salto": {
+    "recall@1": 0.011,
+    "util@1": 0.667,
+    "recall@5": 0.052,
+    "util@5": 0.75,
+    "recall@10": 0.092,
+    "util@10": 0.75,
+    "mrr@10": 0.75,
+    "ndcg@10": 0.545
+   },
+   "varios_saltos": {
+    "recall@1": 0.015,
+    "util@1": 0.333,
+    "recall@5": 0.064,
+    "util@5": 0.5,
+    "recall@10": 0.087,
+    "util@10": 0.5,
+    "mrr@10": 0.5,
+    "ndcg@10": 0.36
+   }
+  }
+ },
+ "idf/hibrido": {
+  "recall@1": 0.015,
+  "util@1": 0.556,
+  "recall@5": 0.06,
+  "util@5": 0.667,
+  "recall@10": 0.091,
+  "util@10": 0.667,
+  "mrr@10": 0.696,
+  "ndcg@10": 0.489,
+  "por_tipo": {
+   "un_salto": {
+    "recall@1": 0.015,
+    "util@1": 0.667,
+    "recall@5": 0.057,
+    "util@5": 0.75,
+    "recall@10": 0.093,
+    "util@10": 0.75,
+    "mrr@10": 0.794,
+    "ndcg@10": 0.555
+   },
+   "varios_saltos": {
+    "recall@1": 0.015,
+    "util@1": 0.333,
+    "recall@5": 0.064,
+    "util@5": 0.5,
+    "recall@10": 0.087,
+    "util@10": 0.5,
+    "mrr@10": 0.5,
+    "ndcg@10": 0.358
+   }
+  }
+ }
+}

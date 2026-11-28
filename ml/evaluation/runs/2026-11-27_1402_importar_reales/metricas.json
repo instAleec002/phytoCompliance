@@ -1,0 +1,180 @@
+{
+ "contra": "2026-11-27_0405_validador_reales",
+ "hojas": "ml/evaluation/suites/programas_reales_hojas",
+ "filas": 56,
+ "filas_plaguicida": 54,
+ "resueltas": 51,
+ "necesitan_persona": 3,
+ "filas_iguales_a_la_corrida": 56,
+ "filas_distintas": [],
+ "reproduce": true,
+ "dosis": {
+  "dentro": 24,
+  "fuera_de_rango": 13,
+  "no_comparable": 14
+ },
+ "dosis_fuera_de_rango": [
+  {
+   "pid": "r4",
+   "n": 1,
+   "producto": "SUKUNA",
+   "dosis": "2 Lt/ha",
+   "registradas": [
+    "0.2 L/ha",
+    "0.8 L/ha",
+    "1–1.25 L/ha",
+    "1–1.5 L/ha",
+    "1.2 L/ha"
+   ]
+  },
+  {
+   "pid": "r4",
+   "n": 4,
+   "producto": "BISO",
+   "dosis": "0.06Kg/ cil",
+   "registradas": [
+    "0 kg/cilindro",
+    "0.065–0.07 kg/cilindro",
+    "0.07–0.08 kg/cilindro",
+    "0.075 kg/cilindro",
+    "0.075–0.1 kg/cilindro",
+    "0.1 kg/cilindro"
+   ]
+  },
+  {
+   "pid": "r4",
+   "n": 5,
+   "producto": "CIGARAL 70 WP",
+   "dosis": "3.0 Lt/ha",
+   "registradas": [
+    "0.5–0.75 L/ha",
+    "0.525–0.6 L/ha",
+    "0.75 L/ha"
+   ]
+  },
+  {
+   "pid": "r4",
+   "n": 6,
+   "producto": "WENTUM 500 WG",
+   "dosis": "0.06 kg/ cil",
+   "registradas": [
+    "0.08–0.12 kg/cilindro",
+    "0.1 kg/cilindro",
+    "0.12 kg/cilindro",
+    "0.4–0.55 kg/cilindro"
+   ]
+  },
+  {
+   "pid": "r4",
+   "n": 12,
+   "producto": "CHEKKER",
+   "dosis": "0.7 lt/ha",
+   "registradas": [
+    "0.75 L/ha"
+   ]
+  },
+  {
+   "pid": "r4",
+   "n": 15,
+   "producto": "TAKLE",
+   "dosis": "1.5 lt/ha",
+   "registradas": [
+    "0 L/ha",
+    "0.45–0.6 L/ha",
+    "0.45–0.9 L/ha",
+    "0.75 L/ha",
+    "0.9 L/ha"
+   ]
+  },
+  {
+   "pid": "r4",
+   "n": 18,
+   "producto": "CROSS",
+   "dosis": "200 gr/ cil",
+   "registradas": [
+    "0.005–0.03 kg/cilindro",
+    "0.012–0.015 kg/cilindro",
+    "0.03–0.05 kg/cilindro",
+    "0.04–0.06 kg/cilindro",
+    "0.06 kg/cilindro",
+    "0.06–0.08 kg/cilindro",
+    "0.07 kg/cilindro",
+    "0.07–0.08 kg/cilindro",
+    "0.07–0.09 kg/cilindro",
+    "0.07–0.1 kg/cilindro",
+    "0.08 kg/cilindro",
+    "0.08–0.1 kg/cilindro",
+    "0.1 kg/cilindro",
+    "0.5–0.6 kg/cilindro"
+   ]
+  },
+  {
+   "pid": "r5",
+   "n": 3,
+   "producto": "AFIDON",
+   "dosis": "300 ml/Cil",
+   "registradas": [
+    "0.2 L/cilindro",
+    "0.2–0.25 L/cilindro",
+    "0.25 L/cilindro"
+   ]
+  },
+  {
+   "pid": "r5",
+   "n": 4,
+   "producto": "K-OIL MINERAL",
+   "dosis": "1 lt/Cil",
+   "registradas": [
+    "2–3 L/cilindro",
+    "3 L/cilindro"
+   ]
+  },
+  {
+   "pid": "r5",
+   "n": 8,
+   "producto": "GALAXY 10 CE",
+   "dosis": "100 ml/Cil",
+   "registradas": [
+    "0.2 L/cilindro",
+    "0.2–0.3 L/cilindro",
+    "0.25 L/cilindro"
+   ]
+  },
+  {
+   "pid": "r5",
+   "n": 12,
+   "producto": "GALAXY 10 CE",
+   "dosis": "100 ml/Cil",
+   "registradas": [
+    "0.2 L/cilindro",
+    "0.2–0.3 L/cilindro",
+    "0.25 L/cilindro"
+   ]
+  },
+  {
+   "pid": "r5",
+   "n": 20,
+   "producto": "LUME",
+   "dosis": "200 gr/Cil",
+   "registradas": [
+    "0.04 kg/cilindro",
+    "0.075 kg/cilindro",
+    "0.1 kg/cilindro"
+   ]
+  },
+  {
+   "pid": "r5",
+   "n": 22,
+   "producto": "K-OIL MINERAL",
+   "dosis": "1 lt/Cil",
+   "registradas": [
+    "2–3 L/cilindro",
+    "3 L/cilindro"
+   ]
+  }
+ ],
+ "dosis_no_comparables_por_motivo": {
+  "la dosis no indica volumen o peso por hectárea o por cilindro": 13,
+  "SIGIA no registra dosis en kg/ha para este producto en el cultivo": 1
+ }
+}

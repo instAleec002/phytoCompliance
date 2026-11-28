@@ -1,0 +1,17 @@
+{
+ "suite": "estructurada_genericas_2.jsonl",
+ "modo": "herramientas",
+ "modelo": "gemma4:e4b",
+ "genericas": false,
+ "preguntas": 31,
+ "exactas": 0,
+ "exactitud": 0.0,
+ "por_tipo": {
+  "lista": 0.0,
+  "conteo_productos": 0.0,
+  "conteo_sin_lmr": 0.0
+ },
+ "con_valor_inventado": 1,
+ "sin_llamar_herramientas": 26,
+ "segundos_mediana": 1.69
+}

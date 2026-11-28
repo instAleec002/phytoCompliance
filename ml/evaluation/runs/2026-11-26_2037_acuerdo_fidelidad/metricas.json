@@ -1,0 +1,108 @@
+{
+ "corrida": "2026-11-26_2015_fidelidad_s2_qwen3-8b",
+ "anotacion": "",
+ "oraciones_anotadas": 0,
+ "jueces": {
+  "local:qwen3:8b": {
+   "corrida": "2026-11-26_2015_fidelidad_s2_qwen3-8b",
+   "media": 0.752,
+   "por_tipo": {
+    "un_salto": 0.843,
+    "varios_saltos": 0.558
+   },
+   "varios_saltos_no_respaldadas": {
+    "ausente": 11,
+    "contradice": 7,
+    "mezcla": 3
+   },
+   "varios_saltos_por_cobertura": {
+    "cita_0_de_2_docs_oro": {
+     "respuestas": 11,
+     "fidelidad": 0.527
+    },
+    "cita_1_de_2_docs_oro": {
+     "respuestas": 5,
+     "fidelidad": 0.627
+    },
+    "cita_2_de_2_docs_oro": {
+     "respuestas": 0,
+     "fidelidad": null
+    }
+   }
+  },
+  "local:gemma4:e4b": {
+   "corrida": "2026-11-26_2029_rejuicio_s2_gemma4-e4b",
+   "media": 0.625,
+   "por_tipo": {
+    "un_salto": 0.692,
+    "varios_saltos": 0.483
+   },
+   "varios_saltos_no_respaldadas": {
+    "ausente": 20,
+    "contradice": 2,
+    "mezcla": 5
+   },
+   "varios_saltos_por_cobertura": {
+    "cita_0_de_2_docs_oro": {
+     "respuestas": 11,
+     "fidelidad": 0.485
+    },
+    "cita_1_de_2_docs_oro": {
+     "respuestas": 5,
+     "fidelidad": 0.48
+    },
+    "cita_2_de_2_docs_oro": {
+     "respuestas": 0,
+     "fidelidad": null
+    }
+   }
+  },
+  "local:llama3.1:8b": {
+   "corrida": "2026-11-26_2032_rejuicio_s2_llama3_1-8b",
+   "media": 0.714,
+   "por_tipo": {
+    "un_salto": 0.706,
+    "varios_saltos": 0.729
+   },
+   "varios_saltos_no_respaldadas": {
+    "ausente": 1,
+    "contradice": 1,
+    "mezcla": 12
+   },
+   "varios_saltos_por_cobertura": {
+    "cita_0_de_2_docs_oro": {
+     "respuestas": 11,
+     "fidelidad": 0.661
+    },
+    "cita_1_de_2_docs_oro": {
+     "respuestas": 5,
+     "fidelidad": 0.88
+    },
+    "cita_2_de_2_docs_oro": {
+     "respuestas": 0,
+     "fidelidad": null
+    }
+   }
+  }
+ },
+ "entre_jueces": {
+  "local:qwen3:8b | local:gemma4:e4b": {
+   "oraciones": 132,
+   "kappa_respaldada_si_no": 0.489,
+   "kappa_4_etiquetas": 0.387
+  },
+  "local:qwen3:8b | local:llama3.1:8b": {
+   "oraciones": 132,
+   "kappa_respaldada_si_no": 0.122,
+   "kappa_4_etiquetas": 0.065
+  },
+  "local:gemma4:e4b | local:llama3.1:8b": {
+   "oraciones": 132,
+   "kappa_respaldada_si_no": 0.187,
+   "kappa_4_etiquetas": 0.121
+  }
+ },
+ "humano": {
+  "varios_saltos": {}
+ }
+}

@@ -1,0 +1,31 @@
+# Seed corpus (06/11/2026): about twenty documents to run the whole chain (download, processing, index, cited answer)
+# before the full corpus. Picked from searches of the public repositories on 06/11/2026: technical text on the three
+# crops (palto, vid, arándano), biological control and the export plan of one crop. Each entry names the item; the
+# downloader reads its metadata (title, year, type, licence) from the repository and picks the main file.
+
+items:
+  # INIA (level A): crop manuals
+  - {source: inia, uuid: 1c754df1-3653-4dbb-a7ed-5ed503ec1ce8, why: "manual de manejo agronómico del palto"}
+  - {source: inia, uuid: 49618654-af5d-4976-ad56-8d22e018d3fa, why: "guía del cultivo del palto"}
+  - {source: inia, uuid: 7359944d-aaa7-4c63-af28-98f690a9d243, why: "virus en el cultivo de la vid"}
+
+  # SENASA (level A): pests, export plan, biological control agent sheets
+  - {source: senasa, uuid: 13b36a58-3e68-4d2a-b705-ac2a56325e4e, why: "plagas de paltos y su manejo"}
+  - {source: senasa, uuid: a5065b8d-1a8b-41ad-a4b5-e5e53bc77513, why: "plan de trabajo de exportación de palta Hass"}
+  - {source: senasa, uuid: 213a4005-cc84-4c96-b359-8ec0a300b1a8, why: "ficha técnica de Trichoderma viride (antagonista)"}
+  - {source: senasa, uuid: 4e0432ac-09f0-42ac-9a27-f648545e0b84, why: "ficha técnica de Anagyrus pseudococci (cochinilla harinosa de la vid)"}
+  - {source: senasa, uuid: 41f588e0-8073-4d25-8dff-901b0a193a6f, why: "ficha técnica de Trichogramma"}
+
+  # UNALM (level C): field experience by valley
+  - {source: unalm, uuid: 8f286783-2c67-4e2c-a358-f395f201635d, why: "MIP de arándano en Huarmey"}
+  - {source: unalm, uuid: 07245584-5130-487e-8539-e950a1d9d5d2, why: "MIP de arándano en Chao, Trujillo"}
+  - {source: unalm, uuid: 5f628e99-655b-4b3a-8782-5fe2fed4e089, why: "MIP de arándano en Pisco"}
+  - {source: unalm, uuid: 0feed203-c14a-489a-847d-a2a3fb9bfd89, why: "enfermedades del palto en Ica"}
+  - {source: unalm, uuid: 35990d59-06c7-411c-aeec-9de731077e2b, why: "manejo agronómico del palto Hass en Chilca"}
+  - {source: unalm, uuid: ff8fc87c-efdf-4ca3-8e0c-cc741e1340d6, why: "MIP de vid en Cañete"}
+  - {source: unalm, uuid: bc8903b6-7e66-4c91-a3cc-b2caa41acb94, why: "insecticida biológico contra Lobesia botrana en vid"}
+  - {source: unalm, uuid: f5497683-d779-4bc6-85ca-6579e2b55868, why: "control químico de la cochinilla harinosa de la vid"}
+  - {source: unalm, uuid: 99b5e032-1bda-4d77-a4b0-18da27df9da3, why: "gestión fitosanitaria en cultivos de agroexportación"}
+
+  # Interno: documents of the simulated agro-exporter, in backend/data/corpus_interno
+  - {source: interno, file: procedimiento_aplicacion_fitosanitaria.docx, why: "procedimiento interno de aplicación"}

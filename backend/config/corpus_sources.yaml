@@ -1,0 +1,60 @@
+# Sources of the document corpus (what goes to the RAG; structured sources stay in the graph: decision D1, 06/11/2026).
+# Each source states its authority level, licence policy, how to reach it, which files to skip and which rules the
+# document pipeline applies to its documents. The seed list is corpus_seed.yaml.
+#
+# level: A official | B product (manufacturer sheets) | C academic | interno (simulated organisation documents)
+
+sources:
+  inia:
+    name: Instituto Nacional de Innovación Agraria
+    level: A
+    kind: dspace
+    # Paused on 11/11/2026: the repository answered 403 to searches and then to item requests after the candidate
+    # count. We do not retry or work around it; the documents downloaded on 06/11 are kept (reused from that snapshot).
+    active: false
+    paused_reason: "el repositorio rechaza nuestros pedidos (HTTP 403 desde el 11/11/2026); no se reintenta"
+    api: https://repositorio.inia.gob.pe/server/api
+    handle_url: https://repositorio.inia.gob.pe/handle/
+    # the HAL links of this server omit /server: file URLs are built from the bundle id instead of followed
+    build_links: true
+    skip_types: [lecture, other]          # slides and management reports are not technical text
+    rules: {}
+
+  senasa:
+    name: Servicio Nacional de Sanidad Agraria
+    level: A
+    kind: dspace
+    api: https://repositorio.senasa.gob.pe/server/api
+    handle_url: https://repositorio.senasa.gob.pe/handle/
+    build_links: true
+    skip_access: [restrictedAccess]
+    rules: {}
+
+  unalm:
+    name: Universidad Nacional Agraria La Molina
+    level: C
+    kind: dspace
+    api: https://repositorio.lamolina.edu.pe/server/api
+    handle_url: https://repositorio.lamolina.edu.pe/handle/
+    build_links: true
+    # theses carry their originality report, authorisation form and abstract as separate PDFs
+    skip_files: ["turnitin", "originalidad", "antiplagio", "autorizaci", "resumen", "^IO-", "preview", "informe originalidad"]
+    rules:
+      drop_sections: ["referencias", "bibliograf", "dedicatoria", "agradecimient", "^índice", "^indice", "anexos?$"]
+
+  interno:
+    name: Agroexportadora simulada (caso de estudio)
+    level: interno
+    kind: local
+    folder: backend/data/corpus_interno
+    licence: propio
+    rules: {}
+
+# Licences accepted for the corpus (academic, non-commercial, no redistribution of the corpus or derived data).
+accepted_licences:
+  - creativecommons.org/licenses/by/
+  - creativecommons.org/licenses/by-sa/
+  - creativecommons.org/licenses/by-nc/
+  - creativecommons.org/licenses/by-nc-sa/
+  - creativecommons.org/licenses/by-nc-nd/
+  - propio

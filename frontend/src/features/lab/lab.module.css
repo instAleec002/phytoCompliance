@@ -1,0 +1,17 @@
+.gauge { position: relative; height: 12px; background: var(--surface-2); border: 1px solid var(--rule-strong);
+  border-radius: var(--radius-pill); min-width: 160px; }
+.fill { position: absolute; left: 0; top: 0; bottom: 0; background: var(--ink-2); border-radius: var(--radius-pill); }
+.fill[data-tone="risk"] { background: var(--risk); }
+.fill[data-tone="blocking"] { background: var(--blocking); }
+.mark { position: absolute; top: -3px; bottom: -3px; width: 0; border-left: 1px solid var(--ink); }
+.markProfile { border-left: 1px dashed var(--risk); }
+/* labels sit exactly under their marks */
+.gaugeScale { position: relative; height: 14px; font-family: var(--font-data); font-size: 10.5px; color: var(--ink-3); margin-top: 3px; }
+.gaugeScale span { position: absolute; top: 0; transform: translateX(-50%); white-space: nowrap; }
+.totals { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--rule);
+  border: 1px solid var(--rule-strong); border-radius: var(--radius-control); overflow: hidden; }
+.total { background: var(--surface); padding: 12px 14px; display: flex; flex-direction: column; gap: 4px; }
+.totalValue { font-family: var(--font-data); font-size: 22px; font-weight: 600; }
+.totalValue[data-tone="blocking"] { color: var(--blocking); }
+.totalValue[data-tone="ok"] { color: var(--ok); }
+.measure { display: grid; grid-template-columns: minmax(0, 1fr) 120px 32px; gap: 6px; align-items: end; }

@@ -1,0 +1,25 @@
+{
+ "suite": "textual.jsonl (S2)",
+ "sistema": "agente",
+ "generador": "qwen3:8b",
+ "juez": "local:qwen3:8b",
+ "unidad": "oraciones de la respuesta (evaluation/fidelidad.py)",
+ "preguntas": 2,
+ "con_evidencia": 2,
+ "abstenciones": 0,
+ "medidas": 2,
+ "fidelidad_media": 1.0,
+ "fidelidad_mediana": 1.0,
+ "por_tipo": {
+  "un_salto": {
+   "n": 2,
+   "media": 1.0
+  }
+ },
+ "oraciones": 7,
+ "veredictos": {
+  "respaldada": 7
+ },
+ "meta": 0.7,
+ "cumple": true
+}

@@ -1,0 +1,10 @@
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--rule-strong); margin-bottom: 16px; }
+.tab { height: 38px; padding: 0 14px; font: inherit; font-weight: 500; background: transparent; border: none;
+  border-bottom: 2px solid transparent; margin-bottom: -1px; color: var(--ink-3); cursor: pointer; }
+.tab:hover { color: var(--ink); }
+.tab[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+.linkBox { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; align-items: center; }
+.linkBox input { font-family: var(--font-code); font-size: var(--text-sm); }
+.inviteGrid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)) auto; gap: 10px; align-items: end; }
+@media (max-width: 1100px) { .inviteGrid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+.selfRow td { background: var(--accent-tint); }

@@ -1,0 +1,127 @@
+{
+ "revisadas": 20,
+ "validas": 7,
+ "wilson_95": [
+  0.181,
+  0.567
+ ],
+ "no_validas": [
+  {
+   "qid": "t003",
+   "juicios": {
+    "¿Se entiende sola?": "sí",
+    "¿El fragmento la responde?": "en parte",
+    "¿La haría un técnico?": "sí"
+   },
+   "comentario": "El fragmento no nombra la plaga (dice «esta plaga»)."
+  },
+  {
+   "qid": "t008",
+   "juicios": {
+    "¿Se entiende sola?": "sí",
+    "¿El fragmento la responde?": "no",
+    "¿La haría un técnico?": "sí"
+   },
+   "comentario": "El fragmento dice que se evaluó el efecto, no cuál fue."
+  },
+  {
+   "qid": "t011",
+   "juicios": {
+    "¿Se entiende sola?": "sí",
+    "¿El fragmento la responde?": "no",
+    "¿La haría un técnico?": "sí"
+   },
+   "comentario": "Pide un plazo y el fragmento no trae ninguno."
+  },
+  {
+   "qid": "t017",
+   "juicios": {
+    "¿Se entiende sola?": "sí",
+    "¿El fragmento la responde?": "sí",
+    "¿La haría un técnico?": "no"
+   },
+   "comentario": "Pregunta rara: la degradación del sustrato no es algo que pregunte un técnico."
+  },
+  {
+   "qid": "t032",
+   "juicios": {
+    "¿Se entiende sola?": "sí",
+    "¿El fragmento la responde?": "sí",
+    "¿La haría un técnico?": "no"
+   },
+   "comentario": "Es del convenio institucional, no una duda de sanidad vegetal."
+  },
+  {
+   "qid": "t038",
+   "juicios": {
+    "¿Se entiende sola?": "sí",
+    "¿El fragmento la responde?": "no",
+    "¿La haría un técnico?": "sí"
+   },
+   "comentario": "El fragmento habla de preparar el agua, no de la suspensión; la respuesta de referencia no sale de él."
+  },
+  {
+   "qid": "t040",
+   "juicios": {
+    "¿Se entiende sola?": "sí",
+    "¿El fragmento la responde?": "no",
+    "¿La haría un técnico?": "sí"
+   },
+   "comentario": "El fragmento es sobre el origen de la vid y no menciona el nemátodo."
+  },
+  {
+   "qid": "t042",
+   "juicios": {
+    "¿Se entiende sola?": "sí",
+    "¿El fragmento la responde?": "en parte",
+    "¿La haría un técnico?": "sí"
+   },
+   "comentario": "Da la región y las plagas, no el control."
+  },
+  {
+   "qid": "t046",
+   "juicios": {
+    "¿Se entiende sola?": "sí",
+    "¿El fragmento la responde?": "no",
+    "¿La haría un técnico?": "no"
+   },
+   "comentario": "Mezcla dos temas; el fragmento es de Botrytis en arándano y no dice nada de Penicillium."
+  },
+  {
+   "qid": "t047",
+   "juicios": {
+    "¿Se entiende sola?": "sí",
+    "¿El fragmento la responde?": "en parte",
+    "¿La haría un técnico?": "sí"
+   },
+   "comentario": "Lista las plagas pero no describe el daño."
+  },
+  {
+   "qid": "t050",
+   "juicios": {
+    "¿Se entiende sola?": "sí",
+    "¿El fragmento la responde?": "en parte",
+    "¿La haría un técnico?": "sí"
+   },
+   "comentario": "No hay datos de control, solo la descripción de Chrysoperla."
+  },
+  {
+   "qid": "t055",
+   "juicios": {
+    "¿Se entiende sola?": "sí",
+    "¿El fragmento la responde?": "en parte",
+    "¿La haría un técnico?": "sí"
+   },
+   "comentario": "Falta el impacto directo y el control; solo hay inferencias."
+  },
+  {
+   "qid": "t060",
+   "juicios": {
+    "¿Se entiende sola?": "sí",
+    "¿El fragmento la responde?": "en parte",
+    "¿La haría un técnico?": "sí"
+   },
+   "comentario": "Dice que verdolaga es hospedero, pero no de qué plaga concreta."
+  }
+ ]
+}

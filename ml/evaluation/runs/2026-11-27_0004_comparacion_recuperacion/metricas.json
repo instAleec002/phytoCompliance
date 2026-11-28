@@ -1,0 +1,57 @@
+{
+ "corrida": "2026-11-26_2016_recuperacion_juzgada",
+ "hibrido_vs_denso": {
+  "preguntas": 60,
+  "util@10": {
+   "hibrido": 48.0,
+   "denso": 45.0,
+   "solo_a": 3,
+   "solo_b": 0,
+   "p": 0.25,
+   "prueba": "McNemar exacta (scipy.stats.binomtest)"
+  },
+  "util@1": {
+   "hibrido": 29.0,
+   "denso": 34.0,
+   "solo_a": 3,
+   "solo_b": 8,
+   "p": 0.2265625,
+   "prueba": "McNemar exacta (scipy.stats.binomtest)"
+  },
+  "mrr@10": {
+   "hibrido": 0.781,
+   "denso": 0.774,
+   "n": 12,
+   "estadistico": 34.5,
+   "p": 0.7203427314161813,
+   "prueba": "Wilcoxon (scipy.stats.wilcoxon)"
+  }
+ },
+ "hibrido_vs_lexico": {
+  "preguntas": 60,
+  "util@10": {
+   "hibrido": 48.0,
+   "lexico": 39.0,
+   "solo_a": 13,
+   "solo_b": 4,
+   "p": 0.049041748046875,
+   "prueba": "McNemar exacta (scipy.stats.binomtest)"
+  },
+  "util@1": {
+   "hibrido": 29.0,
+   "lexico": 14.0,
+   "solo_a": 18,
+   "solo_b": 3,
+   "p": 0.0014896392822265625,
+   "prueba": "McNemar exacta (scipy.stats.binomtest)"
+  },
+  "mrr@10": {
+   "hibrido": 0.781,
+   "lexico": 0.62,
+   "n": 37,
+   "estadistico": 178.0,
+   "p": 0.00854333913112094,
+   "prueba": "Wilcoxon (scipy.stats.wilcoxon)"
+  }
+ }
+}

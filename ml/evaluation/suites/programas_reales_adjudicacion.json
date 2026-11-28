@@ -1,0 +1,14 @@
+{
+ "descripcion": "Filas de la referencia manual de los programas reales (programas_reales_referencia.xlsx, 26/11/2026) en desacuerdo con el validador que se resolvieron contra la fuente oficial descargada el 27/11/2026 (SIGIA del palto, EU Pesticides Database y eCFR de 40 CFR 180). Solo se resolvieron filas en desacuerdo, después de ver los hallazgos del sistema; por eso se informan los dos acuerdos, con la referencia original y con la adjudicada. La hoja original no se modifica.",
+ "fuente_fecha": "2026-11-27",
+ "correcciones": [
+  {"cultivo": "avocado", "texto": "Buprofezin", "columna": "¿Registrado para el cultivo?", "original": "No", "adjudicado": "Sí",
+   "evidencia": "SIGIA, palto (sigia/020732/2026-11-27): productos con buprofezin autorizados en palto, entre ellos TRIUNFO (PQUA N° 3166-SENASA) y APPLAUD 40 SC; igual que en la instantánea del 28/10/2026"},
+  {"cultivo": "avocado", "texto": "Dimetoato", "columna": "¿Registrado para el cultivo?", "original": "No", "adjudicado": "Sí",
+   "evidencia": "SIGIA, palto (sigia/020732/2026-11-27): AFIDON (dimetoato, PQUA Nº1742-SENASA) autorizado en palto; igual que el 28/10/2026"},
+  {"cultivo": "table_grape", "texto": "Sulfodin", "columna": "LMR UE", "original": "por defecto", "adjudicado": "exento",
+   "evidencia": "EU Pesticides Database (eu_mrl/2026-11-27, uva de mesa 0151010): azufre, residuo 377, anexo IV, «No MRL required», Reg. (EC) No 459/2010, aplicable"},
+  {"cultivo": "avocado", "texto": "Difenoconazole", "columna": "Tolerancia EE. UU.", "original": "sí", "adjudicado": "no",
+   "evidencia": "eCFR 40 CFR § 180.475 (us_tolerances/2026-11-27): sin fila para palta ni para el subgrupo 24B"}
+ ]
+}

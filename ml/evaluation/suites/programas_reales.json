@@ -1,0 +1,435 @@
+{
+ "descripcion": "Programas de aplicación reales publicados en tesis de la UNALM que están en el corpus, transcritos tal como aparecen (nombres comerciales, fechas, dosis y unidades originales, con sus errores). Revisión del short paper, 26/11/2026. Los supuestos (cosecha, mercados, año y meses de cada etapa fenológica) se fijan aquí antes de correr el validador; la verdad de referencia se fija a mano contra el registro de SENASA y los LMR (programas_reales_referencia.xlsx). Para comprobarlos con el registro y los LMR vigentes, las fechas conservan día y mes y se trasladan a la campaña 2025-2026 (cosecha_evaluacion), como si el mismo programa se planificara hoy. Corrección del 27/11/2026: los programas de palto se ubican en la campaña en curso, 2026-2027 (cosecha en mayo de 2027), porque la fuente de Estados Unidos no tiene historia y el grafo solo conoce sus tolerancias desde la instantánea del 26/10/2026; con la cosecha en mayo de 2026 esas verificaciones no podían correr.",
+ "programas": [
+  {
+   "pid": "r1",
+   "cultivo": "table_grape",
+   "fuente": "unalm-137f8dae",
+   "tabla": "Cuadro N° 10 (Tratamiento I), p. 27",
+   "titulo": "Control de Erysiphe necator usando el índice de riesgo del oídio, vid cv. Flame Seedless, Villacurí, Ica, 2012",
+   "anio": 2012,
+   "plaga_texto": "oídio (Erysiphe necator)",
+   "cosecha": "2012-12-28",
+   "cosecha_supuesto": "poda del 31/07/2012 (Cuadro N° 5) más el ciclo de 150 días que la tesis da para Flame Seedless",
+   "mercados": [
+    "EU"
+   ],
+   "mercados_supuesto": "mercado británico (la tesis); en 2012 el Reino Unido aplicaba los LMR de la Unión Europea",
+   "filas": [
+    {
+     "fecha": "11-sep",
+     "ingrediente": "Triadimenol",
+     "producto": "Bayfidan",
+     "dosis": "100"
+    },
+    {
+     "fecha": "18-sep",
+     "ingrediente": "Azufre",
+     "producto": "Sulfodin",
+     "dosis": "2"
+    },
+    {
+     "fecha": "25-sep",
+     "ingrediente": "Trifloxystrobin y Tebuconazol",
+     "producto": "Nativo",
+     "dosis": "0.375"
+    },
+    {
+     "fecha": "09-oct",
+     "ingrediente": "Trifloxystrobin",
+     "producto": "Flint",
+     "dosis": "0.375"
+    }
+   ],
+   "cosecha_evaluacion": "2026-12-28"
+  },
+  {
+   "pid": "r2",
+   "cultivo": "table_grape",
+   "fuente": "unalm-137f8dae",
+   "tabla": "Cuadro N° 11 (Tratamiento II), p. 28",
+   "titulo": "Control de Erysiphe necator usando el índice de riesgo del oídio, vid cv. Flame Seedless, Villacurí, Ica, 2012",
+   "anio": 2012,
+   "plaga_texto": "oídio (Erysiphe necator)",
+   "cosecha": "2012-12-28",
+   "cosecha_supuesto": "poda del 31/07/2012 (Cuadro N° 5) más el ciclo de 150 días que la tesis da para Flame Seedless",
+   "mercados": [
+    "EU"
+   ],
+   "mercados_supuesto": "mercado británico (la tesis); en 2012 el Reino Unido aplicaba los LMR de la Unión Europea",
+   "filas": [
+    {
+     "fecha": "11-sep",
+     "ingrediente": "Triadimenol",
+     "producto": "Bayfidan",
+     "dosis": "100"
+    },
+    {
+     "fecha": "18-sep",
+     "ingrediente": "Spiroketal-amina",
+     "producto": "Prosper",
+     "dosis": "115"
+    },
+    {
+     "fecha": "25-sep",
+     "ingrediente": "Trifloxystrobin y Tebuconazol",
+     "producto": "Nativo",
+     "dosis": "0.375"
+    },
+    {
+     "fecha": "03-oct",
+     "ingrediente": "Trifloxystrobin y Tebuconazol",
+     "producto": "Nativo",
+     "dosis": "0.375"
+    },
+    {
+     "fecha": "10-oct",
+     "ingrediente": "Trifloxystrobin",
+     "producto": "Flint",
+     "dosis": "0.375"
+    }
+   ],
+   "cosecha_evaluacion": "2026-12-28"
+  },
+  {
+   "pid": "r3",
+   "cultivo": "table_grape",
+   "fuente": "unalm-137f8dae",
+   "tabla": "Cuadro N° 12 (Tratamiento III, programa del área de fitosanidad del fundo), p. 28",
+   "titulo": "Control de Erysiphe necator usando el índice de riesgo del oídio, vid cv. Flame Seedless, Villacurí, Ica, 2012",
+   "anio": 2012,
+   "plaga_texto": "oídio (Erysiphe necator)",
+   "cosecha": "2012-12-28",
+   "cosecha_supuesto": "poda del 31/07/2012 (Cuadro N° 5) más el ciclo de 150 días que la tesis da para Flame Seedless",
+   "mercados": [
+    "EU"
+   ],
+   "mercados_supuesto": "mercado británico (la tesis); en 2012 el Reino Unido aplicaba los LMR de la Unión Europea",
+   "filas": [
+    {
+     "fecha": "08-sep",
+     "ingrediente": "Myclobutanil",
+     "producto": "Systhane",
+     "dosis": "100"
+    },
+    {
+     "fecha": "14-sep",
+     "ingrediente": "Spiroketal-amina",
+     "producto": "Prosper",
+     "dosis": "115"
+    },
+    {
+     "fecha": "22-sep",
+     "ingrediente": "Triadimenol",
+     "producto": "Bayfidan",
+     "dosis": "0.375"
+    },
+    {
+     "fecha": "29-sep",
+     "ingrediente": "Myclobutanil",
+     "producto": "Systhane",
+     "dosis": "0.375"
+    },
+    {
+     "fecha": "06-oct",
+     "ingrediente": "Trifloxystrobin",
+     "producto": "Flint",
+     "dosis": "0.375"
+    },
+    {
+     "fecha": "20-oct",
+     "ingrediente": "Penconazol",
+     "producto": "Topas",
+     "dosis": "0.375"
+    }
+   ],
+   "cosecha_evaluacion": "2026-12-28"
+  },
+  {
+   "pid": "r4",
+   "cultivo": "avocado",
+   "fuente": "unalm-74038cf4",
+   "tabla": "Tabla 17 (empresa agrícola, visitada en 2022), p. 37",
+   "titulo": "Uso de plaguicidas en los cultivos de fresa, palto y cítricos en la provincia de Huaura",
+   "anio": 2022,
+   "plaga_texto": null,
+   "cosecha": "2023-05-15",
+   "cosecha_supuesto": "campaña 2022-2023: poscosecha en junio y julio de 2022 (Tabla 20 de la misma tesis), cosecha siguiente desde mayo de 2023",
+   "mercados": [
+    "EU",
+    "US"
+   ],
+   "mercados_supuesto": "la tesis no dice el destino de esta empresa; Unión Europea y Estados Unidos son los principales destinos de la palta peruana",
+   "etapas_supuesto": "las etapas sin fecha se ubican en los meses que la Tabla 20 de la misma tesis da para cada etapa en el valle; con un rango de meses se toma el último día (lo más cercano a la cosecha)",
+   "filas": [
+    {
+     "momento": "Post- cosecha / Aplicación de cierre campaña (terminada cosecha)",
+     "ingrediente": "Prochloraz",
+     "dosis": "2 Lt/ha",
+     "objetivo": "hongos de madera"
+    },
+    {
+     "momento": "Post- cosecha / Lavado de cierre campaña",
+     "ingrediente": "Detergente agrícola",
+     "dosis": "5 lt/ha",
+     "objetivo": "limpieza"
+    },
+    {
+     "momento": "Post- cosecha / Aplicación después de lavado",
+     "ingrediente": "Clorpirifos",
+     "dosis": "0.4 lt/cil",
+     "objetivo": "ácaros, trips, queresas"
+    },
+    {
+     "momento": "Post- cosecha / Aplicación después de lavado",
+     "ingrediente": "Thiametoxan",
+     "dosis": "0.06Kg/ cil",
+     "objetivo": "picadores chupadores"
+    },
+    {
+     "momento": "Post- cosecha / Aplicación después de lavado",
+     "ingrediente": "Imidacloprid",
+     "dosis": "3.0 Lt/ha",
+     "objetivo": "queresas"
+    },
+    {
+     "momento": "Brotamiento, prefloración / Coliflor",
+     "ingrediente": "Azoxystrobim",
+     "dosis": "0.06 kg/ cil",
+     "objetivo": "botrytis, cladosporium"
+    },
+    {
+     "momento": "Inicio de Floración / 10 días después de aplicac. Azoxystrobim",
+     "ingrediente": "Boscalid",
+     "dosis": "0.8 Kg/ ha",
+     "objetivo": "botrytis"
+    },
+    {
+     "momento": "Floración / 7 días después de aplicac. Prochloraz",
+     "ingrediente": "Mancozeb",
+     "dosis": "0.5 Kg/ cil",
+     "objetivo": "botrytis, cladosporium"
+    },
+    {
+     "momento": "Floración / 7 días después de aplicac. Prochloraz",
+     "ingrediente": "Prochloraz",
+     "dosis": "0.15 lt/ cil",
+     "objetivo": "botrytis, cladosporium"
+    },
+    {
+     "momento": "Plena Floración / 7 días después de aplicac. Mancozeb",
+     "ingrediente": "Pirimetanil",
+     "dosis": "0.2 lt/ cil",
+     "objetivo": "botrytis, cladosporium"
+    },
+    {
+     "momento": "Plena Floración / 7 días después de aplicac. Mancozeb",
+     "ingrediente": "Spinetoram",
+     "dosis": "300 cc/ha",
+     "objetivo": "trips"
+    },
+    {
+     "momento": "Floración / 10 días después de aplicac. de pirimetanil",
+     "ingrediente": "Difenoconazole",
+     "dosis": "0.7 lt/ha",
+     "objetivo": "botrytis, cladosporium"
+    },
+    {
+     "momento": "Floración / 7 días después de aplicac. Mancozeb",
+     "ingrediente": "Thiabendazol",
+     "dosis": "0.3 lt/ cil",
+     "objetivo": "botrytis, cladosporium"
+    },
+    {
+     "momento": "Floración / 10 días después de aplicac. Thiabendazol",
+     "ingrediente": "Trichodermas",
+     "dosis": "De acuerdo al proveedor",
+     "objetivo": "botrytis, cladosporium"
+    },
+    {
+     "momento": "Cuaja / Cuaja",
+     "ingrediente": "Thiabendazol",
+     "dosis": "1.5 lt/ha",
+     "objetivo": "hongos de madera"
+    },
+    {
+     "momento": "Fines de enero / Crecimiento de fruta",
+     "ingrediente": "Spirodiclofen",
+     "dosis": "0.6 lt/ ha",
+     "objetivo": "ácaros"
+    },
+    {
+     "momento": "Fines de enero / Crecimiento de fruta",
+     "ingrediente": "Buprofezin",
+     "dosis": "200 gr/ cil",
+     "objetivo": "queresas"
+    },
+    {
+     "momento": "Quincena de febrero / Crecimiento de fruta",
+     "ingrediente": "Emamectin benzoato",
+     "dosis": "200 gr/ cil",
+     "objetivo": "bicho del cesto"
+    }
+   ],
+   "cosecha_evaluacion": "2027-05-15"
+  },
+  {
+   "pid": "r5",
+   "cultivo": "avocado",
+   "fuente": "unalm-74038cf4",
+   "tabla": "Tabla 20 (agricultor, visitado en 2024), p. 42",
+   "titulo": "Uso de plaguicidas en los cultivos de fresa, palto y cítricos en la provincia de Huaura",
+   "anio": 2024,
+   "plaga_texto": null,
+   "cosecha": "2025-05-15",
+   "cosecha_supuesto": "campaña 2024-2025: poscosecha en junio y julio de 2024 (la misma tabla), cosecha siguiente desde mayo de 2025",
+   "mercados": [
+    "EU",
+    "US"
+   ],
+   "mercados_supuesto": "la tesis no dice el destino; Unión Europea y Estados Unidos son los principales destinos de la palta peruana",
+   "etapas_supuesto": "con un rango de meses se toma el último día del rango (lo más cercano a la cosecha)",
+   "filas": [
+    {
+     "momento": "Post- cosecha / Junio - Julio",
+     "ingrediente": "Detergente agrícola",
+     "dosis": "1 lt/Cil",
+     "objetivo": "insectos y fumagina"
+    },
+    {
+     "momento": "Post- cosecha / Junio - Julio",
+     "ingrediente": "Clorpirifos",
+     "dosis": "300 ml/Cil",
+     "objetivo": "queresa"
+    },
+    {
+     "momento": "Post- cosecha / Junio - Julio",
+     "ingrediente": "Dimetoato",
+     "dosis": "300 ml/Cil",
+     "objetivo": "queresa"
+    },
+    {
+     "momento": "Post- cosecha / Junio - Julio",
+     "ingrediente": "Aceite Agrícola",
+     "dosis": "1 lt/Cil",
+     "objetivo": "queresa y ácaros"
+    },
+    {
+     "momento": "Poda / Julio",
+     "ingrediente": "Sulfato de cobre",
+     "dosis": "500 ml/Cil",
+     "objetivo": "Lasiodiplodia"
+    },
+    {
+     "momento": "Brotamiento / Julio - Agosto",
+     "ingrediente": "Imidacloprid",
+     "dosis": "200 ml/Cil",
+     "objetivo": "mosca blanca, queresa"
+    },
+    {
+     "momento": "Brotamiento / Julio - Agosto",
+     "ingrediente": "Abamectina",
+     "dosis": "200 ml/Cil",
+     "objetivo": "araña"
+    },
+    {
+     "momento": "Inicio de Floración / Agosto",
+     "ingrediente": "Alfacipermetrina",
+     "dosis": "100 ml/Cil",
+     "objetivo": "trips"
+    },
+    {
+     "momento": "Inicio de Floración / Agosto",
+     "ingrediente": "Imidacloprid",
+     "dosis": "200 ml/Cil",
+     "objetivo": "queresa"
+    },
+    {
+     "momento": "Inicio de Floración / Agosto",
+     "ingrediente": "Abamectina",
+     "dosis": "200 ml/Cil",
+     "objetivo": "araña"
+    },
+    {
+     "momento": "Inicio de Floración / Agosto",
+     "ingrediente": "Hidróxido de cobre",
+     "dosis": "500 gr/Cil",
+     "objetivo": "Cladosporium, Botritis"
+    },
+    {
+     "momento": "Floración / Setiembre",
+     "ingrediente": "Alfacipermetrina",
+     "dosis": "100 ml/Cil",
+     "objetivo": "trips"
+    },
+    {
+     "momento": "Floración / Setiembre",
+     "ingrediente": "Abamectina",
+     "dosis": "200 ml/Cil",
+     "objetivo": "araña"
+    },
+    {
+     "momento": "Floración / Setiembre",
+     "ingrediente": "Procloraz",
+     "dosis": "120 ml/Cil",
+     "objetivo": "Botritis"
+    },
+    {
+     "momento": "Cuaja / Octubre",
+     "ingrediente": "Tiamethoxan",
+     "dosis": "100 gr/Cil",
+     "objetivo": "mosca blanca"
+    },
+    {
+     "momento": "Cuaja / Octubre",
+     "ingrediente": "Abamectina",
+     "dosis": "200 ml/Cil",
+     "objetivo": "araña"
+    },
+    {
+     "momento": "Cuaja / Octubre",
+     "ingrediente": "Buprofezin",
+     "dosis": "200 gr/Cil",
+     "objetivo": "queresa"
+    },
+    {
+     "momento": "Desarrollo de fruto / Noviembre - Enero",
+     "ingrediente": "Tiamethoxan",
+     "dosis": "100 gr/Cil",
+     "objetivo": "mosca blanca y queresa"
+    },
+    {
+     "momento": "Desarrollo de fruto / Noviembre - Enero",
+     "ingrediente": "Abamectina",
+     "dosis": "200 ml/Cil",
+     "objetivo": "araña"
+    },
+    {
+     "momento": "Desarrollo de fruto / Noviembre - Enero",
+     "ingrediente": "Emamectin benzoato + Lufenuron",
+     "dosis": "200 gr/Cil",
+     "objetivo": "bicho del cesto, gusano de hoja"
+    },
+    {
+     "momento": "Desarrollo de fruto / Enero - Marzo",
+     "ingrediente": "Sulfato de cobre",
+     "dosis": "500 ml/Cil",
+     "objetivo": "Lasiodiplodia"
+    },
+    {
+     "momento": "Desarrollo de fruto / Enero - Marzo",
+     "ingrediente": "Aceite agrícola",
+     "dosis": "1 lt/Cil",
+     "objetivo": "ácaros"
+    },
+    {
+     "momento": "Desarrollo de fruto / Enero - Marzo",
+     "ingrediente": "Abamectina",
+     "dosis": "200 ml/Cil",
+     "objetivo": "ácaros y araña"
+    }
+   ],
+   "cosecha_evaluacion": "2027-05-15"
+  }
+ ]
+}

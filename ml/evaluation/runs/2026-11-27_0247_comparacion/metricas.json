@@ -1,0 +1,26 @@
+{
+ "s1": {
+  "sistema": "2026-11-24_1012_cumplimiento_s1_herramientas"
+ },
+ "s2": {
+  "sistema": "2026-11-27_0235_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_por-partes_prueba_qwen3-8b",
+  "contra": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+  "ambos_con_evidencia": 26,
+  "media_sistema_pareada": 0.992,
+  "media_otro_pareada": 0.974,
+  "media_sistema": 0.992,
+  "media_otro": 0.972,
+  "respondidas_sistema": 26,
+  "respondidas_otro": 45,
+  "n": 4,
+  "estadistico": 2.5,
+  "p": 0.3572725590318747,
+  "prueba": "Wilcoxon (scipy.stats.wilcoxon)",
+  "cobertura": {
+   "solo_a": 0,
+   "solo_b": 8,
+   "p": 0.0078125,
+   "prueba": "McNemar exacta (scipy.stats.binomtest)"
+  }
+ }
+}

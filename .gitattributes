@@ -1,0 +1,2 @@
+# Saltos de línea LF en todo el repositorio (los editores de Windows escriben CRLF).
+* text=auto eol=lf

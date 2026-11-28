@@ -1,0 +1,42 @@
+{
+ "s1": {
+  "sistema": "2026-11-27_0037_cumplimiento_s1_herramientas_gen-gemma4-e4b_guarda-salida",
+  "2026-11-26_2324_cumplimiento_s1_sin-guarda_gen-gemma4-e4b": {
+   "preguntas": 110,
+   "exactas_sistema": 110,
+   "exactas_otro": 104,
+   "solo_a": 6,
+   "solo_b": 0,
+   "p": 0.03125,
+   "prueba": "McNemar exacta (scipy.stats.binomtest)"
+  },
+  "2026-11-26_2357_cumplimiento_s1_memoria_gen-gemma4-e4b": {
+   "preguntas": 110,
+   "exactas_sistema": 110,
+   "exactas_otro": 7,
+   "solo_a": 103,
+   "solo_b": 0,
+   "p": 1.9721522630525295e-31,
+   "prueba": "McNemar exacta (scipy.stats.binomtest)"
+  },
+  "2026-11-26_2358_cumplimiento_s1_rag_gen-gemma4-e4b": {
+   "preguntas": 110,
+   "exactas_sistema": 110,
+   "exactas_otro": 0,
+   "solo_a": 110,
+   "solo_b": 0,
+   "p": 1.5407439555097887e-33,
+   "prueba": "McNemar exacta (scipy.stats.binomtest)"
+  },
+  "2026-11-26_2321_cumplimiento_s1_herramientas_gen-gemma4-e4b": {
+   "preguntas": 110,
+   "exactas_sistema": 110,
+   "exactas_otro": 108,
+   "solo_a": 2,
+   "solo_b": 0,
+   "p": 0.5,
+   "prueba": "McNemar exacta (scipy.stats.binomtest)"
+  }
+ },
+ "s2": {}
+}

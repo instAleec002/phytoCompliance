@@ -1,0 +1,99 @@
+.app {
+  background: transparent;
+  display: grid;
+  grid-template-columns: var(--rail) minmax(0, 1fr);
+  min-height: 100vh;
+}
+
+.main { min-width: 0; display: flex; flex-direction: column; }
+@media print { .app { display: block; } }
+
+/* Sidebar --------------------------------------------------------------------------------------------------------- */
+
+.rail {
+  position: sticky; top: 0; height: 100vh; display: flex; flex-direction: column; overflow-y: auto;
+  background: var(--sidebar); color: var(--ink); border-right: 1px solid var(--rule-strong);
+}
+
+.mark { padding: 18px 18px 14px; }
+.markCode { font-size: var(--text-xs); font-weight: 500; color: var(--ink-3); }
+.markName { font-family: var(--font-title); font-weight: 600; font-size: 17px; line-height: 1.2; margin-top: 2px; color: var(--ink);
+  white-space: nowrap; }
+
+.nav { list-style: none; margin: 0; padding: 4px 10px 12px; flex: 1; }
+.navSection { padding: 16px 10px 6px; font-size: var(--text-xs); font-weight: 600; color: var(--ink-3); }
+.link {
+  display: grid; grid-template-columns: 30px 1fr; align-items: start; padding: 7px 10px; margin: 1px 0;
+  color: var(--ink-2); text-decoration: none; border: 1px solid transparent; border-radius: var(--radius-control);
+}
+.link:hover { color: var(--ink); background: var(--hover); border-color: var(--rule-strong); text-decoration: none; }
+.link[aria-current="page"] { color: var(--ink); background: var(--surface); border-color: var(--rule-strong);
+  box-shadow: var(--shadow-soft); font-weight: 500; }
+.linkIcon { grid-row: 1 / span 2; align-self: start; margin-top: 1px; }
+.linkIndex { font-size: var(--text-xs); color: var(--ink-3); padding-top: 2px; }
+.link[aria-current="page"] .linkIndex { color: var(--accent-text); }
+.linkHint { grid-column: -2 / -1; font-size: var(--text-xs); color: var(--ink-3); line-height: 1.35; font-weight: 400; }
+
+.railFoot { padding: 12px 18px; border-top: 1px solid var(--rule); font-size: var(--text-xs); color: var(--ink-3); }
+
+/* Top bar --------------------------------------------------------------------------------------------------------- */
+
+.bar {
+  position: sticky; top: 0; z-index: 10; height: var(--bar); display: flex; align-items: center; gap: 20px;
+  padding: 0 32px; background: var(--bar-bg); border-bottom: 1px solid var(--rule-strong);
+}
+.barGroup { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.barSpacer { flex: 1; }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--ink-3); flex: none; }
+.dot[data-state="ok"] { background: var(--ok); }
+.dot[data-state="error"] { background: var(--blocking); }
+.dot[data-state="wait"] { background: var(--risk); }
+.host { font-family: var(--font-code); font-size: var(--text-xs); color: var(--ink-2); white-space: nowrap; overflow: hidden;
+  text-overflow: ellipsis; max-width: 200px; }
+.fresh { display: flex; gap: 14px; font-size: var(--text-sm); color: var(--ink-3); white-space: nowrap; }
+.fresh b { font-weight: 600; color: var(--ink-2); }
+.dateBox { display: flex; align-items: center; gap: 8px; }
+.dateBox input { height: 32px; width: 150px; flex: none; }
+.dateBox[data-moved="true"] input { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-tint); }
+
+@media (max-width: 900px) {
+  .app { grid-template-columns: minmax(0, 1fr); }
+  .rail { position: static; height: auto; border-right: none; border-bottom: 1px solid var(--rule-strong); }
+  .nav { display: flex; overflow-x: auto; padding: 0 8px 8px; }
+  .navSection, .linkHint, .railFoot { display: none; }
+  .fresh { display: none; }
+}
+
+/* User menu ------------------------------------------------------------------------------------------------------- */
+
+.who { position: relative; padding-left: 16px; border-left: 1px solid var(--rule-strong); }
+.whoButton { display: inline-flex; align-items: center; gap: 8px; height: 34px; padding: 0 10px 0 4px; font: inherit;
+  color: var(--ink); background: transparent; border: 1px solid transparent; border-radius: var(--radius-pill); cursor: pointer; }
+.whoButton:hover, .whoButton[aria-expanded="true"] { background: var(--hover); border-color: var(--rule-strong); }
+.avatar { width: 26px; height: 26px; border-radius: 50%; display: inline-grid; place-items: center; font-size: var(--text-xs);
+  font-weight: 600; color: var(--accent-text); background: var(--accent-tint); }
+.whoName { font-size: var(--text-sm); font-weight: 500; white-space: nowrap; }
+.chevron { width: 10px; height: 10px; color: var(--ink-3); }
+
+.menu { position: absolute; right: 0; top: calc(100% + 6px); min-width: 250px; padding: 6px; z-index: 20;
+  background: var(--surface); border: 1px solid var(--rule-strong); border-radius: var(--radius-panel); box-shadow: var(--shadow-float); }
+.menuHead { padding: 8px 10px 10px; border-bottom: 1px solid var(--rule); margin-bottom: 6px; }
+.menuName { font-weight: 600; }
+.menuMail { font-size: var(--text-sm); color: var(--ink-3); overflow-wrap: anywhere; }
+.menuItem { display: flex; width: 100%; align-items: center; justify-content: space-between; gap: 10px; padding: 8px 10px;
+  font: inherit; color: var(--ink); background: transparent; border: none; border-radius: var(--radius-control);
+  cursor: pointer; text-align: left; text-decoration: none; }
+.menuItem:hover, .menuItem:focus-visible { background: var(--hover-row); text-decoration: none; outline: none; }
+.menuRow { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 6px 10px; }
+.menuSep { height: 1px; background: var(--rule); margin: 6px 0; }
+.danger { color: var(--blocking); }
+
+/* Bare frame: sign-in and activation ------------------------------------------------------------------------------ */
+
+.bare { min-height: 100vh; display: grid; grid-template-rows: auto 1fr auto; }
+.bareMark { display: flex; flex-direction: column; gap: 2px; padding: 22px 32px; border-bottom: 1px solid var(--rule-strong); }
+.bareMain { width: 100%; max-width: 460px; margin: 0 auto; padding: 56px 20px; }
+.bareFoot { padding: 14px 32px; font-size: var(--text-xs); color: var(--ink-3); border-top: 1px solid var(--rule); }
+
+/* the freshness strip yields first when the bar is short of room; Estado de datos shows it in full */
+@media (max-width: 1500px) { .fresh { display: none; } }

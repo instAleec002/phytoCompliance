@@ -1,0 +1,15 @@
+{
+ "s1": {
+  "sistema": "2026-11-27_0037_cumplimiento_s1_herramientas_gen-gemma4-e4b_guarda-salida",
+  "2026-11-26_2321_cumplimiento_s1_herramientas_gen-gemma4-e4b": {
+   "preguntas": 110,
+   "exactas_sistema": 110,
+   "exactas_otro": 108,
+   "solo_a": 2,
+   "solo_b": 0,
+   "p": 0.5,
+   "prueba": "McNemar exacta (scipy.stats.binomtest)"
+  }
+ },
+ "s2": {}
+}

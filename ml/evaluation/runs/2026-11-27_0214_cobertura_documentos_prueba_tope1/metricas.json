@@ -1,0 +1,30 @@
+{
+ "particion": "prueba",
+ "k": 6,
+ "tope_por_documento": 1,
+ "firma": "c33f24be94bd",
+ "mmr": 0.85,
+ "preguntas": 42,
+ "un_salto": {
+  "preguntas": 28,
+  "todos_los_docs_oro": 19,
+  "al_menos_uno": 19,
+  "ninguno": 9,
+  "docs_distintos_media": 5.71,
+  "distribucion": {
+   "1": 19,
+   "0": 9
+  }
+ },
+ "varios_saltos": {
+  "preguntas": 14,
+  "todos_los_docs_oro": 0,
+  "al_menos_uno": 9,
+  "ninguno": 5,
+  "docs_distintos_media": 5.57,
+  "distribucion": {
+   "1": 9,
+   "0": 5
+  }
+ }
+}

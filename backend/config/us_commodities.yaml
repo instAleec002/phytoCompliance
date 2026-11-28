@@ -1,0 +1,49 @@
+# Filas de 40 CFR 180 que cubren cada cultivo, según los grupos y subgrupos de § 180.41 (eCFR del 26/10/2026).
+# names: nombres completos (se normalizan: minúsculas, sin comas ni notas). groups: expresiones sobre el nombre
+# normalizado antes de «except». excluded_after_except: el cultivo nombrado tras «except» deja la fila fuera.
+
+blueberry:   # arándano alto (Vaccinium corymbosum), el que exporta el Perú
+  names:
+    - Blueberry
+    - Blueberry, highbush
+    - Blueberry, postharvest
+  groups:
+    - '^bushberry (except .* )?subgroup 13-07b\b'   # 13-07B incluye el arándano alto
+    - '^bushberry subgroup 13b\b'                     # subgrupo anterior a 2007
+    - '^berry group 13\b'                       # grupo 13 anterior: incluye el arándano
+    - '^berry and small fruit group 13-07\b'    # grupo completo
+  # 13-07G y 13-07H (bayas de porte bajo) cubren solo el arándano bajo (lowbush), no el alto
+  excluded_after_except: "^(?!.*lowbush).*(blueberry|highbush)"   # «except lowbush blueberry» no lo excluye
+  flags:
+    Blueberry, postharvest: tolerancia para uso en poscosecha
+
+avocado:
+  names:
+    - Avocado
+    - Avocado, imported
+    - Avocado, postharvest
+  groups:
+    - '^tropical and subtropical medium to large fruit smooth inedible peel subgroup 24b\b'   # 24B incluye la palta
+    - '^fruit tropical and subtropical inedible peel group 24\b'
+  excluded_after_except: "avocado"
+  flags:
+    Avocado, imported: tolerancia de importación (sin registro en EE. UU.)
+    Avocado, postharvest: tolerancia para uso en poscosecha
+
+table_grape:
+  names:
+    - Grape
+    - Grape, imported
+    - Grape (import)
+    - Grape, table
+    - Grape, postharvest
+    - Grape and fuzzy kiwifruit
+  groups:
+    - '\b13-07[df]\b'      # 13-07D y 13-07F (trepadoras de fruto pequeño) incluyen la uva; 13-07E no
+    - '^berry and small fruit group 13-07\b'
+  # 13-07E es «except grape»; pasas, vino, jugo y orujo no son uva de mesa (no están en names)
+  excluded_after_except: "grape"
+  flags:
+    Grape, imported: tolerancia de importación (sin registro en EE. UU.)
+    Grape (import): tolerancia de importación (sin registro en EE. UU.)
+    Grape, postharvest: tolerancia para uso en poscosecha

@@ -1,0 +1,2320 @@
+{
+ "base": "2026-11-26_2015_fidelidad_s2_qwen3-8b",
+ "corridas": [
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b"
+ ],
+ "semilla": 20261127,
+ "preguntas": 30,
+ "oraciones": 233,
+ "a_anotar": 197,
+ "reutilizadas": 36,
+ "por_corrida": {
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b": {
+   "a_anotar": 53,
+   "reutilizadas": 36
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b": {
+   "a_anotar": 144,
+   "reutilizadas": 0
+  }
+ },
+ "ids": {
+  "v001": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t029|9d5f851026d2",
+  "v002": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t029|c14b967c4890",
+  "v003": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t029|3867152dbcee",
+  "v004": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t029|f3f8929ac19b",
+  "v005": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t029|d7538fedeb8b",
+  "v006": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t009|239f8a18bb25",
+  "v007": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t009|204231d464c0",
+  "v008": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t009|a616e31a5bd2",
+  "v009": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t012|a3a4cd6441de",
+  "v010": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t012|1d56fdd33d2b",
+  "v011": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t012|421a4be44771",
+  "v012": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t012|3da922a9de7f",
+  "v013": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t046|acd5872b714e",
+  "v014": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t046|8161d668dc44",
+  "v015": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t046|8b6bd26baea6",
+  "v016": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t046|06bd1e29b51a",
+  "v017": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t046|832e19a558e0",
+  "v018": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t024|d20c8f428a7b",
+  "v019": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t024|23b47cae3b08",
+  "v020": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t024|0f0631d87ab6",
+  "v021": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t058|b1b3111d71ec",
+  "v022": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t034|3e9a61b27ad3",
+  "v023": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t034|00c1fa89ea78",
+  "v024": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t034|f12fceb035c3",
+  "v025": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t034|db3cf6ba41a9",
+  "v026": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t034|15f3ee894cb7",
+  "v027": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t034|c89f519fff5b",
+  "v028": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t042|d13bda65b21c",
+  "v029": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t042|21398312a2e1",
+  "v030": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t037|a0edbfe36a18",
+  "v031": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t037|29486aebecb3",
+  "v032": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t037|f6f25e5b31bd",
+  "v033": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t044|fa9307c3e456",
+  "v034": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t044|bb79ce7ecebf",
+  "v035": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t044|10711c09ca18",
+  "v036": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t044|8bf3c8adcb7c",
+  "v037": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t044|a3fa0984dd40",
+  "v038": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t044|9d1e9610a70c",
+  "v039": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t044|d01ac4f09b30",
+  "v040": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t044|e5de9cb92e7d",
+  "v041": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t044|4b23bfb18f9a",
+  "v042": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t025|dcd1d4ae44f3",
+  "v043": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t031|96a2e2b2b1d0",
+  "v044": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t031|fd77759dd647",
+  "v045": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t054|d86d5c52c292",
+  "v046": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t054|b2a8b1251372",
+  "v047": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t054|ae90f0981167",
+  "v048": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t054|111d6b7d056b",
+  "v049": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t054|2f6f68020bf4",
+  "v050": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t050|ce3278f332ee",
+  "v051": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t050|61b1af51a478",
+  "v052": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t050|755e9c322037",
+  "v053": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t050|d957548dc7b5",
+  "v054": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t050|352c9ed5d87f",
+  "v055": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t050|ad5b592fa49c",
+  "v056": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t050|84aee87c1420",
+  "v057": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t050|a276c1315833",
+  "v058": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t050|bf8fd558c1f0",
+  "v059": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t044|d5ba0469696b",
+  "v060": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t044|e7de15f74c67",
+  "v061": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t033|2648255b94e0",
+  "v062": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t033|b62c1d84caa8",
+  "v063": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t003|d8310271d954",
+  "v064": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t003|a7e1fa55e6d3",
+  "v065": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t003|85dfe2bff993",
+  "v066": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t003|2c36b519f2db",
+  "v067": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t003|fd1c893997dc",
+  "v068": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t003|45495a6d03b1",
+  "v069": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t055|7f4777eca670",
+  "v070": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t055|ae9edcc727d2",
+  "v071": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t055|9833ab9b3cb5",
+  "v072": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t055|c9fc40d33bff",
+  "v073": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t023|7f460924afab",
+  "v074": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t023|ae4e98413f7d",
+  "v075": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t025|1e797949f2d6",
+  "v076": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t049|168c7fb8e152",
+  "v077": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t049|112e60a7e53f",
+  "v078": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t049|50132778f376",
+  "v079": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t049|58dfc68de9f8",
+  "v080": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t049|0d39c3a363a3",
+  "v081": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t049|dbb3f34a95b0",
+  "v082": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t049|a58f45477ce6",
+  "v083": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t049|018e837b4bfe",
+  "v084": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t049|ab7357e276aa",
+  "v085": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t034|76b8f19d162b",
+  "v086": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t034|f00e319b6f4a",
+  "v087": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t047|09d75319fc50",
+  "v088": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t047|fd023219528b",
+  "v089": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t047|74faa1687919",
+  "v090": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t047|418edcb8fcc9",
+  "v091": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t047|295bd5b5978a",
+  "v092": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t047|13ebfdb4da29",
+  "v093": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t047|bac92c93fdfc",
+  "v094": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t047|d1f1fe5cbaa4",
+  "v095": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t047|eefc7aa6617c",
+  "v096": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t047|2afeeb8622f3",
+  "v097": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t047|c5bb2412188d",
+  "v098": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t047|55b15e3d458c",
+  "v099": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t057|3099a3fa0023",
+  "v100": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t056|adf4aa1138a2",
+  "v101": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t056|362354270b4f",
+  "v102": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t056|d8b479d46b83",
+  "v103": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t056|ffaec682c409",
+  "v104": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t056|073ddbec7b6b",
+  "v105": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t060|1edd35f321c7",
+  "v106": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t051|19411cb00830",
+  "v107": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t051|1f82b39d0d8a",
+  "v108": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t051|8e1b5ebd8eba",
+  "v109": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t051|1fe3d6508ee0",
+  "v110": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t051|a0b93bd17f1a",
+  "v111": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t051|99730baef250",
+  "v112": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t056|6151ac01a2d3",
+  "v113": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t056|28d8a271d232",
+  "v114": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t056|109004c2a0ee",
+  "v115": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t056|43789554d151",
+  "v116": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t013|66ecca343025",
+  "v117": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t049|f00ab06e0a5b",
+  "v118": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t049|8069ef56ff81",
+  "v119": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t031|f2268d6195d1",
+  "v120": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t031|9219d738d4a1",
+  "v121": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t031|ff800960dcd6",
+  "v122": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t031|4199da94d6d6",
+  "v123": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t031|f196f3e17257",
+  "v124": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t031|bdfc9a684d68",
+  "v125": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t031|30103c7164cb",
+  "v126": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t031|f9b0fae1a851",
+  "v127": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t031|967172ef63cf",
+  "v128": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t012|553206499d2a",
+  "v129": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t053|cbaeae2ac116",
+  "v130": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t053|97a863ac7ab8",
+  "v131": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t027|78fa2bd1ed28",
+  "v132": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t027|6a40c7720ef2",
+  "v133": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t027|8c410ee01b3a",
+  "v134": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t057|5345c2668d90",
+  "v135": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t057|dd2d4720bb26",
+  "v136": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t057|fa3ab64c9d13",
+  "v137": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t057|c659e489a4a5",
+  "v138": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t057|72dfd42bda2d",
+  "v139": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t046|86f91bdac09d",
+  "v140": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t046|4796bcd2051a",
+  "v141": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t046|32c59a398e10",
+  "v142": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t045|0bf12a79fa20",
+  "v143": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t045|a2b7c395193d",
+  "v144": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t045|b73e999a8563",
+  "v145": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t045|b9674aef5acb",
+  "v146": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t058|0a80e9beaf1c",
+  "v147": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t058|de0b09aaf871",
+  "v148": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t058|8d312e99b717",
+  "v149": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t024|6e6d15701d57",
+  "v150": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t024|936d2c242cf6",
+  "v151": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t024|76f65559a6bb",
+  "v152": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t024|09ba85a0647d",
+  "v153": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t024|22de9b641252",
+  "v154": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t024|60e690f53d64",
+  "v155": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t052|48b924045a80",
+  "v156": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t052|51010406388b",
+  "v157": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t052|ccabdd9326f4",
+  "v158": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t052|1731ad33ef11",
+  "v159": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t052|deafa02768fe",
+  "v160": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t052|56c68e490225",
+  "v161": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t027|d64d2f374702",
+  "v162": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t027|a2a64ee34046",
+  "v163": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t027|8468ca09f111",
+  "v164": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t053|8834f276615f",
+  "v165": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t053|26d53a623101",
+  "v166": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t050|c21c8a1b1637",
+  "v167": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t050|9b049210c817",
+  "v168": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t009|3c9d3bb0dcdd",
+  "v169": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t009|bd429cbcbb86",
+  "v170": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t009|f553b0cfe643",
+  "v171": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t009|20c0e5e55874",
+  "v172": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t009|fbbb7b4181c3",
+  "v173": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t009|bc818f39e7af",
+  "v174": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t054|c7aa8323b1a8",
+  "v175": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t054|865a40bfed78",
+  "v176": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t054|fc710d27b9a8",
+  "v177": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t038|e5897c9139ab",
+  "v178": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t038|2c84fcc7e989",
+  "v179": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t038|7f07ed265f98",
+  "v180": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t038|b57913ac35e7",
+  "v181": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t038|346c49543df0",
+  "v182": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t038|4291fc44ed52",
+  "v183": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t037|fb457ec5fc87",
+  "v184": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t033|7e8675fc8fb0",
+  "v185": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t033|9ea1c8c51d5b",
+  "v186": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t033|35501e347f42",
+  "v187": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t055|76597e4e4851",
+  "v188": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t055|bdd68b53be4e",
+  "v189": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t052|e2f3e6f3b3d4",
+  "v190": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t052|3b54fa4d3ab9",
+  "v191": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t042|606060e11f54",
+  "v192": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t042|856403503c5c",
+  "v193": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t042|3ad0cbb0fdcc",
+  "v194": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t042|1d3f2e2ca223",
+  "v195": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t042|5c37fe921ecd",
+  "v196": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t042|d61489e2e55c",
+  "v197": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t023|dc4c275c047a"
+ },
+ "detalle": {
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t003|1ab5be288601": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t003",
+   "tipo": "un_salto",
+   "oracion": "La plaga que representa un riesgo de reinfestación en zonas donde ya se encuentra erradicada es la mosca de la fruta (Ceratitis capitata). [2]",
+   "antes": true,
+   "despues": false,
+   "reutilizada": "ausente"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t009|239f8a18bb25": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t009",
+   "tipo": "un_salto",
+   "oracion": "La dosis de fertilización nitrogenada puede influir en el contenido de magnesio foliar en el arándano.",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t009|204231d464c0": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t009",
+   "tipo": "un_salto",
+   "oracion": "Según el documento, la aplicación de una mayor concentración de magnesio (4 mEq/L) incrementó significativamente el contenido de nitrógeno en las hojas, pero no se mencionó un efecto directo sobre el magnesio.",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t009|a616e31a5bd2": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t009",
+   "tipo": "un_salto",
+   "oracion": "Sin embargo, se observó que concentraciones excesivas de magnesio pueden interferir con la absorción de otros nutrientes, como el calcio y el potasio, lo cual puede afectar indirectamente el contenido de magnesio foliar. [1]",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t012|fdd1a450eeb8": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t012",
+   "tipo": "un_salto",
+   "oracion": "Los insecticidas recomendados para el control de la mosca blanca en el cultivo de palto durante el desarrollo de fruto incluyen el imidacloprid, que se aplica en prefloración para controlar también queresas, mosca blanca y trips [2].",
+   "antes": true,
+   "despues": false,
+   "reutilizada": "respaldada"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t012|553206499d2a": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t012",
+   "tipo": "un_salto",
+   "oracion": "Además, se menciona el uso de prácticas culturales como la eliminación de malezas y restos de cosecha, el uso de cultivos trampa y barreras vivas para frenar la entrada de adultos de la mosca blanca [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t013|6dcd2c3e978c": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t013",
+   "tipo": "un_salto",
+   "oracion": "El modo de acción de Trichogramma spp. no está registrado en las listas FRAC, IRAC ni HRAC [G1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": "respaldada"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t023|dc4c275c047a": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t023",
+   "tipo": "un_salto",
+   "oracion": "La poda de sanidad en el manejo integrado de la mosca de la fruta tiene como función eliminar las ramas secas, enfermas y mejorar la estructura del árbol, lo que reduce el microclima favorable para el desarrollo de la plaga y facilita las labores de cosecha y recolección de frutos infestados [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t024|d20c8f428a7b": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t024",
+   "tipo": "un_salto",
+   "oracion": "La enzima UFGT (UDP-Glucos transferasa) juega un rol fundamental en el desarrollo del color en uva, ya que cataliza la glicosilación de antocianidinas, convirtiéndolas en antocianinas estables, lo cual es esencial para la coloración roja y azul de las uvas.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t024|23b47cae3b08": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t024",
+   "tipo": "un_salto",
+   "oracion": "[1] Además, su expresión se da en una etapa tardía del desarrollo del fruto, regulada por genes específicos, y coincide con el inicio de la síntesis de azúcar en las bayas.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t024|0f0631d87ab6": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t024",
+   "tipo": "un_salto",
+   "oracion": "[4] La actividad de UFGT se incrementa paralelamente con el contenido de antocianinas, mientras que la actividad de las enzimas PAL y CHI disminuye al iniciarse la acumulación del pigmento. [2]",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t025|fdd3d15d6828": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t025",
+   "tipo": "un_salto",
+   "oracion": "Al finalizar la poda mecanizada, se realiza la desinfección de los discos con sulfato de cobre.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": "respaldada"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t025|dcd1d4ae44f3": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t025",
+   "tipo": "un_salto",
+   "oracion": "Este procedimiento se lleva a cabo al final del día, después de limpiar los discos con un soplador de aire para retirar los restos de hojas y ramas. [3]",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t027|d64d2f374702": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t027",
+   "tipo": "un_salto",
+   "oracion": "La cochinilla algodonosa afecta principalmente el cultivo de arándano.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t027|a2a64ee34046": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t027",
+   "tipo": "un_salto",
+   "oracion": "El parasitoide utilizado para su control es Anagyrus pseudococci [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t027|8468ca09f111": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t027",
+   "tipo": "un_salto",
+   "oracion": "Además, se menciona el uso de Cryptolaemus montrouzieri como un controlador biológico para el control de la cochinilla harinosa [2].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t029|387c0444817c": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t029",
+   "tipo": "un_salto",
+   "oracion": "La temperatura óptima para el crecimiento del micelio de Lasiodiplodia* varía según la especie, pero generalmente está entre 20°C y 30°C [1].",
+   "antes": true,
+   "despues": false,
+   "reutilizada": "ausente"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t029|c235c7ae5e99": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t029",
+   "tipo": "un_salto",
+   "oracion": "Para Lasiodiplodia theobromae*, la temperatura óptima específica es de 28°C [5].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": "respaldada"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t031|96a2e2b2b1d0": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t031",
+   "tipo": "un_salto",
+   "oracion": "El levantamiento de información en la producción de arándano en contenedores es fundamental para el manejo agronómico y el cumplimiento fitosanitario.",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t031|11285a3f8885": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t031",
+   "tipo": "un_salto",
+   "oracion": "Permite monitorear variables como el uso de insumos, el control de plagas y enfermedades, y el cumplimiento de los límites máximos de residuos (LMR) en los mercados objetivo [1].",
+   "antes": true,
+   "despues": false,
+   "reutilizada": "ausente"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t031|1586fcd687f4": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t031",
+   "tipo": "un_salto",
+   "oracion": "Además, facilita la toma de decisiones basada en datos, lo que mejora la eficiencia y la sostenibilidad de la producción [2].",
+   "antes": true,
+   "despues": false,
+   "reutilizada": "ausente"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t031|fd77759dd647": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t031",
+   "tipo": "un_salto",
+   "oracion": "La información también ayuda a optimizar el diseño de siembra, el control fitosanitario y la gestión del riego, lo que contribuye a una mayor productividad [4].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t033|2648255b94e0": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t033",
+   "tipo": "un_salto",
+   "oracion": "El producto Heterorhabditis bacteriophora puede ser utilizado en programas de manejo integrado de plagas, ya que resiste a varios químicos usados en la agricultura y puede ser aprovechado en combinación con otros métodos de control, incluyendo el uso de otros agentes de control biológico como entomopatógenos [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t033|b62c1d84caa8": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t033",
+   "tipo": "un_salto",
+   "oracion": "Además, puede presentar sinergismo al ser empleado con otros microorganismos [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t034|76b8f19d162b": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t034",
+   "tipo": "un_salto",
+   "oracion": "El uso indiscriminado de los neonicotinoides, como el imidacloprid, está asociado a un alto impacto ambiental, según estudios que muestran que estos productos incrementan significativamente el valor de impacto ambiental (EI) por campaña en cultivos como el tomate y el pepinillo [5].",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t034|f00e319b6f4a": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t034",
+   "tipo": "un_salto",
+   "oracion": "Además, el uso de plaguicidas en general, incluyendo neonicotinoides, genera contaminación del ambiente y afecta la salud de los agricultores y sus familias [2].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t037|9ba41628222f": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t037",
+   "tipo": "un_salto",
+   "oracion": "Los neonicotinoides thiametoxam e imidacloprid son altamente tóxicos para adultos de C. montrouzieri* en condiciones de laboratorio, alcanzando mortalidad superior al 80% en las primeras 48 horas [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": "respaldada"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t037|f8036da0c666": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t037",
+   "tipo": "un_salto",
+   "oracion": "Sin embargo, bajo condiciones de campo, estos neonicotinoides son inocuos para C. montrouzieri* 1 día después de la aplicación [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": "respaldada"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t037|fb457ec5fc87": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t037",
+   "tipo": "un_salto",
+   "oracion": "Además, en estudios de laboratorio en Chile, se confirmó que estos insecticidas son tóxicos para adultos, pero no tienen efecto letal en condiciones de campo debido a factores como la resistencia o la falta de exposición directa [2].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t038|e5897c9139ab": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t038",
+   "tipo": "un_salto",
+   "oracion": "La preparación de la suspensión de Lecanicillium lecanii* se realiza mediante los siguientes pasos, según los pasajes encontrados: 1.",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t038|2c84fcc7e989": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t038",
+   "tipo": "un_salto",
+   "oracion": "Se inicia con la siembra del hongo en placas Petri con medio PDA y fragmentos de tallos de pino, incubando a 25 °C durante 3 días, y luego bajo luz fluorescente hasta la formación de estructuras reproductivas [5]. 2.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t038|7f07ed265f98": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t038",
+   "tipo": "un_salto",
+   "oracion": "Se obtiene una suspensión de conidias, realizando diluciones sucesivas con agua destilada hasta alcanzar una concentración de 10⁵ conidias/ml [5]. 3.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t038|b57913ac35e7": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t038",
+   "tipo": "un_salto",
+   "oracion": "Para la suspensión micelial, se filtra en doble gasa para eliminar el caldo, licúa en agua estéril a alta velocidad durante 10 minutos, y se agrega una gota de Tween 20 (Sigma-Aldrich) [3]. 4.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t038|346c49543df0": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t038",
+   "tipo": "un_salto",
+   "oracion": "Se realiza un conteo en una cámara “Neubauer” para asegurar una concentración de 3 × 10⁵ fragmentos miceliales/ml [3].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t038|4291fc44ed52": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t038",
+   "tipo": "un_salto",
+   "oracion": "Estos pasajes [3] y [5] detallan el proceso de preparación de la suspensión de Lecanicillium lecanii*.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t042|d13bda65b21c": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t042",
+   "tipo": "varios_saltos",
+   "oracion": "La Caracha (Prodiplosis longifila) afecta negativamente el cultivo de frijol al dañar las hojas, tallos y flores, lo que reduce el rendimiento y la calidad del fruto [4].",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t042|5291543c4a16": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t042",
+   "tipo": "varios_saltos",
+   "oracion": "El control recomendado incluye el uso de insecticidas registrados en el SENASA, como el malation, y la implementación de prácticas culturales como el riego controlado y la poda de plantas infectadas [2].",
+   "antes": true,
+   "despues": false,
+   "reutilizada": "ausente"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t042|21398312a2e1": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t042",
+   "tipo": "varios_saltos",
+   "oracion": "Además, se recomienda el uso de cultivos trampa como pepino, frijol o camote que atraen más al insecto y donde pueden concentrarse las aplicaciones, así como el uso de barreras vivas como maíz o sorgo rodeando el cultivo para frenar la entrada de adultos y favorecer a los insectos benéficos [6].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t044|d5ba0469696b": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t044",
+   "tipo": "varios_saltos",
+   "oracion": "La presencia de Cyperus spp. no se menciona directamente en relación con el manejo de plagas en el cultivo de arándano en los pasajes consultados.",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t044|e7de15f74c67": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t044",
+   "tipo": "varios_saltos",
+   "oracion": "Sin embargo, se destaca la importancia de un manejo integrado de plagas, que incluye el uso de productos químicos, métodos biológicos y prácticas culturales, para controlar plagas como los lepidópteros (Chloridea virescens, Helicoverpa spp.), los trips, y otros insectos que afectan al arándano. [1]",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t045|7f5e088a6add": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t045",
+   "tipo": "varios_saltos",
+   "oracion": "El impacto de Aleurodicus sp.* en el cultivo del molle serrano incluye la secreción de mielecilla, que favorece el desarrollo de hongos como la fumagina, reduciendo la fotosíntesis y causando daños significativos.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": "respaldada"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t045|957d22d2fb2d": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t045",
+   "tipo": "varios_saltos",
+   "oracion": "Además, este insecto actúa como portador de ciertos virus [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": "respaldada"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t045|9e6e9519d3a6": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t045",
+   "tipo": "varios_saltos",
+   "oracion": "En cuanto a métodos de manejo, se han desarrollado estrategias basadas en el monitoreo de poblaciones y el uso de enemigos naturales como Chrysoperla sp., Ceraeochrysa sp., Toxomerus sp., Nephapis sp.* y parasitoides como Encarsia sp.* [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": "respaldada"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t045|2cb0f6c3e59c": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t045",
+   "tipo": "varios_saltos",
+   "oracion": "También se ha destacado la importancia del control hídrico, ya que el estrés hídrico favorece su proliferación [6].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": "respaldada"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t046|86f91bdac09d": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t046",
+   "tipo": "varios_saltos",
+   "oracion": "Penicillium expansum* es responsable de la podredumbre azul (blue mold) en frutas como manzanas y uvas, lo que reduce la calidad y el valor comercial de los productos [1].",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t046|4796bcd2051a": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t046",
+   "tipo": "varios_saltos",
+   "oracion": "Por otro lado, Botrytis cinerea* causa la podredumbre gris (gray mold) en frutas, especialmente en condiciones húmedas, lo que también afecta la calidad y la seguridad alimentaria [2].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t046|32c59a398e10": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t046",
+   "tipo": "varios_saltos",
+   "oracion": "Ambas plagas son importantes en la producción de frutas, pero afectan a diferentes cultivos y causan síntomas distintos.",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t047|0a7c015e12ea": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t047",
+   "tipo": "varios_saltos",
+   "oracion": "El daño causado por Hemiberlesia lataniae* en el palto se debe a la extracción de jugo del parénquima, lo que conduce a la caída de hojas y a la muerte de pequeñas ramas.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": "respaldada"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t047|f0b55a29fb17": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t047",
+   "tipo": "varios_saltos",
+   "oracion": "Además, a través de su saliva, estos insectos pueden introducir toxinas en los tejidos de las plantas, provocando la muerte de ramas y árboles cuando la plaga alcanza una alta densidad poblacional.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": "respaldada"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t047|f935126e28cf": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t047",
+   "tipo": "varios_saltos",
+   "oracion": "Las queresas tienden a agruparse en las zonas bajas e interiores del árbol, donde hay menos luz y mayor humedad [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": "respaldada"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t047|c76184ad2a26": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t047",
+   "tipo": "varios_saltos",
+   "oracion": "Las plagas mencionadas como importantes en el cultivo de palto incluyen: Oligonychus yothersi*, Hemiberlesia lataniae*, Fiorinia fioriniae*, Heliothrips haemorrhoidalis*, Chrysomphalus dictyospermi*, Aleurodicus pulvinatus*, Oiketicus kirbyi* y Dagbertus minensis* [2].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": "respaldada"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t049|5a7e5fb17fbf": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t049",
+   "tipo": "varios_saltos",
+   "oracion": "El impacto de Cladosporium herbarum* en la calidad de los cultivos incluye la afectación de la floración, lo que dificulta el desarrollo de los frutos, especialmente en el palto, y puede causar necrosis en las flores, con micelio de color gris o verde y alta esporulación [2].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": "respaldada"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t049|75ccaf54be32": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t049",
+   "tipo": "varios_saltos",
+   "oracion": "En uvas, causa pudrición superficial con micelio esporulante de color verde olivo [6].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": "ausente"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t049|d72639e53df4": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t049",
+   "tipo": "varios_saltos",
+   "oracion": "Para controlar Cladosporium herbarum*, se han evaluado varios fungicidas, como propineb, fosetil de aluminio, Iprovalicarb+Propineb, tiofanate metil y metiram+piraclostrobin, que muestran cierta eficacia en condiciones in vitro [4].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": "respaldada"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t049|f00ab06e0a5b": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t049",
+   "tipo": "varios_saltos",
+   "oracion": "Además, se han explorado extractos vegetales como alternativa de control [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t049|8069ef56ff81": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t049",
+   "tipo": "varios_saltos",
+   "oracion": "Sin embargo, estudios indican que algunas especies de Trichoderma* no son eficaces para el control de este patógeno [3].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t050|a30edcbe6147": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t050",
+   "tipo": "varios_saltos",
+   "oracion": "La Cochinilla harinosa (Planococcus citri) tiene un impacto significativo en el cultivo del arándano, causando daños como la succión de savia, la producción de sustancias azucaradas que favorecen el desarrollo de hongos, la transmisión de virus y la disminución de rendimientos [2].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": "respaldada"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t050|e9a3044f3d2c": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t050",
+   "tipo": "varios_saltos",
+   "oracion": "Además, puede generar fumagina que mancha los frutos y es una plaga cuarentenaria en algunos países, lo que puede provocar rechazos de partidas [2].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": "respaldada"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t050|c21c8a1b1637": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t050",
+   "tipo": "varios_saltos",
+   "oracion": "Para controlarla, se recomienda el uso de controladores biológicos, como la producción y liberación de Anagyrus pseudococci y Cryptolaemus montrouzieri, que son efectivos en el manejo de esta plaga en arándano orgánico [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t050|20922060c989": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t050",
+   "tipo": "varios_saltos",
+   "oracion": "También se menciona la importancia de evaluar correctamente la presencia de la plaga, considerando indicadores como la presencia de hormigas, que tienen una relación simbiótica con la cochinilla [6].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": "respaldada"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t050|9b049210c817": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t050",
+   "tipo": "varios_saltos",
+   "oracion": "En algunos casos, se han reportado especies similares, lo que complica el manejo integral [4].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t051|7a2d4d3e08a3": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t051",
+   "tipo": "varios_saltos",
+   "oracion": "La Setaria verticillata no se menciona directamente en los pasajes proporcionados, pero se puede inferir que su impacto en la agricultura podría ser similar al de otras plagas, como las moscas de la fruta, que causan daños a la producción hortofrutícola y restricciones cuarentenarias.",
+   "antes": true,
+   "despues": false,
+   "reutilizada": "respaldada"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t051|dcb2c7e58a4e": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t051",
+   "tipo": "varios_saltos",
+   "oracion": "Para el control de plagas como la Setaria verticillata, se recomienda el uso de métodos integrados, que incluyen el monitoreo, la aplicación de medidas de control específicas y la colaboración con instituciones como el SENASA. [1], [4], [6]",
+   "antes": true,
+   "despues": false,
+   "reutilizada": "ausente"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t052|1f1daa8f3892": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t052",
+   "tipo": "varios_saltos",
+   "oracion": "El impacto de Cylindrocarpon sp* en el cultivo de granado es principalmente relacionado con la enfermedad del pie negro, la cual causa daños en las raíces, llevando a un desarrollo retrasado, vegetación débil, hojas cloróticas y entrenudos más cortos [1].",
+   "antes": true,
+   "despues": false,
+   "reutilizada": "mezcla"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t052|176f0399a2d4": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t052",
+   "tipo": "varios_saltos",
+   "oracion": "Además, se menciona que Cylindrocarpon sp* es una plaga secundaria que tiene un impacto menor en el cultivo, apareciendo en ciertas etapas fenológicas, especialmente cerca de la cosecha [2].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": "respaldada"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t052|e2f3e6f3b3d4": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t052",
+   "tipo": "varios_saltos",
+   "oracion": "Para el control, se recomienda un manejo integrado que incluya prácticas culturales, como la poda de rejuvenecimiento, y el uso de productos fitosanitarios autorizados, aunque no se especifican en este documento.",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t052|3b54fa4d3ab9": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t052",
+   "tipo": "varios_saltos",
+   "oracion": "Se sugiere consultar el registro de productos autorizados para el cultivo de granado y las plagas específicas [registro_producto].",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t053|a7beab34c3d8": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t053",
+   "tipo": "varios_saltos",
+   "oracion": "La presencia de Echinochloa glabrescens* en el cultivo de palto puede reducir el rendimiento y la calidad del cultivo al competir por recursos como agua, nutrientes y luz solar [1].",
+   "antes": true,
+   "despues": false,
+   "reutilizada": "ausente"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t053|8834f276615f": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t053",
+   "tipo": "varios_saltos",
+   "oracion": "El uso de mulch puede mitigar este impacto al actuar como una barrera física que inhibe el crecimiento de esta maleza, reduciendo la germinación de sus semillas y limitando su acceso a la luz solar y la humedad necesarias para su desarrollo [1].",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t053|26d53a623101": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t053",
+   "tipo": "varios_saltos",
+   "oracion": "Además, el mulch ayuda a mantener la humedad del suelo y a regular la temperatura, lo cual favorece el crecimiento del cultivo de palto más que el de la maleza [1].",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t054|c7aa8323b1a8": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t054",
+   "tipo": "varios_saltos",
+   "oracion": "El impacto de Plasmopara viticola* en la producción vitivinícola incluye la pérdida de rendimiento y calidad de la uva debido a la podredumbre de las hojas y frutos, lo que puede afectar la producción y el valor del producto [1].",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t054|865a40bfed78": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t054",
+   "tipo": "varios_saltos",
+   "oracion": "Para mitigar este impacto, se recomienda el uso de prácticas culturales como la poda adecuada, la rotación de cultivos y el control de la humedad en las viñas [1].",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t054|fc710d27b9a8": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t054",
+   "tipo": "varios_saltos",
+   "oracion": "Además, el uso de fitosanitarios autorizados, como el azufre y el piraclostrobina, puede ser efectivo para reducir la presencia de la plaga [1].",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t055|bc09d6ecd45f": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t055",
+   "tipo": "varios_saltos",
+   "oracion": "El impacto de Aleurodicus coccolobae* en el cultivo de palto es significativo, ya que es una de las moscas blancas que afectan al cultivo, causando daños en las hojas y reduciendo la productividad del árbol [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": "ausente"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t055|76597e4e4851": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t055",
+   "tipo": "varios_saltos",
+   "oracion": "Para su control, se recomienda el uso de prácticas de manejo integrado, incluyendo lavados fitosanitarios con jabón potásico, azufre mojable, y aplicaciones de insecticidas químicos y biológicos, especialmente en zonas con incidencia de la plaga [6].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t055|bdd68b53be4e": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t055",
+   "tipo": "varios_saltos",
+   "oracion": "Además, se sugiere el uso de pesticidas biológicos como alternativa sostenible, tal como se ha implementado en proyectos de manejo integrado [3].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t056|adf4aa1138a2": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t056",
+   "tipo": "varios_saltos",
+   "oracion": "La relación entre Dothiorella sp.* y Lasiodiplodia theobromae* en el cultivo de palto se ha abordado en estudios fitopatológicos, donde se menciona que en el pasado se confundía Lasiodiplodia theobromae* con Dothiorella sp.* debido a la falta de análisis fitopatológicos precisos [3].",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t056|362354270b4f": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t056",
+   "tipo": "varios_saltos",
+   "oracion": "Sin embargo, se ha establecido que Lasiodiplodia theobromae* es un hongo patógeno importante en el cultivo de palto, causando enfermedades en la madera y los frutos, especialmente bajo condiciones de estrés hídrico, altas temperaturas y bajos niveles de nutrición [4].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t056|d8b479d46b83": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t056",
+   "tipo": "varios_saltos",
+   "oracion": "Además, se ha observado que Lasiodiplodia theobromae* puede infectar los frutos durante la cosecha o en postcosecha, lo que afecta la calidad y la comercialización del producto [4].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t056|ffaec682c409": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t056",
+   "tipo": "varios_saltos",
+   "oracion": "En cuanto a la relación con Dothiorella sp., se menciona que existen especies dentro del género Lasiodiplodia* que han sido reubicadas en Dothiorella* debido a diferencias morfológicas y filogenéticas [3].",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t056|073ddbec7b6b": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t056",
+   "tipo": "varios_saltos",
+   "oracion": "Sin embargo, no se ha establecido una relación directa entre Dothiorella sp.* y Lasiodiplodia theobromae* en el contexto del cultivo de palto.",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t057|7b9bd3e34811": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t057",
+   "tipo": "varios_saltos",
+   "oracion": "El Scirtothrips manihoti es una plaga que afecta al cultivo de arándano, especialmente en los meses de marzo y setiembre, cuando hay activación de la planta para producir nuevos brotes [1].",
+   "antes": true,
+   "despues": false,
+   "reutilizada": "mezcla"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t057|8779f1588b14": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t057",
+   "tipo": "varios_saltos",
+   "oracion": "Esta plaga puede reducir los rendimientos hasta en un 10% en infestaciones severas [2].",
+   "antes": true,
+   "despues": false,
+   "reutilizada": "ausente"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t057|ac8893d91ca8": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t057",
+   "tipo": "varios_saltos",
+   "oracion": "Las rizobacterias pueden ayudar a mitigar su impacto mediante el control biológico.",
+   "antes": true,
+   "despues": false,
+   "reutilizada": "ausente"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t057|c0ff2f356344": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t057",
+   "tipo": "varios_saltos",
+   "oracion": "Estas bacterias promueven el crecimiento de las plantas y mejoran su resistencia a plagas y enfermedades, lo que puede reducir la necesidad de intervenciones químicas [4].",
+   "antes": true,
+   "despues": false,
+   "reutilizada": "ausente"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t057|3099a3fa0023": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t057",
+   "tipo": "varios_saltos",
+   "oracion": "Para un manejo efectivo, se recomienda combinar estrategias como la regulación del riego, mejora del drenaje y el uso de trampas adhesivas amarillas, junto con el uso de rizobacterias [2].",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t058|4b736de56221": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t058",
+   "tipo": "varios_saltos",
+   "oracion": "El método de control recomendado para Aleurodicus sp. en el cultivo de palto es el uso de insecticidas químicos, como la abamectina, el spirodiclofen, el propargite y el aceite agrícola vegetal, que son efectivos contra este tipo de plagas [2].",
+   "antes": true,
+   "despues": false,
+   "reutilizada": "mezcla"
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t058|b1b3111d71ec": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t058",
+   "tipo": "varios_saltos",
+   "oracion": "Para mejorar la eficacia del control, se puede combinar el uso de estos insecticidas con estrategias de manejo integrado de plagas, que incluyen el control mecánico y la aplicación de métodos biológicos, como la utilización de predadores naturales [4].",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b|t060|1edd35f321c7": {
+   "corrida": "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b",
+   "qid": "t060",
+   "tipo": "varios_saltos",
+   "oracion": "El papel de Portulaca oleracea* en la presencia de plagas en cultivos es el de una especie vegetal que puede actuar como hospedador de ciertas plagas y enfermedades, lo que puede facilitar su propagación en los cultivos cercanos. [1]",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t003|d8310271d954": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t003",
+   "tipo": "un_salto",
+   "oracion": "La documentación no especifica una plaga concreta que represente un riesgo de reinfestación en zonas ya erradicadas de manera general.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t003|a7e1fa55e6d3": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t003",
+   "tipo": "un_salto",
+   "oracion": "Sin embargo, se mencionan principios de manejo que abordan este riesgo:",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t003|85dfe2bff993": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t003",
+   "tipo": "un_salto",
+   "oracion": "Prevención de reinfestación: Se señala que la prevención puede ser difícil de mantener cuando el cultivo se encuentra cerca de otras fuentes de infestación, como árboles silvestres o cultivos abandonados [4].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t003|2c36b519f2db": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t003",
+   "tipo": "un_salto",
+   "oracion": "Control cultural: Se menciona la importancia de remover el suelo para destruir focos de infestación, práctica que puede eliminar un 85% de la plaga [6].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t003|fd1c893997dc": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t003",
+   "tipo": "un_salto",
+   "oracion": "Manejo de residuos: Se recomienda erradicar hojas secas de cultivos anteriores [5].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t003|45495a6d03b1": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t003",
+   "tipo": "un_salto",
+   "oracion": "Para identificar una plaga específica, necesitaría más detalles sobre el cultivo o la región.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t009|3c9d3bb0dcdd": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t009",
+   "tipo": "un_salto",
+   "oracion": "Los documentos consultados se centran principalmente en el efecto de la concentración de magnesio en el riego sobre el contenido de magnesio y nitrógeno en las hojas del arándano, y en la relación entre estos nutrientes [1], [2].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t009|bd429cbcbb86": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t009",
+   "tipo": "un_salto",
+   "oracion": "Específicamente, se menciona que:",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t009|f553b0cfe643": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t009",
+   "tipo": "un_salto",
+   "oracion": "Una mayor concentración de Mg aplicada incrementó significativamente el contenido de Nitrógeno (N) en las hojas en un momento de evaluación [2].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t009|20c0e5e55874": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t009",
+   "tipo": "un_salto",
+   "oracion": "Se observaron efectos positivos en el contenido foliar de Mg con la aplicación de Mg a través del riego [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t009|fbbb7b4181c3": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t009",
+   "tipo": "un_salto",
+   "oracion": "Sin embargo, ninguno de los pasajes proporcionados establece directamente la relación causal o el efecto de la dosis de fertilización nitrogenada* sobre el contenido de magnesio foliar.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t009|bc818f39e7af": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t009",
+   "tipo": "un_salto",
+   "oracion": "Los estudios se enfocan más en la aplicación de Mg y sus efectos en N y otros parámetros [1], [2], [4].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t012|a3a4cd6441de": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t012",
+   "tipo": "un_salto",
+   "oracion": "Basado en la documentación encontrada, se menciona que el Imidacloprid se ha aplicado en prefloración para controlar mosca blanca y trips en palto [2].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t012|1d56fdd33d2b": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t012",
+   "tipo": "un_salto",
+   "oracion": "Sin embargo, la documentación no especifica un ingrediente activo recomendado específicamente para el control de la mosca blanca durante el desarrollo de fruto*.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t012|421a4be44771": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t012",
+   "tipo": "un_salto",
+   "oracion": "Se menciona que el Fosfito de cobre se ha reportado como eficaz en el control de enfermedades de raíz y cuello en cítricos y otros cultivos, aplicado tras el cuajado del fruto [2], pero no específicamente para la mosca blanca en esa etapa.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t012|3da922a9de7f": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t012",
+   "tipo": "un_salto",
+   "oracion": "Para obtener una recomendación de manejo más precisa y actualizada, se sugiere consultar las guías agronómicas del SENASA.",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t013|66ecca343025": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t013",
+   "tipo": "un_salto",
+   "oracion": "El ingrediente activo \"Trichogramma spp.\" no figura en las listas FRAC, IRAC ni HRAC cargadas, por lo que no puedo proporcionar su modo de acción [G1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t023|7f460924afab": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t023",
+   "tipo": "un_salto",
+   "oracion": "La poda de sanidad es recomendable porque un árbol frutal con exceso de follaje proporciona condiciones óptimas (microclima) para el desarrollo de la plaga y, además, dificulta las labores de cosecha y la recolección de frutos infestados [2].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t023|ae4e98413f7d": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t023",
+   "tipo": "un_salto",
+   "oracion": "Esta poda consiste en eliminar ramas secas y enfermas, manteniendo una buena estructura de la planta, y se recomienda realizarla durante el periodo de descanso o agoste del árbol frutal [2].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t024|6e6d15701d57": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t024",
+   "tipo": "un_salto",
+   "oracion": "La enzima UFGT (UDP glucosa: flavonoide-3-glucosil transferasa) es clave en el desarrollo del color en uva de mesa porque cataliza la glicosilación de las antocianinas [6].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t024|936d2c242cf6": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t024",
+   "tipo": "un_salto",
+   "oracion": "Este proceso añade un azúcar a un pigmento inestable, lo que lo hace estable y, por ende, genera el color [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t024|76f65559a6bb": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t024",
+   "tipo": "un_salto",
+   "oracion": "Además, se señala que:",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t024|09ba85a0647d": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t024",
+   "tipo": "un_salto",
+   "oracion": "La actividad de UFGT se incrementa paralelamente con el contenido de antocianinas [2].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t024|22de9b641252": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t024",
+   "tipo": "un_salto",
+   "oracion": "La expresión del gen que codifica para UFGT se regula de manera tardía, justo después del inicio del envero, lo cual es determinante para el color [3], [5].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t024|60e690f53d64": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t024",
+   "tipo": "un_salto",
+   "oracion": "La glicosilación catalizada por UFGT contribuye a la coloración y a la estabilidad de la molécula ante ataques nucleofílicos o degradación enzimática, siendo esta etapa particularmente relevante en uvas rojas [6].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t025|1e797949f2d6": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t025",
+   "tipo": "un_salto",
+   "oracion": "El procedimiento para desinfectar los discos al finalizar la poda mecanizada es limpiarlos con un soplador de aire para retirar restos de hojas y ramas impregnadas, y luego realizar la desinfección de los discos con sulfato de cobre [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t027|78fa2bd1ed28": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t027",
+   "tipo": "un_salto",
+   "oracion": "El documento menciona que Anagyrus pseudococci* es una avispa parasitoide de la cochinilla algodonosa de los cítricos [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t027|6a40c7720ef2": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t027",
+   "tipo": "un_salto",
+   "oracion": "Además, se menciona que Anagyrus pseudococci* es un endoparasitoide cenobionte solitario del orden Hymenoptera, y su huésped principal es Planococcus citri* [6].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t027|8c410ee01b3a": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t027",
+   "tipo": "un_salto",
+   "oracion": "No se especifica un cultivo afectado por la cochinilla algodonosa en el contexto de arándano, palto o uva de mesa, aunque se menciona su uso en cítricos [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t029|9d5f851026d2": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t029",
+   "tipo": "un_salto",
+   "oracion": "La información disponible indica que para Lasiodiplodia theobromae*, la temperatura óptima para su crecimiento se encuentra entre 28°C y 40°C, siendo 28°C la temperatura óptima [6].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t029|c14b967c4890": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t029",
+   "tipo": "un_salto",
+   "oracion": "Para otras especies de Lasiodiplodia* que afectan el palto, se observaron los siguientes rangos:",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t029|3867152dbcee": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t029",
+   "tipo": "un_salto",
+   "oracion": "A 10°C, L. pseudotheobromae* se desarrolló mejor que las otras especies [2].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t029|f3f8929ac19b": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t029",
+   "tipo": "un_salto",
+   "oracion": "Las temperaturas de 0°C, 5°C, 45°C y 50°C no mostraron crecimiento alguno para las especies estudiadas [2].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t029|d7538fedeb8b": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t029",
+   "tipo": "un_salto",
+   "oracion": "No se especifica una temperatura óptima única para el micelio de Lasiodiplodia* en general, sino que varía según la especie y el estudio [1, 2, 6].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t031|f2268d6195d1": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t031",
+   "tipo": "un_salto",
+   "oracion": "El levantamiento de información es crucial en la producción de arándano en contenedores por varias razones, ya que esta tecnología permite un control más eficiente y optimizado del cultivo [5].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t031|9219d738d4a1": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t031",
+   "tipo": "un_salto",
+   "oracion": "Los puntos clave son:",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t031|ff800960dcd6": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t031",
+   "tipo": "un_salto",
+   "oracion": "Control Ambiental y Nutricional: Permite controlar de manera más eficiente la aireación, la retención de humedad y los nutrientes requeridos de forma individual por planta [5].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t031|4199da94d6d6": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t031",
+   "tipo": "un_salto",
+   "oracion": "Además, simplifica el manejo al evitar los desuniformes del suelo, facilitando el control seguro y eficiente del pH y la salinidad, lo cual es determinante para el desarrollo y potencial de producción [5].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t031|f196f3e17257": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t031",
+   "tipo": "un_salto",
+   "oracion": "Productividad y Densidad: Permite trabajar con altas densidades, alcanzando hasta 12,000 a 14,000 plantas/ha, lo que confiere una mayor productividad al productor al permitir reestructurar el diseño de siembra y optimizar espacios [4].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t031|bdfc9a684d68": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t031",
+   "tipo": "un_salto",
+   "oracion": "Manejo Sanitario: El control fitosanitario es más eficaz porque las plantas son individuales, lo que reduce la propagación de patógenos y permite eliminar y reemplazar fácilmente las plantas afectadas [4].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t031|30103c7164cb": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t031",
+   "tipo": "un_salto",
+   "oracion": "Desarrollo General: El manejo del riego bajo este sistema asegura la eficiencia en la absorción de agua y nutrientes, ya que el arándano es muy sensible a cualquier desbalance [6].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t031|f9b0fae1a851": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t031",
+   "tipo": "un_salto",
+   "oracion": "Asimismo, la adquisición y procedencia de las plantas es fundamental para asegurar un óptimo desarrollo estructural y sanitario [6].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t031|967172ef63cf": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t031",
+   "tipo": "un_salto",
+   "oracion": "En resumen, el conocimiento detallado es necesario para gestionar la alta productividad, el control preciso de las condiciones y la sanidad de las plantas individuales [5], [6].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t033|7e8675fc8fb0": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t033",
+   "tipo": "un_salto",
+   "oracion": "El producto Heterorhabditis bacteriophora* puede ser aprovechado en programas de manejo integrado de plagas porque resiste varios químicos utilizados en la agricultura [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t033|9ea1c8c51d5b": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t033",
+   "tipo": "un_salto",
+   "oracion": "Además, puede ser aplicado junto con otros agentes de control biológico, como entomopatógenos, y puede presentar sinergismo al ser usado con otros microorganismos [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t033|35501e347f42": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t033",
+   "tipo": "un_salto",
+   "oracion": "Adicionalmente, los nemátodos entomopatógenos son utilizados en el control biológico de diversas plagas agrícolas [4].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t034|3e9a61b27ad3": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t034",
+   "tipo": "un_salto",
+   "oracion": "Los documentos indican que el uso indiscriminado de insecticidas, incluyendo neonicotinoides, ha ocasionado serios problemas ambientales, como la contaminación directa del medio ambiente y desórdenes ecológicos en las poblaciones de artrópodos de los agroecosistemas [4].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t034|00c1fa89ea78": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t034",
+   "tipo": "un_salto",
+   "oracion": "Específicamente sobre los neonicotinoides:",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t034|f12fceb035c3": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t034",
+   "tipo": "un_salto",
+   "oracion": "Su uso indiscriminado ha provocado problemas ambientales a nivel mundial, lo que ha llevado a su prohibición en la Unión Europea debido a su implicación en el colapso de las abejas [2].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t034|db3cf6ba41a9": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t034",
+   "tipo": "un_salto",
+   "oracion": "Se ha demostrado que la exposición al Imidacloprid (un neonicotinoide) incrementa la susceptibilidad de las abejas obreras al patógeno Nosema ceranae* [6].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t034|15f3ee894cb7": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t034",
+   "tipo": "un_salto",
+   "oracion": "Además, estudios han encontrado que el imidacloprid resultó tóxico para algunas especies de depredadores y parasitoides [5].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t034|c89f519fff5b": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t034",
+   "tipo": "un_salto",
+   "oracion": "Se recomienda un plan de uso seguro de estos químicos y se debe priorizar el estudio de la resistencia a los neonicotinoides en Perú [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t037|a0edbfe36a18": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t037",
+   "tipo": "un_salto",
+   "oracion": "Los neonicotinoides thiametoxam e imidacloprid son altamente tóxicos para adultos de C. montrouzieri* en aplicación directa en laboratorio, causando una mortalidad superior al 80% en las primeras 48 horas [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t037|29486aebecb3": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t037",
+   "tipo": "un_salto",
+   "oracion": "Sin embargo, pruebas de semi-campo en plantas de palto mostraron que estos neonicotinoides fueron inocuos para C. montrouzieri* un día después de la aplicación [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t037|f6f25e5b31bd": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t037",
+   "tipo": "un_salto",
+   "oracion": "Adicionalmente, se menciona que en condiciones de laboratorio en Chile, la aplicación directa de estos neonicotinoides es altamente tóxica, alcanzando un 80% de mortalidad en adultos, aunque en condiciones de campo es inocuo [2].",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t042|606060e11f54": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t042",
+   "tipo": "varios_saltos",
+   "oracion": "Los documentos consultados no contienen información específica sobre el impacto o el control de la plaga \"Caracha (mosquilla de los brotes)\" en el cultivo de frijol.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t042|856403503c5c": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t042",
+   "tipo": "varios_saltos",
+   "oracion": "Los pasajes encontrados tratan sobre:",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t042|3ad0cbb0fdcc": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t042",
+   "tipo": "varios_saltos",
+   "oracion": "Control de plagas en general (como Planococcus citri* o cochinilla harinosa) utilizando diferentes métodos químicos y biológicos [1], [3], [4].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t042|1d3f2e2ca223": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t042",
+   "tipo": "varios_saltos",
+   "oracion": "Control de plagas en frutales de hueso mediante parasitoides y confusión sexual [5].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t042|5c37fe921ecd": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t042",
+   "tipo": "varios_saltos",
+   "oracion": "Problemas fitosanitarios en vid [2], [6].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t042|d61489e2e55c": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t042",
+   "tipo": "varios_saltos",
+   "oracion": "Por lo tanto, no puedo proporcionarte una respuesta fundamentada sobre el frijol con la información disponible.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t044|fa9307c3e456": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t044",
+   "tipo": "varios_saltos",
+   "oracion": "La información proporcionada por las herramientas no menciona directamente la relación entre la presencia de Cyperus spp.* y el manejo de plagas en el cultivo de arándano.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t044|bb79ce7ecebf": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t044",
+   "tipo": "varios_saltos",
+   "oracion": "Los documentos consultados se centran en:",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t044|10711c09ca18": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t044",
+   "tipo": "varios_saltos",
+   "oracion": "El manejo integrado de plagas en arándano, mencionando plagas como Chloridea virescens* y Helicoverpa spp.* [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t044|8bf3c8adcb7c": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t044",
+   "tipo": "varios_saltos",
+   "oracion": "El uso de agentes biológicos contra hongos de suelo como Phytophthora* [2].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t044|a3fa0984dd40": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t044",
+   "tipo": "varios_saltos",
+   "oracion": "La rotación de insecticidas contra trips y lepidópteros [3].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t044|9d1e9610a70c": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t044",
+   "tipo": "varios_saltos",
+   "oracion": "Las recomendaciones para el manejo orgánico de plagas [4].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t044|d01ac4f09b30": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t044",
+   "tipo": "varios_saltos",
+   "oracion": "El control de plagas específicas como Pseudoccus longispinus* y Anomala spp.* [5].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t044|e5de9cb92e7d": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t044",
+   "tipo": "varios_saltos",
+   "oracion": "El uso de enemigos naturales como Chrysoperla externa* para controlar lepidópteros [6].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t044|4b23bfb18f9a": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t044",
+   "tipo": "varios_saltos",
+   "oracion": "No hay pasajes que vinculen específicamente a Cyperus spp.* con el manejo fitosanitario del arándano.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t045|0bf12a79fa20": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t045",
+   "tipo": "varios_saltos",
+   "oracion": "El impacto de Aleurodicus sp.* (específicamente Aleurodicus juleikae*) en el molle serrano (Schinus molle*) es el daño causado por la secreción de mielecilla, lo cual promueve el desarrollo de hongos como la \"fumagina\", interfiriendo y reduciendo la fotosíntesis de la hoja [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t045|a2b7c395193d": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t045",
+   "tipo": "varios_saltos",
+   "oracion": "Además, este insecto es un portador de ciertos virus [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t045|b73e999a8563": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t045",
+   "tipo": "varios_saltos",
+   "oracion": "En cuanto a los métodos de manejo, los documentos mencionan la presencia de enemigos naturales como Chrysoperla sp., Ceraeochrysa sp., Toxomerus sp.* y Nephapis sp., además de parasitoides como Encarsia sp.* [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t045|b9674aef5acb": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t045",
+   "tipo": "varios_saltos",
+   "oracion": "Adicionalmente, se menciona que Aleurodicus juleikae* es una plaga importante en el molle serrano, junto con Calophya schini*, Empoasca Kraemeri* y Hemiberlesia lataniae* [5].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t046|acd5872b714e": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t046",
+   "tipo": "varios_saltos",
+   "oracion": "El documento encontrado se centra principalmente en el impacto de Botrytis cinerea* en cultivos como el arándano y la fresa, describiéndolo como un hongo necrotrófico que causa pudrición en frutos, hojas, yemas y flores [3], [5], [6].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t046|8161d668dc44": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t046",
+   "tipo": "varios_saltos",
+   "oracion": "Respecto a Penicillium expansum*, la información proporcionada no menciona directamente su impacto o su relación con Botrytis cinerea*.",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t046|8b6bd26baea6": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t046",
+   "tipo": "varios_saltos",
+   "oracion": "En resumen, según los documentos:",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t046|06bd1e29b51a": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t046",
+   "tipo": "varios_saltos",
+   "oracion": "Botrytis cinerea: Es un hongo necrotrófico que causa pudrición en frutos, hojas, yemas y flores, pudiendo causar pérdidas significativas en la producción, especialmente en la poscosecha [3], [5], [6].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t046|832e19a558e0": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t046",
+   "tipo": "varios_saltos",
+   "oracion": "Relación con Penicillium expansum: No se encontró información específica en los pasajes consultados sobre la relación entre Penicillium expansum* y Botrytis cinerea*.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t047|09d75319fc50": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t047",
+   "tipo": "varios_saltos",
+   "oracion": "El daño causado por Hemiberlesia lataniae* en el palto se debe a la extracción de jugo del parénquima, lo que provoca la caída de hojas y la muerte de pequeñas ramas.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t047|fd023219528b": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t047",
+   "tipo": "varios_saltos",
+   "oracion": "Además, su saliva puede introducir toxinas que causan la muerte de ramas y árboles si la población es alta [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t047|74faa1687919": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t047",
+   "tipo": "varios_saltos",
+   "oracion": "También se menciona que, con poblaciones elevadas, pueden envolver completamente los frutos, reduciendo su calidad para la exportación [4].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t047|418edcb8fcc9": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t047",
+   "tipo": "varios_saltos",
+   "oracion": "Entre las plagas importantes mencionadas en el cultivo de palto se encuentran:",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t047|295bd5b5978a": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t047",
+   "tipo": "varios_saltos",
+   "oracion": "Oligonychus punicae* (arañita marrón) [5]",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t047|13ebfdb4da29": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t047",
+   "tipo": "varios_saltos",
+   "oracion": "Fiorinia fiorinae* y Hemiberlesia lataniae* (queresas) [5]",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t047|bac92c93fdfc": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t047",
+   "tipo": "varios_saltos",
+   "oracion": "Aleurodicus cocois* (mosca blanca) [5]",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t047|d1f1fe5cbaa4": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t047",
+   "tipo": "varios_saltos",
+   "oracion": "Frankliniella occidentalis* (trips) [5]",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t047|eefc7aa6617c": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t047",
+   "tipo": "varios_saltos",
+   "oracion": "Ceratitis capitata* (mosca de la fruta) [5]",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t047|2afeeb8622f3": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t047",
+   "tipo": "varios_saltos",
+   "oracion": "Oiketicus kirbyi* (polilla de la semilla) [5]",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t047|c5bb2412188d": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t047",
+   "tipo": "varios_saltos",
+   "oracion": "Dagbertus minensis* (chinche verde del palto) [2]",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t047|55b15e3d458c": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t047",
+   "tipo": "varios_saltos",
+   "oracion": "Oligonychus punicae* (arañita marrón) [5] Fiorinia fiorinae* y Hemiberlesia lataniae* (queresas) [5] Aleurodicus cocois* (mosca blanca) [5] Frankliniella occidentalis* (trips) [5] Ceratitis capitata* (mosca de la fruta) [5] Oiketicus kirbyi* (polilla de la semilla) [5] Dagbertus minensis* (chinche verde del palto) [2]",
+   "antes": false,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t049|168c7fb8e152": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t049",
+   "tipo": "varios_saltos",
+   "oracion": "El impacto de Cladosporium herbarum* (o Cladosporium spp.) en el cultivo de palto es que afecta gravemente la floración, impidiendo la polinización y la fecundación, lo que dificulta el desarrollo de los frutos [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t049|112e60a7e53f": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t049",
+   "tipo": "varios_saltos",
+   "oracion": "Este microorganismo puede aparecer entre finales del invierno y principios de la primavera, y se dispersa más fácilmente en condiciones de bajas temperaturas y alta humedad atmosférica, causando necrosis en la flor [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t049|50132778f376": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t049",
+   "tipo": "varios_saltos",
+   "oracion": "En cuanto a su control, la literatura menciona lo siguiente:",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t049|58dfc68de9f8": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t049",
+   "tipo": "varios_saltos",
+   "oracion": "Control biológico: Se han realizado estudios para determinar cepas de Trichoderma* eficaces para el control de Cladosporium sp.* en el cultivo de palto [6].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t049|0d39c3a363a3": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t049",
+   "tipo": "varios_saltos",
+   "oracion": "Sin embargo, una evaluación específica indicó que ninguna de las especies de Trichoderma* ensayadas fue eficiente para controlar Cladosporium sp.* en comparación con los testigos [3].",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t049|dbb3f34a95b0": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t049",
+   "tipo": "varios_saltos",
+   "oracion": "Control químico (en laboratorio): En condiciones in vitro*, se ha observado que varios fungicidas inhiben el micelio de Cladosporium cladosporioides*.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t049|a58f45477ce6": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t049",
+   "tipo": "varios_saltos",
+   "oracion": "Por ejemplo, Metiram+Piraclostrobin inhibió el crecimiento en 36.5 mm, mientras que Tiofanate metil inhibió 33 mm [4].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t049|018e837b4bfe": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t049",
+   "tipo": "varios_saltos",
+   "oracion": "Otros productos evaluados incluyen Hexaconazole, Ppropiconazole, Carbendazin y Difenoconazole [4].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t049|ab7357e276aa": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t049",
+   "tipo": "varios_saltos",
+   "oracion": "Es importante notar que Cladosporium* puede actuar como saprófito o patógeno secundario, y puede volverse patógeno en las plantas bajo estrés hídrico o nutricional [2], [5].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t050|ce3278f332ee": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t050",
+   "tipo": "varios_saltos",
+   "oracion": "El impacto de la Cochinilla harinosa en el cultivo de arándano se relaciona con la presencia de especies como Pseudococcus longispinus*, Planococcus citri* y Ferrisia virgata* [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t050|61b1af51a478": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t050",
+   "tipo": "varios_saltos",
+   "oracion": "Para el control, se han planteado estrategias que incluyen: 1.",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t050|755e9c322037": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t050",
+   "tipo": "varios_saltos",
+   "oracion": "Control Biológico: Se ha destacado la relevancia del manejo y control de la cochinilla harinosa en arándano orgánico, optando por la producción y liberación de controladores biológicos [4].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t050|d957548dc7b5": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t050",
+   "tipo": "varios_saltos",
+   "oracion": "Específicamente, se menciona la producción y efectividad del control biológico de P. citri* en arándano [5]. 2.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t050|352c9ed5d87f": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t050",
+   "tipo": "varios_saltos",
+   "oracion": "Control Químico/Biológico Combinado:",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t050|ad5b592fa49c": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t050",
+   "tipo": "varios_saltos",
+   "oracion": "Si la detección es al inicio de la campaña, se sugiere aplicar Imidacloprid vía sistema de riego a una dosis de 1.5 L/ha [6].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t050|84aee87c1420": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t050",
+   "tipo": "varios_saltos",
+   "oracion": "En plena etapa de cosecha, se pueden considerar extractos utilizados para el control de trips, y también se sugiere aplicar el entomopatógeno Purpureocillium lilacinum en alternancia con Beauveria bassiana, especialmente en campos de alta densidad, recomendando aplicaciones con alto mojamiento [6].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t050|a276c1315833": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t050",
+   "tipo": "varios_saltos",
+   "oracion": "Como alternativa foliar, se menciona la molécula Acetamiprid a una dosis de 70 g/200L [6].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t050|bf8fd558c1f0": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t050",
+   "tipo": "varios_saltos",
+   "oracion": "Nota: Los datos provienen de estudios específicos y se recomienda consultar las guías oficiales del SENASA para un manejo integral completo.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t051|19411cb00830": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t051",
+   "tipo": "varios_saltos",
+   "oracion": "Los documentos encontrados se centran en el impacto general de los pesticidas en la agricultura y la necesidad de un Manejo Integrado de Plagas (MIP), pero no mencionan específicamente el impacto o el control de Setaria verticillata*.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t051|1f82b39d0d8a": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t051",
+   "tipo": "varios_saltos",
+   "oracion": "Los pasajes indican que:",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t051|8e1b5ebd8eba": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t051",
+   "tipo": "varios_saltos",
+   "oracion": "El uso continuo de pesticidas ha impactado negativamente en la disminución de la fertilidad de los suelos y en la pérdida de la entomofauna benéfica en ciertas zonas agrícolas [4].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t051|1fe3d6508ee0": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t051",
+   "tipo": "varios_saltos",
+   "oracion": "El impacto de los pesticidas debe medirse de manera integral, considerando el capital humano, social, natural y financiero de los agricultores [2].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t051|a0b93bd17f1a": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t051",
+   "tipo": "varios_saltos",
+   "oracion": "El MIP es fundamental para cambiar las prácticas de control de plagas y generar beneficios para los agricultores [6].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t051|99730baef250": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t051",
+   "tipo": "varios_saltos",
+   "oracion": "Para obtener información específica sobre Setaria verticillata*, le recomiendo buscar en guías especializadas del SENASA o manuales agronómicos.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t052|48b924045a80": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t052",
+   "tipo": "varios_saltos",
+   "oracion": "El impacto de Cylindrocarpon sp.* en el cultivo de granado es que causa la destrucción total o parcial del interior del fruto, mientras que la parte exterior permanece normal (Pie negro) [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t052|51010406388b": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t052",
+   "tipo": "varios_saltos",
+   "oracion": "Además, se menciona que Cylindrocarpon spp.* es una de las plagas secundarias que aparecen en etapas fenológicas críticas, especialmente cerca de la cosecha [2].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t052|ccabdd9326f4": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t052",
+   "tipo": "varios_saltos",
+   "oracion": "Para el control, los documentos consultados mencionan prácticas generales de manejo integrado de plagas, como:",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t052|1731ad33ef11": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t052",
+   "tipo": "varios_saltos",
+   "oracion": "Control cultural: Utilizar prácticas agrícolas para hacer el ambiente desfavorable para el desarrollo de la plaga [6].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t052|deafa02768fe": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t052",
+   "tipo": "varios_saltos",
+   "oracion": "Manejo de canopia: Controlar el nivel de follaje para asegurar una buena iluminación y aireación, lo cual dificulta la proliferación de plagas [5].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t052|56c68e490225": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t052",
+   "tipo": "varios_saltos",
+   "oracion": "No se especifica un método de control directo para Cylindrocarpon sp.* en los pasajes encontrados.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t053|cbaeae2ac116": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t053",
+   "tipo": "varios_saltos",
+   "oracion": "El documento encontrado menciona el efecto del uso de cobertura mulch* en el cultivo de palto, indicando que el mulch* inhibe el crecimiento de malezas, lo que reduciría la competencia con las plantas de palto [3].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t053|97a863ac7ab8": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t053",
+   "tipo": "varios_saltos",
+   "oracion": "Sin embargo, la información proporcionada no especifica directamente el impacto de la presencia de la maleza Echinochloa glabrescens* en el cultivo de palto ni cómo se relaciona específicamente con el uso de mulch* para controlar esa especie [1, 2, 3, 4, 5, 6].",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t054|d86d5c52c292": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t054",
+   "tipo": "varios_saltos",
+   "oracion": "El impacto de Plasmopara viticola* (Mildiu) en la producción vitivinícola es que perjudica principalmente las partes verdes de la vid, manifestándose como manchas amarillentas o de aceite en el haz de la hoja, seguidas de esporulación blanquecina en el envés y necrosis rojiza de los tejidos [4].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t054|b2a8b1251372": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t054",
+   "tipo": "varios_saltos",
+   "oracion": "Este hongo es especialmente problemático durante la etapa de crecimiento vegetativo después de la poda, siendo crítica la floración y el cuajado [4].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t054|ae90f0981167": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t054",
+   "tipo": "varios_saltos",
+   "oracion": "Para mitigar este problema, se debe implementar un manejo integrado.",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t054|111d6b7d056b": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t054",
+   "tipo": "varios_saltos",
+   "oracion": "Aunque los documentos citados se enfocan en el manejo de Erysiphe necator* (Oídio) [5], se menciona que el control de enfermedades en uva de mesa requiere la articulación de diferentes tácticas [5].",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t054|2f6f68020bf4": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t054",
+   "tipo": "varios_saltos",
+   "oracion": "Además, existen registros de productos fitosanitarios para el control de Plasmopara viticola* en la uva de mesa, como se indica en las guías de Buenas Prácticas Agrícolas [2], [3].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t055|7f4777eca670": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t055",
+   "tipo": "varios_saltos",
+   "oracion": "El impacto de Aleurodicus coccolobae* en el cultivo de palto se relaciona con la presencia de moscas blancas del género Aleurodicus* como plaga registrada en el cultivo [2].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t055|ae9edcc727d2": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t055",
+   "tipo": "varios_saltos",
+   "oracion": "Respecto al control, los documentos mencionan que en los programas de Manejo Integrado de Plagas (MIP) para el palto se utilizan diferentes estrategias [4].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t055|9833ab9b3cb5": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t055",
+   "tipo": "varios_saltos",
+   "oracion": "Aunque no se detalla un control específico para Aleurodicus coccolobae*, se menciona que el control de insectos picadores chupadores en general es químico cuando alcanzan el umbral de daño económico [5].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t055|c9fc40d33bff": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t055",
+   "tipo": "varios_saltos",
+   "oracion": "Para obtener información más detallada sobre el manejo agronómico y control de plagas, te recomiendo revisar los documentos citados [2], [4] y [5].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t056|6151ac01a2d3": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t056",
+   "tipo": "varios_saltos",
+   "oracion": "El documento encontrado menciona la clasificación de especies de Lasiodiplodia* que afectan el cultivo de palto (Persea americana*), pero no establece directamente la relación o el impacto de Dothiorella sp.* con Lasiodiplodia theobromae* en este cultivo.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t056|28d8a271d232": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t056",
+   "tipo": "varios_saltos",
+   "oracion": "Sin embargo, el pasaje [2] indica que Phillips et al.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t056|109004c2a0ee": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t056",
+   "tipo": "varios_saltos",
+   "oracion": "(2005) reintrodujeron el género Dothiorella*, señalando que este género presenta características morfológicas y filogenéticas diferentes a Botryosphaeria*, y que algunas especies de este género tienen teleomorfos con características que no corresponden a Botryosphaeria*.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t056|43789554d151": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t056",
+   "tipo": "varios_saltos",
+   "oracion": "Para obtener información más específica sobre el impacto de Dothiorella sp.* en el palto, necesitaría una consulta más enfocada o más documentos.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t057|5345c2668d90": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t057",
+   "tipo": "varios_saltos",
+   "oracion": "El impacto de Scirtothrips dorsalis* (mencionado en los documentos como Scirtothrips dorsalis*, que es un tipo de trips) en el cultivo de arándano es que infesta brotes tiernos, donde los adultos ovipositan y las ninfas se alimentan causando raspados severos [2].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t057|dd2d4720bb26": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t057",
+   "tipo": "varios_saltos",
+   "oracion": "Se ha reportado que esta plaga es altamente polífaga y representa una seria amenaza para los arándanos [4].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t057|fa3ab64c9d13": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t057",
+   "tipo": "varios_saltos",
+   "oracion": "Respecto a cómo las rizobacterias pueden ayudar a mitigar este problema, la búsqueda de documentos no proporcionó información específica sobre el uso de rizobacterias para controlar Scirtothrips dorsalis*.",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t057|c659e489a4a5": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t057",
+   "tipo": "varios_saltos",
+   "oracion": "Sin embargo, los documentos sí mencionan el uso de aislamientos de Trichoderma* como agente de control biológico para proteger las plantas frente a fitopatógenos [7], [11], [12].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t057|72dfd42bda2d": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t057",
+   "tipo": "varios_saltos",
+   "oracion": "Para obtener información específica sobre el control biológico con rizobacterias contra este trips, se necesitaría una búsqueda más enfocada o se debe considerar que la información disponible se centra en el control de hongos como Phytophthora cinnamomi* [7], [12].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t058|0a80e9beaf1c": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t058",
+   "tipo": "varios_saltos",
+   "oracion": "El método de control recomendado para Aleurodicus sp.* en el cultivo de palto, según la literatura consultada, incluye la implementación de un Manejo Integrado de Plagas (MIP) [1].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t058|de0b09aaf871": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t058",
+   "tipo": "varios_saltos",
+   "oracion": "Para mejorar la eficacia, se pueden considerar estrategias biológicas, ya que se ha documentado el ciclo biológico y la capacidad de depredación de insectos como Ceraeochrysa cincta* contra Aleurodicus juleikae* [4].",
+   "antes": true,
+   "despues": true,
+   "reutilizada": null
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b|t058|8d312e99b717": {
+   "corrida": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+   "qid": "t058",
+   "tipo": "varios_saltos",
+   "oracion": "Nota: Los documentos consultados mencionan el control de otros plagas como la arañita marrón (Oligonychus punicae*) [2, 5, 6], pero el pasaje [4] es el único que menciona directamente la interacción con Aleurodicus juleikae*.",
+   "antes": true,
+   "despues": false,
+   "reutilizada": null
+  }
+ }
+}

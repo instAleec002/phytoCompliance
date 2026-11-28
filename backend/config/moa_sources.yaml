@@ -1,0 +1,17 @@
+# Clasificaciones oficiales de modo de acción (comités de resistencia de CropLife International).
+# Al salir una edición nueva se cambia la URL y la edición; la instantánea guarda el archivo tal como se descargó.
+FRAC:
+  name: FRAC Code List
+  edition: "2026"
+  url: https://www.frac.info/media/s1zfrjqa/frac-code-list-2026.pdf
+  kind: pdf
+IRAC:
+  name: IRAC Mode of Action Classification Scheme
+  edition: "11.5 (febrero de 2026)"
+  url: https://irac-online.org/documents/moa-classification/?ext=pdf
+  kind: pdf
+HRAC:
+  name: HRAC Global Herbicide MoA Classification, Master List
+  edition: "2026"
+  url: https://hracglobal.com/getdoc.php?file=2026-Herbicide-MoA-Classification-Master-List-without-Molecular-Structures.xlsx
+  kind: xlsx

@@ -1,0 +1,7 @@
+# Perfil de cliente publicado: Lidl, Purchasing policy: Fruit, vegetables, flowers and plants (2025).
+# https://info.lidl/en/asset/download/3719/file/ALT_20250919_EKP_F+V,F+P.pdf
+name: Lidl (política publicada, 2025)
+max_fraction_of_mrl_per_substance: 0.333
+max_sum_of_mrl_fractions: 0.80
+max_number_of_residues: 5
+max_fraction_of_arfd: 1.0

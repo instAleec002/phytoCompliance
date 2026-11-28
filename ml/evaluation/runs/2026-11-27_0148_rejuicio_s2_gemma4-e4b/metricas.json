@@ -1,0 +1,32 @@
+{
+ "suite": "textual.jsonl (S2)",
+ "corrida_fuente": "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b",
+ "sistema": "agente",
+ "generador": "gemma4:e4b",
+ "juez": "local:gemma4:e4b",
+ "unidad": "oraciones de la respuesta (evaluation/fidelidad.py)",
+ "preguntas": 60,
+ "con_evidencia": 45,
+ "abstenciones": 15,
+ "medidas": 45,
+ "fidelidad_media": 0.889,
+ "fidelidad_mediana": 1.0,
+ "por_tipo": {
+  "un_salto": {
+   "n": 27,
+   "media": 0.942
+  },
+  "varios_saltos": {
+   "n": 18,
+   "media": 0.811
+  }
+ },
+ "oraciones": 169,
+ "veredictos": {
+  "respaldada": 151,
+  "mezcla": 2,
+  "ausente": 16
+ },
+ "meta": 0.7,
+ "cumple": true
+}

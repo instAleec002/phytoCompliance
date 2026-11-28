@@ -1,0 +1,5 @@
+# Todo lo que empieza con non_ queda fuera del repositorio.
+non_*
+
+# copias anteriores de hojas de anotación (respaldo local, no van al repo)
+ml/evaluation/suites/_anteriores/

@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen3:8b",
+ "temperatura": 0.1,
+ "semilla": null,
+ "repeticiones": 2,
+ "preguntas": 18,
+ "texto_igual": 5,
+ "citas_iguales": 13,
+ "llamadas_iguales": 16
+}

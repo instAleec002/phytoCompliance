@@ -1,0 +1,17 @@
+{
+ "suite": "estructurada_genericas_2.jsonl",
+ "modo": "herramientas",
+ "modelo": "qwen3:8b",
+ "genericas": true,
+ "preguntas": 31,
+ "exactas": 26,
+ "exactitud": 0.839,
+ "por_tipo": {
+  "lista": 0.917,
+  "conteo_productos": 0.9,
+  "conteo_sin_lmr": 0.667
+ },
+ "con_valor_inventado": 0,
+ "sin_llamar_herramientas": 0,
+ "segundos_mediana": 4.22
+}

@@ -1,0 +1,1005 @@
+{
+  "value": [
+    {
+      "language": "ES",
+      "product_id": 93,
+      "product_parent_id": 89,
+      "product_code": "0212040",
+      "product_type_id": 4,
+      "product_name": "Arrurruces",
+      "product_scientific_names": "Maranta arundinacea",
+      "product_synonym_names": "Castaña de agua, Raíces de loto"
+    },
+    {
+      "language": "ES",
+      "product_id": 219,
+      "product_parent_id": 208,
+      "product_code": "0401110",
+      "product_type_id": 4,
+      "product_name": "Semillas de cártamo",
+      "product_scientific_names": "Cartamus tinctorius",
+      "product_synonym_names": "Semillas de cardo mariano, Semillas de Níger/ramtilla"
+    },
+    {
+      "language": "ES",
+      "product_id": 315,
+      "product_parent_id": 314,
+      "product_code": "1011010",
+      "product_type_id": 4,
+      "product_name": "Músculo",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 187,
+      "product_parent_id": 185,
+      "product_code": "0270020",
+      "product_type_id": 4,
+      "product_name": "Cardos",
+      "product_scientific_names": "Cynara cardunculus Grupo Cardoon",
+      "product_synonym_names": "Borraja"
+    },
+    {
+      "language": "ES",
+      "product_id": 371,
+      "product_parent_id": 369,
+      "product_code": "1030020",
+      "product_type_id": 4,
+      "product_name": "de pato",
+      "product_scientific_names": "Anas platyrhynchos Mallard",
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 289,
+      "product_parent_id": 288,
+      "product_code": "0830010",
+      "product_type_id": 4,
+      "product_name": "Canela",
+      "product_scientific_names": "Cinnamomum verum; sinónimo: Cinnamomum zeylanicum",
+      "product_synonym_names": "Caña fístula, Caña fístula, Caña fístula"
+    },
+    {
+      "language": "ES",
+      "product_id": 328,
+      "product_parent_id": 313,
+      "product_code": "1013000",
+      "product_type_id": 3,
+      "product_name": "c) ovino",
+      "product_scientific_names": "Ovis aries",
+      "product_synonym_names": "Muflón (de granja)"
+    },
+    {
+      "language": "ES",
+      "product_id": 24,
+      "product_parent_id": 22,
+      "product_code": "0130020",
+      "product_type_id": 4,
+      "product_name": "Peras",
+      "product_scientific_names": "Pyrus communis",
+      "product_synonym_names": "Peras blancas chinas, Peras Nashi/peras asiáticas, Peras silvestres"
+    },
+    {
+      "language": "ES",
+      "product_id": 100,
+      "product_parent_id": 95,
+      "product_code": "0213050",
+      "product_type_id": 4,
+      "product_name": "Aguaturmas",
+      "product_scientific_names": "Helianthus tuberosus",
+      "product_synonym_names": "Alcachofas chinas/alcachofas betónicas, Guija tuberosa, Helianto estrumoso, Mashua, Oca"
+    },
+    {
+      "language": "ES",
+      "product_id": 226,
+      "product_parent_id": 225,
+      "product_code": "0402010",
+      "product_type_id": 4,
+      "product_name": "Aceitunas para aceite",
+      "product_scientific_names": "Olea europaea var. europaea",
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 73,
+      "product_parent_id": 55,
+      "product_code": "0163000",
+      "product_type_id": 3,
+      "product_name": "c) grandes, de piel no comestible",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 240,
+      "product_parent_id": 231,
+      "product_code": "0500090",
+      "product_type_id": 4,
+      "product_name": "Trigo",
+      "product_scientific_names": "Triticum aestivum",
+      "product_synonym_names": "Escanda almidonera, Escanda menor/escaña menor, Espelta, Otras especies del género Triticum, no mencionadas en otra parte, Trigo duro, Trigo Khorasan, Tritical, Tritordeum"
+    },
+    {
+      "language": "ES",
+      "product_id": 16,
+      "product_parent_id": 9,
+      "product_code": "0120070",
+      "product_type_id": 4,
+      "product_name": "Macadamias",
+      "product_scientific_names": "Macadamia ternifolia; sinónimo: Macadamia integrifolia, Macadamia tetraphylla",
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 314,
+      "product_parent_id": 313,
+      "product_code": "1011000",
+      "product_type_id": 3,
+      "product_name": "a) porcino",
+      "product_scientific_names": "Sus scrofa",
+      "product_synonym_names": "Jabalí (de granja)"
+    },
+    {
+      "language": "ES",
+      "product_id": 134,
+      "product_parent_id": 133,
+      "product_code": "0241000",
+      "product_type_id": 3,
+      "product_name": "a) inflorescencias",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 244,
+      "product_parent_id": 242,
+      "product_code": "0620000",
+      "product_type_id": 2,
+      "product_name": "Granos de café",
+      "product_scientific_names": "Coffea arabica, Coffea canephora; sinónimo: Coffea robusta, Coffea liberica",
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 136,
+      "product_parent_id": 134,
+      "product_code": "0241020",
+      "product_type_id": 4,
+      "product_name": "Coliflores",
+      "product_scientific_names": "Brassica oleracea var. botrytis",
+      "product_synonym_names": "Romanesco"
+    },
+    {
+      "language": "ES",
+      "product_id": 4,
+      "product_parent_id": 2,
+      "product_code": "0110020",
+      "product_type_id": 4,
+      "product_name": "Naranjas",
+      "product_scientific_names": "Citrus sinensis",
+      "product_synonym_names": "Bergamotas, Naranjas amargas/naranjas agrias, Naranjas Cara Cara, Naranjas espinosas, Naranjas morunas, Naranjas sanguinas, Otros híbridos de Citrus sinensis, no mencionados en otra parte"
+    },
+    {
+      "language": "ES",
+      "product_id": 97,
+      "product_parent_id": 95,
+      "product_code": "0213020",
+      "product_type_id": 4,
+      "product_name": "Zanahorias",
+      "product_scientific_names": "Daucus carota subsp. sativus",
+      "product_synonym_names": "Variedades de zanahorias colores, Zanahorias enanas"
+    },
+    {
+      "language": "ES",
+      "product_id": 297,
+      "product_parent_id": 266,
+      "product_code": "0850000",
+      "product_type_id": 2,
+      "product_name": "Especias de yemas",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 263,
+      "product_parent_id": 242,
+      "product_code": "0640000",
+      "product_type_id": 2,
+      "product_name": "Cacao en grano",
+      "product_scientific_names": "Theobroma cacao",
+      "product_synonym_names": "Cupuazú/cacao blanco, Frutos del colatero, Frutos del colatero"
+    },
+    {
+      "language": "ES",
+      "product_id": 363,
+      "product_parent_id": 312,
+      "product_code": "1020000",
+      "product_type_id": 2,
+      "product_name": "Leche",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 271,
+      "product_parent_id": 267,
+      "product_code": "0810040",
+      "product_type_id": 4,
+      "product_name": "Cilantro",
+      "product_scientific_names": "Coriandrum sativum",
+      "product_synonym_names": "Culantro/cilantro habanero"
+    },
+    {
+      "language": "ES",
+      "product_id": 307,
+      "product_parent_id": null,
+      "product_code": "0900000",
+      "product_type_id": 1,
+      "product_name": "PLANTAS AZUCARERAS",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 3,
+      "product_parent_id": 2,
+      "product_code": "0110010",
+      "product_type_id": 4,
+      "product_name": "Toronjas o pomelos",
+      "product_scientific_names": "Citrus paradisi",
+      "product_synonym_names": "Natsudaidais, Otros híbridos de Citrus paradisi, no mencionados en otra parte, Pamplemusas/pomelos, Pomelit/oroblancos, Tangelos, Tangelos (excepto minneolas)/Ugli®"
+    },
+    {
+      "language": "ES",
+      "product_id": 176,
+      "product_parent_id": 166,
+      "product_code": "0256100",
+      "product_type_id": 4,
+      "product_name": "Estragón",
+      "product_scientific_names": "Artemisia dracunculus",
+      "product_synonym_names": "Dragoncillo/artemisa, Epazote/, Hierba dulce/orozú, Hierba limón, Hisopo, Orégano mexicano, Ortiga, Otras especies del género Urtica, no mencionadas en otra parte, Stevia"
+    },
+    {
+      "language": "ES",
+      "product_id": 52,
+      "product_parent_id": 45,
+      "product_code": "0154070",
+      "product_type_id": 4,
+      "product_name": "Acerolas",
+      "product_scientific_names": "Crataegus azarolus",
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 294,
+      "product_parent_id": 291,
+      "product_code": "0840030",
+      "product_type_id": 4,
+      "product_name": "Cúrcuma",
+      "product_scientific_names": "Curcuma longa; sinónimo: Curcuma domestica",
+      "product_synonym_names": "Asafétida, Cedoaria, Cúrcuma de Java"
+    },
+    {
+      "language": "ES",
+      "product_id": 28,
+      "product_parent_id": 22,
+      "product_code": "0130990",
+      "product_type_id": 5,
+      "product_name": "Los demás (2)",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 102,
+      "product_parent_id": 95,
+      "product_code": "0213070",
+      "product_type_id": 4,
+      "product_name": "Perejil (raíz)",
+      "product_scientific_names": "Petroselinum crispum convar. radicosum",
+      "product_synonym_names": "Otras especies del género Urtica, no mencionadas en otra parte, Perifollos tuberosos, Pimpinela blanca, Raíces de angélica, Raíces de ortiga, Semillas de levístico"
+    },
+    {
+      "language": "ES",
+      "product_id": 321,
+      "product_parent_id": 313,
+      "product_code": "1012000",
+      "product_type_id": 3,
+      "product_name": "b) bovino",
+      "product_scientific_names": "Bos primigenius taurus",
+      "product_synonym_names": "Banteng, Bisonte europeo, Búfalo, Búfalo americano, Cebú, Gayal, Híbridos de los géneros Bison, Bos, Bubalus y Poëphagus, Yak (doméstico)"
+    },
+    {
+      "language": "ES",
+      "product_id": 121,
+      "product_parent_id": 114,
+      "product_code": "0232000",
+      "product_type_id": 3,
+      "product_name": "b) cucurbitáceas de piel comestible",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 113,
+      "product_parent_id": 108,
+      "product_code": "0220990",
+      "product_type_id": 5,
+      "product_name": "Los demás (2)",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 298,
+      "product_parent_id": 297,
+      "product_code": "0850010",
+      "product_type_id": 4,
+      "product_name": "Clavo",
+      "product_scientific_names": "Syzygium aromaticum; sinónimo: Eugenia caryophyllata",
+      "product_synonym_names": "Yemas de cassia, Yemas de cassia, Yemas de cassia"
+    },
+    {
+      "language": "ES",
+      "product_id": 85,
+      "product_parent_id": 73,
+      "product_code": "0163990",
+      "product_type_id": 5,
+      "product_name": "Las demás (2)",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 309,
+      "product_parent_id": 307,
+      "product_code": "0900020",
+      "product_type_id": 4,
+      "product_name": "Cañas de azúcar",
+      "product_scientific_names": "Saccharum officinarum",
+      "product_synonym_names": "Espiguillas de sorgo dulce, Hojas de agave"
+    },
+    {
+      "language": "ES",
+      "product_id": 346,
+      "product_parent_id": 342,
+      "product_code": "1015040",
+      "product_type_id": 4,
+      "product_name": "Riñón",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 235,
+      "product_parent_id": 231,
+      "product_code": "0500040",
+      "product_type_id": 4,
+      "product_name": "Mijo",
+      "product_scientific_names": "Panicum miliaceum",
+      "product_synonym_names": "«Tef», Alpiste, Fonio blanco, Fonio negro, Lágrimas de San Pedro, Mijo africano, Mijo candela, Mijo cola de zorra/Panizo, Mijo menor"
+    },
+    {
+      "language": "ES",
+      "product_id": 246,
+      "product_parent_id": 245,
+      "product_code": "0631000",
+      "product_type_id": 3,
+      "product_name": "a) de flores",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 260,
+      "product_parent_id": 258,
+      "product_code": "0633020",
+      "product_type_id": 4,
+      "product_name": "Ginseng",
+      "product_scientific_names": "Panax ginseng, Panax quinquefolius",
+      "product_synonym_names": "Gingseng siberiano, Gingseng siberiano"
+    },
+    {
+      "language": "ES",
+      "product_id": 127,
+      "product_parent_id": 126,
+      "product_code": "0233010",
+      "product_type_id": 4,
+      "product_name": "Melones",
+      "product_scientific_names": "Cucumis melo",
+      "product_synonym_names": "Frutos del paraíso/kiwanos"
+    },
+    {
+      "language": "ES",
+      "product_id": 95,
+      "product_parent_id": 87,
+      "product_code": "0213000",
+      "product_type_id": 3,
+      "product_name": "c) otras raíces y tubérculos, excluida la remolacha azucarera",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 268,
+      "product_parent_id": 267,
+      "product_code": "0810010",
+      "product_type_id": 4,
+      "product_name": "Anís",
+      "product_scientific_names": "Pimpinella anisum",
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 374,
+      "product_parent_id": 369,
+      "product_code": "1030990",
+      "product_type_id": 5,
+      "product_name": "Los demás (2)",
+      "product_scientific_names": null,
+      "product_synonym_names": "Avestruz, Emú, Ñandú común, Otras aves productoras de huevos"
+    },
+    {
+      "language": "ES",
+      "product_id": 225,
+      "product_parent_id": 207,
+      "product_code": "0402000",
+      "product_type_id": 2,
+      "product_name": "Frutos oleaginosos",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 159,
+      "product_parent_id": 158,
+      "product_code": "0252010",
+      "product_type_id": 4,
+      "product_name": "Espinacas",
+      "product_scientific_names": "Spinacia oleracea",
+      "product_synonym_names": "Amaranto/bledos, Amaranto/bledos, Amaranto/bledos, Amaranto/bledos, Amaranto/bledos, Bitawiri, Crisantemos mojigata, Espinacas de Nueva Zelanda, Espinacas gigantes, Hojas de batata/boniato, Hojas de frijoles de ojo negro/hojas de caupí, Hojas de Tania/hojas de yautía, Hojas de yuca, Veronia"
+    },
+    {
+      "language": "ES",
+      "product_id": 369,
+      "product_parent_id": 312,
+      "product_code": "1030000",
+      "product_type_id": 2,
+      "product_name": "Huevos de ave",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 162,
+      "product_parent_id": 158,
+      "product_code": "0252990",
+      "product_type_id": 5,
+      "product_name": "Las demás (2)",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 302,
+      "product_parent_id": 301,
+      "product_code": "0860010",
+      "product_type_id": 4,
+      "product_name": "Azafrán",
+      "product_scientific_names": "Crocus sativus",
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 191,
+      "product_parent_id": 185,
+      "product_code": "0270060",
+      "product_type_id": 4,
+      "product_name": "Puerros",
+      "product_scientific_names": "Allium ampeloprasum ampeloprasum Grupo de  Grupo de las cebollas perla; sinónimo: Allium porrum var. sectivum",
+      "product_synonym_names": "«Kurrat»/Ajetes"
+    },
+    {
+      "language": "ES",
+      "product_id": 101,
+      "product_parent_id": 95,
+      "product_code": "0213060",
+      "product_type_id": 4,
+      "product_name": "Chirivías",
+      "product_scientific_names": "Pastinaca sativa",
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 232,
+      "product_parent_id": 231,
+      "product_code": "0500010",
+      "product_type_id": 4,
+      "product_name": "Cebada",
+      "product_scientific_names": "Hordeum vulgare",
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 362,
+      "product_parent_id": 356,
+      "product_code": "1017990",
+      "product_type_id": 5,
+      "product_name": "Las demás (2)",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 336,
+      "product_parent_id": 335,
+      "product_code": "1014010",
+      "product_type_id": 4,
+      "product_name": "Músculo",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 149,
+      "product_parent_id": 148,
+      "product_code": "0251010",
+      "product_type_id": 4,
+      "product_name": "Canónigos",
+      "product_scientific_names": "Valerianella locusta",
+      "product_synonym_names": "Hierba de los canónigos italiana"
+    },
+    {
+      "language": "ES",
+      "product_id": 172,
+      "product_parent_id": 166,
+      "product_code": "0256060",
+      "product_type_id": 4,
+      "product_name": "Romero",
+      "product_scientific_names": "Rosmarinus officinalis",
+      "product_synonym_names": "Botonera/santolina, Santolina verde"
+    },
+    {
+      "language": "ES",
+      "product_id": 338,
+      "product_parent_id": 335,
+      "product_code": "1014030",
+      "product_type_id": 4,
+      "product_name": "Hígado",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 252,
+      "product_parent_id": 246,
+      "product_code": "0631990",
+      "product_type_id": 5,
+      "product_name": "Las demás (2)",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 312,
+      "product_parent_id": null,
+      "product_code": "1000000",
+      "product_type_id": 1,
+      "product_name": "PRODUCTOS DE ORIGEN ANIMAL: ANIMALES TERRESTRES",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 301,
+      "product_parent_id": 266,
+      "product_code": "0860000",
+      "product_type_id": 2,
+      "product_name": "Especias del estigma de las flores",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 106,
+      "product_parent_id": 95,
+      "product_code": "0213110",
+      "product_type_id": 4,
+      "product_name": "Nabos",
+      "product_scientific_names": "Brassica rapa subsp. rapa",
+      "product_synonym_names": "Mostaza, raíz tuberosa china"
+    },
+    {
+      "language": "ES",
+      "product_id": 290,
+      "product_parent_id": 288,
+      "product_code": "0830990",
+      "product_type_id": 5,
+      "product_name": "Las demás (2)",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 31,
+      "product_parent_id": 29,
+      "product_code": "0140020",
+      "product_type_id": 4,
+      "product_name": "Cerezas (dulces)",
+      "product_scientific_names": "Cerasus avium; sinónimo: Prunus avium",
+      "product_synonym_names": "Capulís, Cerezas ácidas/cerezas de Morello, Cerezas de Virginia, Cerezas Nanking, Cerezas negras americanas, Cornejos de Cornelia"
+    },
+    {
+      "language": "ES",
+      "product_id": 40,
+      "product_parent_id": 35,
+      "product_code": "0153000",
+      "product_type_id": 3,
+      "product_name": "c) frutas de caña",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 103,
+      "product_parent_id": 95,
+      "product_code": "0213080",
+      "product_type_id": 4,
+      "product_name": "Rábanos",
+      "product_scientific_names": "Raphanus sativus  Grupo Rábanos",
+      "product_synonym_names": "Chufas, Daikon/rábanos japoneses, Rabanitos, Rábanos negros, Raíces de maca"
+    },
+    {
+      "language": "ES",
+      "product_id": 379,
+      "product_parent_id": null,
+      "product_code": "1100000",
+      "product_type_id": 1,
+      "product_name": "PRODUCTOS DE ORIGEN ANIMAL: PESCADO, PRODUCTOS DE PESCADO Y OTROS PRODUCTOS ALIMENTICIOS MARINOS Y DE AGUA DULCE (8)",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 99,
+      "product_parent_id": 95,
+      "product_code": "0213040",
+      "product_type_id": 4,
+      "product_name": "Rábanos rusticanos",
+      "product_scientific_names": "Armoracia rusticana",
+      "product_synonym_names": "Galanga falsa/kencur, Galanga mayor, Galanga menor, Jengibre, Jengibre chino, Raíces de diente de león, Raíces de genciana, Raíces de orris, Raíces de orris, Raíces de wasabi, Rizoma de galanga, Rizoma de galanga, Rizoma de galanga, Rizoma de galanga"
+    },
+    {
+      "language": "ES",
+      "product_id": 210,
+      "product_parent_id": 208,
+      "product_code": "0401020",
+      "product_type_id": 4,
+      "product_name": "Cacahuetes",
+      "product_scientific_names": "Arachis hypogaea",
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 241,
+      "product_parent_id": 231,
+      "product_code": "0500990",
+      "product_type_id": 5,
+      "product_name": "Los demás (2)",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 326,
+      "product_parent_id": 321,
+      "product_code": "1012050",
+      "product_type_id": 4,
+      "product_name": "Despojos comestibles (distintos del hígado o el riñón)",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 168,
+      "product_parent_id": 166,
+      "product_code": "0256020",
+      "product_type_id": 4,
+      "product_name": "Cebolletas",
+      "product_scientific_names": "Allium schoenoprasum",
+      "product_synonym_names": "Ajos de oso, Cebollinos chinos/ajo cebollino"
+    },
+    {
+      "language": "ES",
+      "product_id": 234,
+      "product_parent_id": 231,
+      "product_code": "0500030",
+      "product_type_id": 4,
+      "product_name": "Maíz",
+      "product_scientific_names": "Zea mays",
+      "product_synonym_names": "Maíz córneo/maíz duro"
+    },
+    {
+      "language": "ES",
+      "product_id": 228,
+      "product_parent_id": 225,
+      "product_code": "0402030",
+      "product_type_id": 4,
+      "product_name": "Frutos de palma",
+      "product_scientific_names": "Attalea maripa, Elaeis guineensis, Elaeis oleifera",
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 20,
+      "product_parent_id": 9,
+      "product_code": "0120110",
+      "product_type_id": 4,
+      "product_name": "Nueces",
+      "product_scientific_names": "Juglans nigra, Juglans regia",
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 150,
+      "product_parent_id": 148,
+      "product_code": "0251020",
+      "product_type_id": 4,
+      "product_name": "Lechugas",
+      "product_scientific_names": "Lactuca sativa",
+      "product_synonym_names": "Lechugas de cortar, Lechugas repolladas, Lechugas repolladas/lechugas iceberg, Lechugas romanas/lechugas alargadas/lollo bionda/lollo rossa"
+    },
+    {
+      "language": "ES",
+      "product_id": 221,
+      "product_parent_id": 208,
+      "product_code": "0401130",
+      "product_type_id": 4,
+      "product_name": "Semillas de camelina",
+      "product_scientific_names": "Camelina sativa",
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 72,
+      "product_parent_id": 65,
+      "product_code": "0162990",
+      "product_type_id": 5,
+      "product_name": "Las demás (2)",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 18,
+      "product_parent_id": 9,
+      "product_code": "0120090",
+      "product_type_id": 4,
+      "product_name": "Piñones",
+      "product_scientific_names": "Pinus pinea",
+      "product_synonym_names": "Otras especies del género Pinus, no mencionadas en otra parte, Piñones de especies distintas de Pinus pinea, Piñones de especies distintas de Pinus pinea, Piñones de especies distintas de Pinus pinea, Piñones de especies distintas de Pinus pinea, Piñones de especies distintas de Pinus pinea, Piñones de especies distintas de Pinus pinea, Piñones de especies distintas de Pinus pinea"
+    },
+    {
+      "language": "ES",
+      "product_id": 304,
+      "product_parent_id": 266,
+      "product_code": "0870000",
+      "product_type_id": 2,
+      "product_name": "Especias de arilo",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 177,
+      "product_parent_id": 166,
+      "product_code": "0256990",
+      "product_type_id": 5,
+      "product_name": "Las demás (2)",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 83,
+      "product_parent_id": 73,
+      "product_code": "0163100",
+      "product_type_id": 4,
+      "product_name": "Duriones",
+      "product_scientific_names": "Durio zibethinus",
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 15,
+      "product_parent_id": 9,
+      "product_code": "0120060",
+      "product_type_id": 4,
+      "product_name": "Avellanas",
+      "product_scientific_names": "Corylus avellana",
+      "product_synonym_names": "Avellanas de Lambert, Bellotas"
+    },
+    {
+      "language": "ES",
+      "product_id": 380,
+      "product_parent_id": null,
+      "product_code": "1200000",
+      "product_type_id": 1,
+      "product_name": "PRODUCTOS O PARTES DE PRODUCTOS UTILIZADOS EXCLUSIVAMENTE EN LA ALIMENTACIÓN ANIMAL (8)",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 360,
+      "product_parent_id": 356,
+      "product_code": "1017040",
+      "product_type_id": 4,
+      "product_name": "Riñón",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 222,
+      "product_parent_id": 208,
+      "product_code": "0401140",
+      "product_type_id": 4,
+      "product_name": "Semillas de cáñamo",
+      "product_scientific_names": "Cannabis sativa subsp. sativa, Cannabis sativa subsp. spontanea",
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 288,
+      "product_parent_id": 266,
+      "product_code": "0830000",
+      "product_type_id": 2,
+      "product_name": "Especias de corteza",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 46,
+      "product_parent_id": 45,
+      "product_code": "0154010",
+      "product_type_id": 4,
+      "product_name": "Mirtilos gigantes",
+      "product_scientific_names": "Vaccinium angustifolium, Vaccinium corymbosum, Vaccinium formosum, Vaccinium virgatum",
+      "product_synonym_names": "Agracejos, Agracejos, Agracejos, Agracejos, Arándano de fruto encarnado (arándanos rojos), Arándano de fruto encarnado (arándanos rojos), Arándano de fruto encarnado (arándanos rojos), Arándano de fruto encarnado (arándanos rojos), Arándano de fruto encarnado (arándanos rojos), Arándano de fruto encarnado (arándanos rojos), Arándano de fruto encarnado (arándanos rojos), Arándano de fruto encarnado (arándanos rojos), Arándanos «Huckleberrie», Arándanos «Huckleberrie», Arándanos «Huckleberrie», Arándanos «Huckleberrie», Arándanos de las ciénagas, Arándanos de las ciénagas, Arándanos de las ciénagas, Arándanos de las ciénagas, Bayas ásperas/grosellas nativas, Bayas ásperas/grosellas nativas, Bayas ásperas/grosellas nativas, Bayas ásperas/grosellas nativas, Bayas chilenas, Bayas chilenas, Bayas chilenas, Bayas chilenas, Bayas de aronia (negras, moradas y rojas), Bayas de aronia (negras, moradas y rojas), Bayas de aronia (negras, moradas y rojas), Bayas de aronia (negras, moradas y rojas), Bayas de aronia (negras, moradas y rojas), Bayas de aronia (negras, moradas y rojas), Bayas de aronia (negras, moradas y rojas), Bayas de aronia (negras, moradas y rojas), Bayas de aronia (negras, moradas y rojas), Bayas de aronia (negras, moradas y rojas), Bayas de aronia (negras, moradas y rojas), Bayas de aronia (negras, moradas y rojas), Bayas de madreselva azul, Bayas de madreselva azul, Bayas de madreselva azul, Bayas de madreselva azul, Bayas de mirtilo/arándanos Vaccinium myrtillus, Bayas de mirtilo/arándanos Vaccinium myrtillus, Bayas de mirtilo/arándanos Vaccinium myrtillus, Bayas de mirtilo/arándanos Vaccinium myrtillus, Bayas de salal, Bayas de salal, Bayas de salal, Bayas de salal, Cornillos/bayas de junio, Cornillos/bayas de junio, Cornillos/bayas de junio, Cornillos/bayas de junio, Espino amarillo/espino falso, Espino amarillo/espino falso, Espino amarillo/espino falso, Espino amarillo/espino falso, Grosellas doradas, Grosellas doradas, Grosellas doradas, Grosellas doradas, Grosellas josta, Grosellas josta, Grosellas josta, Grosellas josta, Murtas/bayas de arrayán, Murtas/bayas de arrayán, Murtas/bayas de arrayán, Murtas/bayas de arrayán, Otras especies y otros híbridos de los géneros Ribes y Vaccinium, no mencionados en otra parte, Otras especies y otros híbridos de los géneros Ribes y Vaccinium, no mencionados en otra parte, Otras especies y otros híbridos de los géneros Ribes y Vaccinium, no mencionados en otra parte, Otras especies y otros híbridos de los géneros Ribes y Vaccinium, no mencionados en otra parte, Serbas, Serbas, Serbas, Serbas, Uvas de oso, Uvas de oso, Uvas de oso, Uvas de oso, Worcesterberries, Worcesterberries, Worcesterberries, Worcesterberries"
+    },
+    {
+      "language": "ES",
+      "product_id": 163,
+      "product_parent_id": 147,
+      "product_code": "0253000",
+      "product_type_id": 3,
+      "product_name": "c) hojas de vid y especies similares",
+      "product_scientific_names": "Vitis vinifera",
+      "product_synonym_names": "Brotes de acacia, Espinacas de Malabar"
+    },
+    {
+      "language": "ES",
+      "product_id": 69,
+      "product_parent_id": 65,
+      "product_code": "0162040",
+      "product_type_id": 4,
+      "product_name": "Higos chumbos (fruto de la chumbera)",
+      "product_scientific_names": "Opuntia ficusindica",
+      "product_synonym_names": "Frutas del saguaro, Pita(ha)yas amarillas, Pitayas rojas, Pitayas/frutas del dragón"
+    },
+    {
+      "language": "ES",
+      "product_id": 188,
+      "product_parent_id": 185,
+      "product_code": "0270030",
+      "product_type_id": 4,
+      "product_name": "Apio",
+      "product_scientific_names": "Apium graveolens var. dulce",
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 201,
+      "product_parent_id": null,
+      "product_code": "0300000",
+      "product_type_id": 1,
+      "product_name": "LEGUMINOSAS SECAS",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 250,
+      "product_parent_id": 246,
+      "product_code": "0631040",
+      "product_type_id": 4,
+      "product_name": "Jazmín",
+      "product_scientific_names": "Jasminum officinale, Jasminum sambac",
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 171,
+      "product_parent_id": 166,
+      "product_code": "0256050",
+      "product_type_id": 4,
+      "product_name": "Salvia real",
+      "product_scientific_names": "Salvia officinalis",
+      "product_synonym_names": "Hojas de borraja, Otras especies y otros híbridos del género Salvia, no mencionados en otra parte, Planta de hojas de curry, Salvia griega/salvia de jardín, Salvia mexicana"
+    },
+    {
+      "language": "ES",
+      "product_id": 49,
+      "product_parent_id": 45,
+      "product_code": "0154040",
+      "product_type_id": 4,
+      "product_name": "Grosellas espinosas (verdes, rojas y amarillas)",
+      "product_scientific_names": "Ribes uvacrispa",
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 63,
+      "product_parent_id": 56,
+      "product_code": "0161070",
+      "product_type_id": 4,
+      "product_name": "Yambolanas",
+      "product_scientific_names": "Syzygium cumini",
+      "product_synonym_names": "Bayas de agua, Cajuil de Sulimán, Camu camu, Carandas, Cerezas agrias, Cerezas de agua, Cerezas de Barbados, Cerezas de Suriname, Ciruelas de los Andes, Grumichamas, Jobos amarillos, Madroños, Manzanas de agua, Uvas de mar"
+    },
+    {
+      "language": "ES",
+      "product_id": 206,
+      "product_parent_id": 201,
+      "product_code": "0300990",
+      "product_type_id": 5,
+      "product_name": "Los demás (2)",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 233,
+      "product_parent_id": 231,
+      "product_code": "0500020",
+      "product_type_id": 4,
+      "product_name": "Alforfón y otros seudocereales",
+      "product_scientific_names": "Fagopyrum esculentum",
+      "product_synonym_names": "Amaranto/bledos, Amaranto/bledos, Amaranto/bledos, Canagua/canigua, Quinoa, Semillas de chía"
+    },
+    {
+      "language": "ES",
+      "product_id": 118,
+      "product_parent_id": 115,
+      "product_code": "0231030",
+      "product_type_id": 4,
+      "product_name": "Berenjenas",
+      "product_scientific_names": "Solanum melongena",
+      "product_synonym_names": "Berenjenas africanas/berenjenas blancas, Berenjenas cimarronas, Nakatis etíopes, Pepino dulce, Poroporo/kohoho/bullibulli, Solanum incanum"
+    },
+    {
+      "language": "ES",
+      "product_id": 345,
+      "product_parent_id": 342,
+      "product_code": "1015030",
+      "product_type_id": 4,
+      "product_name": "Hígado",
+      "product_scientific_names": null,
+      "product_synonym_names": null
+    },
+    {
+      "language": "ES",
+      "product_id": 286,
+      "product_parent_id": 278,
+      "product_code": "0820080",
+      "product_type_id": 4,
+      "product_name": "Tamarindos",
+      "product_scientific_names": "Tamarindus indica",
+      "product_synonym_names": null
+    }
+  ],
+  "nextLink": "https://api.datalake.sante.service.ec.europa.eu/sante/pesticides/pesticide-residues-products?$after=W3siRW50aXR5TmFtZSI6IlBJTVNfVFJfUEVTVElDSURFX1JFU0lEVUVTX1BST0RVQ1RTIiwiRmllbGROYW1lIjoiaGFzaF9jb2x1bW4iLCJGaWVsZFZhbHVlIjoiUnRKMXV4R1hzRTExUkt6VklcdTAwMkJlbXZIbkpHZEE9IiwiRGlyZWN0aW9uIjowfV0=&format=json&language=ES&api-version=v3.0"
+}

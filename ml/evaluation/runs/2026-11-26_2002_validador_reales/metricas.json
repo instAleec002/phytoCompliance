@@ -1,0 +1,78 @@
+{
+ "programas": 5,
+ "filas": 56,
+ "filas_plaguicida": 54,
+ "no_plaguicida": 2,
+ "resueltas_por_nombre": 12,
+ "resueltas_por_ingrediente": 36,
+ "no_resueltas": 6,
+ "nombre_e_ingrediente_discrepan": 0,
+ "fechas_exactas": 15,
+ "fechas_aproximadas": 33,
+ "filas_con_bloqueante": 1,
+ "filas_con_riesgo": 33,
+ "hallazgos": {
+  "DEFAULT_LIMIT": 6,
+  "ROTATION_SAME_GROUP": 17,
+  "LIMIT_AT_LOQ": 17,
+  "PHI_NOT_MET": 1
+ },
+ "por_programa": [
+  {
+   "pid": "r1",
+   "cultivo": "table_grape",
+   "filas": 4,
+   "no_conforme": false,
+   "con_riesgo": true,
+   "hallazgos": {
+    "DEFAULT_LIMIT": 2,
+    "ROTATION_SAME_GROUP": 1
+   }
+  },
+  {
+   "pid": "r2",
+   "cultivo": "table_grape",
+   "filas": 5,
+   "no_conforme": false,
+   "con_riesgo": true,
+   "hallazgos": {
+    "DEFAULT_LIMIT": 3,
+    "ROTATION_SAME_GROUP": 3
+   }
+  },
+  {
+   "pid": "r3",
+   "cultivo": "table_grape",
+   "filas": 6,
+   "no_conforme": false,
+   "con_riesgo": true,
+   "hallazgos": {
+    "DEFAULT_LIMIT": 1,
+    "ROTATION_SAME_GROUP": 1
+   }
+  },
+  {
+   "pid": "r4",
+   "cultivo": "avocado",
+   "filas": 18,
+   "no_conforme": false,
+   "con_riesgo": true,
+   "hallazgos": {
+    "LIMIT_AT_LOQ": 8,
+    "ROTATION_SAME_GROUP": 2
+   }
+  },
+  {
+   "pid": "r5",
+   "cultivo": "avocado",
+   "filas": 23,
+   "no_conforme": true,
+   "con_riesgo": true,
+   "hallazgos": {
+    "LIMIT_AT_LOQ": 10,
+    "PHI_NOT_MET": 1,
+    "ROTATION_SAME_GROUP": 3
+   }
+  }
+ ]
+}

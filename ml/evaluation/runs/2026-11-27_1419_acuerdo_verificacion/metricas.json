@@ -1,0 +1,498 @@
+{
+ "anotacion": "ml/evaluation/suites/fidelidad_s2_verificacion_anotacion.xlsx (no publicada: contiene pasajes del corpus)",
+ "anotadas_ahora": 197,
+ "reutilizadas": 36,
+ "sin_etiqueta": 0,
+ "corridas": {
+  "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b": {
+   "respuestas_con_texto_antes": 30,
+   "respuestas_con_texto_despues": 22,
+   "fidelidad_persona_antes": 0.506,
+   "fidelidad_persona_despues": 0.824,
+   "por_tipo": {
+    "un_salto": {
+     "antes": 0.649,
+     "despues": 0.894
+    },
+    "varios_saltos": {
+     "antes": 0.38,
+     "despues": 0.74
+    }
+   },
+   "pareadas": {
+    "n": 22,
+    "antes": 0.667,
+    "despues": 0.824,
+    "sube": 6,
+    "baja": 1,
+    "wilcoxon_p": 0.0274
+   },
+   "regla": {
+    "ganancia_fidelidad": 0.318,
+    "perdida_cobertura": 0.267,
+    "mejora": true
+   },
+   "verificador_frente_a_persona": {
+    "oraciones": 89,
+    "kappa_conservar_frente_a_respaldada": 0.619,
+    "retiradas": 38,
+    "retiradas_que_la_persona_no_respaldaba": 33,
+    "no_respaldadas_por_la_persona": 45,
+    "conservadas_que_la_persona_no_respaldaba": 12
+   },
+   "jueces_frente_a_persona": {
+    "2026-11-27_0042_fidelidad_s2_ver-gemma4-e4b_qwen3-8b": {
+     "juez": "local:qwen3:8b",
+     "oraciones": 51,
+     "kappa": 0.234
+    },
+    "2026-11-27_0109_rejuicio_s2_qwen3-8b": {
+     "juez": "local:qwen3:8b",
+     "oraciones": 89,
+     "kappa": 0.397
+    },
+    "2026-11-27_0112_rejuicio_s2_gemma4-e4b": {
+     "juez": "local:gemma4:e4b",
+     "oraciones": 88,
+     "kappa": 0.592
+    },
+    "2026-11-27_0114_rejuicio_s2_gemma4-e4b": {
+     "juez": "local:gemma4:e4b",
+     "oraciones": 50,
+     "kappa": 0.08
+    },
+    "2026-11-27_0116_rejuicio_s2_llama3_1-8b": {
+     "juez": "local:llama3.1:8b",
+     "oraciones": 89,
+     "kappa": -0.051
+    },
+    "2026-11-27_0118_rejuicio_s2_llama3_1-8b": {
+     "juez": "local:llama3.1:8b",
+     "oraciones": 51,
+     "kappa": -0.041
+    }
+   },
+   "por_respuesta": [
+    {
+     "qid": "t003",
+     "tipo": "un_salto",
+     "antes": 0,
+     "despues": null
+    },
+    {
+     "qid": "t009",
+     "tipo": "un_salto",
+     "antes": 0,
+     "despues": null
+    },
+    {
+     "qid": "t012",
+     "tipo": "un_salto",
+     "antes": 1,
+     "despues": 1
+    },
+    {
+     "qid": "t013",
+     "tipo": "un_salto",
+     "antes": 1,
+     "despues": 1
+    },
+    {
+     "qid": "t023",
+     "tipo": "un_salto",
+     "antes": 1,
+     "despues": 1
+    },
+    {
+     "qid": "t024",
+     "tipo": "un_salto",
+     "antes": 1,
+     "despues": 1
+    },
+    {
+     "qid": "t025",
+     "tipo": "un_salto",
+     "antes": 1,
+     "despues": 1
+    },
+    {
+     "qid": "t027",
+     "tipo": "un_salto",
+     "antes": 0.6666666666666666,
+     "despues": 0.6666666666666666
+    },
+    {
+     "qid": "t029",
+     "tipo": "un_salto",
+     "antes": 0.5,
+     "despues": 1
+    },
+    {
+     "qid": "t031",
+     "tipo": "un_salto",
+     "antes": 0.25,
+     "despues": 1
+    },
+    {
+     "qid": "t033",
+     "tipo": "un_salto",
+     "antes": 1,
+     "despues": 1
+    },
+    {
+     "qid": "t034",
+     "tipo": "un_salto",
+     "antes": 0.5,
+     "despues": 1
+    },
+    {
+     "qid": "t037",
+     "tipo": "un_salto",
+     "antes": 0.6666666666666666,
+     "despues": 0.6666666666666666
+    },
+    {
+     "qid": "t038",
+     "tipo": "un_salto",
+     "antes": 0.5,
+     "despues": 0.4
+    },
+    {
+     "qid": "t042",
+     "tipo": "varios_saltos",
+     "antes": 0.3333333333333333,
+     "despues": 1
+    },
+    {
+     "qid": "t044",
+     "tipo": "varios_saltos",
+     "antes": 1,
+     "despues": 1
+    },
+    {
+     "qid": "t045",
+     "tipo": "varios_saltos",
+     "antes": 1,
+     "despues": 1
+    },
+    {
+     "qid": "t046",
+     "tipo": "varios_saltos",
+     "antes": 0,
+     "despues": 0
+    },
+    {
+     "qid": "t047",
+     "tipo": "varios_saltos",
+     "antes": 1,
+     "despues": 1
+    },
+    {
+     "qid": "t049",
+     "tipo": "varios_saltos",
+     "antes": 0.6,
+     "despues": 0.6
+    },
+    {
+     "qid": "t050",
+     "tipo": "varios_saltos",
+     "antes": 0.8,
+     "despues": 0.8
+    },
+    {
+     "qid": "t051",
+     "tipo": "varios_saltos",
+     "antes": 0.5,
+     "despues": null
+    },
+    {
+     "qid": "t052",
+     "tipo": "varios_saltos",
+     "antes": 0.25,
+     "despues": 1
+    },
+    {
+     "qid": "t053",
+     "tipo": "varios_saltos",
+     "antes": 0,
+     "despues": null
+    },
+    {
+     "qid": "t054",
+     "tipo": "varios_saltos",
+     "antes": 0,
+     "despues": null
+    },
+    {
+     "qid": "t055",
+     "tipo": "varios_saltos",
+     "antes": 0,
+     "despues": 0
+    },
+    {
+     "qid": "t056",
+     "tipo": "varios_saltos",
+     "antes": 0.6,
+     "despues": 1
+    },
+    {
+     "qid": "t057",
+     "tipo": "varios_saltos",
+     "antes": 0,
+     "despues": null
+    },
+    {
+     "qid": "t058",
+     "tipo": "varios_saltos",
+     "antes": 0,
+     "despues": null
+    },
+    {
+     "qid": "t060",
+     "tipo": "varios_saltos",
+     "antes": 0,
+     "despues": null
+    }
+   ]
+  },
+  "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b": {
+   "respuestas_con_texto_antes": 28,
+   "respuestas_con_texto_despues": 28,
+   "fidelidad_persona_antes": 0.949,
+   "fidelidad_persona_despues": 0.964,
+   "por_tipo": {
+    "un_salto": {
+     "antes": 0.965,
+     "despues": 1
+    },
+    "varios_saltos": {
+     "antes": 0.934,
+     "despues": 0.933
+    }
+   },
+   "pareadas": {
+    "n": 28,
+    "antes": 0.949,
+    "despues": 0.964,
+    "sube": 3,
+    "baja": 3,
+    "wilcoxon_p": 0.3441
+   },
+   "regla": {
+    "ganancia_fidelidad": 0.015,
+    "perdida_cobertura": 0.0,
+    "mejora": true
+   },
+   "verificador_frente_a_persona": {
+    "oraciones": 143,
+    "kappa_conservar_frente_a_respaldada": 0.087,
+    "retiradas": 28,
+    "retiradas_que_la_persona_no_respaldaba": 3,
+    "no_respaldadas_por_la_persona": 8,
+    "conservadas_que_la_persona_no_respaldaba": 5
+   },
+   "jueces_frente_a_persona": {
+    "2026-11-27_0120_fidelidad_s2_gen-gemma4-e4b_ver-qwen3-8b_qwen3-8b": {
+     "juez": "local:qwen3:8b",
+     "oraciones": 116,
+     "kappa": 0.373
+    },
+    "2026-11-27_0143_rejuicio_s2_qwen3-8b": {
+     "juez": "local:qwen3:8b",
+     "oraciones": 143,
+     "kappa": 0.137
+    },
+    "2026-11-27_0146_rejuicio_s2_gemma4-e4b": {
+     "juez": "local:gemma4:e4b",
+     "oraciones": 143,
+     "kappa": 0.228
+    },
+    "2026-11-27_0148_rejuicio_s2_gemma4-e4b": {
+     "juez": "local:gemma4:e4b",
+     "oraciones": 116,
+     "kappa": 0.269
+    },
+    "2026-11-27_0150_rejuicio_s2_llama3_1-8b": {
+     "juez": "local:llama3.1:8b",
+     "oraciones": 143,
+     "kappa": 0.008
+    },
+    "2026-11-27_0153_rejuicio_s2_llama3_1-8b": {
+     "juez": "local:llama3.1:8b",
+     "oraciones": 116,
+     "kappa": 0.058
+    }
+   },
+   "por_respuesta": [
+    {
+     "qid": "t003",
+     "tipo": "un_salto",
+     "antes": 1,
+     "despues": 1
+    },
+    {
+     "qid": "t009",
+     "tipo": "un_salto",
+     "antes": 1,
+     "despues": 1
+    },
+    {
+     "qid": "t012",
+     "tipo": "un_salto",
+     "antes": 0.75,
+     "despues": 1
+    },
+    {
+     "qid": "t013",
+     "tipo": "un_salto",
+     "antes": 1,
+     "despues": 1
+    },
+    {
+     "qid": "t023",
+     "tipo": "un_salto",
+     "antes": 1,
+     "despues": 1
+    },
+    {
+     "qid": "t024",
+     "tipo": "un_salto",
+     "antes": 1,
+     "despues": 1
+    },
+    {
+     "qid": "t025",
+     "tipo": "un_salto",
+     "antes": 1,
+     "despues": 1
+    },
+    {
+     "qid": "t027",
+     "tipo": "un_salto",
+     "antes": 1,
+     "despues": 1
+    },
+    {
+     "qid": "t029",
+     "tipo": "un_salto",
+     "antes": 0.8,
+     "despues": 1
+    },
+    {
+     "qid": "t031",
+     "tipo": "un_salto",
+     "antes": 1,
+     "despues": 1
+    },
+    {
+     "qid": "t033",
+     "tipo": "un_salto",
+     "antes": 1,
+     "despues": 1
+    },
+    {
+     "qid": "t034",
+     "tipo": "un_salto",
+     "antes": 1,
+     "despues": 1
+    },
+    {
+     "qid": "t037",
+     "tipo": "un_salto",
+     "antes": 1,
+     "despues": 1
+    },
+    {
+     "qid": "t042",
+     "tipo": "varios_saltos",
+     "antes": 1,
+     "despues": 1
+    },
+    {
+     "qid": "t044",
+     "tipo": "varios_saltos",
+     "antes": 1,
+     "despues": 1
+    },
+    {
+     "qid": "t045",
+     "tipo": "varios_saltos",
+     "antes": 1,
+     "despues": 1
+    },
+    {
+     "qid": "t046",
+     "tipo": "varios_saltos",
+     "antes": 1,
+     "despues": 1
+    },
+    {
+     "qid": "t047",
+     "tipo": "varios_saltos",
+     "antes": 0.9090909090909091,
+     "despues": 0.75
+    },
+    {
+     "qid": "t049",
+     "tipo": "varios_saltos",
+     "antes": 1,
+     "despues": 1
+    },
+    {
+     "qid": "t050",
+     "tipo": "varios_saltos",
+     "antes": 0.8888888888888888,
+     "despues": 0.8571428571428571
+    },
+    {
+     "qid": "t051",
+     "tipo": "varios_saltos",
+     "antes": 0.8333333333333334,
+     "despues": 0.8
+    },
+    {
+     "qid": "t052",
+     "tipo": "varios_saltos",
+     "antes": 0.8333333333333334,
+     "despues": 0.8333333333333334
+    },
+    {
+     "qid": "t053",
+     "tipo": "varios_saltos",
+     "antes": 1,
+     "despues": 1
+    },
+    {
+     "qid": "t054",
+     "tipo": "varios_saltos",
+     "antes": 0.8,
+     "despues": 1
+    },
+    {
+     "qid": "t055",
+     "tipo": "varios_saltos",
+     "antes": 0.75,
+     "despues": 0.75
+    },
+    {
+     "qid": "t056",
+     "tipo": "varios_saltos",
+     "antes": 1,
+     "despues": 1
+    },
+    {
+     "qid": "t057",
+     "tipo": "varios_saltos",
+     "antes": 1,
+     "despues": 1
+    },
+    {
+     "qid": "t058",
+     "tipo": "varios_saltos",
+     "antes": 1,
+     "despues": 1
+    }
+   ]
+  }
+ }
+}

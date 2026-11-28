@@ -1,0 +1,114 @@
+# Ingredientes hacia las secciones de 40 CFR 180 (eCFR del 26/10/2026). Clave: ingrediente normalizado del grafo.
+# Valor: el nombre de la sustancia tal como encabeza la sección, comprobado. Sin sección, en EE. UU. el residuo no
+# está permitido; por eso cada químico sin sección figura en checked_absent con lo que se revisó.
+
+to_section:
+  abamectin: Avermectin B1 and its delta-8,9-isomer          # § 180.449, «residues of abamectin»
+  emamectin benzoate: Emamectin                              # § 180.505
+  glufosinate-ammonium: Glufosinate                          # § 180.473
+  lambda-cyhalothrin: Lambda-cyhalothrin and an isomer gamma-cyhalothrin   # § 180.438
+  metalaxyl-m: [Metalaxyl, Mefenoxam]                        # mefenoxam es el metalaxil-M (§ 180.546)
+  fosetyl-aluminium: Aluminum tris (O-ethylphosphonate)      # § 180.415
+  uniconazole-p: Uniconazole                                 # § 180.643
+  sodium metabisulphite: Sulfur dioxide                      # § 180.444, residuos de sulfito medidos como SO2
+  # cobre: § 180.1021(b), exentos como fungicida en cultivos en crecimiento
+  copper hydroxide: Copper
+  copper oxychloride: Copper
+  copper sulphate: Copper
+  copper sulphate pentahydrate: Copper
+  cuprous oxide: Copper
+  tribasic copper sulphate: Copper                           # «copper sulfate basic»
+  paraffin oil: Petroleum oils                               # § 180.905(a)(1), en cultivos en crecimiento
+  # productos biológicos
+  potassium hydrogen carbonate: Carbonic acid, monopotassium salt   # § 180.950(e)
+  l-ascorbic acid: Ascorbic acid (vitamin C)                 # § 180.950(e)
+  aceite de soya: edible fats and oils                       # § 180.950(c)
+  aceite de algodon: edible fats and oils
+  aceite de palma aceitera: edible fats and oils
+  aceite de ricino: Castor oil                               # § 180.950(e)
+  extracto de canela: commonly consumed food commodities     # § 180.950(a)(1)(ii), especias como la canela
+  neem: Cold pressed neem oil
+  bacillus thuringiensis: &bt Viable spores of the microorganism Bacillus thuringiensis Berliner   # § 180.1011
+  bacillus thuringiensis var kurstaki: *bt
+  bacillus thuringiensis var. kurstaki: *bt
+  bacillus thuringiensis var aizawai: *bt
+  bacillus thuringiensis var israelensis: *bt
+  bacillus thuringiensis var. tenebrionis: *bt
+  bacillus thuringiensis cepa n1: *bt
+  bacillus thuringiensis cepa n2: *bt
+  gibberellin: Gibberellins [Gibberellic Acids (GA3 and GA4 + GA7), and Sodium or Potassium Gibberellate]
+  1-naphthylacetic acid: 1-Naphthaleneacetic acid           # § 180.155, tolerancias
+  lepidopteran pheromone: Lepidopteran pheromones            # § 180.1153
+  virus de la poliedrosis nuclear de helicoverpa zea: Nuclear polyhedrosis virus of Heliothis zea   # Heliothis = Helicoverpa
+  spodoptera exigua nucleopolyhedrovirus: Spodoptera exigua nuclear polyhedrosis virus
+  capsaicina: Capsaicin
+  chitosan: Poly-D-glucosamine (chitosan)
+  citoquininas: Cytokinins
+  fatty acids potassium salts: C12-C18 fatty acid potassium salts
+  extracto de quillaja saponaria: Quillaja saponaria extract (saponins)
+  extracto de reynoutria sachalinensis: Reynoutria sachalinensis extract
+  extracto de chenopodium ambrosioides: Extract of Chenopodium ambrosioides near ambrosioides
+  burkholderia rinojensis y su medio fermentativo: Inactivated Burkholderia rinojensis strain A396 cells and spent fermentation media
+  complejo polioxina: Polyoxin D zinc salt
+  aldehido cinamico: Cinnamaldehyde
+  d-limoneno: d-Limonene
+  # palta y uva de mesa (28/10/2026)
+  acido peracetico: Peroxyacetic acid                        # § 180.1196, exención
+  alpha-cypermethrin: Cypermethrin and isomers alpha-cypermethrin and zeta-cypermethrin   # § 180.418
+  cypermethrin: Cypermethrin and isomers alpha-cypermethrin and zeta-cypermethrin
+  ethoprophos: Ethoprop                                      # § 180.262
+  halosulphuron methyl: Halosulfuron-methyl                  # § 180.479
+  magnesium phosphide: Phosphine                             # § 180.225, residuos de fosfina de los fosfuros
+  mepiquat chloride: Mepiquat (N,N-dimethylpiperidinium)     # § 180.384
+  prohexadione-calcium: Prohexadione calcium                 # § 180.547
+  propamocarb hydrochloride: Propamocarb                     # § 180.499
+  fosetyl: Aluminum tris (O-ethylphosphonate)                # § 180.415
+  propylene glycol monolaurate: C8, C10, and C12 fatty acid monoesters of glycerol and propylene glycol   # § 180.1250
+  complejo yodo polietoxi polipropoxi polietoxietanol: Iodine-detergent complex   # § 180.1022, yodo con detergentes de polioxipropileno y polioxietileno
+
+checked_absent:
+  carbendazim: sin tolerancia propia; el MBC solo se tolera como metabolito del tiofanato-metilo (§ 180.371)
+  hymexazol: sin tolerancia ni exención en 40 CFR 180
+  lufenuron: sin tolerancia ni exención en 40 CFR 180
+  phenthoate: sin tolerancia ni exención en 40 CFR 180
+  prochloraz: sin tolerancia ni exención en 40 CFR 180
+  paclobutrazol: sin tolerancia ni exención en 40 CFR 180
+  hydrogen cyanamide: sin tolerancia ni exención en 40 CFR 180
+  ningnanmycin: sin tolerancia ni exención en 40 CFR 180
+  sophora flavescens: sin tolerancia ni exención en 40 CFR 180
+  cnidium monnieri extract: sin tolerancia ni exención en 40 CFR 180
+  tetraethyl silicate: coadyuvante; su estado es el de ingrediente inerte (§ 180.910 a 180.940), fuera del alcance
+  polyalkyleneoxide modified heptamethyltrisiloxane: coadyuvante; su estado es el de ingrediente inerte (§ 180.910 a 180.940), fuera del alcance
+  # palta y uva de mesa (28/10/2026)
+  benalaxyl: sin tolerancia propia; solo hay tolerancias para benalaxil-M (§ 180.684)
+  benfuracarb: sin tolerancia propia; § 180.254 cubre el carbofurano de su propio uso
+  triadimenol: sin tolerancia propia; figura como metabolito en la tolerancia del triadimefón (§ 180.410)
+  rotenone: § 180.905(b) la exime en cultivos en crecimiento, pero no hay registros en EE. UU. desde 2011
+  copper: SIGIA no indica la sal; § 180.1021(b) exime solo las sales de cobre que lista
+  bordeaux mixture: § 180.1021(b) no nombra el caldo bordelés entre las sales de cobre exentas
+  copper nitrate: § 180.1021(b) no nombra el nitrato de cobre entre las sales de cobre exentas
+  copper phosphate: § 180.1021(b) no nombra el fosfato de cobre entre las sales de cobre exentas
+  propaquizafop: sin tolerancia propia; § 180.441 es para el quizalofop-etilo
+  quizalofop-p-tefuryl: sin tolerancia propia; § 180.441 es para el quizalofop-etilo
+  benomyl: sin tolerancia ni exención en 40 CFR 180
+  bromadiolone: sin tolerancia ni exención en 40 CFR 180
+  bupirimate: sin tolerancia ni exención en 40 CFR 180
+  cyhexatin: sin tolerancia ni exención en 40 CFR 180
+  dichlorprop-p: sin tolerancia ni exención en 40 CFR 180
+  diniconazole: sin tolerancia ni exención en 40 CFR 180
+  endosulfan: sin tolerancia ni exención en 40 CFR 180
+  haloxyfop-methyl: sin tolerancia ni exención en 40 CFR 180
+  hexaconazole: sin tolerancia ni exención en 40 CFR 180
+  lime sulphur: sin tolerancia ni exención en 40 CFR 180
+  methamidophos: sin tolerancia ni exención en 40 CFR 180
+  metominostrobin: sin tolerancia ni exención en 40 CFR 180
+  milbemectin: sin tolerancia ni exención en 40 CFR 180
+  oxadiazon: sin tolerancia ni exención en 40 CFR 180
+  penconazole: sin tolerancia ni exención en 40 CFR 180
+  propineb: sin tolerancia ni exención en 40 CFR 180
+  pyraziflumid: sin tolerancia ni exención en 40 CFR 180
+  quinoleina fenolica: sin tolerancia ni exención en 40 CFR 180
+  spidoxamat: sin tolerancia ni exención en 40 CFR 180
+  tebufenpyrad: sin tolerancia ni exención en 40 CFR 180
+  thiocyclam hydrogen oxalate: sin tolerancia ni exención en 40 CFR 180
+  zinc thiazole: sin tolerancia ni exención en 40 CFR 180

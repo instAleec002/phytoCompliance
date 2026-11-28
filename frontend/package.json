@@ -1,0 +1,35 @@
+{
+  "name": "tp202620505-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Interfaz del sistema de cumplimiento fitosanitario: web en la nube y base de la aplicación de escritorio (Tauri)",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "npx serve non_build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "gen:api": "openapi-typescript src/lib/api/openapi.json -o src/lib/api/schema.d.ts"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "5.3.0",
+    "@fontsource/eb-garamond": "5.3.0",
+    "@tanstack/react-query": "5.104.3",
+    "next": "16.3.8",
+    "openapi-fetch": "0.17.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "7.0.1",
+    "@testing-library/react": "16.3.3",
+    "@types/node": "24.19.2",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.7",
+    "@vitejs/plugin-react": "6.1.2",
+    "jsdom": "27.4.0",
+    "openapi-typescript": "7.13.0",
+    "typescript": "5.9.3",
+    "vitest": "5.0.3"
+  }
+}

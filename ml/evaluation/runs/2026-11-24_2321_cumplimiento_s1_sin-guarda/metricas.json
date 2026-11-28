@@ -1,0 +1,19 @@
+{
+ "modo": "sin-guarda",
+ "modelo": "qwen3:8b",
+ "preguntas": 110,
+ "exactitud": 0.5,
+ "por_tipo": {
+  "lmr_ue_vigente": 0.233,
+  "lmr_ue_historico": 0.2,
+  "lmr_eeuu": 0.0,
+  "lmr_codex": 0.2,
+  "comparacion": 1.0,
+  "registro": 1.0,
+  "carencia": 1.0,
+  "modo_accion": 0.9
+ },
+ "con_valor_inventado": 65,
+ "sin_llamar_herramientas": 66,
+ "segundos_mediana": 1.1949999999999998
+}

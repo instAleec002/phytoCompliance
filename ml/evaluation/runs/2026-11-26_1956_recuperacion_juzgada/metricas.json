@@ -1,0 +1,107 @@
+{
+ "juicios": 8411,
+ "firma": "db7e71e57aec",
+ "particion": "todo",
+ "preguntas": 60,
+ "mmr": null,
+ "encabezado_lexico": "con",
+ "peso_genericas": null,
+ "expandir_sinonimos": null,
+ "descomponer": false,
+ "idf/lexico": {
+  "recall@1": 0.01,
+  "util@1": 0.233,
+  "recall@5": 0.047,
+  "util@5": 0.55,
+  "recall@10": 0.078,
+  "util@10": 0.65,
+  "mrr@10": 0.617,
+  "ndcg@10": 0.283,
+  "por_tipo": {
+   "un_salto": {
+    "recall@1": 0.012,
+    "util@1": 0.25,
+    "recall@5": 0.049,
+    "util@5": 0.6,
+    "recall@10": 0.079,
+    "util@10": 0.725,
+    "mrr@10": 0.671,
+    "ndcg@10": 0.31
+   },
+   "varios_saltos": {
+    "recall@1": 0.008,
+    "util@1": 0.2,
+    "recall@5": 0.042,
+    "util@5": 0.45,
+    "recall@10": 0.075,
+    "util@10": 0.5,
+    "mrr@10": 0.51,
+    "ndcg@10": 0.229
+   }
+  }
+ },
+ "idf/denso": {
+  "recall@1": 0.015,
+  "util@1": 0.55,
+  "recall@5": 0.063,
+  "util@5": 0.733,
+  "recall@10": 0.113,
+  "util@10": 0.75,
+  "mrr@10": 0.753,
+  "ndcg@10": 0.439,
+  "por_tipo": {
+   "un_salto": {
+    "recall@1": 0.016,
+    "util@1": 0.625,
+    "recall@5": 0.067,
+    "util@5": 0.85,
+    "recall@10": 0.111,
+    "util@10": 0.875,
+    "mrr@10": 0.803,
+    "ndcg@10": 0.494
+   },
+   "varios_saltos": {
+    "recall@1": 0.013,
+    "util@1": 0.4,
+    "recall@5": 0.055,
+    "util@5": 0.5,
+    "recall@10": 0.118,
+    "util@10": 0.5,
+    "mrr@10": 0.652,
+    "ndcg@10": 0.33
+   }
+  }
+ },
+ "idf/hibrido": {
+  "recall@1": 0.016,
+  "util@1": 0.483,
+  "recall@5": 0.061,
+  "util@5": 0.75,
+  "recall@10": 0.119,
+  "util@10": 0.783,
+  "mrr@10": 0.771,
+  "ndcg@10": 0.444,
+  "por_tipo": {
+   "un_salto": {
+    "recall@1": 0.017,
+    "util@1": 0.6,
+    "recall@5": 0.063,
+    "util@5": 0.875,
+    "recall@10": 0.118,
+    "util@10": 0.9,
+    "mrr@10": 0.827,
+    "ndcg@10": 0.5
+   },
+   "varios_saltos": {
+    "recall@1": 0.013,
+    "util@1": 0.25,
+    "recall@5": 0.057,
+    "util@5": 0.5,
+    "recall@10": 0.121,
+    "util@10": 0.55,
+    "mrr@10": 0.658,
+    "ndcg@10": 0.33
+   }
+  }
+ }
+}

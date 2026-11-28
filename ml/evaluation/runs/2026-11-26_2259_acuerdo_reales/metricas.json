@@ -1,0 +1,20 @@
+{
+ "corrida": "2026-11-26_2003_validador_reales",
+ "filas_comparadas": 54,
+ "bloqueante": {
+  "referencia_positivas": 7,
+  "sistema_positivas": 5,
+  "coinciden": 50,
+  "precision": 0.8,
+  "exhaustividad": 0.571,
+  "kappa": 0.626
+ },
+ "riesgo_mercado": {
+  "referencia_positivas": 20,
+  "sistema_positivas": 0,
+  "coinciden": 34,
+  "precision": null,
+  "exhaustividad": 0.0,
+  "kappa": 0.0
+ }
+}

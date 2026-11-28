@@ -1,0 +1,16 @@
+# Productos del Codex (Clasificación de Alimentos y Piensos) que cubren cada cultivo, del más específico al más
+# general. El Codex indica buscar también el subgrupo y el grupo; un LMR del producto concreto prevalece sobre el del
+# subgrupo, y este sobre el del grupo. Se identifican por código, que es estable (base del 28/10/2026).
+blueberry:
+  - {code: FB 4073, name: "Blueberry, highbush", level: commodity}
+  - {code: FB 0020, name: "Blueberries", level: commodity}
+  - {code: FB 2006, name: "Bush berries (subgroup)", level: subgroup}
+  - {code: FB 0018, name: "Berries and other small fruits", level: group}
+avocado:
+  - {code: FI 0326, name: "Avocado", level: commodity}
+  - {code: FI 0030, name: "Assorted tropical and sub-tropical fruits - inedible peel", level: group}
+table_grape:
+  - {code: FB 1235, name: "Table-grapes", level: commodity}
+  - {code: FB 0269, name: "Grapes", level: commodity}
+  - {code: FB 2008, name: "Small fruit vine climbing (subgroup)", level: subgroup}
+  - {code: FB 0018, name: "Berries and other small fruits", level: group}

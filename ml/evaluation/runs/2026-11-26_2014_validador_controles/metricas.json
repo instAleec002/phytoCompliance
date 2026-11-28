@@ -1,0 +1,44 @@
+{
+ "programas": 42,
+ "correctos": 42,
+ "falsas_alarmas": 0,
+ "omitidos": 0,
+ "por_tipo": {
+  "LIMPIO": {
+   "programas": 14,
+   "correctos": 14,
+   "falsas_alarmas": 0,
+   "omitidos": 0
+  },
+  "PHI_EXACTA": {
+   "programas": 6,
+   "correctos": 6,
+   "falsas_alarmas": 0,
+   "omitidos": 0
+  },
+  "PHI_MENOS_UNO": {
+   "programas": 6,
+   "correctos": 6,
+   "falsas_alarmas": 0,
+   "omitidos": 0
+  },
+  "COSECHA_MISMO_DIA": {
+   "programas": 6,
+   "correctos": 6,
+   "falsas_alarmas": 0,
+   "omitidos": 0
+  },
+  "OTRA_PLAGA": {
+   "programas": 5,
+   "correctos": 5,
+   "falsas_alarmas": 0,
+   "omitidos": 0
+  },
+  "ROTACION_ALTERNA": {
+   "programas": 5,
+   "correctos": 5,
+   "falsas_alarmas": 0,
+   "omitidos": 0
+  }
+ }
+}

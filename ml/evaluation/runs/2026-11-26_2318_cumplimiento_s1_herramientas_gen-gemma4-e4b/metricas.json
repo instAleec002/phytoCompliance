@@ -1,0 +1,12 @@
+{
+ "modo": "herramientas",
+ "modelo": "gemma4:e4b",
+ "preguntas": 3,
+ "exactitud": 1.0,
+ "por_tipo": {
+  "lmr_ue_vigente": 1.0
+ },
+ "con_valor_inventado": 0,
+ "sin_llamar_herramientas": 0,
+ "segundos_mediana": 0.68
+}

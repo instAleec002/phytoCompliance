@@ -1,0 +1,40 @@
+{
+ "base": {
+  "n": 34,
+  "r1": 0.353,
+  "r5": 0.735,
+  "r10": 0.794,
+  "mrr10": 0.504,
+  "ndcg10": 0.575
+ },
+ "adaptado": {
+  "n": 34,
+  "r1": 0.471,
+  "r5": 0.765,
+  "r10": 0.765,
+  "mrr10": 0.585,
+  "ndcg10": 0.63
+ },
+ "mejora_relativa_pct": {
+  "r1": 33.4,
+  "r5": 4.1,
+  "r10": -3.7,
+  "mrr10": 16.1,
+  "ndcg10": 9.6
+ },
+ "meta_8pct": {
+  "r10": false,
+  "ndcg10": true
+ },
+ "pares": 667,
+ "minutos": 7.5,
+ "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+ "vram_max_gb": 6.67,
+ "config": {
+  "epocas": 2,
+  "rango": 16,
+  "lr": 0.0001,
+  "lote": 64,
+  "max_tokens": 512
+ }
+}

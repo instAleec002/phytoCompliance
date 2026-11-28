@@ -1,0 +1,19 @@
+{
+ "modo": "herramientas",
+ "modelo": "gemma4:e4b",
+ "preguntas": 110,
+ "exactitud": 0.982,
+ "por_tipo": {
+  "lmr_ue_vigente": 1.0,
+  "lmr_ue_historico": 0.8,
+  "lmr_eeuu": 1.0,
+  "lmr_codex": 1.0,
+  "comparacion": 1.0,
+  "registro": 1.0,
+  "carencia": 1.0,
+  "modo_accion": 1.0
+ },
+ "con_valor_inventado": 2,
+ "sin_llamar_herramientas": 0,
+ "segundos_mediana": 0.665
+}

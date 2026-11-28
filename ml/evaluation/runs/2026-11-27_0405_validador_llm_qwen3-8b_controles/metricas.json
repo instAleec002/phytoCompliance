@@ -1,0 +1,19 @@
+{
+ "modelo": "qwen3:8b",
+ "limpios": 14,
+ "llm_falsas_alarmas_limpios": 4,
+ "control_programas": 42,
+ "control_llm_correctos": 11,
+ "control_validador_correctos": 42,
+ "llm_exhaustividad_sembradas": null,
+ "llm_precision_sembradas": null,
+ "programas_correctos_validador": 42,
+ "programas_correctos_llm": 11,
+ "programas": 42,
+ "mcnemar_validador_vs_llm": {
+  "solo_a": 31,
+  "solo_b": 0,
+  "p": 9.313225746154785e-10,
+  "prueba": "McNemar exacta (scipy.stats.binomtest)"
+ }
+}

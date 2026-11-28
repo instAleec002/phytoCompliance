@@ -1,0 +1,12 @@
+{
+  "fecha": "2026-11-23",
+  "muestra": "juicios_s2_muestra_anotacion.xlsx",
+  "n": 180,
+  "kappa_0_1_2": 0.483,
+  "kappa_relevante_si_no": 0.667,
+  "acuerdo_exacto": 0.656,
+  "acepta_relevancia_si_no": true,
+  "acepta_grados_0_1_2": false,
+  "metricas_principales": "recall@k, mrr@10 (relevancia sí/no)",
+  "metricas_secundarias": "ndcg@10, util@k (grados 0/1/2), con kappa 0.483 < 0.6"
+}

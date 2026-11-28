@@ -1,0 +1,407 @@
+# Alias de ingredientes activos. Cada entrada sale de un nombre real de SIGIA que no coincidió con el catálogo de
+# residuos de la UE (instantáneas del 27 y 28/10/2026), y el destino se comprobó en ese catálogo. La carga del grafo
+# falla si un destino deja de existir o si un ingrediente queda sin destino ni motivo, de modo que una descarga
+# nueva con nombres distintos se detecta en vez de pasar en silencio.
+
+# Cómo aparece en SIGIA -> nombre común ISO (inglés)
+to_iso:
+  ABAMECTINA: abamectin
+  AZUFRE: sulphur
+  EMAMECTIN BENZOATO: emamectin benzoate
+  METHOXIFENOZIDE: methoxyfenozide          # error de escritura en SIGIA
+  OXICLORURO DE COBRE: copper oxychloride
+  SULFATO DE COBRE TRIBASICO: tribasic copper sulphate
+  SULFATO DE COBRE: copper sulphate
+  ÓXIDO CUPROSO: cuprous oxide
+  ACEITE MINERAL: paraffin oil
+  ACIDO CÍTRICO: citric acid
+  GLYPHOSATE ISOPROPILAMINE: glyphosate     # sal; la UE fija el LMR para glifosato
+  METABISULFITO DE SODIO: sodium metabisulphite
+  UNICONAZOL-P: uniconazole-p
+  ISOFETAMIDE: isofetamid
+  ACEITE DEL ARBOL DEL TE: tea tree oil
+  EXTRACTO DEL ARBOL DEL TE: tea tree oil
+  EXTRACTO DE RHEUM OFFICINALE: rheum officinale extract
+  EXTRACTO DE CNIDIUM MONNIERI: cnidium monnieri extract
+  # productos biológicos
+  6 BENZYLADENINE: 6-benzyladenine
+  6-BENZYLAMINOPURINE: 6-benzyladenine      # sinónimo
+  ACEITE DE AJO: garlic extract
+  EXTRACTO DE AJO: garlic extract
+  ACEITE DE CITRONELA: citronella oil
+  ACEITE DE CLAVO DE OLOR: clove oil
+  EXTRACTO DE CLAVO DE OLOR: clove oil
+  ACEITE DE NARANJA: orange oil
+  ACEITE DE NEEM: neem
+  EXTRACTO DE NEEM: neem
+  AZADIRACHTA: neem
+  EXTRACTO DE AZADIRACHTA INDICA: neem
+  ACIDO 1-NAFTIL ACETICO: 1-naphthylacetic acid
+  ACIDO ALFA NAFTALENACETICO: 1-naphthylacetic acid
+  ACIDO ASCORBICO: l-ascorbic acid
+  ACIDO CAPRILICO + ACIDO CAPRICO: caprylic and capric acid
+  ACIDO INDOL 3 BUTIRICO: indolylbutyric acid
+  ACIDO INDOL ACETICO: indolylacetic acid
+  ACIDO LACTICO: lactic acid
+  AKANTHOMYCES MUSCARIUS CEPA VE6: akanthomyces muscarius ve6
+  ALGAS MARINAS: seaweed extracts
+  BICARBONATO DE POTASIO: potassium hydrogen carbonate
+  GIBERELINAS: gibberellin
+  "CEREVISANE= PARED CELULAR DE SACCHAROMYCES CEREVISIAE STRAIN LAS 117": cerevisane
+  QUITOSANO: chitosan
+  PYRETHRIN: pyrethrins
+  EXTRACTO DE PIRETRO: pyrethrins
+  EXTRACTO DE CRYSANTHEMO-PIRETRO: pyrethrins
+  EXTRACTO DE CHRYSANTHEMUM CINERARIAEFOLIUM: pyrethrins
+  HELICOVERPA ARMIGUERA NUCLEOPOLYHEDROVIRUS: helicoverpa armigera nucleopolyhedrovirus   # error de escritura
+  NPV HELICOVERPA ARMIGERA: helicoverpa armigera nucleopolyhedrovirus
+  VIRUS DE LA POLIEDROSIS NUCLEAR HELICOVERPA ARMIGERA: helicoverpa armigera nucleopolyhedrovirus
+  VIRUS DE LA POLIEDROSIS NUCLEAR DE SPODOPTERA EXIGUA: spodoptera exigua nucleopolyhedrovirus
+  FEROMONA CHLORIDEA VIRESCENS: lepidopteran pheromone
+  FEROMONA HELICOVERPA ARMIGERA: lepidopteran pheromone
+  FEROMONA DE ARGYROTAENIA SPHALEROPA: lepidopteran pheromone
+  PAECILOMYCES FUMOSOROSEUS: isaria fumosorosea           # nombre anterior de la especie
+  SACCHAROMYCES CEREVISAE: saccharomyces cerevisiae       # error de escritura
+  SALES POTASICAS DE ACIDOS GRASOS: fatty acids potassium salts
+
+  # palta y uva de mesa (instantáneas de SIGIA del 28/10/2026)
+  CIMOXANIL: cymoxanil
+  METRAFENONA: metrafenone
+  LAMBDA-CYHALOTHRINA: lambda-cyhalothrin
+  KRESOXIM METHYL: kresoxim-methyl
+  FLUAZIFOP -P -BUTYL: fluazifop-p-butyl
+  HALOXYFOP METHYL: haloxyfop-methyl
+  GLUFOSINATE P-AMMONIUM: glufosinate-ammonium
+  L-GLUFOSINATE AMMONIUM: glufosinate-ammonium
+  GLYPHOSATE AMMONIUM: glyphosate           # sal; la UE fija el LMR para glifosato
+  COBRE: copper
+  CALDOS BORDALES: bordeaux mixture
+  FOSFATO DE COBRE: copper phosphate
+  NITRATO DE COBRE: copper nitrate
+  POLISULPHURO DE CALCIO: lime sulphur
+  FOSFURO DE MAGNESIO: magnesium phosphide
+  ACIDO GIBERELICO: gibberellic acid
+  ACIDO S-ABSCISICO: s-abscisic acid
+  ACIDO PELARGONICO: pelargonic acid
+  ACIDO FOLICO: folic acid
+  CITRONELOL: citronellol
+  CLORURO SODICO: sodium chloride
+  ACEITE DE GIRASOL: sunflower oil
+  ACEITE PARAFINICO: paraffin oil
+  L-CISTEINA: l-cysteine
+  LECITINA DE SOYA: lecithins
+  PROTEINA HIDROLIZADA: hydrolysed proteins
+  EXTRACTO DE AJOS: garlic extract
+  EXTRACTO DE ALGAS: seaweed extracts
+  EXTRACTO ASCOPHYLLUM NODOSUM: seaweed extracts   # alga parda
+  EXTRACTO DE EQUISETUM ARVENSE: equisetum arvense l.
+  PAECILOMYCES LILACINUS: purpureocillium lilacinum   # nombre anterior de la especie
+
+# Nombre ISO -> residuo o residuos con que la UE fija el LMR. Una lista indica que SIGIA no dice cuál aplica (una
+# especie sin la cepa) o que el producto es una mezcla: el dominio usa entonces el límite más estricto y lo avisa.
+to_residue:
+  emamectin benzoate: emamectin b1a
+  glufosinate-ammonium: glufosinate
+  copper sulphate: total copper
+  copper sulphate pentahydrate: total copper
+  copper oxychloride: total copper
+  copper hydroxide: total copper
+  tribasic copper sulphate: total copper
+  cuprous oxide: total copper
+  hydrogen cyanamide: cyanamide
+  fosetyl-aluminium: fosetyl
+  metalaxyl-m: metalaxyl
+  formetanate hydrochloride: formetanate
+  flumioxazin: flumioxazine                 # así lo escribe la UE
+  tea tree oil: extract from tea tree
+  citronella oil: plant oils / citronella oil
+  clove oil: plant oils / clove oil eugenol
+  eugenol: plant oils / clove oil eugenol
+  neem: azadirachtin                        # la UE define el residuo de los productos de neem como azadiractina
+  1-naphthylacetic acid: 1-naphthylacetamide and 1-naphthylacetic acid
+  caprylic and capric acid: ["fatty acids: octanoic acid", "fatty acids: decanoic acid", capric acid]
+  fatty acids potassium salts: fatty acids c7-c20
+  lepidopteran pheromone: straight chain lepidopteran pheromones   # feromonas de cadena lineal de lepidópteros
+  spodoptera exigua nucleopolyhedrovirus:
+    - spodoptera exigua multicapsid nucleopolyhedrovirus isolate bv-0004
+    - spodoptera exigua nuclear polyhedrosis virus
+  copper: total copper
+  bordeaux mixture: total copper
+  copper phosphate: total copper
+  copper nitrate: total copper
+  mancozeb: dithiocarbamates                 # la UE mide los ditiocarbamatos como CS2
+  metiram: dithiocarbamates
+  benomyl: carbendazim and benomyl
+  benfuracarb: carbofuran                    # el residuo del carbofurano incluye el generado por benfuracarb
+  alpha-cypermethrin: cypermethrin           # el residuo incluye las mezclas de isómeros
+  cyhexatin: azocyclotin and cyhexatin
+  dichlorprop-p: dichlorprop
+  fluazifop-p-butyl: fluazifop-p
+  haloxyfop-methyl: haloxyfop
+  mepiquat chloride: mepiquat
+  prohexadione-calcium: prohexadione
+  propamocarb hydrochloride: propamocarb
+  propaquizafop: quizalofop                  # el residuo incluye sus ésteres, entre ellos propaquizafop
+  quizalofop-p-tefuryl: quizalofop
+  magnesium phosphide: phosphane and phosphide salts
+  pelargonic acid: "fatty acids: pelargonic acid"
+  citronellol: plant oils / citronellol
+  # microorganismos: SIGIA da la especie, la UE lista cepas (con su nombre anterior entre paréntesis)
+  bacillus amyloliquefaciens:
+    - bacillus amyloliquefaciens str. qst 713
+    - bacillus amyloliquefaciens ah2
+    - bacillus amyloliquefaciens strain fzb24
+    - bacillus amyloliquefaciens strain it-45
+    - bacillus amyloliquefaciens strain mbi 600
+    - bacillus amyloliquefaciens subsp. plantarum strain d747
+  bacillus subtilis:
+    - bacillus subtilis strain iab/bs03
+    - bacillus amyloliquefaciens str. qst 713   # antes B. subtilis
+  bacillus pumilus: bacillus pumilus qst 2808
+  beauveria bassiana:
+    - beauveria bassiana ppri 5339
+    - beauveria bassiana strain atcc 74040
+    - beauveria bassiana strain gha
+  isaria fumosorosea:
+    - isaria fumosorosea apopka strain 97
+    - paecilomyces fumosoroseus strain fe 9901
+  purpureocillium lilacinum:
+    - purpureocillium lilacinum pl11
+    - purpureocillium lilacinum strain 251
+  pythium oligandrum: pythium oligandrum strain m1
+  saccharomyces cerevisiae: saccharomyces cerevisiae strain las02
+  trichoderma gamsii: trichoderma gamsii strain icc080
+  trichoderma viride: trichoderma gamsii strain icc080          # antes T. viride
+  trichoderma atroviride:
+    - trichoderma atroviride strains imi 206040 and t11
+    - trichoderma atroviride strain agr2
+    - trichoderma atroviride strain at10
+    - trichoderma atroviride strain i-1237
+    - trichoderma atroviride strain sc1
+  trichoderma harzianum:                                        # las tres, antes T. harzianum
+    - trichoderma afroharzianum strain t-22
+    - trichoderma asperellum strains icc012, t25 and tv1
+    - trichoderma atroviride strains imi 206040 and t11
+
+# Sin residuo en el catálogo de la UE (comprobado). En la UE rige entonces el valor por defecto de 0,01 mg/kg
+# (Reglamento 396/2005, art. 18), salvo que la sustancia esté exenta; eso lo decide el dominio, no la normalización.
+not_in_eu:
+  tolfenpyrad: no figura en el catálogo de residuos de la UE
+  kasugamycin: no figura en el catálogo de residuos de la UE
+  pydiflumetofen: no figura en el catálogo de residuos de la UE
+  uniconazole-p: no figura en el catálogo de residuos de la UE
+  ningnanmycin: no figura en el catálogo de residuos de la UE
+  citric acid: no figura en el catálogo de residuos de la UE
+  sodium metabisulphite: no figura en el catálogo de residuos de la UE
+  sulphur dioxide: no figura en el catálogo de residuos de la UE
+  tetraethyl silicate: coadyuvante; no es un plaguicida con LMR
+  polyalkyleneoxide modified heptamethyltrisiloxane: coadyuvante; no es un plaguicida con LMR
+  1,8 cineol: no figura en el catálogo de residuos de la UE
+  alpha-pineno: no figura en el catálogo de residuos de la UE
+  terpinen-4-ol: no figura en el catálogo de residuos de la UE
+  carvacrol: no figura en el catálogo de residuos de la UE
+  aldehido cinamico: no figura en el catálogo de residuos de la UE
+  d-limoneno: no figura en el catálogo de la UE (la UE lista el aceite de naranja, no el limoneno)
+  mezcla de terpenos: la UE lista una mezcla concreta (QRD 460) y SIGIA no la identifica
+  bioflavonoides: no figura en el catálogo de residuos de la UE
+  salicilato: no figura en el catálogo de residuos de la UE
+  brassinolide: no figura en el catálogo de la UE (la UE lista 24-epibrasinólida, otra sustancia)
+  kinetina: no figura en el catálogo de residuos de la UE
+  carbonato de potasio: no figura en el catálogo de la UE (la UE lista el hidrogenocarbonato de potasio)
+  chitosan oligosaccharide: no figura en el catálogo de la UE (la UE lista el quitosano)
+  cnidiadin: no figura en el catálogo de residuos de la UE
+  complejo polioxina: no figura en el catálogo de residuos de la UE
+  polyoxin b: no figura en el catálogo de residuos de la UE
+  matrine: no figura en el catálogo de residuos de la UE
+  fungous proteoglycan: no figura en el catálogo de residuos de la UE
+  # extractos y aceites vegetales
+  sophora flavescens: extracto vegetal sin residuo en la UE
+  rheum officinale extract: extracto vegetal sin residuo en la UE
+  cnidium monnieri extract: extracto vegetal sin residuo en la UE
+  oxymatrine-extracto de raiz de sphora flavescens: extracto vegetal sin residuo en la UE
+  extracto de sophora flavescens: extracto vegetal sin residuo en la UE
+  aceite de algodon: extracto vegetal sin residuo en la UE
+  aceite de canela: extracto vegetal sin residuo en la UE
+  extracto de canela: extracto vegetal sin residuo en la UE
+  aceite de eucalipto: extracto vegetal sin residuo en la UE
+  aceite de limon: extracto vegetal sin residuo en la UE
+  extracto de limon: extracto vegetal sin residuo en la UE
+  aceite de oregano: extracto vegetal sin residuo en la UE
+  extracto de oregano: extracto vegetal sin residuo en la UE
+  aceite de palma aceitera: extracto vegetal sin residuo en la UE
+  aceite de pino: extracto vegetal sin residuo en la UE
+  aceite de ricino: extracto vegetal sin residuo en la UE
+  aceite de soya: extracto vegetal sin residuo en la UE
+  aceite de tomillo: extracto vegetal sin residuo en la UE (la UE lista el timol, no el aceite de tomillo)
+  extracto de aceite de tomillo: extracto vegetal sin residuo en la UE (la UE lista el timol, no el aceite de tomillo)
+  capsaicina: extracto vegetal sin residuo en la UE
+  extracto de aji: extracto vegetal sin residuo en la UE
+  extracto de capsicum: extracto vegetal sin residuo en la UE
+  extracto de chile: extracto vegetal sin residuo en la UE
+  oleoresina de capsicum: extracto vegetal sin residuo en la UE
+  oleorresina de aji: extracto vegetal sin residuo en la UE
+  extracto citrico: extracto vegetal sin residuo en la UE
+  extracto de semilla de citricos: extracto vegetal sin residuo en la UE
+  extracto de citrus aurantiifolia: extracto vegetal sin residuo en la UE
+  residuos vegetales citricos: extracto vegetal sin residuo en la UE
+  pectina citrica y azucares: extracto vegetal sin residuo en la UE
+  extracto de aceite de olea europaea: extracto vegetal sin residuo en la UE
+  extracto de chenopodium ambrosioides: extracto vegetal sin residuo en la UE
+  extracto de cyperus rotundus: extracto vegetal sin residuo en la UE
+  extracto de ficus: extracto vegetal sin residuo en la UE
+  extracto de gobernadora: extracto vegetal sin residuo en la UE
+  extracto de karanja oil: extracto vegetal sin residuo en la UE
+  extracto de manzanilla: extracto vegetal sin residuo en la UE
+  extracto de mimosa tenuiflora: extracto vegetal sin residuo en la UE
+  extracto de ortiga: extracto vegetal sin residuo en la UE
+  extracto de pachuli: extracto vegetal sin residuo en la UE
+  extracto de quillaja saponaria: extracto vegetal sin residuo en la UE
+  extracto de remolacha azucarera: extracto vegetal sin residuo en la UE
+  extracto de reynoutria sachalinensis: extracto vegetal sin residuo en la UE
+  extracto de saccharum officinarum: extracto vegetal sin residuo en la UE
+  extracto de tagete micrantha: extracto vegetal sin residuo en la UE
+  extracto de tagetes micrantha: extracto vegetal sin residuo en la UE
+  extracto de yucca schidigera: extracto vegetal sin residuo en la UE
+  extracto tumerico: extracto vegetal sin residuo en la UE
+  sapindus saponaria: extracto vegetal sin residuo en la UE
+  saponinas: extracto vegetal sin residuo en la UE
+  saponinas de origen vegetal: extracto vegetal sin residuo en la UE
+  saponinas triterpenoides: extracto vegetal sin residuo en la UE
+  # nombres genéricos
+  auxinas: nombre genérico en SIGIA; no identifica una sustancia
+  citoquininas: nombre genérico en SIGIA; no identifica una sustancia
+  extracto vegetal: nombre genérico en SIGIA; no identifica una sustancia
+  extractos vegetales y fitohormonas: nombre genérico en SIGIA; no identifica una sustancia
+  virus de la poliedrosis nuclear: nombre genérico en SIGIA; no identifica una sustancia
+  # nutrientes y bioestimulantes
+  acido alginico: nutriente o bioestimulante; no es una sustancia con LMR
+  acidos nucleicos: nutriente o bioestimulante; no es una sustancia con LMR
+  aminoacidos: nutriente o bioestimulante; no es una sustancia con LMR
+  microelementos: nutriente o bioestimulante; no es una sustancia con LMR
+  nutrientes: nutriente o bioestimulante; no es una sustancia con LMR
+  calcio total: nutriente o bioestimulante; no es una sustancia con LMR
+  silicio total: nutriente o bioestimulante; no es una sustancia con LMR
+  celulasas: enzima; no figura en el catálogo de residuos de la UE
+  glucanasas: enzima; no figura en el catálogo de residuos de la UE
+  # feromonas y atrayentes que no son de cadena lineal de lepidópteros
+  feromona de oiketicus kirbyi: feromona o atrayente para trampas o difusores; no figura en el catálogo de la UE
+  feromona ceratitis capitata: feromona o atrayente para trampas o difusores; no figura en el catálogo de la UE
+  feromona de pseudococcus longispinus: feromona o atrayente para trampas o difusores; no figura en el catálogo de la UE
+  feromona de pseudococcus viburni: feromona o atrayente para trampas o difusores; no figura en el catálogo de la UE
+  feromona planococcus citri: feromona o atrayente para trampas o difusores; no figura en el catálogo de la UE
+  feromona planococcus ficus: feromona o atrayente para trampas o difusores; no figura en el catálogo de la UE
+  kairomona de trips: feromona o atrayente para trampas o difusores; no figura en el catálogo de la UE
+  trimedlure: feromona o atrayente para trampas o difusores; no figura en el catálogo de la UE
+  # macroorganismos
+  heterorhabditis bacteriophora: nematodo entomopatógeno (macroorganismo); la UE no le fija LMR
+  steinernema carpocapsae: nematodo entomopatógeno (macroorganismo); la UE no le fija LMR
+  steinernema feltiae: nematodo entomopatógeno (macroorganismo); la UE no le fija LMR
+  # virus sin entrada para la especie
+  ectropis obliqua nucleopolyhedrovirus: virus sin entrada para esta especie en el catálogo de la UE
+  mamestra brassicae virus de la poliedrosis nuclear: virus sin entrada para esta especie en el catálogo de la UE
+  virus de la poliedrosis nuclear de helicoverpa zea: virus sin entrada para esta especie en el catálogo de la UE
+  # microorganismos sin ninguna cepa de la especie en el catálogo
+  bacillus thuringiensis: microorganismo; la UE no lista Bacillus thuringiensis en su catálogo de residuos
+  bacillus thuringiensis cepa n1: microorganismo; la UE no lista Bacillus thuringiensis en su catálogo de residuos
+  bacillus thuringiensis cepa n2: microorganismo; la UE no lista Bacillus thuringiensis en su catálogo de residuos
+  bacillus thuringiensis var aizawai: microorganismo; la UE no lista Bacillus thuringiensis en su catálogo de residuos
+  bacillus thuringiensis var israelensis: microorganismo; la UE no lista Bacillus thuringiensis en su catálogo de residuos
+  bacillus thuringiensis var kurstaki: microorganismo; la UE no lista Bacillus thuringiensis en su catálogo de residuos
+  bacillus thuringiensis var. kurstaki: microorganismo; la UE no lista Bacillus thuringiensis en su catálogo de residuos
+  bacillus thuringiensis var. tenebrionis: microorganismo; la UE no lista Bacillus thuringiensis en su catálogo de residuos
+  endotoxina de bacillus thuringiensis transconjugado: microorganismo; la UE no lista Bacillus thuringiensis en su catálogo de residuos
+  bacillus laterosporus: microorganismo sin cepa de esta especie en el catálogo de la UE
+  bacillus licheniformis: microorganismo sin cepa de esta especie en el catálogo de la UE
+  bacillus licheniformis - mallerauco: microorganismo sin cepa de esta especie en el catálogo de la UE
+  bacillus velezensis: microorganismo sin cepa de esta especie en el catálogo de la UE
+  brevibacillus brevis cepa maguellines: microorganismo sin cepa de esta especie en el catálogo de la UE
+  brevibacillus brevis cepa maguellines i: microorganismo sin cepa de esta especie en el catálogo de la UE
+  burkholderia rinojensis y su medio fermentativo: microorganismo sin cepa de esta especie en el catálogo de la UE
+  chromobacterium subtsugae: microorganismo sin cepa de esta especie en el catálogo de la UE
+  empedobacter brevis: microorganismo sin cepa de esta especie en el catálogo de la UE
+  bionectria ochroleuca: microorganismo sin cepa de esta especie en el catálogo de la UE
+  cordyceps javanica: microorganismo sin cepa de esta especie en el catálogo de la UE
+  hypocrea virens: microorganismo sin cepa de esta especie en el catálogo de la UE
+  trichoderma virens: microorganismo sin cepa de esta especie en el catálogo de la UE
+  trichoderma koningii: microorganismo sin cepa de esta especie en el catálogo de la UE
+  "lecanicillium lecanii =": microorganismo sin cepa de esta especie en el catálogo de la UE
+  metarhizium anisopliae: microorganismo sin cepa de esta especie en el catálogo de la UE (la UE lista M. brunneum)
+  pseudomonas fluorescens: microorganismo sin cepa de esta especie en el catálogo de la UE
+  saccharopolyspora erythraea: microorganismo sin cepa de esta especie en el catálogo de la UE
+  # palta y uva de mesa (28/10/2026)
+  cyclobutrifluram: no figura en el catálogo de residuos de la UE
+  indaziflam: no figura en el catálogo de residuos de la UE
+  fluazaindolizine: no figura en el catálogo de residuos de la UE
+  fluensulfone: no figura en el catálogo de residuos de la UE
+  florylpicoxamid: no figura en el catálogo de residuos de la UE
+  fluoxapiprolin: no figura en el catálogo de residuos de la UE
+  inpyrfluxam: no figura en el catálogo de residuos de la UE
+  isocycloseram: no figura en el catálogo de residuos de la UE
+  spidoxamat: no figura en el catálogo de residuos de la UE
+  spiropidion: no figura en el catálogo de residuos de la UE
+  pyraziflumid: no figura en el catálogo de residuos de la UE
+  pyrifluquinazon: no figura en el catálogo de residuos de la UE
+  metominostrobin: no figura en el catálogo de residuos de la UE
+  thidiazuron: no figura en el catálogo de residuos de la UE
+  thiocyclam hydrogen oxalate: no figura en el catálogo de residuos de la UE
+  zinc thiazole: no figura en el catálogo de residuos de la UE
+  uniconazole: no figura en el catálogo de residuos de la UE
+  aminoethoxyvinyglycine: no figura en el catálogo de residuos de la UE
+  alfa-terthienyl: no figura en el catálogo de residuos de la UE
+  borax: no figura en el catálogo de residuos de la UE
+  acido peracetico: no figura en el catálogo de residuos de la UE
+  acido gluconico: no figura en el catálogo de residuos de la UE
+  acido sacarico: no figura en el catálogo de residuos de la UE
+  antranilato de metilo: no figura en el catálogo de residuos de la UE
+  farnesol: no figura en el catálogo de residuos de la UE
+  nerolidol: no figura en el catálogo de residuos de la UE
+  zeatin: no figura en el catálogo de residuos de la UE
+  quinil galato: no figura en el catálogo de residuos de la UE
+  quinoleina fenolica: no figura en el catálogo de residuos de la UE
+  propionato amonico: no figura en el catálogo de residuos de la UE
+  propylene glycol monolaurate: no figura en el catálogo de residuos de la UE
+  "aatc - acido n-acetil tiazolidin-4-carboxilico": no figura en el catálogo de residuos de la UE
+  silicato de potasio: no figura en el catálogo de residuos de la UE
+  oxido de silicio: no figura en el catálogo de residuos de la UE
+  complejo yodo polietoxi polipropoxi polietoxietanol: coadyuvante; no es un plaguicida con LMR
+  aceite de sesamo: extracto vegetal sin residuo en la UE
+  aceite de wintergreen: extracto vegetal sin residuo en la UE
+  extracto de apazote: extracto vegetal sin residuo en la UE
+  extracto de argemone mexicana: extracto vegetal sin residuo en la UE
+  argemonina: extracto vegetal sin residuo en la UE
+  berberina: extracto vegetal sin residuo en la UE
+  ricinina: extracto vegetal sin residuo en la UE
+  "extracto de citricos + extracto de aceite de": extracto vegetal sin residuo en la UE
+  extracto de gluten: extracto vegetal sin residuo en la UE
+  extracto de pino: extracto vegetal sin residuo en la UE
+  extracto de semilla y pulpa de toronja: extracto vegetal sin residuo en la UE
+  extracto de tagetes erecta: extracto vegetal sin residuo en la UE
+  extracto vegetal de arroz: extracto vegetal sin residuo en la UE
+  extractos de limon: extracto vegetal sin residuo en la UE
+  aceite de thyme: extracto vegetal sin residuo en la UE (la UE lista el timol, no el aceite de tomillo)
+  extracto d-limoneno: no figura en el catálogo de la UE (la UE lista el aceite de naranja, no el limoneno)
+  extracto pimienta: la UE lista «Pepper» sin precisar la especie; no se asume que sea la pimienta negra
+  sulfonatos y compuestos azufrados: nombre genérico en SIGIA; no identifica una sustancia
+  aceite vegetal: nombre genérico en SIGIA; no identifica una sustancia
+  alcaloides: nombre genérico en SIGIA; no identifica una sustancia
+  extractos vegetales concentrados y fito hormonas: nombre genérico en SIGIA; no identifica una sustancia
+  biovermax: nombre comercial en SIGIA; no identifica una sustancia
+  acido fulvico: nutriente o bioestimulante; no es una sustancia con LMR
+  acidos uronicos: nutriente o bioestimulante; no es una sustancia con LMR
+  aminoacidos activos: nutriente o bioestimulante; no es una sustancia con LMR
+  carbohidratos activos: nutriente o bioestimulante; no es una sustancia con LMR
+  materia organica: nutriente o bioestimulante; no es una sustancia con LMR
+  fosfato: nutriente o bioestimulante; no es una sustancia con LMR
+  roca fosforica: nutriente o bioestimulante; no es una sustancia con LMR
+  celulosas: enzima; no figura en el catálogo de residuos de la UE
+  proteasas: enzima; no figura en el catálogo de residuos de la UE
+  feromona oiketicus kirbyi: feromona o atrayente para trampas o difusores; no figura en el catálogo de la UE
+  arthrobotrys oligospora: microorganismo sin cepa de esta especie en el catálogo de la UE
+  bacillus cereus cepa bromelia: microorganismo sin cepa de esta especie en el catálogo de la UE
+  bacillus cereus cepa peumo: microorganismo sin cepa de esta especie en el catálogo de la UE
+  hirsutella thompsonii: microorganismo sin cepa de esta especie en el catálogo de la UE
+  myrothecium verrucaria: microorganismo sin cepa de esta especie en el catálogo de la UE
+  pochonia chlamydosporia var. chlamydosporia: microorganismo sin cepa de esta especie en el catálogo de la UE
+  streptomyces viridochromogenes: microorganismo sin cepa de esta especie en el catálogo de la UE
+  trichoderma asperelloides: microorganismo sin cepa de esta especie en el catálogo de la UE
+  trichoderma longibratum: microorganismo sin cepa de esta especie en el catálogo de la UE

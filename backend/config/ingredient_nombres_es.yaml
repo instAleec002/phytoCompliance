@@ -1,0 +1,158 @@
+# Spanish common names for ISO ingredient names that SIGIA spells the same as ISO or that do not need an alias.
+# Used to write evaluation questions in Spanish. en_sigia: the spelling appears in the SIGIA product records.
+acetamiprid:
+  en_sigia: true
+  es: acetamiprid
+alpha-cypermethrin:
+  en_sigia: false
+  es: alfa-cipermetrina
+benzovindiflupyr:
+  en_sigia: false
+  es: benzovindiflupir
+bifenthrin:
+  en_sigia: false
+  es: bifentrina
+boscalid:
+  en_sigia: true
+  es: boscalid
+bupirimate:
+  en_sigia: false
+  es: bupirimato
+captan:
+  en_sigia: true
+  es: captan
+clothianidin:
+  en_sigia: false
+  es: clotianidina
+cyantraniliprole:
+  en_sigia: false
+  es: ciantraniliprol
+cyprodinil:
+  en_sigia: true
+  es: ciprodinil
+diquat:
+  en_sigia: true
+  es: diquat
+diuron:
+  en_sigia: true
+  es: diuron
+epoxiconazole:
+  en_sigia: false
+  es: epoxiconazol
+ethephon:
+  en_sigia: false
+  es: etefon
+etoxazole:
+  en_sigia: false
+  es: etoxazol
+fenbuconazole:
+  en_sigia: false
+  es: fenbuconazol
+fenhexamid:
+  en_sigia: false
+  es: fenhexamida
+fenpropathrin:
+  en_sigia: false
+  es: fenpropatrina
+fenpropimorph:
+  en_sigia: false
+  es: fenpropimorf
+fluazinam:
+  en_sigia: true
+  es: fluazinam
+flumioxazin:
+  en_sigia: false
+  es: flumioxazina
+fluopyram:
+  en_sigia: true
+  es: fluopyram
+fluoxastrobin:
+  en_sigia: false
+  es: fluoxastrobina
+flupyradifurone:
+  en_sigia: false
+  es: flupiradifurona
+fluxapyroxad:
+  en_sigia: false
+  es: fluxapiroxad
+formetanate hydrochloride:
+  en_sigia: false
+  es: formetanato clorhidrato
+fosetyl:
+  en_sigia: false
+  es: fosetil
+fosetyl-aluminium:
+  en_sigia: false
+  es: fosetil aluminio
+hydrogen cyanamide:
+  en_sigia: false
+  es: cianamida hidrogenada
+hymexazol:
+  en_sigia: false
+  es: himexazol
+indoxacarb:
+  en_sigia: true
+  es: indoxacarb
+isoprothiolane:
+  en_sigia: false
+  es: isoprotiolano
+metaldehyde:
+  en_sigia: false
+  es: metaldehido
+myclobutanil:
+  en_sigia: false
+  es: miclobutanil
+oxyfluorfen:
+  en_sigia: false
+  es: oxifluorfen
+penconazole:
+  en_sigia: false
+  es: penconazol
+prochloraz:
+  en_sigia: false
+  es: procloraz
+prohexadione-calcium:
+  en_sigia: false
+  es: prohexadiona calcica
+propamocarb:
+  en_sigia: true
+  es: propamocarb
+propaquizafop:
+  en_sigia: true
+  es: propaquizafop
+propiconazole:
+  en_sigia: false
+  es: propiconazol
+prothioconazole:
+  en_sigia: false
+  es: protioconazol
+pyrimethanil:
+  en_sigia: false
+  es: pirimetanil
+pyriproxyfen:
+  en_sigia: false
+  es: piriproxifen
+spinetoram:
+  en_sigia: true
+  es: spinetoram
+spiroxamine:
+  en_sigia: false
+  es: espiroxamina
+sulfoxaflor:
+  en_sigia: true
+  es: sulfoxaflor
+tebuconazole:
+  en_sigia: true
+  es: tebuconazol
+thiabendazole:
+  en_sigia: false
+  es: tiabendazol
+thiacloprid:
+  en_sigia: false
+  es: tiacloprid
+tolylfluanid:
+  en_sigia: false
+  es: tolilfluanida
+triadimenol:
+  en_sigia: true
+  es: triadimenol

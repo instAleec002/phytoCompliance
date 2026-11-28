@@ -1,0 +1,98 @@
+{
+ "Qwen3-8B (verificador Gemma)": {
+  "preguntas": 42,
+  "respondidas": [
+   26,
+   29
+  ],
+  "p_respondidas": 0.4531,
+  "varios_saltos_respondidas": [
+   8,
+   10
+  ],
+  "varios_saltos_ambos_docs_citados": [
+   0,
+   0
+  ],
+  "fidelidad": {
+   "Qwen3-8B": {
+    "antes": 0.942,
+    "con_D3": 0.879,
+    "pareadas_n": 24,
+    "p": 0.3216,
+    "varios_saltos": [
+     1.0,
+     0.85
+    ]
+   },
+   "Gemma 4 E4B": {
+    "antes": 0.846,
+    "con_D3": 0.793,
+    "pareadas_n": 24,
+    "p": 0.1306,
+    "varios_saltos": [
+     0.75,
+     0.75
+    ]
+   },
+   "Llama 3.1 8B": {
+    "antes": 0.876,
+    "con_D3": 0.863,
+    "pareadas_n": 24,
+    "p": 0.8117,
+    "varios_saltos": [
+     0.95,
+     0.867
+    ]
+   }
+  }
+ },
+ "Gemma 4 E4B (verificador Qwen)": {
+  "preguntas": 42,
+  "respondidas": [
+   34,
+   34
+  ],
+  "p_respondidas": 1.0,
+  "varios_saltos_respondidas": [
+   13,
+   12
+  ],
+  "varios_saltos_ambos_docs_citados": [
+   0,
+   0
+  ],
+  "fidelidad": {
+   "Qwen3-8B": {
+    "antes": 0.97,
+    "con_D3": 1.0,
+    "pareadas_n": 32,
+    "p": 0.0656,
+    "varios_saltos": [
+     0.922,
+     1.0
+    ]
+   },
+   "Gemma 4 E4B": {
+    "antes": 0.915,
+    "con_D3": 0.937,
+    "pareadas_n": 32,
+    "p": 0.152,
+    "varios_saltos": [
+     0.879,
+     0.921
+    ]
+   },
+   "Llama 3.1 8B": {
+    "antes": 0.733,
+    "con_D3": 0.781,
+    "pareadas_n": 32,
+    "p": 0.3078,
+    "varios_saltos": [
+     0.651,
+     0.769
+    ]
+   }
+  }
+ }
+}

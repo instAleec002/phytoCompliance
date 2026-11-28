@@ -1,0 +1,105 @@
+{
+ "juicios": 8293,
+ "firma": "d0b351aecc40",
+ "particion": "desarrollo",
+ "preguntas": 18,
+ "mmr": 0.85,
+ "encabezado_lexico": "con",
+ "peso_genericas": null,
+ "idf/lexico": {
+  "recall@1": 0.006,
+  "util@1": 0.278,
+  "recall@5": 0.052,
+  "util@5": 0.667,
+  "recall@10": 0.089,
+  "util@10": 0.722,
+  "mrr@10": 0.543,
+  "ndcg@10": 0.31,
+  "por_tipo": {
+   "un_salto": {
+    "recall@1": 0.004,
+    "util@1": 0.25,
+    "recall@5": 0.038,
+    "util@5": 0.583,
+    "recall@10": 0.069,
+    "util@10": 0.667,
+    "mrr@10": 0.537,
+    "ndcg@10": 0.279
+   },
+   "varios_saltos": {
+    "recall@1": 0.008,
+    "util@1": 0.333,
+    "recall@5": 0.08,
+    "util@5": 0.833,
+    "recall@10": 0.128,
+    "util@10": 0.833,
+    "mrr@10": 0.556,
+    "ndcg@10": 0.37
+   }
+  }
+ },
+ "idf/denso": {
+  "recall@1": 0.012,
+  "util@1": 0.556,
+  "recall@5": 0.051,
+  "util@5": 0.667,
+  "recall@10": 0.086,
+  "util@10": 0.667,
+  "mrr@10": 0.608,
+  "ndcg@10": 0.436,
+  "por_tipo": {
+   "un_salto": {
+    "recall@1": 0.01,
+    "util@1": 0.583,
+    "recall@5": 0.052,
+    "util@5": 0.75,
+    "recall@10": 0.091,
+    "util@10": 0.75,
+    "mrr@10": 0.662,
+    "ndcg@10": 0.494
+   },
+   "varios_saltos": {
+    "recall@1": 0.018,
+    "util@1": 0.5,
+    "recall@5": 0.051,
+    "util@5": 0.5,
+    "recall@10": 0.076,
+    "util@10": 0.5,
+    "mrr@10": 0.5,
+    "ndcg@10": 0.322
+   }
+  }
+ },
+ "idf/hibrido": {
+  "recall@1": 0.013,
+  "util@1": 0.556,
+  "recall@5": 0.044,
+  "util@5": 0.611,
+  "recall@10": 0.089,
+  "util@10": 0.778,
+  "mrr@10": 0.638,
+  "ndcg@10": 0.433,
+  "por_tipo": {
+   "un_salto": {
+    "recall@1": 0.011,
+    "util@1": 0.583,
+    "recall@5": 0.041,
+    "util@5": 0.667,
+    "recall@10": 0.094,
+    "util@10": 0.833,
+    "mrr@10": 0.699,
+    "ndcg@10": 0.484
+   },
+   "varios_saltos": {
+    "recall@1": 0.018,
+    "util@1": 0.5,
+    "recall@5": 0.051,
+    "util@5": 0.5,
+    "recall@10": 0.079,
+    "util@10": 0.667,
+    "mrr@10": 0.517,
+    "ndcg@10": 0.329
+   }
+  }
+ }
+}

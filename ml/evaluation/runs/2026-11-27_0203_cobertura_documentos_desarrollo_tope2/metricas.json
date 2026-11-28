@@ -1,0 +1,30 @@
+{
+ "particion": "desarrollo",
+ "k": 6,
+ "tope_por_documento": 2,
+ "firma": "c33f24be94bd",
+ "mmr": 0.85,
+ "preguntas": 18,
+ "un_salto": {
+  "preguntas": 12,
+  "todos_los_docs_oro": 8,
+  "al_menos_uno": 8,
+  "ninguno": 4,
+  "docs_distintos_media": 4.5,
+  "distribucion": {
+   "0": 4,
+   "1": 8
+  }
+ },
+ "varios_saltos": {
+  "preguntas": 6,
+  "todos_los_docs_oro": 0,
+  "al_menos_uno": 2,
+  "ninguno": 4,
+  "docs_distintos_media": 4.5,
+  "distribucion": {
+   "0": 4,
+   "1": 2
+  }
+ }
+}

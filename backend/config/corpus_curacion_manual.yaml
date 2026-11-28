@@ -1,0 +1,11 @@
+# Manual decisions over the automatic topical curation (knowledge.corpus.curate). They win over the model's decision.
+# Reviewed by Claude Code on 11/11/2026 against the scope in curate.SCOPE; the author can change any of them.
+entran:
+  - titulo: "Situación actual del cultivo del arándano (Vaccinium corymbosum L.) en Huarmey"
+    motivo: "panorama general del cultivo; estos trabajos suelen tener un capítulo de sanidad"
+  - titulo: "El cultivo de Arándanos (Vaccinium corymbosum) en macetas"
+    motivo: "manejo agronómico del cultivo, dentro del alcance"
+  - titulo: "Manejo del cultivo de vid (Vitis vinifera L.) cv. Quebranta"
+    motivo: "manejo del viñedo, dentro del alcance aunque la uva vaya a pisco"
+  - titulo: "Situación y experiencia en el cultivo de uva vinífera"
+    motivo: "las plagas y el manejo sanitario del viñedo son los mismos que en uva de mesa"

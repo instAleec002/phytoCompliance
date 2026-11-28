@@ -1,0 +1,11 @@
+# Ingredientes hacia el nombre del plaguicida en la base del Codex (índice del 28/10/2026). Sin LMR del Codex no hay
+# referencia internacional: decide el país de destino, así que la ausencia no se trata como incumplimiento.
+to_pesticide:
+  fosetyl-aluminium: Fosetyl aluminium
+  glufosinate-ammonium: Glufosinate ammonium
+  lambda-cyhalothrin: Cyhalothrin (includes lambda-cyhalothrin)
+  metalaxyl-m: Metalaxyl                    # el residuo del Codex incluye el metalaxil-M
+  alpha-cypermethrin: Cypermethrins (including alpha- and zeta- cypermethrin)
+  zeta-cypermethrin: Cypermethrins (including alpha- and zeta- cypermethrin)
+  cypermethrin: Cypermethrins (including alpha- and zeta- cypermethrin)
+  emamectin benzoate: Emamectin benzoate

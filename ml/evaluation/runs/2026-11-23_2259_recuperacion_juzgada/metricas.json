@@ -1,0 +1,100 @@
+{
+ "juicios": 2648,
+ "firma": "6223e6d20ce3",
+ "idf/lexico": {
+  "recall@1": 0.033,
+  "util@1": 0.233,
+  "recall@5": 0.144,
+  "util@5": 0.55,
+  "recall@10": 0.241,
+  "util@10": 0.65,
+  "mrr@10": 0.62,
+  "ndcg@10": 0.342,
+  "por_tipo": {
+   "un_salto": {
+    "recall@1": 0.037,
+    "util@1": 0.25,
+    "recall@5": 0.151,
+    "util@5": 0.6,
+    "recall@10": 0.251,
+    "util@10": 0.725,
+    "mrr@10": 0.675,
+    "ndcg@10": 0.363
+   },
+   "varios_saltos": {
+    "recall@1": 0.026,
+    "util@1": 0.2,
+    "recall@5": 0.128,
+    "util@5": 0.45,
+    "recall@10": 0.223,
+    "util@10": 0.5,
+    "mrr@10": 0.51,
+    "ndcg@10": 0.3
+   }
+  }
+ },
+ "idf/denso": {
+  "recall@1": 0.055,
+  "util@1": 0.567,
+  "recall@5": 0.213,
+  "util@5": 0.733,
+  "recall@10": 0.359,
+  "util@10": 0.75,
+  "mrr@10": 0.805,
+  "ndcg@10": 0.556,
+  "por_tipo": {
+   "un_salto": {
+    "recall@1": 0.058,
+    "util@1": 0.625,
+    "recall@5": 0.225,
+    "util@5": 0.85,
+    "recall@10": 0.371,
+    "util@10": 0.875,
+    "mrr@10": 0.886,
+    "ndcg@10": 0.61
+   },
+   "varios_saltos": {
+    "recall@1": 0.049,
+    "util@1": 0.45,
+    "recall@5": 0.19,
+    "util@5": 0.5,
+    "recall@10": 0.336,
+    "util@10": 0.5,
+    "mrr@10": 0.643,
+    "ndcg@10": 0.447
+   }
+  }
+ },
+ "idf/hibrido": {
+  "recall@1": 0.056,
+  "util@1": 0.467,
+  "recall@5": 0.207,
+  "util@5": 0.733,
+  "recall@10": 0.344,
+  "util@10": 0.783,
+  "mrr@10": 0.819,
+  "ndcg@10": 0.518,
+  "por_tipo": {
+   "un_salto": {
+    "recall@1": 0.06,
+    "util@1": 0.575,
+    "recall@5": 0.215,
+    "util@5": 0.875,
+    "recall@10": 0.363,
+    "util@10": 0.9,
+    "mrr@10": 0.904,
+    "ndcg@10": 0.568
+   },
+   "varios_saltos": {
+    "recall@1": 0.049,
+    "util@1": 0.25,
+    "recall@5": 0.19,
+    "util@5": 0.45,
+    "recall@10": 0.306,
+    "util@10": 0.55,
+    "mrr@10": 0.65,
+    "ndcg@10": 0.419
+   }
+  }
+ }
+}

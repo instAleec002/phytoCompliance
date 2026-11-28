@@ -1,0 +1,95 @@
+# Alias hacia las clasificaciones de modo de acción (instantánea del 28/10/2026: FRAC 2026, IRAC 11.5, HRAC 2026).
+# Clave: el ingrediente ya normalizado (nombre ISO del grafo). Valor: el nombre o los nombres tal como figuran en la
+# lista del comité, comprobados en ella. La carga falla si un destino desaparece o si un ingrediente químico queda
+# sin grupo ni motivo.
+
+to_entry:
+  # sales y escrituras distintas
+  copper hydroxide: copper                       # FRAC M01, «copper (different salts)»
+  copper oxychloride: copper
+  copper sulphate: copper
+  copper sulphate pentahydrate: copper
+  cuprous oxide: copper
+  tribasic copper sulphate: copper
+  formetanate hydrochloride: formetanate
+  fosetyl-aluminium: fosetyl-al
+  hymexazol: hymexazole
+  paraffin oil:                                  # FRAC NC y IRAC UNM: sin modo de acción específico
+    - mineral oils, organic oils, inorganic salts, material of biological origin
+    - mineral oil
+  # agentes biológicos con entrada en las listas
+  bacillus amyloliquefaciens: b. amyloliquefaciens strain qst713 strain fzb24 strain mbi600 strain d747 strain f727 strain at-332
+  bacillus subtilis: b. subtilis strain afs032321 strain y1336 strain hai-0404 strain rti477
+  bacillus velezensis: b. velezensis strain rti301 strain 11604
+  trichoderma harzianum: t. afroharzianum strain t-22
+  trichoderma virens: t. virens strain g-41
+  hypocrea virens: t. virens strain g-41         # Hypocrea virens es la fase sexual de T. virens
+  saccharomyces cerevisiae: s. cerevisae strain las02 strain ddsf623
+  cerevisane: cell walls of saccharomyces cerevisiae strain las117
+  extracto de reynoutria sachalinensis: extract from reynoutria sachalinensis
+  extracto de remolacha azucarera: beet extract
+  tea tree oil: extract from melaleuca alternifolia
+  eugenol: "plant oils : eugenol, geraniol, thymol"
+  aldehido cinamico: cinnamaldehyde
+  bacillus thuringiensis var kurstaki: bacillus thuringiensis
+  bacillus thuringiensis var. kurstaki: bacillus thuringiensis
+  bacillus thuringiensis var aizawai: bacillus thuringiensis
+  bacillus thuringiensis var israelensis: bacillus thuringiensis
+  bacillus thuringiensis var. tenebrionis: bacillus thuringiensis
+  bacillus thuringiensis cepa n1: bacillus thuringiensis
+  bacillus thuringiensis cepa n2: bacillus thuringiensis
+  endotoxina de bacillus thuringiensis transconjugado: bacillus thuringiensis
+  beauveria bassiana: beauveria bassiana strains
+  isaria fumosorosea: paecilomyces fumosoroseus apopka strain 97
+  burkholderia rinojensis y su medio fermentativo: burkholderia spp
+  helicoverpa armigera nucleopolyhedrovirus: helicoverpa armigera npv
+  neem: neem oil
+  extracto de chenopodium ambrosioides: chenopodium ambrosioides near ambrosioides extract
+
+  # palta y uva de mesa (28/10/2026)
+  copper: copper
+  bordeaux mixture: copper
+  copper nitrate: copper
+  copper phosphate: copper
+  fosetyl: fosetyl-al
+  propamocarb hydrochloride: propamocarb
+  thiocyclam hydrogen oxalate: Thiocyclam                       # IRAC 14
+  flubendiamide: Flubendimide                                   # así lo escribe el Apéndice 5 del IRAC 11.5
+  magnesium phosphide: Phosphine                                # IRAC 24A: los fosfuros actúan liberando fosfina
+  propylene glycol monolaurate: fatty acid monoesters with glycerol or propanediol   # IRAC UNE
+  dichlorprop-p: Dichlorprop                                    # HRAC 4
+  halosulphuron methyl: Halosulfuron-methyl                     # HRAC 2
+  fluazifop-p-butyl: Fluazifop-butyl                            # HRAC 1; la lista nombra la mezcla racémica
+  quizalofop-p-tefuryl: Quizalofop-ethyl                        # HRAC 1, mismo grupo químico (ariloxifenoxipropionatos)
+
+# Ingredientes que el comité clasifica fuera de la lista que se lee, con la cita de dónde figuran.
+listed_elsewhere:
+  spiropidion: {group: "IRAC:23", cite: "IRAC 11.5, tabla de clasificación 7.2 (no figura en el Apéndice 5)"}
+
+# Ingredientes químicos que ningún comité clasifica, con el motivo. La rotación los informa como no revisados.
+not_classified:
+  1-methylcyclopropene: regulador de crecimiento vegetal; FRAC, IRAC y HRAC no lo clasifican
+  hydrogen cyanamide: regulador de crecimiento vegetal; FRAC, IRAC y HRAC no lo clasifican
+  paclobutrazol: regulador de crecimiento vegetal; FRAC, IRAC y HRAC no lo clasifican
+  uniconazole-p: regulador de crecimiento vegetal; FRAC, IRAC y HRAC no lo clasifican
+  ningnanmycin: antiviral; no figura en FRAC, IRAC ni HRAC
+  sodium metabisulphite: conservante o fumigante de poscosecha; no figura en FRAC, IRAC ni HRAC
+  sulphur dioxide: conservante o fumigante de poscosecha; no figura en FRAC, IRAC ni HRAC
+  tetraethyl silicate: coadyuvante; no tiene modo de acción plaguicida
+  polyalkyleneoxide modified heptamethyltrisiloxane: coadyuvante; no tiene modo de acción plaguicida
+  sophora flavescens: extracto vegetal; no figura en FRAC, IRAC ni HRAC
+  cnidium monnieri extract: extracto vegetal; no figura en FRAC, IRAC ni HRAC
+  # palta y uva de mesa (28/10/2026)
+  ethephon: regulador de crecimiento vegetal; FRAC, IRAC y HRAC no lo clasifican
+  mepiquat chloride: regulador de crecimiento vegetal; FRAC, IRAC y HRAC no lo clasifican
+  prohexadione-calcium: regulador de crecimiento vegetal; FRAC, IRAC y HRAC no lo clasifican
+  cyclanilide: regulador de crecimiento vegetal; FRAC, IRAC y HRAC no lo clasifican
+  thidiazuron: regulador de crecimiento vegetal; FRAC, IRAC y HRAC no lo clasifican
+  uniconazole: regulador de crecimiento vegetal; FRAC, IRAC y HRAC no lo clasifican
+  metaldehyde: molusquicida; el IRAC excluye los molusquicidas
+  bromadiolone: rodenticida; fuera de FRAC, IRAC y HRAC
+  fluazaindolizine: nematicida; el IRAC los clasifica en un documento aparte que no se carga
+  fluensulfone: nematicida; el IRAC los clasifica en un documento aparte que no se carga
+  acido peracetico: desinfectante; no figura en FRAC, IRAC ni HRAC
+  quinoleina fenolica: no figura en FRAC, IRAC ni HRAC
+  complejo yodo polietoxi polipropoxi polietoxietanol: coadyuvante; no tiene modo de acción plaguicida

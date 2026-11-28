@@ -1,0 +1,25 @@
+# Códigos de cada cultivo en las fuentes, cada uno con la fecha en que se verificó.
+blueberry:
+  name_es: arándano
+  scientific: Vaccinium corymbosum
+  sigia_crop: "023075"            # verificado 24/09/2026 (70 plagas)
+  eu_product_id: 46               # verificado 24/09/2026
+  eu_code: "0154010"              # verificado 27/10/2026 (2402 versiones; 737 aplicables)
+  us_crop_group: "13-07B"         # Bushberry subgroup, 40 CFR 180.41
+  senasa_requirements_code: "18464"  # verificado 06/10/2026 (75 destinos)
+avocado:
+  name_es: palta
+  scientific: Persea americana
+  sigia_crop: "020732"            # verificado 27/10/2026 (Palto)
+  eu_product_id: 74               # verificado 27/10/2026
+  eu_code: "0163010"              # verificado 27/10/2026 (Avocados)
+  us_crop_group: "24B"            # verificado 28/10/2026, 40 CFR 180.41 (filas en config/us_commodities.yaml)
+  senasa_requirements_code: "05433"  # verificado 06/10/2026 (74 destinos)
+table_grape:
+  name_es: uva de mesa
+  scientific: Vitis vinifera
+  sigia_crop: "020772"            # verificado 27/10/2026 (Vid; 177 plagas y otros usos)
+  eu_product_id: 37               # verificado 27/10/2026
+  eu_code: "0151010"              # verificado 27/10/2026 (Table grapes)
+  us_crop_group: "13-07F"         # verificado 28/10/2026, 40 CFR 180.41 (filas en config/us_commodities.yaml)
+  senasa_requirements_code: "04530"  # verificado 06/10/2026 (98 destinos)

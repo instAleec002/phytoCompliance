@@ -1,0 +1,67 @@
+Installed 75 packages in 317ms
+/mnt/c/gpu-jobs/bge_lora_01/train.py:91: DeprecationWarning: Importing from 'sentence_transformers.losses' is deprecated and will be removed in a future version. Please use 'sentence_transformers.sentence_transformer.losses' instead.
+  from sentence_transformers.losses import CachedMultipleNegativesRankingLoss
+/mnt/c/gpu-jobs/bge_lora_01/train.py:92: DeprecationWarning: Importing from 'sentence_transformers.training_args' is deprecated and will be removed in a future version. Please use 'sentence_transformers.sentence_transformer.training_args' instead.
+  from sentence_transformers.training_args import BatchSamplers
+preparando: GPU NVIDIA GeForce RTX 5070 Laptop GPU, torch 2.11.0+cu128
+datos: 658 fragmentos, 667 pares de entrenamiento, 34 preguntas de evaluaci├│n
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]
+Loading weights: 100%|ÔûêÔûêÔûêÔûêÔûêÔûêÔûêÔûêÔûêÔûê| 391/391 [00:00<00:00, 24455.67it/s]
+evaluando el modelo base
+base: {'n': 34, 'r1': 0.353, 'r5': 0.735, 'r10': 0.794, 'mrr10': 0.504, 'ndcg10': 0.575}
+entrenando: 2 ├®pocas, rango 16, lr 0.0001, lote 64
+
+Computing widget examples:   0%|          | 0/1 [00:00<?, ?example/s]
+                                                                     
+
+  0%|          | 0/22 [00:00<?, ?it/s]
+  5%|Ôûì         | 1/22 [00:04<01:38,  4.67s/it]
+  9%|Ôûë         | 2/22 [00:08<01:25,  4.29s/it]
+ 14%|ÔûêÔûÄ        | 3/22 [00:12<01:16,  4.02s/it]
+ 18%|ÔûêÔûè        | 4/22 [00:16<01:12,  4.04s/it]
+{'loss': '1.591', 'grad_norm': '2.087', 'learning_rate': '9.474e-05', 'epoch': '0.4545'}
+ 23%|ÔûêÔûêÔûÄ       | 5/22 [00:20<01:08,  4.04s/it]
+                                              
+
+ 23%|ÔûêÔûêÔûÄ       | 5/22 [00:20<01:08,  4.04s/it]
+ 27%|ÔûêÔûêÔûï       | 6/22 [00:24<01:06,  4.13s/it]
+ 32%|ÔûêÔûêÔûêÔûÅ      | 7/22 [00:34<01:28,  5.88s/it]
+ 36%|ÔûêÔûêÔûêÔûï      | 8/22 [00:43<01:37,  6.95s/it]
+ 41%|ÔûêÔûêÔûêÔûê      | 9/22 [00:52<01:40,  7.70s/it]
+ 45%|ÔûêÔûêÔûêÔûêÔûî     | 10/22 [01:01<01:36,  8.06s/it]
+                                               
+{'loss': '1.483', 'grad_norm': '2.119', 'learning_rate': '6.842e-05', 'epoch': '0.9091'}
+
+ 45%|ÔûêÔûêÔûêÔûêÔûî     | 10/22 [01:01<01:36,  8.06s/it]
+ 50%|ÔûêÔûêÔûêÔûêÔûê     | 11/22 [01:05<01:14,  6.79s/it]
+ 55%|ÔûêÔûêÔûêÔûêÔûêÔûì    | 12/22 [01:14<01:15,  7.52s/it]
+ 59%|ÔûêÔûêÔûêÔûêÔûêÔûë    | 13/22 [01:23<01:11,  7.94s/it]
+ 64%|ÔûêÔûêÔûêÔûêÔûêÔûêÔûÄ   | 14/22 [01:32<01:06,  8.31s/it]
+ 68%|ÔûêÔûêÔûêÔûêÔûêÔûêÔûè   | 15/22 [01:42<01:00,  8.57s/it]
+                                               
+{'loss': '1.062', 'grad_norm': '2.062', 'learning_rate': '4.211e-05', 'epoch': '1.364'}
+
+ 68%|ÔûêÔûêÔûêÔûêÔûêÔûêÔûè   | 15/22 [01:42<01:00,  8.57s/it]
+ 73%|ÔûêÔûêÔûêÔûêÔûêÔûêÔûêÔûÄ  | 16/22 [01:51<00:52,  8.74s/it]
+ 77%|ÔûêÔûêÔûêÔûêÔûêÔûêÔûêÔûï  | 17/22 [02:00<00:44,  8.80s/it]
+ 82%|ÔûêÔûêÔûêÔûêÔûêÔûêÔûêÔûêÔûÅ | 18/22 [02:09<00:35,  8.81s/it]
+ 86%|ÔûêÔûêÔûêÔûêÔûêÔûêÔûêÔûêÔûï | 19/22 [02:17<00:26,  8.81s/it]
+ 91%|ÔûêÔûêÔûêÔûêÔûêÔûêÔûêÔûêÔûê | 20/22 [02:26<00:17,  8.91s/it]
+                                               
+{'loss': '1.134', 'grad_norm': '2.405', 'learning_rate': '1.579e-05', 'epoch': '1.818'}
+
+ 91%|ÔûêÔûêÔûêÔûêÔûêÔûêÔûêÔûêÔûê | 20/22 [02:26<00:17,  8.91s/it]
+ 95%|ÔûêÔûêÔûêÔûêÔûêÔûêÔûêÔûêÔûêÔûî| 21/22 [02:35<00:08,  8.91s/it]
+100%|ÔûêÔûêÔûêÔûêÔûêÔûêÔûêÔûêÔûêÔûê| 22/22 [02:39<00:00,  7.33s/it]
+                                               
+{'train_runtime': '159.5', 'train_samples_per_second': '8.363', 'train_steps_per_second': '0.138', 'train_loss': '1.282', 'epoch': '2'}
+
+100%|ÔûêÔûêÔûêÔûêÔûêÔûêÔûêÔûêÔûêÔûê| 22/22 [02:39<00:00,  7.33s/it]
+100%|ÔûêÔûêÔûêÔûêÔûêÔûêÔûêÔûêÔûêÔûê| 22/22 [02:39<00:00,  7.25s/it]
+evaluando el modelo adaptado
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|ÔûêÔûêÔûêÔûêÔûêÔûêÔûêÔûêÔûêÔûê| 1/1 [00:00<00:00, 12.64it/s]
+terminado: base {'n': 34, 'r1': 0.353, 'r5': 0.735, 'r10': 0.794, 'mrr10': 0.504, 'ndcg10': 0.575} -> adaptado {'n': 34, 'r1': 0.471, 'r5': 0.765, 'r10': 0.765, 'mrr10': 0.585, 'ndcg10': 0.63}; mejora {'r1': 33.4, 'r5': 4.1, 'r10': -3.7, 'mrr10': 16.1, 'ndcg10': 9.6}

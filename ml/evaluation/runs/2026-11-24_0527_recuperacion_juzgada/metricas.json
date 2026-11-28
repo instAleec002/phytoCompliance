@@ -1,0 +1,105 @@
+{
+ "juicios": 8293,
+ "firma": "c33f24be94bd",
+ "particion": "desarrollo",
+ "preguntas": 18,
+ "mmr": null,
+ "encabezado_lexico": "peso",
+ "peso_genericas": null,
+ "idf/lexico": {
+  "recall@1": 0.012,
+  "util@1": 0.278,
+  "recall@5": 0.037,
+  "util@5": 0.611,
+  "recall@10": 0.068,
+  "util@10": 0.667,
+  "mrr@10": 0.424,
+  "ndcg@10": 0.269,
+  "por_tipo": {
+   "un_salto": {
+    "recall@1": 0.005,
+    "util@1": 0.167,
+    "recall@5": 0.029,
+    "util@5": 0.667,
+    "recall@10": 0.048,
+    "util@10": 0.667,
+    "mrr@10": 0.365,
+    "ndcg@10": 0.235
+   },
+   "varios_saltos": {
+    "recall@1": 0.025,
+    "util@1": 0.5,
+    "recall@5": 0.055,
+    "util@5": 0.5,
+    "recall@10": 0.11,
+    "util@10": 0.667,
+    "mrr@10": 0.542,
+    "ndcg@10": 0.337
+   }
+  }
+ },
+ "idf/denso": {
+  "recall@1": 0.013,
+  "util@1": 0.556,
+  "recall@5": 0.061,
+  "util@5": 0.667,
+  "recall@10": 0.097,
+  "util@10": 0.667,
+  "mrr@10": 0.667,
+  "ndcg@10": 0.486,
+  "por_tipo": {
+   "un_salto": {
+    "recall@1": 0.011,
+    "util@1": 0.667,
+    "recall@5": 0.054,
+    "util@5": 0.75,
+    "recall@10": 0.095,
+    "util@10": 0.75,
+    "mrr@10": 0.75,
+    "ndcg@10": 0.546
+   },
+   "varios_saltos": {
+    "recall@1": 0.018,
+    "util@1": 0.333,
+    "recall@5": 0.076,
+    "util@5": 0.5,
+    "recall@10": 0.101,
+    "util@10": 0.5,
+    "mrr@10": 0.5,
+    "ndcg@10": 0.366
+   }
+  }
+ },
+ "idf/hibrido": {
+  "recall@1": 0.012,
+  "util@1": 0.444,
+  "recall@5": 0.061,
+  "util@5": 0.667,
+  "recall@10": 0.098,
+  "util@10": 0.667,
+  "mrr@10": 0.63,
+  "ndcg@10": 0.477,
+  "por_tipo": {
+   "un_salto": {
+    "recall@1": 0.009,
+    "util@1": 0.5,
+    "recall@5": 0.054,
+    "util@5": 0.75,
+    "recall@10": 0.097,
+    "util@10": 0.75,
+    "mrr@10": 0.694,
+    "ndcg@10": 0.532
+   },
+   "varios_saltos": {
+    "recall@1": 0.018,
+    "util@1": 0.333,
+    "recall@5": 0.076,
+    "util@5": 0.5,
+    "recall@10": 0.101,
+    "util@10": 0.5,
+    "mrr@10": 0.5,
+    "ndcg@10": 0.368
+   }
+  }
+ }
+}

@@ -1,0 +1,63 @@
+{
+ "suite": "ml\\evaluation\\suites\\textual_piloto.jsonl",
+ "signature": "6223e6d20ce3",
+ "encoder": "bge-m3",
+ "generator": "gemini:gemini-3.8-flash@ai_studio",
+ "judge": "gemini:gemini-3.8-flash@ai_studio",
+ "retrieval": {
+  "lexical": {
+   "strict": {
+    "r1": 0.147,
+    "r5": 0.294,
+    "r10": 0.412,
+    "mrr": 0.21
+   },
+   "lenient": {
+    "r1": 0.176,
+    "r5": 0.353,
+    "r10": 0.5,
+    "mrr": 0.251
+   }
+  },
+  "dense": {
+   "strict": {
+    "r1": 0.353,
+    "r5": 0.735,
+    "r10": 0.765,
+    "mrr": 0.501
+   },
+   "lenient": {
+    "r1": 0.353,
+    "r5": 0.765,
+    "r10": 0.794,
+    "mrr": 0.508
+   }
+  },
+  "hybrid": {
+   "strict": {
+    "r1": 0.382,
+    "r5": 0.618,
+    "r10": 0.824,
+    "mrr": 0.492
+   },
+   "lenient": {
+    "r1": 0.382,
+    "r5": 0.676,
+    "r10": 0.853,
+    "mrr": 0.511
+   }
+  }
+ },
+ "end_to_end": {
+  "in_scope": 34,
+  "out_of_scope": 6,
+  "answered_with_evidence": 0.765,
+  "cited_when_answered": 0.962,
+  "source_chunk_cited": 0.618,
+  "abstained_out_of_scope": 0.667,
+  "faithfulness_mean": 0.987,
+  "faithfulness_n": 25,
+  "latency_median_s": 6.39,
+  "latency_p90_s": 8.72
+ }
+}

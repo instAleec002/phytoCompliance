@@ -1,0 +1,105 @@
+{
+ "juicios": 8293,
+ "firma": "d8a73b61c2fc",
+ "particion": "desarrollo",
+ "preguntas": 18,
+ "mmr": 0.85,
+ "encabezado_lexico": "peso",
+ "peso_genericas": null,
+ "idf/lexico": {
+  "recall@1": 0.005,
+  "util@1": 0.222,
+  "recall@5": 0.034,
+  "util@5": 0.611,
+  "recall@10": 0.055,
+  "util@10": 0.722,
+  "mrr@10": 0.497,
+  "ndcg@10": 0.223,
+  "por_tipo": {
+   "un_salto": {
+    "recall@1": 0.004,
+    "util@1": 0.167,
+    "recall@5": 0.026,
+    "util@5": 0.583,
+    "recall@10": 0.048,
+    "util@10": 0.667,
+    "mrr@10": 0.498,
+    "ndcg@10": 0.226
+   },
+   "varios_saltos": {
+    "recall@1": 0.008,
+    "util@1": 0.333,
+    "recall@5": 0.05,
+    "util@5": 0.667,
+    "recall@10": 0.069,
+    "util@10": 0.833,
+    "mrr@10": 0.496,
+    "ndcg@10": 0.216
+   }
+  }
+ },
+ "idf/denso": {
+  "recall@1": 0.009,
+  "util@1": 0.556,
+  "recall@5": 0.041,
+  "util@5": 0.667,
+  "recall@10": 0.066,
+  "util@10": 0.667,
+  "mrr@10": 0.607,
+  "ndcg@10": 0.386,
+  "por_tipo": {
+   "un_salto": {
+    "recall@1": 0.011,
+    "util@1": 0.667,
+    "recall@5": 0.043,
+    "util@5": 0.75,
+    "recall@10": 0.068,
+    "util@10": 0.75,
+    "mrr@10": 0.703,
+    "ndcg@10": 0.435
+   },
+   "varios_saltos": {
+    "recall@1": 0.005,
+    "util@1": 0.333,
+    "recall@5": 0.038,
+    "util@5": 0.5,
+    "recall@10": 0.06,
+    "util@10": 0.5,
+    "mrr@10": 0.417,
+    "ndcg@10": 0.288
+   }
+  }
+ },
+ "idf/hibrido": {
+  "recall@1": 0.007,
+  "util@1": 0.389,
+  "recall@5": 0.04,
+  "util@5": 0.667,
+  "recall@10": 0.07,
+  "util@10": 0.722,
+  "mrr@10": 0.551,
+  "ndcg@10": 0.377,
+  "por_tipo": {
+   "un_salto": {
+    "recall@1": 0.007,
+    "util@1": 0.417,
+    "recall@5": 0.04,
+    "util@5": 0.75,
+    "recall@10": 0.076,
+    "util@10": 0.833,
+    "mrr@10": 0.619,
+    "ndcg@10": 0.424
+   },
+   "varios_saltos": {
+    "recall@1": 0.005,
+    "util@1": 0.333,
+    "recall@5": 0.038,
+    "util@5": 0.5,
+    "recall@10": 0.057,
+    "util@10": 0.5,
+    "mrr@10": 0.417,
+    "ndcg@10": 0.283
+   }
+  }
+ }
+}

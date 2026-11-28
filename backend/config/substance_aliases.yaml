@@ -1,0 +1,44 @@
+# Ingredientes hacia la sustancia activa de la UE que lleva sus valores toxicológicos (ARfD), comprobado en el
+# endpoint active-substances del 28/10/2026. Una lista reúne varias entradas posibles: si alguna tiene ARfD se usa la
+# menor; si ninguna la tiene y no todas dicen «no necesaria», la ARfD queda sin fijar.
+to_substance:
+  emamectin benzoate: Emamectin
+  formetanate hydrochloride: Formetanate
+  fosetyl-aluminium: Fosetyl
+  glufosinate-ammonium: Glufosinate
+  hydrogen cyanamide: Cyanamide (H & Ca cyanamide)
+  uniconazole-p: Uniconazole
+  # el cobre tiene sus valores en «Copper compounds»
+  copper hydroxide: Copper compounds
+  copper oxychloride: Copper compounds
+  copper sulphate: Copper compounds
+  copper sulphate pentahydrate: Copper compounds
+  tribasic copper sulphate: Copper compounds
+  cuprous oxide: Copper compounds
+  paraffin oil:
+    - Paraffin oil/(CAS 64741-88-4)
+    - Paraffin oil/(CAS 64741-89-5)
+    - Paraffin oil/(CAS 64741-97-5)
+    - Paraffin oil/(CAS 64742-46-7)
+    - Paraffin oil/(CAS 64742-54-7)
+    - Paraffin oil/(CAS 64742-55-8)
+    - Paraffin oil/(CAS 64742-65-0)
+    - Paraffin oil/(CAS 72623-86-0)
+    - Paraffin oil/(CAS 8012-95-1)
+    - Paraffin oil/(CAS 8042-47-5)
+    - Paraffin oil/(CAS 97862-82-3)
+  # palta y uva de mesa (28/10/2026)
+  haloxyfop-methyl: Haloxyfop-P (Haloxyfop-R)
+  fluazifop-p-butyl: Fluazifop-P
+  mepiquat chloride: Mepiquat
+  prohexadione-calcium: Prohexadione
+  propamocarb hydrochloride: Propamocarb
+  halosulphuron methyl: Halosulfuron-methyl
+  thiocyclam hydrogen oxalate: Thiocyclam
+  diniconazole: Diniconazole-M
+  acido peracetico: Peracetic acid
+  copper nitrate: Copper compounds
+  copper phosphate: Copper compounds
+  copper: Copper compounds
+  bordeaux mixture: Copper compounds
+

@@ -1,0 +1,51 @@
+# The assistant: embedding model, retrieval and generator. Every part is swappable by name. Everything runs locally
+# (decision of 24/11/2026: no Gemini, no GCP): the generator is Gemma 4 E4B on Ollama since 27/11/2026 (the configuration
+# the short paper recommends: 110/110 on S1 with both guards, 0.95 faithfulness by the manual annotation; Qwen3-8B stays
+# as the second family), and it also drives the agent with the exact-core tools (orchestration.herramientas). device: auto puts the encoder on CUDA when there is one. The gemini
+# entry stays only to reproduce the earlier runs. Environment overrides: ASSISTANT_EMBEDDER, ASSISTANT_DEVICE,
+# ASSISTANT_GENERATOR.
+
+embedder:
+  name: bge-m3                 # bge-m3 | hash (deterministic, tests only)
+  model: BAAI/bge-m3
+  device: auto                 # auto (cuda if available) | cpu | cuda
+  batch_size: 8
+  max_length: 1024             # tokens per text; chunks are ~480 tokens plus the header
+
+retrieval:
+  signature: c33f24be94bd      # V7 (etapa 3, 24/11/2026): parent_child; explicit, so a later test index is never picked
+  mmr_lambda: 0.85             # V7: MMR over the final candidates (drops near-duplicates)
+  k_lexical: 30                # candidates from the Spanish full-text index
+  k_dense: 30                  # candidates from pgvector
+  rrf_k: 60                    # reciprocal rank fusion constant
+  top_k: 6                     # passages given to the generator
+  min_dense_score: 0.45        # below this cosine, a passage without lexical match does not count as evidence
+  lexical_weight: 0.5          # weighted RRF: the lexical list counts half (pilot 06/11/2026: it pushed good dense
+  dense_weight: 1.0            # hits out of the top 5)
+  lexical_ranking: idf         # BM25-style term weights; S2 11/11/2026: hybrid R@5 0.375 -> 0.408, lexical 0.167 -> 0.300
+  expand_synonyms: false       # AGROVOC + SIGIA synonyms added to the lexical query; off until the ablation measures it
+  graph_list_weight: 1.0       # D3 (27/11/2026): third list in the fusion, fragments that name the question's graph terms,
+                               # one per document; test: both documents of a multi-hop question 0/14 -> 2/14
+
+generator:
+  name: local                  # local | extractive (no language model: top passages, for tests) | gemini (earlier runs)
+  temperature: 0.0              # 27/11/2026, with a fixed seed: identical answers 5/18 -> 13/18 (repetibilidad-s2,
+  seed: 20261127               # Qwen3-8B); the paper's S2 runs used 0.1 without a seed
+  max_output_tokens: 4096      # Gemini counts its thinking tokens here; 1024 cut answers mid-sentence (06/11/2026)
+
+chat:
+  max_history_messages: 8      # earlier messages used for the rewrite and as context
+  max_history_chars: 3000
+  condense: true               # «¿y en palto?» -> standalone query before retrieval
+
+orchestration:
+  genericas: true              # 27/11/2026: list and count tools (productos_para_plaga, ingredientes_sin_limite);
+                               # S1 110/110 with both models and the second S1b 0 -> 26 and 0 -> 30 of 31
+
+generators:
+  gemini:
+    model: gemini-3.8-flash    # gemini-2.5-flash is closed to new keys (checked 06/11/2026)
+    thinking_level: low        # low | high | null (model default); the answer only restates cited passages
+  local:
+    base_url: http://localhost:11434/v1   # Ollama on the machine with the GPU
+    model: gemma4:e4b          # 27/11/2026; qwen3:8b before (the sentence check is only worth it with Qwen3-8B)

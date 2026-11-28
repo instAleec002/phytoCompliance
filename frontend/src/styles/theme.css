@@ -1,0 +1,196 @@
+/* Theme: the only place where colors, fonts, radii and shadows are chosen.
+
+   Two layers. The palette holds raw values and is never used by components directly. The semantic tokens below it
+   say what a value is for (page, surface, ink, rule, accent, each status); components and modules use only those.
+   To change the look, edit the palette or remap a semantic token here: nothing else in the code names a color.
+
+   Light is the default. Dark applies with <html data-theme="dark">, set from the user menu and stored on the device. */
+
+:root {
+  /* Palette: warm stone neutrals, one blue, three status hues ------------------------------------------------- */
+  --stone-0: #ffffff;
+  --stone-50: #f8f8f5;
+  --stone-100: #f0efeb;
+  --stone-200: #e4e2dc;
+  --stone-400: #a8a29e;
+  --stone-500: #78716c;
+  --stone-600: #57534e;
+  --stone-900: #1c1917;
+
+  --blue-50: #eff4fd;
+  --blue-100: #cfe0fa;
+  --blue-600: #1d4ea8;
+  --blue-700: #1a4491;
+  --blue-800: #12305f;
+
+  --green-50: #ecfdf5;
+  --green-700: #047857;
+  --amber-50: #fffbeb;
+  --amber-700: #b45309;
+  --red-50: #fef2f2;
+  --red-700: #b91c1c;
+
+  /* Typography: one family for the interface, a serif only for page titles, monospace only for codes --------- */
+  --font-ui: "Inter Variable", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-title: "EB Garamond", Georgia, "Times New Roman", serif;
+  --font-data: var(--font-ui);  /* figures use the interface font with tabular digits */
+  --font-code: ui-monospace, "Cascadia Mono", "SF Mono", Consolas, monospace;  /* identifiers, URLs, pasted text */
+
+  --text-xs: 11.5px;
+  --text-sm: 12.5px;
+  --text-base: 14px;
+  --text-lg: 16px;
+  --text-figure: 24px;
+  --text-title: 30px;
+
+  /* Shape and depth -------------------------------------------------------------------------------------------- */
+  --radius-badge: 6px;
+  --radius-control: 8px;
+  --radius-panel: 10px;
+  --radius-pill: 999px;
+
+  /* Size ------------------------------------------------------------------------------------------------------- */
+  --row: 32px;
+  --rail: 232px;
+  --bar: 52px;
+
+  /* Semantic tokens, light ------------------------------------------------------------------------------------- */
+  --paper: var(--stone-50);          /* page background */
+  --surface: var(--stone-0);         /* panels, inputs, menus */
+  --surface-2: var(--stone-100);     /* wells, group rows, disabled */
+  --sidebar: transparent;            /* the sky shows through the sidebar */
+  --bar-bg: var(--stone-0);          /* the sticky top bar is solid so content never shows under it */
+  --ink: var(--stone-900);
+  --ink-2: var(--stone-600);
+  --ink-3: var(--stone-500);
+  --rule: #e9e7e2;                   /* hairlines inside panels */
+  --rule-strong: #d6d3cc;            /* control and panel edges */
+  /* Hover and press are solid, never a transparency: a control on the page turns white when hovered; a row inside a
+     white panel turns to the well tone. */
+  --hover: var(--stone-0);
+  --hover-row: #f5f4f0;
+  --press: var(--stone-100);
+
+  --accent: var(--blue-600);         /* the one interactive color: primary action, focus, current place */
+  --accent-hover: var(--blue-700);
+  --on-accent: var(--stone-0);
+  --accent-tint: var(--blue-50);
+  --accent-text: var(--blue-700);
+  --selection: var(--blue-100);
+
+  --blocking: var(--red-700);
+  --blocking-bg: var(--red-50);
+  --risk: var(--amber-700);
+  --risk-bg: var(--amber-50);
+  --info: var(--blue-700);
+  --info-bg: var(--blue-50);
+  --ok: var(--green-700);
+  --ok-bg: var(--green-50);
+
+  /* Shadows are short and crisp (small blur, small offset): they mark an edge, they do not glow. */
+  --shadow-soft: 0 1px 1px rgb(28 25 23 / 0.06);
+  --shadow-card: 0 1px 2px rgb(28 25 23 / 0.06);
+  --shadow-float: 0 2px 4px rgb(28 25 23 / 0.08), 0 6px 12px -4px rgb(28 25 23 / 0.12);
+
+  /* Page background: a pale sky, white at the top, faint clouds behind the content. Panels stay solid. */
+  --page-bg:
+    radial-gradient(60% 40% at 12% 78%, rgb(196 224 250 / 0.55), transparent 70%),
+    radial-gradient(50% 35% at 88% 60%, rgb(206 229 251 / 0.5), transparent 70%),
+    radial-gradient(45% 30% at 55% 105%, rgb(214 233 252 / 0.6), transparent 70%),
+    linear-gradient(180deg, #ffffff 0%, #f4f9fe 35%, #e6f1fc 100%);
+
+  /* Buttons: glossy pills. Primary is aqua blue with a navy edge; secondary is silver. Hover brightens slightly. */
+  --font-button: var(--font-ui);     /* use var(--font-title) for serif buttons, as in Terminus */
+  --btn-primary-bg: linear-gradient(180deg, #d9e9fd 0%, #93c0f6 42%, #5b9bec 52%, #7fb4f2 78%, #c4defc 100%);
+  --btn-primary-bg-press: linear-gradient(180deg, #8dbbf4 0%, #5b9bec 50%, #8dbbf4 100%);
+  --btn-primary-edge: #24467f;
+  --btn-primary-ink: #0f2a55;
+  --btn-bg: linear-gradient(180deg, #ffffff 0%, #f6f6f5 48%, #e9e8e6 52%, #f4f4f3 100%);
+  --btn-bg-press: linear-gradient(180deg, #e9e8e6 0%, #f4f4f3 100%);
+  --btn-edge: #b9b5ae;
+  --btn-ink: var(--stone-900);
+  --btn-gloss: inset 0 1px 0 rgb(255 255 255 / 0.85);
+  --btn-hover-brightness: 1.06;      /* hover only brightens the button slightly */
+  --btn-shadow: 0 1px 2px rgb(28 25 23 / 0.14);
+
+  /* Icons: glossy objects. Each hue has a light top, a deep bottom and an edge. */
+  --icon-blue-hi: #bfe0ff;
+  --icon-blue-lo: #2f78d6;
+  --icon-blue-edge: #1d4ea8;
+  --icon-green-hi: #c9f0d6;
+  --icon-green-lo: #2f9a5e;
+  --icon-green-edge: #1f6e42;
+  --icon-amber-hi: #ffe6a8;
+  --icon-amber-lo: #e0961c;
+  --icon-amber-edge: #a86a0c;
+  --icon-paper-hi: #ffffff;
+  --icon-paper-lo: #e6e1d6;
+  --icon-paper-edge: #9c958a;
+  --icon-steel-hi: #f1f3f6;
+  --icon-steel-lo: #8a94a3;
+  --icon-steel-edge: #5a6472;
+  --icon-red-hi: #ffd0cc;
+  --icon-red-lo: #d9483b;
+  --icon-red-edge: #9c2a20;
+  --icon-ink: #3a3631;
+  --icon-shine: #ffffff;
+
+  color-scheme: light;
+}
+
+/* Semantic tokens, dark: same roles, warm dark stone --------------------------------------------------------- */
+:root[data-theme="dark"] {
+  --paper: #161514;
+  --surface: #1f1d1c;
+  --surface-2: #292725;
+  --sidebar: transparent;
+  --bar-bg: #161514;
+  --ink: #f5f5f4;
+  --ink-2: #c9c4bf;
+  --ink-3: #9c9590;
+  --rule: #2d2a28;
+  --rule-strong: #403c39;
+  --hover: #2a2826;                  /* solid, one step lighter than the surface */
+  --hover-row: #262422;
+  --press: #33302e;
+
+  --accent: #6d9af0;
+  --accent-hover: #8ab0f5;
+  --on-accent: #0c1a33;
+  --accent-tint: #1b2740;
+  --accent-text: #9dbcf7;
+  --selection: #2a3d63;
+
+  --blocking: #f28b82;
+  --blocking-bg: #3a1c1a;
+  --risk: #eeb35c;
+  --risk-bg: #36290f;
+  --info: #9dbcf7;
+  --info-bg: #1b2740;
+  --ok: #6fd2a6;
+  --ok-bg: #12302a;
+
+  --shadow-soft: 0 1px 1px rgb(0 0 0 / 0.35);
+  --shadow-card: 0 1px 2px rgb(0 0 0 / 0.35);
+  --shadow-float: 0 2px 4px rgb(0 0 0 / 0.4), 0 6px 12px -4px rgb(0 0 0 / 0.5);
+
+  --page-bg:
+    radial-gradient(60% 40% at 12% 78%, rgb(40 70 120 / 0.35), transparent 70%),
+    radial-gradient(50% 35% at 88% 60%, rgb(35 60 105 / 0.3), transparent 70%),
+    linear-gradient(180deg, #161514 0%, #141a24 60%, #142033 100%);
+
+  --btn-primary-bg: linear-gradient(180deg, #8fbaf5 0%, #4d8ae4 45%, #2f6fd0 55%, #3f7edb 80%, #6c9ff0 100%);
+  --btn-primary-bg-press: linear-gradient(180deg, #2f6fd0 0%, #4d8ae4 100%);
+  --btn-primary-edge: #0d2550;
+  --btn-primary-ink: #ffffff;
+  --btn-bg: linear-gradient(180deg, #3a3735 0%, #2f2c2a 48%, #262422 52%, #2d2a28 100%);
+  --btn-bg-press: linear-gradient(180deg, #262422 0%, #2d2a28 100%);
+  --btn-edge: #55504b;
+  --btn-ink: #f5f5f4;
+  --btn-gloss: inset 0 1px 0 rgb(255 255 255 / 0.12);
+  --btn-shadow: 0 1px 2px rgb(0 0 0 / 0.45);
+
+  --icon-ink: #2a2723;
+
+  color-scheme: dark;
+}

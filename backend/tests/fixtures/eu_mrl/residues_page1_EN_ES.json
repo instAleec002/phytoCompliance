@@ -1,0 +1,1784 @@
+{
+ "value": [
+  {
+   "pesticide_residue_id": 195,
+   "pesticide_residue_name": "Pyraclostrobin (F)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Fat soluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 346,
+   "pesticide_residue_name": "Oxadiazón",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 308,
+   "pesticide_residue_name": "Flufenoxurón (F)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Liposoluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 429,
+   "pesticide_residue_name": "Laminarin",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 2790,
+   "pesticide_residue_name": "Quinmerac (sum of quinmerac and its metabolites BH 518-2 and BH 518-4 expressed as quinmerac)(R)(A)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(R)",
+   "pesticide_residue_footnote_def": "The residue definition differs for the following combinations pesticide-code number:",
+   "pesticide_residue_footnote_txt": "code 1000000 except 1040000: quinmerac",
+   "pesticide_residue_version_nbr": 2,
+   "original_pesticide_residue_id": 369.0
+  },
+  {
+   "pesticide_residue_id": 211,
+   "pesticide_residue_name": "Thiacloprid",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 385,
+   "pesticide_residue_name": "Terbutilacina(R)(F)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(R)",
+   "pesticide_residue_footnote_def": "La definición del residuo difiere para las siguientes combinaciones de plaguicida-número de código: ",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 113,
+   "pesticide_residue_name": "Fluroxipir (suma de fluroxipir, sus sales, sus ésteres y sus conjugados, expresados como fluroxipir)(R)(A)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(R)",
+   "pesticide_residue_footnote_def": "La definición del residuo difiere para las siguientes combinaciones de plaguicida-número de código: ",
+   "pesticide_residue_footnote_txt": "Fluroxipir, código 1000000, excepto 1040000: Fluroxipir (suma de fluroxipir y sus sales, expresada como fluroxipir)",
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 217,
+   "pesticide_residue_name": "Triasulfurón",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 406,
+   "pesticide_residue_name": "Ácido benzoico (+)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(+)",
+   "pesticide_residue_footnote_def": "Sustancias incluidas en  el  anexo  IV  sin  perjuicio  de  otra  legislación específica  sobre  alimentos y  piensos, por ejemplo sobre aditivos alimentarios, aditivos para piensos, complementos alimenticios, aromatizantes, etc.",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 299,
+   "pesticide_residue_name": "Fenoxycarb",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 21,
+   "pesticide_residue_name": "Azociclotina y cihexatina (suma de azociclotina y cihexatina, expresadas en cihexatina)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 340,
+   "pesticide_residue_name": "Metrafenona (F)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Liposoluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 2281,
+   "pesticide_residue_name": "Fenpirazamina (F)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "()",
+   "pesticide_residue_footnote_def": "Other Footnote",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 22,
+   "pesticide_residue_name": "Azoxistrobina",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 297,
+   "pesticide_residue_name": "Fenbuconazole (sum of constituent enantiomers)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 140,
+   "pesticide_residue_name": "Lambda-cyhalothrin (includes gamma-cyhalothrin) (sum of R,S and S,R isomers)(F)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Fat soluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 429,
+   "pesticide_residue_name": "Laminarina",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 2424,
+   "pesticide_residue_name": "hidrogenocarbonato de sodio",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 2541,
+   "pesticide_residue_name": "Beauveria bassiana PPRI 5339",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 304,
+   "pesticide_residue_name": "Fluacifop-P (suma de todos los isómeros constituyentes de fluacifop, sus ésteres y sus conjugados, expresada en fluacifop)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 259,
+   "pesticide_residue_name": "Clethodim (sum of Sethoxydim and Clethodim including degradation products calculated as Sethoxydim)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 212,
+   "pesticide_residue_name": "Thifensulfuron-methyl",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 202,
+   "pesticide_residue_name": "Quintozene (sum of quintozene and pentachloro-aniline expressed as quintozene)(F)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Liposoluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 115,
+   "pesticide_residue_name": "Suma de folpet y ftalimida, expresada como folpet (R)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(R)",
+   "pesticide_residue_footnote_def": "La definición del residuo difiere para las siguientes combinaciones de plaguicida-número de código: ",
+   "pesticide_residue_footnote_txt": "código 1000000, excepto 1040000: Ftalimida, expresada como folpet",
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 272,
+   "pesticide_residue_name": "Diclorprop [suma de diclorprop (incluido el diclorprop-P) y sus sales, ésteres y conjugados, expresada como diclorprop] (R)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(R)",
+   "pesticide_residue_footnote_def": "La definición del residuo difiere para las siguientes combinaciones de plaguicida-número de código: ",
+   "pesticide_residue_footnote_txt": "Diclorprop — código 1000000 excepto 1040000: Suma de diclorprop (incluido el diclorprop-P) y sus sales, ésteres y conjugados, expresada como diclorprop",
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 201,
+   "pesticide_residue_name": "Quinoxyfen (F)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Fat soluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 41,
+   "pesticide_residue_name": "Carbon tetrachloride",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 800,
+   "pesticide_residue_name": "Profoxidim",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 265,
+   "pesticide_residue_name": "Cymoxanil",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 222,
+   "pesticide_residue_name": "Triforina",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 140,
+   "pesticide_residue_name": "Lambda-cihalotrina (incluye gamma-cihalotrina) (suma de los isómeros R y S y de los isómeros S y R)(F)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Liposoluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 781,
+   "pesticide_residue_name": "Fluopicolide",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 809,
+   "pesticide_residue_name": "Tepraloxidim (suma de tepraloxidim y sus metabolitos que pueden hidrolizarse bien en el grupo 3-(tetrahidro-piran-4-il)-ácido glutárico, o bien en el grupo 3-hidroxi-(tetrahidro-piran-4-il)-ácido glutárico, expresada como tepraloxidim)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 301,
+   "pesticide_residue_name": "Fenpiroximato (R)(F)(A)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(R)",
+   "pesticide_residue_footnote_def": "La definición del residuo difiere para las siguientes combinaciones de plaguicida-número de código: ",
+   "pesticide_residue_footnote_txt": "Fenpiroximato: códigos 1012030, 1012040, 1013030, 1013040, 1014030, 1014040, 1015030, 1015040, 1017030, 1017040: Fenpiroximato [metabolito M-3, expresado como fenpiroximato (L)]",
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 364,
+   "pesticide_residue_name": "Prosulfocarb",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 301,
+   "pesticide_residue_name": "Fenpiroximato (R)(F)(A)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(A)",
+   "pesticide_residue_footnote_def": "Los  laboratorios  de  referencia de  la  Unión Europea determinaron que  no  existían patrones de  referencia disponibles comercialmente  para [please enter name of substance/metabolite]. Al  revisar el  LMR, la  Comisión tendrá en  cuenta la  disponibilidad comercial del  patrón de  referencia mencionado en  la  primera frase a  más  tardar el [[smartdate]] o  si  dicho patrón no  está  disponible comercialmente para dicha fecha,  su  ausencia, si  no  se  ha presentado hasta esa fecha",
+   "pesticide_residue_footnote_txt": "(A) Los laboratorios de referencia de la UE señalaron que no existían patrones de referencia disponibles comercialmente para el metabolito M-3. Al revisar el LMR, la Comisión tendrá en cuenta la disponibilidad comercial del patrón de referencia que se menciona en la primera frase el 7 de abril de 2018 a más tardar, o su indisponibilidad, si llegada esa fecha no está disponible comercialmente.",
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 785,
+   "pesticide_residue_name": "Fomesafen",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 301,
+   "pesticide_residue_name": "Fenpyroximate (R)(F)(A)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(R)",
+   "pesticide_residue_footnote_def": "The residue definition differs for the following combinations pesticide-code number:",
+   "pesticide_residue_footnote_txt": "Fenpyroximate — codes 1012030, 1012040, 1013030, 1013040, 1014030, 1014040, 1015030, 1015040, 1017030, 1017040: Fenpyroximate (metabolite M-3, expressed as fenpyroximate (F))",
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 7,
+   "pesticide_residue_name": "2,4-D (sum of 2,4-D, its salts, its esters and its conjugates, expressed as 2,4-D)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 2913,
+   "pesticide_residue_name": "Maltodextrin",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 2,
+   "original_pesticide_residue_id": 431.0
+  },
+  {
+   "pesticide_residue_id": 346,
+   "pesticide_residue_name": "Oxadiazon",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 376,
+   "pesticide_residue_name": "Sulcotrione (R)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(R)",
+   "pesticide_residue_footnote_def": "The residue definition differs for the following combinations pesticide-code number:",
+   "pesticide_residue_footnote_txt": "code 1000000 except 1040000: CMBA (2-chloro-4-(methylsulfonyl)benzoic acid)",
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 285,
+   "pesticide_residue_name": "Ditianona",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 213,
+   "pesticide_residue_name": "Thiophanate-methyl (R)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(R)",
+   "pesticide_residue_footnote_def": "The residue definition differs for the following combinations pesticide-code number:",
+   "pesticide_residue_footnote_txt": "Thiofanate-methyl - code 1000000: Carbendazim and thiophanate-methyl, expressed as carbendazim",
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 113,
+   "pesticide_residue_name": "Fluroxipir (suma de fluroxipir, sus sales, sus ésteres y sus conjugados, expresados como fluroxipir)(R)(A)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(A)",
+   "pesticide_residue_footnote_def": "Los  laboratorios  de  referencia de  la  Unión Europea determinaron que  no  existían patrones de  referencia disponibles comercialmente  para [please enter name of substance/metabolite]. Al  revisar el  LMR, la  Comisión tendrá en  cuenta la  disponibilidad comercial del  patrón de  referencia mencionado en  la  primera frase a  más  tardar el [[smartdate]] o  si  dicho patrón no  está  disponible comercialmente para dicha fecha,  su  ausencia, si  no  se  ha presentado hasta esa fecha",
+   "pesticide_residue_footnote_txt": "The EU reference labs identified the reference standard for fluroxypyr conjugates as commercially not available. When re-viewing the MRL, the Commission will take into account the commercial availability of the reference standard referred to in the first sentence by 1 July 2016, or, if that reference standard is not commercially available by that date, the unavailability of it.",
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 385,
+   "pesticide_residue_name": "Terbuthylazine(R)(F)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(R)",
+   "pesticide_residue_footnote_def": "The residue definition differs for the following combinations pesticide-code number:",
+   "pesticide_residue_footnote_txt": "Terbuthylazine - code 1020000  Sum of terbuthylazine and desethyl-terbuthylazine, expressed as terbuthylazine (F)",
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 9,
+   "pesticide_residue_name": "Acephate",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 22,
+   "pesticide_residue_name": "Azoxystrobin",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 341,
+   "pesticide_residue_name": "Metribucina",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 265,
+   "pesticide_residue_name": "Cimoxanilo",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 2424,
+   "pesticide_residue_name": "Sodium hydrogen carbonate",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 773,
+   "pesticide_residue_name": "Cromafenozida",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 376,
+   "pesticide_residue_name": "Sulcotriona (R)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(R)",
+   "pesticide_residue_footnote_def": "La definición del residuo difiere para las siguientes combinaciones de plaguicida-número de código: ",
+   "pesticide_residue_footnote_txt": "código 1000000, excepto 1040000: CMBA (ácido 2-cloro-4-(metilsulfonil)-benzoico)",
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 194,
+   "pesticide_residue_name": "Pymetrozine (R)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(R)",
+   "pesticide_residue_footnote_def": "The residue definition differs for the following combinations pesticide-code number:",
+   "pesticide_residue_footnote_txt": "Pymetrozine - code 1020000: pymetrozine, 6-hydroxymethylpymetrozine and its phosphate conjugate, expressed as pymetrozine",
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 800,
+   "pesticide_residue_name": "Profoxydim",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 297,
+   "pesticide_residue_name": "Fenbuconazol (suma de enantiómeros constituyentes)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 301,
+   "pesticide_residue_name": "Fenpiroximato (R)(F)(A)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Liposoluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 2890,
+   "pesticide_residue_name": "Sum of M4 and M6 (both free and conjugated), expressed as pinoxaden(R)(A)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(A)",
+   "pesticide_residue_footnote_def": "The EU reference laboratories identified the reference standard for [please enter name of substance/metabolite] as commercially not available. When reviewing the MRLs, the Commission will take into account the commercial availability of the reference  standard referred to it in the first sentence by [[smartdate]], or, if that reference standard is not commercially available by that date, the unavailability of it.",
+   "pesticide_residue_footnote_txt": "The EU reference laboratories identified the reference standard for the M5-Metabolite (M4-conjugate) as commercially not available. When reviewing the MRLs, the Commission will take into account the commercial availability of the reference  standard referred to it in the first sentence by 02/08/2023, or, if that reference standard is not commercially available by that date, the unavailability of it.",
+   "pesticide_residue_version_nbr": 2,
+   "original_pesticide_residue_id": 799.0
+  },
+  {
+   "pesticide_residue_id": 186,
+   "pesticide_residue_name": "Profenofos (F)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Fat soluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 240,
+   "pesticide_residue_name": "Beflubutamida",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 385,
+   "pesticide_residue_name": "Terbutilacina(R)(F)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Liposoluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 176,
+   "pesticide_residue_name": "Pendimetalina (F)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Liposoluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 120,
+   "pesticide_residue_name": "Glifosato",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 2449,
+   "pesticide_residue_name": "Methyl decanoate (CAS 110-42-9)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 780,
+   "pesticide_residue_name": "Fluometuron",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 395,
+   "pesticide_residue_name": "Triflumizol: triflumizol y el metabolito FM-6-1(N-(4-Cloro-2-trifluorometilfenil)-n-propoxiacetamidina), expresado como triflumizol (R)(F)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Liposoluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 186,
+   "pesticide_residue_name": "Profenofós (F)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Liposoluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 100,
+   "pesticide_residue_name": "Fenitrothion",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 372,
+   "pesticide_residue_name": "Simazine",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 234,
+   "pesticide_residue_name": "Acrinathrin (F)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Fat soluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 2542,
+   "pesticide_residue_name": "Mefentrifluconazol",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 74,
+   "pesticide_residue_name": "Dicofol suma de isómeros p, p´ y o, p´) (F)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Liposoluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 395,
+   "pesticide_residue_name": "Triflumizol: triflumizol y el metabolito FM-6-1(N-(4-Cloro-2-trifluorometilfenil)-n-propoxiacetamidina), expresado como triflumizol (R)(F)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(R)",
+   "pesticide_residue_footnote_def": "La definición del residuo difiere para las siguientes combinaciones de plaguicida-número de código: ",
+   "pesticide_residue_footnote_txt": "triflumizol - código 100000 excepto 1040000: triflumizol",
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 273,
+   "pesticide_residue_name": "Suma de diclofopmetilo, ácido de diclofop y sus sales, expresada como diclofopmetilo (suma de isómeros)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 93,
+   "pesticide_residue_name": "Famoxadone (F)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Fat soluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 331,
+   "pesticide_residue_name": "Metaldehyde",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 406,
+   "pesticide_residue_name": "Benzoic acid (+)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(+)",
+   "pesticide_residue_footnote_def": "Substances included in Annex IV without prejudice to other specific food and/or feed legislation, e.g. on food additives, feed additives, food supplements, flavourings, etc.",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 2537,
+   "pesticide_residue_name": "Triflumezopyrim",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 234,
+   "pesticide_residue_name": "Acrinatrina (F)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Liposoluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 174,
+   "pesticide_residue_name": "Parathion-methyl (sum of Parathion-methyl and paraoxon-methyl expressed as Parathion-methyl)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 32,
+   "pesticide_residue_name": "Bromopropilato (F)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Liposoluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 331,
+   "pesticide_residue_name": "Metaldehído",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 259,
+   "pesticide_residue_name": "Cletodim (suma de setoxidim y cletodim, incluidos los productos de degradación, calculada como setoxidim)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 295,
+   "pesticide_residue_name": "Etridiazol",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 2537,
+   "pesticide_residue_name": "Triflumezopirim",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 308,
+   "pesticide_residue_name": "Flufenoxuron (F)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Fat soluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 301,
+   "pesticide_residue_name": "Fenpyroximate (R)(F)(A)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(A)",
+   "pesticide_residue_footnote_def": "The EU reference laboratories identified the reference standard for [please enter name of substance/metabolite] as commercially not available. When reviewing the MRLs, the Commission will take into account the commercial availability of the reference  standard referred to it in the first sentence by [[smartdate]], or, if that reference standard is not commercially available by that date, the unavailability of it.",
+   "pesticide_residue_footnote_txt": "(A) The EU reference labs identified the reference standard for the M-3 metabolite as commercially not available. When re-viewing the MRL, the Commission will take into account the commercial availability of the reference standard referred to in the first sentence by 7 April 2018, or, if that reference standard is not commercially available by that date, the unavailability of it.",
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 372,
+   "pesticide_residue_name": "Simacina",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 773,
+   "pesticide_residue_name": "Chromafenozide",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 2542,
+   "pesticide_residue_name": "Mefentrifluconazole",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 24,
+   "pesticide_residue_name": "Benalaxyl including other mixtures of constituent isomers including benalaxyl-M (sum of isomers)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 27,
+   "pesticide_residue_name": "Bifenazato (suma de bifenazato y bifenazato-diazeno expresada en bifenazato)(F)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Liposoluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 2281,
+   "pesticide_residue_name": "Fenpyrazamine (F)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "()",
+   "pesticide_residue_footnote_def": "Other Footnote",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 99,
+   "pesticide_residue_name": "Fenhexamid (F)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Fat soluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 7,
+   "pesticide_residue_name": "2,4-D (suma de 2,4-D, sus sales, sus ésteres y sus conjugados, expresada como 2,4-D)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 794,
+   "pesticide_residue_name": "Ortosulfamuron",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 304,
+   "pesticide_residue_name": "Fluazifop-P (sum of all the constituent isomers of fluazifop, its esters and its conjugates, expressed as fluazifop)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 2281,
+   "pesticide_residue_name": "Fenpyrazamine (F)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Fat soluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 222,
+   "pesticide_residue_name": "Triforine",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 212,
+   "pesticide_residue_name": "Tifensulfurón-metilo",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 373,
+   "pesticide_residue_name": "Espinosad (espinosad, suma de espinosina A y espinosina D)(F)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Liposoluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 395,
+   "pesticide_residue_name": "Triflumizole: Triflumizole and metabolite FM-6-1(N-(4-chloro-2-trifluoromethylphenyl)-n-propoxyacetamidine), expressed as Triflumizole(R)(F)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Fat soluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 88,
+   "pesticide_residue_name": "Ethion",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 99,
+   "pesticide_residue_name": "Fenhexamida (F)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Liposoluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 10,
+   "pesticide_residue_name": "Acetamiprid (R)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(R)",
+   "pesticide_residue_footnote_def": "La definición del residuo difiere para las siguientes combinaciones de plaguicida-número de código: ",
+   "pesticide_residue_footnote_txt": "Acetamiprid - código 1000000 excepto 1040000: Suma de acetamiprid y N-desmetil-acetamiprid (IM-2-1), expresada como acetamiprid",
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 214,
+   "pesticide_residue_name": "Tiram (expresado como tiram)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "()",
+   "pesticide_residue_footnote_def": "Other Footnote",
+   "pesticide_residue_footnote_txt": "Dado que todos los ditiocarbamatos originan el residuo final de CS2, por regla general, no es posible distinguirlos. No obstante, se dispone de ciertos métodos para detectar los residuos de propineb, ziram y tiram, que es aconsejable utilizar en los casos concretos en que se requiera la cantidad específica de estas sustancias.",
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 188,
+   "pesticide_residue_name": "Propiconazol (suma de los isómeros)(F)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Liposoluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 100,
+   "pesticide_residue_name": "Fenitrotión",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 2277,
+   "pesticide_residue_name": "Imazapic",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 171,
+   "pesticide_residue_name": "Oxidemetón-metilo (suma de oxidemetón-metilo y demetón-S-metilsulfona expresado como oxidemetón-metilo)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 74,
+   "pesticide_residue_name": "Dicofol (sum of p, p´ and o,p´ isomers)(F)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Fat soluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 32,
+   "pesticide_residue_name": "Bromopropylate (F)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Fat soluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 176,
+   "pesticide_residue_name": "Pendimethalin (F)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Fat soluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 237,
+   "pesticide_residue_name": "Anilacina",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 794,
+   "pesticide_residue_name": "Orthosulfamuron",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 340,
+   "pesticide_residue_name": "Metrafenone (F)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Fat soluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 301,
+   "pesticide_residue_name": "Fenpyroximate (R)(F)(A)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Fat soluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 285,
+   "pesticide_residue_name": "Dithianon",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 83,
+   "pesticide_residue_name": "Dithiocarbamates (dithiocarbamates expressed as CS2, including maneb, mancozeb, metiram, propineb, thiram and ziram)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "()",
+   "pesticide_residue_footnote_def": "Other Footnote",
+   "pesticide_residue_footnote_txt": "In brackets the origin of the residue (ma: maneb; mz: mancozeb; me: metiram; pr: propineb; t: thiram; z: ziram).\\n\\rThe MRLs expressed as CS2 can arise from different dithiocarbamates and therefore they do not reflect a single Good Agricultural Practice (GAP). It is therefore not appropriate to use these MRLs to check compliance with a GAP.",
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 341,
+   "pesticide_residue_name": "Metribuzin",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 240,
+   "pesticide_residue_name": "Beflubutamid",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 188,
+   "pesticide_residue_name": "Propiconazole (sum of isomers)(F)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Fat soluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 70,
+   "pesticide_residue_name": "Desmedipham",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 273,
+   "pesticide_residue_name": "Sum of diclofop-methyl, diclofop acid and its salts, expressed as diclofop-methyl (sum of isomers)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 237,
+   "pesticide_residue_name": "Anilazine",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 781,
+   "pesticide_residue_name": "Fluopicolide",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 2277,
+   "pesticide_residue_name": "Imazapic",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 395,
+   "pesticide_residue_name": "Triflumizole: Triflumizole and metabolite FM-6-1(N-(4-chloro-2-trifluoromethylphenyl)-n-propoxyacetamidine), expressed as Triflumizole(R)(F)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(R)",
+   "pesticide_residue_footnote_def": "The residue definition differs for the following combinations pesticide-code number:",
+   "pesticide_residue_footnote_txt": "triflumizole - code 100000 , except 1040000 : triflumizole (F)",
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 171,
+   "pesticide_residue_name": "Oxydemeton-methyl (sum of oxydemeton-methyl and demeton-S-methylsulfone expressed as oxydemeton-methyl)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 113,
+   "pesticide_residue_name": "Fluroxypyr (sum of fluroxypyr, its salts, its esters, and its conjugates, expressed as fluroxypyr)(R)(A)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(A)",
+   "pesticide_residue_footnote_def": "The EU reference laboratories identified the reference standard for [please enter name of substance/metabolite] as commercially not available. When reviewing the MRLs, the Commission will take into account the commercial availability of the reference  standard referred to it in the first sentence by [[smartdate]], or, if that reference standard is not commercially available by that date, the unavailability of it.",
+   "pesticide_residue_footnote_txt": "The EU reference labs identified the reference standard for fluroxypyr conjugates as commercially not available. When re-viewing the MRL, the Commission will take into account the commercial availability of the reference standard referred to in the first sentence by 1 July 2016, or, if that reference standard is not commercially available by that date, the unavailability of it.",
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 167,
+   "pesticide_residue_name": "Nitrofen (F)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Fat soluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 187,
+   "pesticide_residue_name": "Prohexadiona (prohexadiona y sus sales expresadas en prohexadiona)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 203,
+   "pesticide_residue_name": "Resmethrin (resmethrin including other mixtures of consituent isomers (sum of isomers))(F)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Fat soluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 2449,
+   "pesticide_residue_name": "decanoato de metilo (CAS 110-42-9)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 70,
+   "pesticide_residue_name": "Desmedifam",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 217,
+   "pesticide_residue_name": "Triasulfuron",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 195,
+   "pesticide_residue_name": "Piraclostrobina (F)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Liposoluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 211,
+   "pesticide_residue_name": "Tiacloprid",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 385,
+   "pesticide_residue_name": "Terbuthylazine(R)(F)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Fat soluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 10,
+   "pesticide_residue_name": "Acetamiprid (R)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(R)",
+   "pesticide_residue_footnote_def": "The residue definition differs for the following combinations pesticide-code number:",
+   "pesticide_residue_footnote_txt": "Acetamiprid - code 1000000 except 1040000: Sum of acetamiprid and N-desmethyl-acetamiprid (IM-2-1), expressed as acetamiprid",
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 213,
+   "pesticide_residue_name": "Tiofanato-metilo (R)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(R)",
+   "pesticide_residue_footnote_def": "La definición del residuo difiere para las siguientes combinaciones de plaguicida-número de código: ",
+   "pesticide_residue_footnote_txt": "Tiofanato-metilo = código 1000000: carbendazina y tiofanato-metilo expresada como carbendazina.",
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 115,
+   "pesticide_residue_name": "Folpet (sum of folpet and phtalimide, expressed as folpet)(R)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(R)",
+   "pesticide_residue_footnote_def": "The residue definition differs for the following combinations pesticide-code number:",
+   "pesticide_residue_footnote_txt": "code 1000000 except 1040000: Phtalimide, expressed as folpet",
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 83,
+   "pesticide_residue_name": "Ditiocarbamatos, expresados en CS2, incluidos maneb, mancoceb, metiram, propineb, tiram y ziram",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "()",
+   "pesticide_residue_footnote_def": "Other Footnote",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 93,
+   "pesticide_residue_name": "Famoxadona (F)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Liposoluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 299,
+   "pesticide_residue_name": "Fenoxicarb",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 373,
+   "pesticide_residue_name": "Spinosad (spinosad, sum of spinosyn A and spinosyn D)(F)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Fat soluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 36,
+   "pesticide_residue_name": "Suma de captan y THPI, expresada como captan (R)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(R)",
+   "pesticide_residue_footnote_def": "La definición del residuo difiere para las siguientes combinaciones de plaguicida-número de código: ",
+   "pesticide_residue_footnote_txt": "código 1000000, excepto 1040000: Suma de THPI, 3-OH THPI y 5-OH THPI, expresada como captan; código 0151020: captan",
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 59,
+   "pesticide_residue_name": "Cinidón-etilo (suma de cinidón-etilo y su isómero- E)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 2890,
+   "pesticide_residue_name": "Sum of M4 and M6 (both free and conjugated), expressed as pinoxaden(R)(A)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(R)",
+   "pesticide_residue_footnote_def": "The residue definition differs for the following combinations pesticide-code number:",
+   "pesticide_residue_footnote_txt": "Sum of M4 and M6 (both free and conjugated), expressed as pinoxaden - code 1000000 except 1040000: M4 (free and conjugated), expressed as pinoxaden",
+   "pesticide_residue_version_nbr": 2,
+   "original_pesticide_residue_id": 799.0
+  },
+  {
+   "pesticide_residue_id": 2541,
+   "pesticide_residue_name": "Beauveria bassiana cepa PPRI 5339",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 203,
+   "pesticide_residue_name": "Resmetrina, incluidas otras mezclas de isómeros constituyentes (suma de isómeros)(F)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Liposoluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 364,
+   "pesticide_residue_name": "Prosulfocarb",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 36,
+   "pesticide_residue_name": "Captan (Sum of captan and THPI, expressed as captan)(R)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(R)",
+   "pesticide_residue_footnote_def": "The residue definition differs for the following combinations pesticide-code number:",
+   "pesticide_residue_footnote_txt": "code 1000000 except 1040000: Sum of THPI, 3-OH THPI and 5-OH THPI, expressed as captan; code 0151020: captan",
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 809,
+   "pesticide_residue_name": "Tepraloxydim (sum of tepraloxydim and its metabolites that can be hydrolysed either to the moiety 3-(tetrahydro-pyran-4-yl)-glutaric acid or to the moiety 3-hydroxy-(tetrahydro-pyran-4-yl)-glutaric acid, expressed as tepraloxydim)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 2281,
+   "pesticide_residue_name": "Fenpirazamina (F)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Liposoluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 272,
+   "pesticide_residue_name": "Dichlorprop (Sum of dichlorprop (including dichlorprop-P), its salts, esters and conjugates, expressed as dichlorprop)(R)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(R)",
+   "pesticide_residue_footnote_def": "The residue definition differs for the following combinations pesticide-code number:",
+   "pesticide_residue_footnote_txt": "Dichlorprop — code 1000000 except 1040000: Sum of dichlorprop (including dichlorprop-P) and its salts, expressed as dichlorprop",
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 167,
+   "pesticide_residue_name": "Nitrofeno (F)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Liposoluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 201,
+   "pesticide_residue_name": "Quinoxifeno (F)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Liposoluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 21,
+   "pesticide_residue_name": "Azocyclotin and Cyhexatin (sum of azocyclotin and cyhexatin expressed as cyhexatin)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 194,
+   "pesticide_residue_name": "Pimetrozina (R)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(R)",
+   "pesticide_residue_footnote_def": "La definición del residuo difiere para las siguientes combinaciones de plaguicida-número de código: ",
+   "pesticide_residue_footnote_txt": "Pymetrozine - code 1020000: pymetrozine, 6-hydroxymethylpymetrozine and its phosphate conjugate, expressed as pymetrozine",
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 88,
+   "pesticide_residue_name": "Etion",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 27,
+   "pesticide_residue_name": "Bifenazate (sum of bifenazate plus bifenazate-diazene expressed as bifenazate)(F)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Fat soluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 365,
+   "pesticide_residue_name": "Protioconazol: protioconazol-destio (suma de isómeros)(F)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Liposoluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 365,
+   "pesticide_residue_name": "Prothioconazole: prothioconazole-desthio (sum of isomers)(F)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Fat soluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 41,
+   "pesticide_residue_name": "Tetracloruro de carbono",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 113,
+   "pesticide_residue_name": "Fluroxypyr (sum of fluroxypyr, its salts, its esters, and its conjugates, expressed as fluroxypyr)(R)(A)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(R)",
+   "pesticide_residue_footnote_def": "The residue definition differs for the following combinations pesticide-code number:",
+   "pesticide_residue_footnote_txt": "Fluroxypyr — code 1000000 except 1040000: Fluroxypyr (sum of fluroxypyr and its salts, expressed as fluroxypyr)",
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 187,
+   "pesticide_residue_name": "Prohexadione (prohexadione (acid) and its salts expressed as prohexadione-calcium)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 295,
+   "pesticide_residue_name": "Etridiazole",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 120,
+   "pesticide_residue_name": "Glyphosate",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 174,
+   "pesticide_residue_name": "Paratión-metilo (suma de paratión-metilo y paraoxón-metilo expresada como paratión-metilo)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 24,
+   "pesticide_residue_name": "Benalaxil con inclusión de otras mezclas de isómeros constituyentes como el benalaxil-M (suma de isómeros)",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 785,
+   "pesticide_residue_name": "Fomesafeno",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 59,
+   "pesticide_residue_name": "Cinidon-ethyl (sum of cinidon ethyl and its E-isomer)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 9,
+   "pesticide_residue_name": "Acefato",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 214,
+   "pesticide_residue_name": "Thiram (expressed as thiram)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "()",
+   "pesticide_residue_footnote_def": "Other Footnote",
+   "pesticide_residue_footnote_txt": "As all dithiocarbamates result in the final CS2 residue, discrimination among them is generally not possible. However single residue methods are available for propineb, ziram and thiram. These methods should be implemented on a case by case basis when the specific quantification of propineb, ziram and/or thiram is required.",
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 780,
+   "pesticide_residue_name": " Fluometurón",
+   "pesticide_residue_lg": "ES",
+   "pesticide_residue_footnote_code": null,
+   "pesticide_residue_footnote_def": null,
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  },
+  {
+   "pesticide_residue_id": 202,
+   "pesticide_residue_name": "Quintozene (sum of quintozene and pentachloro-aniline expressed as quintozene)(F)",
+   "pesticide_residue_lg": "EN",
+   "pesticide_residue_footnote_code": "(F)",
+   "pesticide_residue_footnote_def": "Fat soluble",
+   "pesticide_residue_footnote_txt": null,
+   "pesticide_residue_version_nbr": 1,
+   "original_pesticide_residue_id": null
+  }
+ ]
+}

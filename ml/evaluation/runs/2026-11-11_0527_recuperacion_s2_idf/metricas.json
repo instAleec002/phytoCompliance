@@ -1,0 +1,80 @@
+{
+ "suite": "ml/evaluation/suites/textual.jsonl",
+ "firma": "6223e6d20ce3",
+ "codificador": "bge-m3",
+ "ranking_lexico": "idf",
+ "pesos_rrf": [
+  0.5,
+  1.0
+ ],
+ "n": 60,
+ "lexico": {
+  "recall@1": 0.133,
+  "recall@5": 0.3,
+  "recall@10": 0.342,
+  "mrr@10": 0.2,
+  "ndcg@10": 0.234,
+  "por_tipo": {
+   "un_salto": {
+    "recall@1": 0.2,
+    "recall@5": 0.45,
+    "recall@10": 0.5,
+    "mrr@10": 0.297,
+    "ndcg@10": 0.346
+   },
+   "varios_saltos": {
+    "recall@1": 0.0,
+    "recall@5": 0.0,
+    "recall@10": 0.025,
+    "mrr@10": 0.007,
+    "ndcg@10": 0.01
+   }
+  }
+ },
+ "denso": {
+  "recall@1": 0.242,
+  "recall@5": 0.342,
+  "recall@10": 0.433,
+  "mrr@10": 0.31,
+  "ndcg@10": 0.331,
+  "por_tipo": {
+   "un_salto": {
+    "recall@1": 0.35,
+    "recall@5": 0.475,
+    "recall@10": 0.575,
+    "mrr@10": 0.415,
+    "ndcg@10": 0.452
+   },
+   "varios_saltos": {
+    "recall@1": 0.025,
+    "recall@5": 0.075,
+    "recall@10": 0.15,
+    "mrr@10": 0.1,
+    "ndcg@10": 0.09
+   }
+  }
+ },
+ "hibrido": {
+  "recall@1": 0.2,
+  "recall@5": 0.408,
+  "recall@10": 0.483,
+  "mrr@10": 0.31,
+  "ndcg@10": 0.347,
+  "por_tipo": {
+   "un_salto": {
+    "recall@1": 0.3,
+    "recall@5": 0.575,
+    "recall@10": 0.65,
+    "mrr@10": 0.426,
+    "ndcg@10": 0.481
+   },
+   "varios_saltos": {
+    "recall@1": 0.0,
+    "recall@5": 0.075,
+    "recall@10": 0.15,
+    "mrr@10": 0.079,
+    "ndcg@10": 0.08
+   }
+  }
+ }
+}

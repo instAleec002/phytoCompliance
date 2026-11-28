@@ -1,0 +1,5 @@
+# Modelo de ingesta de residuos de la EFSA. La revisión 3.1 es la que exige la EFSA para LMR mientras la revisión 4
+# no se adopte formalmente (página de herramientas de la EFSA, 28/10/2026).
+name: EFSA PRIMo
+edition: "3.1"
+url: https://www.efsa.europa.eu/sites/default/files/2026-05/EFSA_PRIMo_rev3.1_.xlsm
